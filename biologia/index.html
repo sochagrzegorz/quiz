@@ -14,58 +14,1567 @@
 <main class="shell">
 <header class="top"><div class="brand"><span class="mark">✳</span><span>Biologia na piątkę</span></div><span class="tag">KLASA 5 · BANK PYTAŃ</span></header>
 <section id="home" class="view active">
-<div class="hero"><div class="eyebrow">Jeden quiz · losowane pytania</div><h1>Sprawdź, jak działa życie.</h1><p>Każda sesja losuje 7 pytań jednokrotnego wyboru z puli 100 oraz zawiera 3 pytania opisowe oceniane przez AI.</p><div class="nickname-row"><label for="nickname">Twój pseudonim <span aria-hidden="true">*</span></label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Wpisz pseudonim" required aria-required="true"><p id="nicknameError" class="tiny nickname-error" role="alert" hidden></p></div><div class="hero-actions"><button class="btn primary" id="startBtn">Losuj 10 pytań →</button></div><div class="note">Pseudonim i wynik zapisują się na tym urządzeniu.</div></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankHome"></div></div></section>
+<div class="hero"><div class="eyebrow">Jeden quiz · losowane pytania</div><h1>Sprawdź, jak działa życie.</h1><p>Bank zawiera 100 pytań z działu „Biologia — nauka o życiu”: 97 jednokrotnego wyboru i 3 opisowe. Każda sesja losuje 7 pytań zamkniętych i zawiera 3 pytania opisowe oceniane przez AI.</p><div class="nickname-row"><label for="nickname">Twój pseudonim <span aria-hidden="true">*</span></label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Wpisz pseudonim" required aria-required="true"><p id="nicknameError" class="tiny nickname-error" role="alert" hidden></p></div><div class="hero-actions"><button class="btn primary" id="startBtn">Losuj 10 pytań →</button></div><div class="note">Pseudonim i wynik zapisują się na tym urządzeniu.</div></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankHome"></div></div></section>
 <section id="play" class="view"><button class="btn plain back" id="homeBtn">← Zakończ quiz</button><div class="panel"><div class="quiz-head"><div><div class="eyebrow" id="roundLabel">QUIZ BIOLOGICZNY · LOSOWANY ZESTAW</div><h2 id="roundTitle">Sprawdź swoją wiedzę</h2></div><span class="score-pill" id="scorePill">Wynik: 0 pkt</span></div><div class="progress-meta"><span id="progressText">Pytanie 1 z 10</span><span id="roundPct">0%</span></div><div class="progress"><div class="bar" id="bar"></div></div><div class="qbox"><span class="qtype" id="qType"></span><div class="qtext" id="qText"></div><div id="inputArea"></div><div class="feedback" id="feedback" aria-live="polite"></div></div><div class="actions"><button class="btn plain" id="prevBtn">← Wstecz</button><div class="right"><button class="btn secondary hidden" id="revealBtn">Oceń odpowiedź AI</button><button class="btn primary" id="checkBtn">Sprawdź</button><button class="btn primary hidden" id="nextBtn">Dalej →</button></div></div></div></section>
 <section id="result" class="view"><div class="panel result"><div class="result-icon">✓</div><div class="eyebrow">Koniec quizu</div><p id="playerName" class="player-name"></p><h2 id="resultTitle">Dobra robota!</h2><div class="result-score" id="resultScore">0 pkt</div><p id="resultMessage"></p><p id="rankingStatus" class="tiny" aria-live="polite"></p><div class="result-grid"><div class="stat"><b id="correctStat">0</b><span>zdobyte punkty</span></div><div class="stat"><b id="openStat">0</b><span>ocenione pytania otwarte</span></div></div><button class="btn primary" id="nextRoundBtn">Losuj kolejny zestaw →</button><button class="btn secondary" id="resultHomeBtn">Wróć do początku</button></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankResult"></div></div></section>
 <footer>Biologia · Nauka w swoim tempie</footer>
 </main>
 <script>
-const rounds=[
-{title:'Poziomy organizacji ciała',desc:'Od komórki do organizmu',q:[
-['order','Ułóż od najmniejszego elementu: organizm, tkanka, komórka, narząd, układ narządów.','komórka → tkanka → narząd → układ narządów → organizm'],
-['open','Wyjaśnij własnymi słowami, czym jest komórka.','Komórka to podstawowy element budowy i funkcjonowania organizmu.'],
-['fill','Zespół podobnych komórek pełniących określoną funkcję to ____.','tkanka'],
-['open','Co to jest narząd? Podaj przykład.','Narząd to część organizmu zbudowana z tkanek, np. serce lub mózgowie.'],
-['tf','Prawda czy fałsz: układ narządów składa się ze współpracujących narządów.','prawda'],
-['open','Podaj przykład układu narządów i jednego narządu, który do niego należy.','Np. układ pokarmowy i żołądek.'],
-['fill','Najmniejszym poziomem organizacji ciała jest ____.','komórka'],
-['open','Czym różni się tkanka od narządu?','Tkanka składa się z podobnych komórek, a narząd z różnych tkanek.'],
-['order','Ułóż od najmniejszego: mózgowie, organizm człowieka, komórka nerwowa, układ nerwowy, tkanka nerwowa.','komórka nerwowa → tkanka nerwowa → mózgowie → układ nerwowy → organizm człowieka'],
-['open','Opisz kolejne poziomy budowy od komórki nerwowej do organizmu człowieka.','Komórka nerwowa tworzy tkankę nerwową; tkanka buduje m.in. mózgowie; mózgowie należy do układu nerwowego; układy tworzą organizm.']]},
-{title:'Komórki, tkanki i narządy',desc:'Jak elementy ciała współpracują',q:[
-['fill','Komórki nerwowe tworzą tkankę ____.','nerwową'],['open','Jaką funkcję pełnią komórki nerwowe?','Odbierają i przekazują informacje.'],['tf','Prawda czy fałsz: mózgowie jest narządem.','prawda'],['open','Podaj przykład tkanki występującej w organizmie człowieka.','Np. tkanka mięśniowa, nerwowa lub nabłonkowa.'],['order','Ułóż: mózgowie, tkanka nerwowa, komórka nerwowa.','komórka nerwowa → tkanka nerwowa → mózgowie'],['open','Dlaczego podobne komórki mogą tworzyć tkankę?','Ponieważ mają podobną budowę i wspólnie pełnią określoną funkcję.'],['fill','Serce jest przykładem ____.','narządu'],['open','Podaj jeden narząd należący do układu pokarmowego.','Np. żołądek, jelito lub przełyk.'],['tf','Prawda czy fałsz: narząd może być zbudowany z różnych tkanek.','prawda'],['open','Dlaczego narządy w organizmie współpracują?','Współpraca narządów umożliwia prawidłowe funkcjonowanie organizmu.']]},
-{title:'Cechy organizmów',desc:'Czynności życiowe i bodźce',q:[
-['open','Wymień jedną czynność życiową organizmów.','Np. odżywianie, oddychanie, wydalanie, wzrost, rozmnażanie lub reagowanie na bodźce.'],['open','Wymień cztery cechy organizmów żywych.','Np. odżywianie, oddychanie, wydalanie, wzrost, rozmnażanie i reagowanie na bodźce.'],['fill','Usuwanie z organizmu zbędnych substancji to ____.','wydalanie'],['tf','Prawda czy fałsz: rośliny oddychają.','prawda'],['open','Dlaczego organizmy potrzebują pokarmu?','Pokarm dostarcza organizmom składników potrzebnych do życia i energii.'],['fill','Zwiększanie rozmiarów i masy ciała to ____.','wzrost'],['open','Podaj przykład rozmnażania się roślin.','Np. roślina wytwarza nasiona, z których wyrastają nowe rośliny.'],['tf','Prawda czy fałsz: reagowanie na bodźce jest cechą organizmów.','prawda'],['fill','Uwalnianie energii z pokarmu to ____.','oddychanie'],['open','Opisz sytuację, w której organizm reaguje na bodziec.','Np. roślina wygina się w stronę światła.']]},
-{title:'Biologia i jej dziedziny',desc:'Nauka o organizmach',q:[
-['fill','Nauka o organizmach żywych to ____.','biologia'],['fill','Nauka o roślinach to ____.','botanika'],['open','Czym zajmuje się zoologia?','Zoologia zajmuje się badaniem zwierząt.'],['tf','Prawda czy fałsz: mikrobiologia bada mikroorganizmy.','prawda'],['open','Podaj pytanie, na które może odpowiedzieć biolog.','Np. Jak światło wpływa na wzrost roślin?'],['fill','Nauka o budowie organizmów to ____.','anatomia'],['open','Dlaczego biologia jest ważna w życiu człowieka?','Pomaga rozumieć organizmy, zdrowie i przyrodę.'],['fill','Botanika bada rośliny czy zwierzęta?','rośliny'],['tf','Prawda czy fałsz: biologia może pomagać w ochronie przyrody.','prawda'],['open','Podaj zawód, w którym przydaje się biologia, i wyjaśnij dlaczego.','Np. lekarz wykorzystuje wiedzę o organizmie człowieka.']]},
-{title:'Obserwacja czy doświadczenie',desc:'Rozpoznawanie sposobów badania',q:[
-['fill','Ula przygląda się budowie piór ptaków. To obserwacja czy doświadczenie?','obserwacja'],['fill','Tomek sprawdza, czy światło wpływa na wzrost pelargonii. To obserwacja czy doświadczenie?','doświadczenie'],['open','Czym różni się obserwacja od doświadczenia?','W obserwacji przyglądamy się zjawisku; w doświadczeniu celowo zmieniamy badany czynnik.'],['tf','Prawda czy fałsz: podczas doświadczenia badacz celowo zmienia wybrany czynnik.','prawda'],['fill','Magda bada wpływ wody na kiełkowanie fasoli. Obserwacja czy doświadczenie?','doświadczenie'],['open','Podaj przykład obserwacji przyrody.','Np. obserwowanie mrówek przenoszących pokarm.'],['fill','Małgosia patrzy, jak sikorka karmi młode. Obserwacja czy doświadczenie?','obserwacja'],['open','Wymyśl pytanie, na które można odpowiedzieć doświadczeniem.','Np. Czy ilość wody wpływa na kiełkowanie fasoli?'],['fill','W obserwacji badacz przede wszystkim ____ badany obiekt lub zjawisko.','obserwuje'],['open','Dlaczego należy dokładnie zapisywać wyniki obserwacji?','Aby móc je później porównać i wyciągnąć wnioski.']]},
-{title:'Metoda naukowa',desc:'Od pytania do wniosku',q:[
-['fill','Pytanie, na które chcemy znaleźć odpowiedź, to problem ____.','badawczy'],['fill','Przypuszczalna odpowiedź na pytanie badawcze to ____.','hipoteza'],['open','Czym jest wniosek z doświadczenia?','To podsumowanie wyników, które odpowiada na problem badawczy.'],['tf','Prawda czy fałsz: hipoteza jest przypuszczeniem, które można sprawdzić.','prawda'],['order','Ułóż etapy: wniosek, problem badawczy, doświadczenie, hipoteza.','problem badawczy → hipoteza → doświadczenie → wniosek'],['open','Podaj problem badawczy dotyczący wzrostu roślin.','Np. Czy ilość światła wpływa na wzrost rośliny?'],['fill','Uważne przyglądanie się organizmom lub procesom to ____.','obserwacja'],['open','Ułóż hipotezę do pytania: „Czy światło wpływa na wzrost rośliny?”','Np. Roślina rosnąca w świetle będzie rosła szybciej.'],['tf','Prawda czy fałsz: wniosek powinien wynikać z uzyskanych wyników.','prawda'],['open','Dlaczego warto powtarzać doświadczenie?','Powtórzenie pomaga sprawdzić, czy wynik jest wiarygodny i powtarzalny.']]},
-{title:'Planowanie doświadczeń',desc:'Próba badawcza i kontrolna',q:[
-['fill','W próbie badawczej zmieniamy badany ____.','czynnik'],['tf','Prawda czy fałsz: próba kontrolna pomaga porównać wyniki.','prawda'],['open','Czym różni się próba badawcza od kontrolnej?','W badawczej zmieniamy badany czynnik, a kontrolna służy do porównania.'],['open','W doświadczeniu z fasolą badamy wpływ wody. Co jest badanym czynnikiem?','Dostęp do wody lub jej ilość.'],['open','Opisz prosty plan doświadczenia sprawdzającego wpływ światła na roślinę.','Porównaj podobne rośliny w tych samych warunkach, różniąc je dostępem do światła.'],['tf','Prawda czy fałsz: najlepiej zmieniać kilka czynników jednocześnie.','fałsz'],['fill','Wyniki próby badawczej należy ____ z wynikami próby kontrolnej.','porównać'],['open','Podaj jeden warunek, który powinien być taki sam w obu próbach z roślinami.','Np. gatunek rośliny, ilość gleby lub temperatura.'],['fill','Podczas doświadczenia należy zapisywać ____.','wyniki'],['open','Dlaczego zmieniamy tylko jeden badany czynnik naraz?','Żeby ustalić, który czynnik spowodował zaobserwowaną zmianę.']]},
-{title:'Mikroskop',desc:'Części i powiększenie',q:[
-['fill','Preparat umieszcza się na ____ mikroskopu.','stoliku'],['fill','Część mikroskopu, przez którą patrzymy, to ____.','okular'],['open','Do czego służy mikroskop?','Umożliwia oglądanie i powiększanie bardzo małych obiektów.'],['tf','Prawda czy fałsz: obiektyw powiększa obraz oglądanego obiektu.','prawda'],['fill','Całkowite powiększenie obliczamy, mnożąc powiększenie okularu przez powiększenie ____.','obiektywu'],['fill','Okular powiększa 10 razy, a obiektyw 20 razy. Całkowite powiększenie wynosi ____ razy.','200'],['tf','Prawda czy fałsz: preparat umieszcza się na stoliku mikroskopu.','prawda'],['open','Podaj jedną zasadę bezpiecznego korzystania z mikroskopu.','Np. przenoś mikroskop oburącz i obchodź się ostrożnie ze szkiełkami.'],['fill','Okular 15× i obiektyw 10× dają powiększenie ____ razy.','150'],['open','Dlaczego do obserwacji bardzo małych obiektów używamy mikroskopu?','Ponieważ mikroskop powiększa obraz obiektu.']]},
-{title:'Preparaty mikroskopowe',desc:'Przygotowanie próbki do oglądania',q:[
-['fill','Kroplę wody nanosi się na szkiełko ____.','podstawowe'],['fill','Na koniec preparat przykrywamy szkiełkiem ____.','nakrywkowym'],['open','Opisz, jak przygotować prosty preparat mikroskopowy.','Nanieś kroplę wody na szkiełko podstawowe, umieść w niej obiekt i przykryj szkiełkiem nakrywkowym.'],['order','Ułóż kolejność: przykryj preparat, przygotuj obiekt, nanieś wodę, umieść obiekt w kropli.','przygotuj obiekt → nanieś wodę → umieść obiekt w kropli → przykryj preparat'],['tf','Prawda czy fałsz: preparat należy ułożyć na stoliku mikroskopu.','prawda'],['open','Do czego może służyć pęseta podczas przygotowywania preparatu?','Do chwytania lub przenoszenia badanego obiektu.'],['fill','Szkiełko nakrywkowe kładziemy na ____.','preparacie'],['open','Dlaczego należy ostrożnie obchodzić się ze szkiełkami?','Są kruche i mogą się stłuc.'],['tf','Prawda czy fałsz: do przygotowania preparatu można użyć igły preparacyjnej.','prawda'],['open','Wymień dwa elementy potrzebne do przygotowania prostego preparatu.','Np. szkiełko podstawowe i szkiełko nakrywkowe.']]},
-{title:'Wielka powtórka',desc:'Sprawdź całą wiedzę',q:[
-['order','Ułóż od najmniejszego: układ nerwowy, organizm, komórka nerwowa, mózgowie, tkanka nerwowa.','komórka nerwowa → tkanka nerwowa → mózgowie → układ nerwowy → organizm'],['open','Wyjaśnij na przykładzie, jak komórki tworzą tkankę, a tkanka narząd.','Np. komórki nerwowe tworzą tkankę nerwową, która buduje mózgowie.'],['tf','Prawda czy fałsz: organizm może składać się z kilku układów narządów.','prawda'],['fill','Obserwowanie ptaka w gnieździe to ____ czy doświadczenie?','obserwacja'],['open','Ułóż pytanie badawcze i hipotezę o kiełkowaniu fasoli.','Np. Czy woda wpływa na kiełkowanie fasoli? Hipoteza: podlewana fasola wykiełkuje.'],['fill','Próba służąca do porównania wyników to próba ____.','kontrolna'],['open','Wymień trzy części mikroskopu i opisz funkcję jednej z nich.','Np. okular, obiektyw i stolik; okular powiększa obraz.'],['fill','Okular 10× i obiektyw 40× dają powiększenie ____ razy.','400'],['open','Podaj jedną czynność życiową i krótko ją opisz.','Np. oddychanie — uwalnianie energii z pokarmu.'],['tf','Prawda czy fałsz: prawidłowa kolejność to komórka, tkanka, narząd, układ narządów, organizm.','prawda']]}
+// 100 pytań opracowanych na podstawie 15 zdjęć działu „Biologia — nauka o życiu”.
+const bank=[
+  {
+    "id": "bio-001",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Czym zajmuje się biologia?",
+    "answer": "Badaniem organizmów, ich czynności życiowych oraz zależności z otoczeniem.",
+    "choices": [
+      "Badaniem organizmów, ich czynności życiowych oraz zależności z otoczeniem.",
+      "Wyłącznie badaniem skał i minerałów.",
+      "Wyłącznie przewidywaniem pogody.",
+      "Badaniem budowy maszyn."
+    ],
+    "explanation": "Biologia bada budowę i funkcjonowanie organizmów oraz ich relacje z innymi organizmami i środowiskiem.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-002",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Który zestaw zawiera wyłącznie grupy organizmów wymienione w tekście?",
+    "answer": "Bakterie, protisty, grzyby, rośliny i zwierzęta.",
+    "choices": [
+      "Bakterie, skały, grzyby, rośliny i zwierzęta.",
+      "Protisty, minerały, chmury, rośliny i zwierzęta.",
+      "Grzyby, woda, powietrze, rośliny i zwierzęta.",
+      "Bakterie, protisty, grzyby, rośliny i zwierzęta."
+    ],
+    "explanation": "W tekście do ożywionej części przyrody zaliczono bakterie, protisty, grzyby, rośliny i zwierzęta.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-003",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Co oznacza greckie słowo „bios”, od którego pochodzi nazwa biologii?",
+    "answer": "Życie.",
+    "choices": [
+      "Woda.",
+      "Powietrze.",
+      "Życie.",
+      "Ziemia."
+    ],
+    "explanation": "Nazwa biologii pochodzi od greckich słów bios — życie i logos — słowo.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-004",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Co oznacza greckie słowo „logos” w objaśnieniu nazwy biologii w podręczniku?",
+    "answer": "Słowo.",
+    "choices": [
+      "Komórka.",
+      "Słowo.",
+      "Roślina.",
+      "Zwierzę."
+    ],
+    "explanation": "W ramce etymologicznej logos przetłumaczono jako słowo.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-005",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Która cecha jest wspólna wszystkim organizmom opisanym w podręczniku?",
+    "answer": "Są zbudowane z komórek.",
+    "choices": [
+      "Są zbudowane z komórek.",
+      "Mają serce.",
+      "Poruszają się z miejsca na miejsce.",
+      "Składają się z wielu narządów."
+    ],
+    "explanation": "Wszystkie organizmy mają budowę komórkową; mogą być jedno- lub wielokomórkowe.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-006",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Który organizm podano jako przykład organizmu jednokomórkowego?",
+    "answer": "Drożdże.",
+    "choices": [
+      "Sekwoję.",
+      "Pandę wielką.",
+      "Człowieka.",
+      "Drożdże."
+    ],
+    "explanation": "Na zdjęciu drożdże są przykładem organizmów zbudowanych z jednej komórki.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-007",
+    "kind": "choice",
+    "topic": "Biologia jako nauka",
+    "text": "Co pokazuje przykład sekwoi w tekście?",
+    "answer": "Organizm może być zbudowany z miliardów komórek.",
+    "choices": [
+      "Drzewa nie mają budowy komórkowej.",
+      "Tylko zwierzęta są wielokomórkowe.",
+      "Organizm może być zbudowany z miliardów komórek.",
+      "Każdy organizm składa się z jednej komórki."
+    ],
+    "explanation": "Sekwoja jest przykładem dużego organizmu wielokomórkowego.",
+    "source": "Zdjęcie 1"
+  },
+  {
+    "id": "bio-008",
+    "kind": "choice",
+    "topic": "Dziedziny biologii",
+    "text": "Jak nazywa się nauka o zwierzętach?",
+    "answer": "Zoologia.",
+    "choices": [
+      "Anatomia.",
+      "Zoologia.",
+      "Botanika.",
+      "Mikrobiologia."
+    ],
+    "explanation": "Zoologia zajmuje się zwierzętami.",
+    "source": "Zdjęcie 5"
+  },
+  {
+    "id": "bio-009",
+    "kind": "choice",
+    "topic": "Dziedziny biologii",
+    "text": "Którą dziedzinę biologii wybierze badacz zajmujący się roślinami?",
+    "answer": "Botanikę.",
+    "choices": [
+      "Botanikę.",
+      "Zoologię.",
+      "Mikrobiologię.",
+      "Fizjologię zwierząt."
+    ],
+    "explanation": "Botanika to nauka o roślinach.",
+    "source": "Zdjęcie 5"
+  },
+  {
+    "id": "bio-010",
+    "kind": "choice",
+    "topic": "Dziedziny biologii",
+    "text": "Czym zajmuje się mikrobiologia?",
+    "answer": "Mikroorganizmami.",
+    "choices": [
+      "Wyłącznie dużymi ssakami.",
+      "Wyłącznie budową liści.",
+      "Wyłącznie ruchem planet.",
+      "Mikroorganizmami."
+    ],
+    "explanation": "Mikrobiologia bada mikroorganizmy.",
+    "source": "Zdjęcie 5"
+  },
+  {
+    "id": "bio-011",
+    "kind": "choice",
+    "topic": "Dziedziny biologii",
+    "text": "Jak nazywa się nauka o budowie wewnętrznej organizmów?",
+    "answer": "Anatomia.",
+    "choices": [
+      "Ekologia.",
+      "Botanika.",
+      "Anatomia.",
+      "Fizjologia."
+    ],
+    "explanation": "Anatomia dotyczy budowy wewnętrznej organizmów.",
+    "source": "Zdjęcie 5"
+  },
+  {
+    "id": "bio-012",
+    "kind": "choice",
+    "topic": "Dziedziny biologii",
+    "text": "Która dziedzina biologii bada czynności życiowe organizmów?",
+    "answer": "Fizjologia.",
+    "choices": [
+      "Mikrobiologia.",
+      "Fizjologia.",
+      "Anatomia.",
+      "Zoologia."
+    ],
+    "explanation": "Fizjologia zajmuje się funkcjonowaniem organizmów, czyli ich czynnościami życiowymi.",
+    "source": "Zdjęcie 5"
+  },
+  {
+    "id": "bio-013",
+    "kind": "choice",
+    "topic": "Dziedziny biologii",
+    "text": "Badanie zależności między organizmami a środowiskiem należy do:",
+    "answer": "Ekologii.",
+    "choices": [
+      "Ekologii.",
+      "Anatomii.",
+      "Wyłącznie botaniki.",
+      "Wyłącznie zoologii."
+    ],
+    "explanation": "Ekologia bada między innymi zależności organizmów z ich środowiskiem.",
+    "source": "Zdjęcie 5"
+  },
+  {
+    "id": "bio-014",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Do czego organizm wykorzystuje składniki pokarmowe?",
+    "answer": "Jako źródło energii i materiał do budowy komórek.",
+    "choices": [
+      "Wyłącznie do zmiany miejsca pobytu.",
+      "Tylko do usuwania zbędnych substancji.",
+      "Wyłącznie do odbierania dźwięków.",
+      "Jako źródło energii i materiał do budowy komórek."
+    ],
+    "explanation": "Odżywianie dostarcza substancji potrzebnych do budowy komórek oraz uzyskiwania energii.",
+    "source": "Zdjęcie 2"
+  },
+  {
+    "id": "bio-015",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Na czym polega oddychanie opisane w podręczniku?",
+    "answer": "Na uwalnianiu z pokarmu energii potrzebnej do życia.",
+    "choices": [
+      "Na zwiększaniu masy i rozmiarów ciała.",
+      "Na wydawaniu potomstwa.",
+      "Na uwalnianiu z pokarmu energii potrzebnej do życia.",
+      "Na dostarczaniu gotowych komórek z pokarmem."
+    ],
+    "explanation": "Oddychanie pozwala uzyskać energię zawartą w pokarmie.",
+    "source": "Zdjęcie 2"
+  },
+  {
+    "id": "bio-016",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Które zdanie o oddychaniu jest zgodne z tekstem?",
+    "answer": "U większości organizmów, także u roślin, wymaga ono tlenu.",
+    "choices": [
+      "Oddychanie zachodzi wyłącznie u organizmów wielokomórkowych.",
+      "U większości organizmów, także u roślin, wymaga ono tlenu.",
+      "Rośliny w ogóle nie oddychają.",
+      "Tlen jest potrzebny wyłącznie zwierzętom."
+    ],
+    "explanation": "Podręcznik zaznacza, że większość organizmów, w tym rośliny, wykorzystuje tlen do oddychania.",
+    "source": "Zdjęcie 2"
+  },
+  {
+    "id": "bio-017",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Jaki gaz powstający podczas oddychania wymieniono w tekście?",
+    "answer": "Dwutlenek węgla.",
+    "choices": [
+      "Dwutlenek węgla.",
+      "Tlen.",
+      "Azot.",
+      "Hel."
+    ],
+    "explanation": "W opisie oddychania wymieniono powstawanie dwutlenku węgla.",
+    "source": "Zdjęcie 2"
+  },
+  {
+    "id": "bio-018",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Czym jest wydalanie?",
+    "answer": "Usuwaniem z organizmu substancji niepotrzebnych i szkodliwych.",
+    "choices": [
+      "Pobieraniem składników pokarmowych.",
+      "Wydawaniem potomstwa.",
+      "Zwiększaniem rozmiarów ciała.",
+      "Usuwaniem z organizmu substancji niepotrzebnych i szkodliwych."
+    ],
+    "explanation": "Wydalanie pozwala usuwać między innymi nadmiar wody oraz szkodliwe substancje.",
+    "source": "Zdjęcie 2"
+  },
+  {
+    "id": "bio-019",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Co według tekstu zawiera mocz wydalany przez pandę?",
+    "answer": "Nadmiar wody i soli mineralnych oraz szkodliwe substancje.",
+    "choices": [
+      "Tylko składniki potrzebne do budowy nowych komórek.",
+      "Wyłącznie dwutlenek węgla.",
+      "Nadmiar wody i soli mineralnych oraz szkodliwe substancje.",
+      "Wyłącznie tlen."
+    ],
+    "explanation": "Podpis pod ilustracją wymienia wodę, sole mineralne i szkodliwe substancje.",
+    "source": "Zdjęcie 2"
+  },
+  {
+    "id": "bio-020",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Jak w podręczniku zdefiniowano ruch?",
+    "answer": "Jako zmianę położenia całego ciała lub jego części.",
+    "choices": [
+      "Wyłącznie jako wydawanie potomstwa.",
+      "Jako zmianę położenia całego ciała lub jego części.",
+      "Wyłącznie jako bieganie zwierząt.",
+      "Jako każdą zmianę masy ciała."
+    ],
+    "explanation": "Ruch obejmuje zarówno przemieszczenie organizmu, jak i zmianę położenia części jego ciała.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-021",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Który przykład pokazuje ruch rośliny?",
+    "answer": "Zwracanie liści i łodygi w stronę światła.",
+    "choices": [
+      "Zwracanie liści i łodygi w stronę światła.",
+      "Wytwarzanie nowych nasion.",
+      "Usuwanie nadmiaru wody.",
+      "Uwalnianie energii z pokarmu."
+    ],
+    "explanation": "Roślina może zmieniać położenie części ciała, mimo że nie przemieszcza się jak zwierzę.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-022",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Na czym polega wzrost organizmu?",
+    "answer": "Na zwiększaniu rozmiarów i masy ciała.",
+    "choices": [
+      "Wyłącznie na zmianie miejsca pobytu.",
+      "Wyłącznie na zmianie wyglądu bez zmiany rozmiarów.",
+      "Na usuwaniu szkodliwych substancji.",
+      "Na zwiększaniu rozmiarów i masy ciała."
+    ],
+    "explanation": "Wzrost oznacza zwiększanie rozmiarów i masy organizmu.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-023",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Co obejmuje rozwój organizmu?",
+    "answer": "Zmiany wyglądu i sposobu funkcjonowania w ciągu życia.",
+    "choices": [
+      "Tylko pobieranie pokarmu.",
+      "Wyłącznie zmianę położenia ciała.",
+      "Zmiany wyglądu i sposobu funkcjonowania w ciągu życia.",
+      "Wyłącznie zwiększanie masy ciała."
+    ],
+    "explanation": "Rozwój jest szerszym pojęciem niż wzrost: obejmuje zmiany wyglądu i funkcjonowania.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-024",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Czym jest rozmnażanie się?",
+    "answer": "Wydawaniem na świat potomstwa.",
+    "choices": [
+      "Usuwaniem zbędnych substancji.",
+      "Wydawaniem na świat potomstwa.",
+      "Zwiększaniem masy jednego osobnika.",
+      "Przemieszczaniem się w środowisku."
+    ],
+    "explanation": "Rozmnażanie prowadzi do powstawania nowych organizmów.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-025",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Co jest potrzebne do rozmnażania płciowego opisanego w tekście?",
+    "answer": "Męskie i żeńskie komórki rozrodcze.",
+    "choices": [
+      "Męskie i żeńskie komórki rozrodcze.",
+      "Wyłącznie komórki mięśniowe.",
+      "Tylko zwiększenie ilości pokarmu.",
+      "Wyłącznie zmiana temperatury otoczenia."
+    ],
+    "explanation": "Rozmnażanie płciowe odbywa się z udziałem męskich i żeńskich komórek rozrodczych.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-026",
+    "kind": "choice",
+    "topic": "Czynności życiowe",
+    "text": "Panda wyczuwa zapach drapieżnika i zmienia zachowanie. Którą czynność życiową ilustruje ten przykład?",
+    "answer": "Reakcję na bodźce.",
+    "choices": [
+      "Rozmnażanie się.",
+      "Wydalanie.",
+      "Wzrost.",
+      "Reakcję na bodźce."
+    ],
+    "explanation": "Zapach jest bodźcem, a zmiana zachowania stanowi reakcję organizmu.",
+    "source": "Zdjęcie 3"
+  },
+  {
+    "id": "bio-027",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Która kolejność poziomów budowy organizmu zwierzęcego jest poprawna?",
+    "answer": "Komórka → tkanka → narząd → układ narządów → organizm.",
+    "choices": [
+      "Komórka → narząd → tkanka → układ narządów → organizm.",
+      "Narząd → tkanka → komórka → organizm → układ narządów.",
+      "Komórka → tkanka → narząd → układ narządów → organizm.",
+      "Tkanka → komórka → narząd → organizm → układ narządów."
+    ],
+    "explanation": "Podobne komórki tworzą tkanki, tkanki budują narządy, a narządy współpracują w układach.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-028",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Jaka jest podstawowa jednostka budowy organizmów?",
+    "answer": "Komórka.",
+    "choices": [
+      "Układ narządów.",
+      "Komórka.",
+      "Tkanka.",
+      "Narząd."
+    ],
+    "explanation": "Komórka jest podstawowym i najmniejszym z wymienionych poziomów budowy.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-029",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Czym jest tkanka?",
+    "answer": "Grupą komórek o podobnej budowie wykonujących określone zadania.",
+    "choices": [
+      "Grupą komórek o podobnej budowie wykonujących określone zadania.",
+      "Grupą niezależnych organizmów różnych gatunków.",
+      "Zbiorem wszystkich układów narządów zwierzęcia.",
+      "Pojedynczym narządem otoczonym skórą."
+    ],
+    "explanation": "Tkankę tworzą podobne komórki pełniące określone funkcje.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-030",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Z czego są zbudowane narządy zwierząt?",
+    "answer": "Z tkanek wyspecjalizowanych w pełnieniu określonych funkcji.",
+    "choices": [
+      "Z całych układów narządów.",
+      "Z wielu niezależnych organizmów.",
+      "Wyłącznie z jednej komórki.",
+      "Z tkanek wyspecjalizowanych w pełnieniu określonych funkcji."
+    ],
+    "explanation": "Tkanki współtworzą narząd i umożliwiają wykonywanie jego funkcji.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-031",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Którym poziomem budowy organizmu jest serce?",
+    "answer": "Narządem.",
+    "choices": [
+      "Tkanką.",
+      "Całym organizmem.",
+      "Narządem.",
+      "Komórką."
+    ],
+    "explanation": "W schemacie serce podano jako przykład narządu zwierzęcego.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-032",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Którą tkankę zwierzęcą pokazano w schemacie poziomów budowy?",
+    "answer": "Tkankę mięśniową.",
+    "choices": [
+      "Tkankę okrywającą roślin.",
+      "Tkankę mięśniową.",
+      "Tkankę miękiszową.",
+      "Tkankę przewodzącą roślin."
+    ],
+    "explanation": "Po stronie zwierzęcej schematu znajduje się tkanka mięśniowa.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-033",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Co tworzą narządy uczestniczące we wspólnych czynnościach życiowych zwierzęcia?",
+    "answer": "Układ narządów.",
+    "choices": [
+      "Układ narządów.",
+      "Pojedynczą komórkę.",
+      "Jedną tkankę.",
+      "Grupę niezależnych organizmów."
+    ],
+    "explanation": "Współpracujące narządy tworzą układ, na przykład układ krwionośny.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-034",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Które elementy układu krwionośnego wskazano na ilustracji?",
+    "answer": "Serce i naczynia krwionośne.",
+    "choices": [
+      "Liść i łodygę.",
+      "Okular i obiektyw.",
+      "Korzeń i liść.",
+      "Serce i naczynia krwionośne."
+    ],
+    "explanation": "Na schemacie zwierzęcia podpisano serce oraz naczynia krwionośne.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-035",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Dzięki czemu układy narządów tworzą sprawnie działający organizm?",
+    "answer": "Dzięki współpracy poszczególnych układów.",
+    "choices": [
+      "Dzięki zamianie wszystkich narządów w jedną komórkę.",
+      "Dzięki temu, że organizm nie wykonuje czynności życiowych.",
+      "Dzięki współpracy poszczególnych układów.",
+      "Dzięki temu, że każdy układ działa bez związku z innymi."
+    ],
+    "explanation": "Poszczególne układy współpracują, umożliwiając funkcjonowanie całego organizmu.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-036",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Który przykład organu roślinnego podano w schemacie?",
+    "answer": "Liść.",
+    "choices": [
+      "Całą roślinę.",
+      "Liść.",
+      "Tkankę miękiszową.",
+      "Komórkę roślinną."
+    ],
+    "explanation": "Liść jest organem, natomiast komórka i tkanka reprezentują niższe poziomy budowy.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-037",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Jaką tkankę roślinną podpisano na ilustracji?",
+    "answer": "Tkankę miękiszową.",
+    "choices": [
+      "Tkankę miękiszową.",
+      "Tkankę mięśniową.",
+      "Tkankę nerwową.",
+      "Tkankę kostną."
+    ],
+    "explanation": "Schemat budowy rośliny pokazuje tkankę miękiszową.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-038",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Które organy oznaczono na rysunku systemu pędowego?",
+    "answer": "Liść i łodygę.",
+    "choices": [
+      "Serce i naczynia krwionośne.",
+      "Korzeń i serce.",
+      "Łodygę i komórkę zwierzęcą.",
+      "Liść i łodygę."
+    ],
+    "explanation": "W przedstawionym systemie pędowym wskazano liść oraz łodygę.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-039",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Która kolejność poziomów budowy rośliny jest poprawna?",
+    "answer": "Komórka → tkanka → organ → system organów → organizm.",
+    "choices": [
+      "Organ → komórka → system organów → tkanka → organizm.",
+      "Tkanka → system organów → komórka → organ → organizm.",
+      "Komórka → tkanka → organ → system organów → organizm.",
+      "Komórka → organ → tkanka → organizm → system organów."
+    ],
+    "explanation": "U roślin tkanki budują organy, a organy łączą się w systemy.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-040",
+    "kind": "choice",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Dlaczego tkanka i narząd oznaczają różne poziomy budowy?",
+    "answer": "Tkanka jest grupą podobnych komórek, a narząd jest zbudowany z tkanek.",
+    "choices": [
+      "Tkanka występuje wyłącznie poza organizmem.",
+      "Tkanka jest grupą podobnych komórek, a narząd jest zbudowany z tkanek.",
+      "Tkanka jest większa od całego organizmu.",
+      "Narząd jest zawsze pojedynczą komórką."
+    ],
+    "explanation": "Tkanka i narząd różnią się stopniem złożoności budowy.",
+    "source": "Zdjęcie 4"
+  },
+  {
+    "id": "bio-041",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Na czym polega obserwacja biologiczna?",
+    "answer": "Na uważnym przyglądaniu się organizmom lub procesom bez wpływania na ich przebieg.",
+    "choices": [
+      "Na uważnym przyglądaniu się organizmom lub procesom bez wpływania na ich przebieg.",
+      "Na celowym zmienianiu kilku warunków naraz.",
+      "Na podawaniu organizmowi większej ilości wody w celu sprawdzenia jej wpływu.",
+      "Na zastępowaniu wyników własnym przypuszczeniem."
+    ],
+    "explanation": "Obserwator przygląda się obiektowi lub procesowi, lecz celowo go nie zmienia.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-042",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Jak należy obserwować dzikie zwierzęta, aby nie wpływać na ich zachowanie?",
+    "answer": "Zadbać o to, by nie zauważyły obecności obserwatora.",
+    "choices": [
+      "Podchodzić do nich i zmuszać je do ruchu.",
+      "Karmić je przed każdą obserwacją.",
+      "Hałasować, aby wyszły z kryjówki.",
+      "Zadbać o to, by nie zauważyły obecności obserwatora."
+    ],
+    "explanation": "Podręcznik zaleca, by zwierzęta nie odkryły obecności obserwującej osoby.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-043",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Co odróżnia doświadczenie od obserwacji?",
+    "answer": "Celowa zmiana jednego badanego czynnika.",
+    "choices": [
+      "Konieczność badania wyłącznie zwierząt.",
+      "Rezygnacja z porównywania wyników.",
+      "Celowa zmiana jednego badanego czynnika.",
+      "Brak możliwości zapisywania wyników."
+    ],
+    "explanation": "W doświadczeniu badacz zmienia wybrany czynnik i sprawdza skutki tej zmiany.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-044",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Uczeń przygląda się zachowaniu pary bocianów i nie ingeruje w ich życie. Co prowadzi?",
+    "answer": "Obserwację.",
+    "choices": [
+      "Eksperyment wymagający zmiany ich gniazda.",
+      "Obserwację.",
+      "Doświadczenie ze zmienionym czynnikiem.",
+      "Próbę badawczą polegającą na karmieniu ptaków."
+    ],
+    "explanation": "Przyglądanie się bocianom bez ingerencji jest przykładem obserwacji.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-045",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Badacz podlewa jedną grupę fasoli większą ilością wody i porównuje jej wzrost z drugą grupą. Co prowadzi?",
+    "answer": "Doświadczenie.",
+    "choices": [
+      "Doświadczenie.",
+      "Obserwację bez zmiany warunków.",
+      "Wyłącznie przegląd atlasu roślin.",
+      "Badanie budowy mikroskopu."
+    ],
+    "explanation": "Celowa zmiana ilości wody sprawia, że jest to doświadczenie.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-046",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Do czego służy próba kontrolna?",
+    "answer": "Do porównania z próbą, w której zmieniono badany czynnik.",
+    "choices": [
+      "Do zmiany wszystkich warunków jednocześnie.",
+      "Do zastąpienia zapisywania wyników.",
+      "Do potwierdzenia hipotezy bez wykonania doświadczenia.",
+      "Do porównania z próbą, w której zmieniono badany czynnik."
+    ],
+    "explanation": "Próba kontrolna stanowi punkt odniesienia przy ocenie wpływu badanego czynnika.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-047",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "W której próbie zmieniamy wybrany czynnik?",
+    "answer": "W próbie badawczej.",
+    "choices": [
+      "W żadnej próbie doświadczenia.",
+      "W obu próbach zawsze w taki sam sposób.",
+      "W próbie badawczej.",
+      "W próbie kontrolnej zamiast badawczej."
+    ],
+    "explanation": "Próba badawcza jest zestawem, w którym zmienia się badany czynnik.",
+    "source": "Zdjęcie 6"
+  },
+  {
+    "id": "bio-048",
+    "kind": "choice",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Jak powinny różnić się warunki w próbie badawczej i kontrolnej?",
+    "answer": "Tylko jednym czynnikiem, którego wpływ badamy.",
+    "choices": [
+      "Nie powinny różnić się nawet badanym czynnikiem.",
+      "Tylko jednym czynnikiem, którego wpływ badamy.",
+      "Wszystkimi możliwymi czynnikami.",
+      "Wyłącznie sposobem zapisywania wyników."
+    ],
+    "explanation": "Pozostałe warunki muszą być takie same, aby można było ocenić wpływ jednego czynnika.",
+    "source": "Zdjęcie 9"
+  },
+  {
+    "id": "bio-049",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Które zdanie jest problemem badawczym dotyczącym bananów i jabłek?",
+    "answer": "Czy obecność jabłek przyspiesza dojrzewanie bananów?",
+    "choices": [
+      "Czy obecność jabłek przyspiesza dojrzewanie bananów?",
+      "Banany szybciej dojrzewają w obecności jabłek.",
+      "Banany zbrązowiały po pięciu dniach.",
+      "Przygotowano dwie szklane miski."
+    ],
+    "explanation": "Problem badawczy ma postać pytania, na które szukamy odpowiedzi.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-050",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Które zdanie jest hipotezą do doświadczenia z bananami?",
+    "answer": "Banany szybciej dojrzewają, jeżeli są przechowywane razem z jabłkami.",
+    "choices": [
+      "Czy banany dojrzewają szybciej obok jabłek?",
+      "Przygotuj dwie miski i dwanaście bananów.",
+      "Po pięciu dniach na bananach pojawiły się plamy.",
+      "Banany szybciej dojrzewają, jeżeli są przechowywane razem z jabłkami."
+    ],
+    "explanation": "Hipoteza jest proponowaną odpowiedzią na pytanie badawcze, którą następnie sprawdzamy.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-051",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Która kolejność etapów metody naukowej jest poprawna?",
+    "answer": "Obserwacja → problem badawczy → hipoteza → doświadczenie → analiza wyników → wniosek.",
+    "choices": [
+      "Hipoteza → wniosek → obserwacja → analiza wyników → doświadczenie → problem badawczy.",
+      "Doświadczenie → wniosek → hipoteza → problem badawczy → obserwacja → analiza wyników.",
+      "Obserwacja → problem badawczy → hipoteza → doświadczenie → analiza wyników → wniosek.",
+      "Obserwacja → wniosek → doświadczenie → hipoteza → problem badawczy → analiza wyników."
+    ],
+    "explanation": "Od obserwacji przechodzimy do pytania i hipotezy, a po doświadczeniu analizujemy wyniki i formułujemy wniosek.",
+    "source": "Zdjęcie 15"
+  },
+  {
+    "id": "bio-052",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Co w przedstawionym schemacie następuje po sformułowaniu problemu badawczego?",
+    "answer": "Postawienie hipotezy.",
+    "choices": [
+      "Pominięcie doświadczenia.",
+      "Postawienie hipotezy.",
+      "Sformułowanie końcowego wniosku.",
+      "Zakończenie analizy wyników."
+    ],
+    "explanation": "Po ustaleniu pytania badacz proponuje odpowiedź, czyli hipotezę.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-053",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Co należy ustalić podczas planowania doświadczenia?",
+    "answer": "Materiały, czas trwania, układ prób oraz sposób zapisywania wyników.",
+    "choices": [
+      "Materiały, czas trwania, układ prób oraz sposób zapisywania wyników.",
+      "Wyłącznie tytuł doświadczenia.",
+      "Gotowy wniosek niezależny od wyników.",
+      "Sposób pominięcia próby kontrolnej."
+    ],
+    "explanation": "Dokładny plan obejmuje materiały, czas, próby doświadczalne i dokumentowanie wyników.",
+    "source": "Zdjęcie 15"
+  },
+  {
+    "id": "bio-054",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Jaki czynnik badano w doświadczeniu z dojrzewaniem bananów?",
+    "answer": "Obecność jabłek w misce z bananami.",
+    "choices": [
+      "Rodzaj szkła, z którego wykonano miski.",
+      "Dostęp bananów do gleby.",
+      "Długość korzeni bananowca.",
+      "Obecność jabłek w misce z bananami."
+    ],
+    "explanation": "Próby różniły się obecnością jabłek obok bananów.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-055",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Jak wyglądała próba badawcza w doświadczeniu z bananami?",
+    "answer": "Banany przechowywano w misce z jabłkami.",
+    "choices": [
+      "W misce umieszczono wyłącznie jabłka.",
+      "Banany posadzono w glebie.",
+      "Banany przechowywano w misce z jabłkami.",
+      "Banany przechowywano bez jabłek."
+    ],
+    "explanation": "W próbie badawczej banany znajdowały się razem z jabłkami.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-056",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Jak wyglądała próba kontrolna w doświadczeniu z bananami?",
+    "answer": "Banany przechowywano w misce bez jabłek.",
+    "choices": [
+      "Wszystkie owoce codziennie przenoszono do innego pomieszczenia.",
+      "Banany przechowywano w misce bez jabłek.",
+      "Banany przechowywano w misce z jabłkami.",
+      "W misce pozostawiono wyłącznie jabłka."
+    ],
+    "explanation": "Próba kontrolna pozwalała porównać dojrzewanie bananów bez obecności jabłek.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-057",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Ile dni trwało przedstawione doświadczenie z bananami?",
+    "answer": "Pięć dni.",
+    "choices": [
+      "Pięć dni.",
+      "Jeden dzień.",
+      "Dwa dni.",
+      "Dwadzieścia dni."
+    ],
+    "explanation": "Tabela podaje czas trwania doświadczenia: pięć dni.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-058",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Jak wyglądały banany z próby badawczej po zakończeniu doświadczenia?",
+    "answer": "Były ciemnożółte i miały brązowe plamy.",
+    "choices": [
+      "Były jasnożółte i nie miały brązowych plam.",
+      "Pozostały całkowicie zielone.",
+      "Zmieniły kolor na niebieski.",
+      "Były ciemnożółte i miały brązowe plamy."
+    ],
+    "explanation": "Banany przechowywane z jabłkami szybciej dojrzewały, co pokazała barwa skórki i plamy.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-059",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Jak wyglądały banany z próby kontrolnej po zakończeniu doświadczenia?",
+    "answer": "Były jasnożółte, bez brązowych plam.",
+    "choices": [
+      "Wszystkie pozostały całkowicie zielone.",
+      "Nie miały już skórki.",
+      "Były jasnożółte, bez brązowych plam.",
+      "Były ciemnożółte i miały liczne brązowe plamy."
+    ],
+    "explanation": "W próbie bez jabłek banany były mniej dojrzałe: jasnożółte i bez brązowych plam.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-060",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Jaki wniosek wyciągnięto z przedstawionego doświadczenia?",
+    "answer": "Banany szybciej dojrzewają, gdy są przechowywane razem z jabłkami.",
+    "choices": [
+      "Obie próby dowiodły, że banany nigdy nie zmieniają koloru.",
+      "Banany szybciej dojrzewają, gdy są przechowywane razem z jabłkami.",
+      "Jabłka całkowicie zatrzymują dojrzewanie bananów.",
+      "Banany dojrzewają tylko bez innych owoców."
+    ],
+    "explanation": "Wyniki potwierdziły hipotezę o szybszym dojrzewaniu bananów przechowywanych z jabłkami.",
+    "source": "Zdjęcie 7"
+  },
+  {
+    "id": "bio-061",
+    "kind": "choice",
+    "topic": "Metoda naukowa",
+    "text": "Co należy zrobić, jeżeli wyniki doświadczenia przeczą hipotezie?",
+    "answer": "Odrzucić hipotezę i oprzeć wniosek na uzyskanych wynikach.",
+    "choices": [
+      "Odrzucić hipotezę i oprzeć wniosek na uzyskanych wynikach.",
+      "Zmienić zapis wyników, aby pasował do hipotezy.",
+      "Uznać hipotezę za potwierdzoną mimo wyników.",
+      "Pominąć wszystkie wyniki próby kontrolnej."
+    ],
+    "explanation": "Wniosek może potwierdzić albo odrzucić hipotezę; zależy od wyników doświadczenia.",
+    "source": "Zdjęcie 15"
+  },
+  {
+    "id": "bio-062",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Który zestaw zawiera źródła wiedzy biologicznej wymienione w podręczniku?",
+    "answer": "Książki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe.",
+    "choices": [
+      "Wyłącznie reklamy produktów.",
+      "Wyłącznie przypadkowe plotki.",
+      "Tylko własne domysły bez obserwacji.",
+      "Książki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe."
+    ],
+    "explanation": "Podręcznik wymienia książki, czasopisma, filmy przyrodnicze i edukacyjne strony internetowe.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-063",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Gdzie można prowadzić zajęcia terenowe pomagające poznawać organizmy?",
+    "answer": "W lesie, na łące lub nad stawem.",
+    "choices": [
+      "Tylko w zamkniętym magazynie.",
+      "Wyłącznie w laboratorium chemicznym.",
+      "W lesie, na łące lub nad stawem.",
+      "Wyłącznie w sali komputerowej."
+    ],
+    "explanation": "Bezpośredni kontakt z przyrodą w terenie jest ważnym źródłem wiedzy biologicznej.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-064",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Do czego służą przewodniki do oznaczania roślin i zwierząt?",
+    "answer": "Pomagają rozpoznawać spotkane organizmy.",
+    "choices": [
+      "Służą wyłącznie do przewidywania pogody.",
+      "Pomagają rozpoznawać spotkane organizmy.",
+      "Służą do obliczania powiększenia mikroskopu.",
+      "Zastępują szkiełko podstawowe."
+    ],
+    "explanation": "Podczas zajęć terenowych można używać przewodników do identyfikacji organizmów.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-065",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Co można poznawać podczas wizyty w ogrodzie botanicznym?",
+    "answer": "Rośliny, także pochodzące z innych części świata.",
+    "choices": [
+      "Rośliny, także pochodzące z innych części świata.",
+      "Wyłącznie budowę mikroskopów.",
+      "Tylko zwierzęta żyjące w morzu.",
+      "Wyłącznie skały i minerały."
+    ],
+    "explanation": "Ogród botaniczny umożliwia oglądanie różnych roślin, również pochodzących z odległych regionów.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-066",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Jak badacz okazuje szacunek dla przyrody podczas obserwacji?",
+    "answer": "Nie niszczy roślin i nie płoszy zwierząt.",
+    "choices": [
+      "Zrywa wszystkie napotkane rośliny.",
+      "Hałasuje przy gniazdach.",
+      "Niszczy kryjówki zwierząt, by łatwiej je zobaczyć.",
+      "Nie niszczy roślin i nie płoszy zwierząt."
+    ],
+    "explanation": "Szacunek dla przyrody wymaga ograniczenia szkód i zakłócania życia organizmów.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-067",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Na czym polega ostrożność podczas wykonywania doświadczeń?",
+    "answer": "Na ochronie skóry i oczu przed szkodliwymi substancjami.",
+    "choices": [
+      "Na pomijaniu zasad bezpieczeństwa.",
+      "Na próbowaniu smaku każdej badanej substancji.",
+      "Na ochronie skóry i oczu przed szkodliwymi substancjami.",
+      "Na dotykaniu nieznanych substancji gołą ręką."
+    ],
+    "explanation": "Podręcznik wskazuje ochronę skóry i oczu jako przykład ostrożności badacza.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-068",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Badacz wykonuje długotrwałe badanie zgodnie z planem mimo konieczności powtórzeń. Jaką cechę wykazuje?",
+    "answer": "Cierpliwość.",
+    "choices": [
+      "Brak zainteresowania wynikami.",
+      "Cierpliwość.",
+      "Pośpiech.",
+      "Niedokładność."
+    ],
+    "explanation": "Cierpliwość pomaga wytrwać w badaniach trwających długo lub wymagających wielu powtórzeń.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-069",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Jaką cechę wykazuje uczeń, który regularnie zapisuje wyniki badań?",
+    "answer": "Systematyczność.",
+    "choices": [
+      "Systematyczność.",
+      "Przypadkowość.",
+      "Nieostrożność.",
+      "Niecierpliwość."
+    ],
+    "explanation": "Systematyczność polega między innymi na regularnym dokumentowaniu wyników.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-070",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Które zachowanie świadczy o rzetelności badacza?",
+    "answer": "Dokładne przeprowadzanie i dobre dokumentowanie badań.",
+    "choices": [
+      "Wymyślanie brakujących wyników.",
+      "Pomijanie niewygodnych obserwacji.",
+      "Zapisywanie tylko wyników zgodnych z oczekiwaniem.",
+      "Dokładne przeprowadzanie i dobre dokumentowanie badań."
+    ],
+    "explanation": "Rzetelny badacz pracuje dokładnie i dokumentuje rzeczywisty przebieg badań.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-071",
+    "kind": "choice",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Czym można uzupełniać zapis wyników obserwacji?",
+    "answer": "Rysunkami lub zdjęciami obserwowanych obiektów.",
+    "choices": [
+      "Wyłącznie opisem własnych oczekiwań.",
+      "Zmienionymi wynikami innych osób.",
+      "Rysunkami lub zdjęciami obserwowanych obiektów.",
+      "Dowolnymi obrazkami niezwiązanymi z badaniem."
+    ],
+    "explanation": "Podręcznik zaleca ilustrowanie wyników rysunkami lub zdjęciami, gdy jest to potrzebne.",
+    "source": "Zdjęcie 8"
+  },
+  {
+    "id": "bio-072",
+    "kind": "choice",
+    "topic": "Obserwacje mikroskopowe",
+    "text": "Który przyrząd wymieniono jako pomoc w oglądaniu ptaków?",
+    "answer": "Lornetkę.",
+    "choices": [
+      "Igłę preparacyjną.",
+      "Lornetkę.",
+      "Mikroskop elektronowy.",
+      "Szkiełko nakrywkowe."
+    ],
+    "explanation": "Lornetka umożliwia przyglądanie się ptakom z oddalenia.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-073",
+    "kind": "choice",
+    "topic": "Obserwacje mikroskopowe",
+    "text": "Który przyrząd można wykorzystać do przyjrzenia się budowie kwiatu?",
+    "answer": "Lupę.",
+    "choices": [
+      "Lupę.",
+      "Wyłącznie mikroskop elektronowy.",
+      "Zakraplacz.",
+      "Śrubę makrometryczną."
+    ],
+    "explanation": "Podręcznik podaje lupę jako przyrząd przydatny do badania budowy kwiatu.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-074",
+    "kind": "choice",
+    "topic": "Obserwacje mikroskopowe",
+    "text": "Jakie obiekty można oglądać w mikroskopie optycznym?",
+    "answer": "Zarówno żywe, jak i martwe, odpowiednio przygotowane.",
+    "choices": [
+      "Wyłącznie martwe.",
+      "Wyłącznie żywe.",
+      "Tylko takie, które są większe od stolika mikroskopu.",
+      "Zarówno żywe, jak i martwe, odpowiednio przygotowane."
+    ],
+    "explanation": "Mikroskop optyczny pozwala oglądać obiekty żywe i martwe przygotowane jako preparaty.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-075",
+    "kind": "choice",
+    "topic": "Obserwacje mikroskopowe",
+    "text": "Jak duże powiększenie mikroskopu optycznego podano w podsumowaniu?",
+    "answer": "Nawet tysiąckrotne.",
+    "choices": [
+      "Zawsze dokładnie dziesięciokrotne.",
+      "Nawet milionkrotne.",
+      "Nawet tysiąckrotne.",
+      "Maksymalnie dwukrotne."
+    ],
+    "explanation": "Podsumowanie podaje do tysiąca razy dla mikroskopu optycznego; milion razy dotyczy mikroskopu elektronowego.",
+    "source": "Zdjęcie 13"
+  },
+  {
+    "id": "bio-076",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "Jaką funkcję pełni okular?",
+    "answer": "Powiększa obraz wytworzony przez obiektyw.",
+    "choices": [
+      "Zastępuje szkiełko podstawowe.",
+      "Powiększa obraz wytworzony przez obiektyw.",
+      "Przytrzymuje preparat na stoliku.",
+      "Zmienia ilość wody w preparacie."
+    ],
+    "explanation": "Okular dodatkowo powiększa obraz utworzony przez obiektyw.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-077",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "Do czego służy obiektyw?",
+    "answer": "Do powiększania obrazu oglądanego przedmiotu.",
+    "choices": [
+      "Do powiększania obrazu oglądanego przedmiotu.",
+      "Do nakrywania preparatu.",
+      "Do przenoszenia fragmentu skórki cebuli.",
+      "Do zapisywania wyników obserwacji."
+    ],
+    "explanation": "Obiektyw tworzy powiększony obraz obserwowanego obiektu.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-078",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "W jakiej części mikroskopu umieszczony jest okular?",
+    "answer": "W tubusie.",
+    "choices": [
+      "Na stoliku.",
+      "W źródle światła.",
+      "W szkiełku nakrywkowym.",
+      "W tubusie."
+    ],
+    "explanation": "Tubus jest elementem, w którym znajduje się okular.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-079",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "Do czego służy rewolwer mikroskopu?",
+    "answer": "Do zmiany obiektywu.",
+    "choices": [
+      "Do dokumentowania obserwacji.",
+      "Do barwienia preparatu.",
+      "Do zmiany obiektywu.",
+      "Do nakrapiania wody."
+    ],
+    "explanation": "Obrót rewolweru pozwala wybrać inny obiektyw.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-080",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "Na której części mikroskopu umieszcza się preparat?",
+    "answer": "Na stoliku.",
+    "choices": [
+      "Na rewolwerze.",
+      "Na stoliku.",
+      "Na okularze.",
+      "Na tubusie."
+    ],
+    "explanation": "Stolik jest miejscem przeznaczonym na preparat mikroskopowy.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-081",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "Jaką rolę pełni źródło światła lub odpowiednio ustawione lusterko?",
+    "answer": "Oświetla obserwowany obiekt.",
+    "choices": [
+      "Oświetla obserwowany obiekt.",
+      "Zwiększa masę preparatu.",
+      "Zastępuje obiektyw.",
+      "Nadaje preparatowi wybrany kolor."
+    ],
+    "explanation": "Światło pozwala zobaczyć obserwowany obiekt w mikroskopie optycznym.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-082",
+    "kind": "choice",
+    "topic": "Budowa mikroskopu",
+    "text": "Do czego służą śruby makrometryczna i mikrometryczna?",
+    "answer": "Do ustawiania ostrości obrazu.",
+    "choices": [
+      "Do przygotowywania kropli wody.",
+      "Do zmiany składu badanego obiektu.",
+      "Do obliczania czasu doświadczenia.",
+      "Do ustawiania ostrości obrazu."
+    ],
+    "explanation": "Obie śruby służą do regulowania ostrości obrazu.",
+    "source": "Zdjęcie 10"
+  },
+  {
+    "id": "bio-083",
+    "kind": "choice",
+    "topic": "Praca z mikroskopem",
+    "text": "Od którego obiektywu rozpoczyna się obserwację?",
+    "answer": "Od obiektywu o najmniejszym powiększeniu.",
+    "choices": [
+      "Od dowolnego, bez ustawiania ostrości.",
+      "Obserwację zaczyna się bez obiektywu.",
+      "Od obiektywu o najmniejszym powiększeniu.",
+      "Od obiektywu o największym powiększeniu."
+    ],
+    "explanation": "Zaczynamy od najmniejszego powiększenia, które następnie stopniowo zwiększamy.",
+    "source": "Zdjęcie 12"
+  },
+  {
+    "id": "bio-084",
+    "kind": "choice",
+    "topic": "Praca z mikroskopem",
+    "text": "O czym trzeba pamiętać przy zbliżaniu obiektywu do preparatu?",
+    "answer": "Obiektyw nie może dotknąć preparatu.",
+    "choices": [
+      "Przed zbliżeniem trzeba zdjąć stolik.",
+      "Obiektyw nie może dotknąć preparatu.",
+      "Obiektyw musi mocno dociskać szkiełko.",
+      "Preparat należy położyć na okularze."
+    ],
+    "explanation": "Podręcznik nakazuje zachowanie odstępu, aby obiektyw nie dotknął preparatu.",
+    "source": "Zdjęcie 12"
+  },
+  {
+    "id": "bio-085",
+    "kind": "choice",
+    "topic": "Praca z mikroskopem",
+    "text": "Jak oblicza się całkowite powiększenie obrazu w mikroskopie optycznym?",
+    "answer": "Mnoży się powiększenie okularu przez powiększenie obiektywu.",
+    "choices": [
+      "Mnoży się powiększenie okularu przez powiększenie obiektywu.",
+      "Dodaje się powiększenie okularu do powiększenia obiektywu.",
+      "Odejmuje się powiększenie obiektywu od powiększenia okularu.",
+      "Dzieli się powiększenie okularu przez powiększenie obiektywu."
+    ],
+    "explanation": "Całkowite powiększenie jest iloczynem powiększeń okularu i obiektywu.",
+    "source": "Zdjęcie 12"
+  },
+  {
+    "id": "bio-086",
+    "kind": "choice",
+    "topic": "Praca z mikroskopem",
+    "text": "Okular powiększa 10 razy, a obiektyw 20 razy. Jakie jest całkowite powiększenie?",
+    "answer": "200 razy.",
+    "choices": [
+      "30 razy.",
+      "10 razy.",
+      "2 razy.",
+      "200 razy."
+    ],
+    "explanation": "Mnożymy 10 przez 20 i otrzymujemy powiększenie dwustukrotne.",
+    "source": "Zdjęcie 12"
+  },
+  {
+    "id": "bio-087",
+    "kind": "choice",
+    "topic": "Obserwacje mikroskopowe",
+    "text": "Które mikroskopy, według tekstu, mogą powiększać obraz nawet milion razy?",
+    "answer": "Mikroskopy elektronowe.",
+    "choices": [
+      "Zwykłe lupy.",
+      "Lornetki do obserwowania ptaków.",
+      "Mikroskopy elektronowe.",
+      "Mikroskopy optyczne używane na lekcjach."
+    ],
+    "explanation": "Bardzo duże powiększenia opisano w ramce poświęconej mikroskopom elektronowym.",
+    "source": "Zdjęcie 13"
+  },
+  {
+    "id": "bio-088",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Na które szkiełko najpierw nanosi się kroplę wody?",
+    "answer": "Na szkiełko podstawowe.",
+    "choices": [
+      "Na soczewkę obiektywu.",
+      "Na szkiełko podstawowe.",
+      "Na szkiełko nakrywkowe.",
+      "Na soczewkę okularu."
+    ],
+    "explanation": "Przygotowanie preparatu rozpoczyna się od naniesienia kropli wody na szkiełko podstawowe.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-089",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Jakim narzędziem nanosi się kroplę wody na szkiełko?",
+    "answer": "Zakraplaczem.",
+    "choices": [
+      "Zakraplaczem.",
+      "Rewolwerem.",
+      "Okularem.",
+      "Śrubą mikrometryczną."
+    ],
+    "explanation": "Zakraplacz pozwala przenieść kroplę wody na szkiełko podstawowe.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-090",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Jakie narzędzia służą do zdjęcia i przeniesienia skórki liścia cebuli?",
+    "answer": "Pęseta i igła preparacyjna.",
+    "choices": [
+      "Okular i tubus.",
+      "Rewolwer i obiektyw.",
+      "Śruby makrometryczna i mikrometryczna.",
+      "Pęseta i igła preparacyjna."
+    ],
+    "explanation": "Przy przygotowaniu cienkiego fragmentu skórki używa się pęsety i igły preparacyjnej.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-091",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Z której części liścia spichrzowego cebuli zdejmuje się skórkę w opisanym ćwiczeniu?",
+    "answer": "Z wewnętrznej strony liścia.",
+    "choices": [
+      "Z zewnętrznej strony łodygi.",
+      "Wyłącznie z kwiatu cebuli.",
+      "Z wewnętrznej strony liścia.",
+      "Wyłącznie z korzenia."
+    ],
+    "explanation": "Instrukcja zaleca zdjęcie skórki z wewnętrznej strony białego liścia spichrzowego cebuli.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-092",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Gdzie umieszcza się pobrany fragment skórki cebuli?",
+    "answer": "W kropli wody na szkiełku podstawowym.",
+    "choices": [
+      "W tubusie mikroskopu.",
+      "W kropli wody na szkiełku podstawowym.",
+      "Bezpośrednio na okularze.",
+      "Pod źródłem światła poza stolikiem."
+    ],
+    "explanation": "Fragment skórki powinien znaleźć się w kropli wody na szkiełku podstawowym.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-093",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Czym przykrywa się przygotowany materiał na szkiełku podstawowym?",
+    "answer": "Szkiełkiem nakrywkowym.",
+    "choices": [
+      "Szkiełkiem nakrywkowym.",
+      "Okularem.",
+      "Pęsetą.",
+      "Rewolwerem."
+    ],
+    "explanation": "Szkiełko nakrywkowe osłania materiał umieszczony w kropli wody.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-094",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Jak zgodnie z instrukcją nakłada się szkiełko nakrywkowe?",
+    "answer": "Przykłada się je ukośnie i ostrożnie nakrywa materiał.",
+    "choices": [
+      "Upuszcza się je z dużej wysokości.",
+      "Dociska się je obiektywem.",
+      "Wsuwa się je do tubusu.",
+      "Przykłada się je ukośnie i ostrożnie nakrywa materiał."
+    ],
+    "explanation": "Instrukcja pokazuje ostrożne nakładanie szkiełka nakrywkowego pod kątem.",
+    "source": "Zdjęcie 11"
+  },
+  {
+    "id": "bio-095",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Która kolejność przygotowania preparatu odpowiada podsumowaniu w podręczniku?",
+    "answer": "Kropla wody → przygotowanie obiektu → obiekt w kropli → szkiełko nakrywkowe → stolik mikroskopu.",
+    "choices": [
+      "Obiekt w kropli → stolik → przygotowanie obiektu → szkiełko nakrywkowe → kropla wody.",
+      "Stolik → szkiełko nakrywkowe → obiekt w kropli → przygotowanie obiektu → kropla wody.",
+      "Kropla wody → przygotowanie obiektu → obiekt w kropli → szkiełko nakrywkowe → stolik mikroskopu.",
+      "Szkiełko nakrywkowe → stolik → kropla wody → przygotowanie obiektu → obiekt w kropli."
+    ],
+    "explanation": "W podsumowaniu najpierw nanosi się wodę, potem przygotowuje i umieszcza obiekt, nakrywa go i ustawia preparat na stoliku.",
+    "source": "Zdjęcie 15"
+  },
+  {
+    "id": "bio-096",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Dlaczego w podręczniku często pokazuje się zdjęcia preparatów barwionych?",
+    "answer": "Ponieważ komórki są w nich lepiej widoczne.",
+    "choices": [
+      "Ponieważ barwienie zastępuje obiektyw.",
+      "Ponieważ komórki są w nich lepiej widoczne.",
+      "Ponieważ barwienie zwiększa liczbę komórek.",
+      "Ponieważ bez barwienia mikroskop nie ma okularu."
+    ],
+    "explanation": "Podpis pod zdjęciami wyjaśnia, że barwienie ułatwia dostrzeżenie komórek.",
+    "source": "Zdjęcie 12"
+  },
+  {
+    "id": "bio-097",
+    "kind": "choice",
+    "topic": "Preparat mikroskopowy",
+    "text": "Który zestaw zawiera przykłady obiektów nadających się do obserwacji mikroskopowej?",
+    "answer": "Pojedyncze komórki i fragmenty tkanek.",
+    "choices": [
+      "Pojedyncze komórki i fragmenty tkanek.",
+      "Wyłącznie całe drzewa i góry.",
+      "Tylko chmury i planety.",
+      "Wyłącznie całe stada dużych ssaków."
+    ],
+    "explanation": "Mikroskop umożliwia oglądanie bardzo małych obiektów, na przykład komórek i fragmentów tkanek.",
+    "source": "Zdjęcie 13"
+  },
+  {
+    "id": "bio-098",
+    "kind": "open",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcia 4–5 i 14",
+    "text": "Wyjaśnij własnymi słowami, jak komórka, tkanka, narząd i układ narządów tworzą organizm. Podaj jeden przykład pokazujący wszystkie te poziomy.",
+    "fields": [
+      {
+        "key": "cell",
+        "label": "Komórka"
+      },
+      {
+        "key": "tissue",
+        "label": "Tkanka"
+      },
+      {
+        "key": "organ",
+        "label": "Narząd"
+      },
+      {
+        "key": "system",
+        "label": "Układ narządów"
+      },
+      {
+        "key": "organism",
+        "label": "Organizm"
+      },
+      {
+        "key": "example",
+        "label": "Przykład całej kolejności"
+      }
+    ],
+    "answer": "Komórka jest podstawową jednostką budowy organizmu. Podobne komórki wykonujące określone zadania tworzą tkankę. Tkanki budują narządy. Współpracujące narządy tworzą układy, a współdziałające układy — organizm. Przykład: komórka mięśniowa → tkanka mięśniowa → serce (budowane też przez inne tkanki) → układ krwionośny → organizm kota.",
+    "rubric": "2 pkt: poprawnie opisane poziomy i ich kolejność oraz sensowny przykład obejmujący całą kolejność. 1 pkt: część poziomów wyjaśniona poprawnie, ale wyjaśnienie lub przykład są niepełne. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj inne poprawne przykłady i własne sformułowania."
+  },
+  {
+    "id": "bio-099",
+    "kind": "open",
+    "topic": "Metoda naukowa",
+    "source": "Zdjęcia 6–7, 9 i 15",
+    "text": "Zaplanuj doświadczenie sprawdzające, czy obecność jabłek przyspiesza dojrzewanie bananów. Podaj problem badawczy, hipotezę, obie próby, wspólne warunki oraz sposób zapisywania wyników i wyciągania wniosku.",
+    "fields": [
+      {
+        "key": "problem",
+        "label": "Problem badawczy — pytanie"
+      },
+      {
+        "key": "hypothesis",
+        "label": "Hipoteza — przewidywana odpowiedź"
+      },
+      {
+        "key": "experimental",
+        "label": "Próba badawcza"
+      },
+      {
+        "key": "control",
+        "label": "Próba kontrolna"
+      },
+      {
+        "key": "conditions",
+        "label": "Warunki takie same w obu próbach"
+      },
+      {
+        "key": "results",
+        "label": "Zapis wyników i sposób wyciągnięcia wniosku"
+      }
+    ],
+    "answer": "Problem: Czy obecność jabłek przyspiesza dojrzewanie bananów? Hipoteza: Banany dojrzewają szybciej obok jabłek. Próba badawcza: zielone banany z jabłkami. Kontrolna: podobne banany bez jabłek. Zachowujemy taką samą liczbę i początkową dojrzałość bananów, podobne miski, miejsce i czas obserwacji, np. 5 dni. Zapisujemy zmiany koloru i pojawianie się plam. Porównujemy obie próby i na podstawie rzeczywistych wyników potwierdzamy lub odrzucamy hipotezę.",
+    "rubric": "2 pkt: pytanie i sprawdzalna hipoteza, poprawne próby różniące się obecnością jabłek, wskazane wspólne warunki oraz porównanie zapisanych wyników jako podstawa wniosku. 1 pkt: sensowny, lecz niepełny plan. 0 pkt: plan nie bada wskazanego czynnika lub jest zasadniczo błędny. Akceptuj inne poprawne sformułowania hipotezy, także hipotezę o braku wpływu."
+  },
+  {
+    "id": "bio-100",
+    "kind": "open",
+    "topic": "Preparat i obserwacja mikroskopowa",
+    "source": "Zdjęcia 11–13 i 15",
+    "text": "Opisz przygotowanie preparatu ze skórki liścia cebuli. Wyjaśnij, od jakiego powiększenia zaczynasz obserwację i na co uważasz przy zbliżaniu obiektywu. Oblicz powiększenie dla okularu 10× i obiektywu 40×.",
+    "fields": [
+      {
+        "key": "tools",
+        "label": "Potrzebne narzędzia i materiały"
+      },
+      {
+        "key": "steps",
+        "label": "Kolejne kroki przygotowania preparatu"
+      },
+      {
+        "key": "observation",
+        "label": "Początek obserwacji i ostrożność"
+      },
+      {
+        "key": "magnification",
+        "label": "Obliczenie powiększenia"
+      }
+    ],
+    "answer": "Potrzebne są cebula, woda, szkiełko podstawowe i nakrywkowe, zakraplacz, pęseta oraz igła preparacyjna. Na szkiełko podstawowe nanosimy kroplę wody. Z wewnętrznej strony białego liścia spichrzowego cebuli zdejmujemy skórkę i umieszczamy jej fragment w kropli. Ostrożnie nakrywamy go szkiełkiem nakrywkowym przykładanym ukośnie. Preparat kładziemy na stoliku. Zaczynamy od najmniejszego powiększenia; obiektyw nie może dotknąć preparatu. Powiększenie: 10 × 40 = 400 razy.",
+    "rubric": "2 pkt: poprawna kolejność głównych etapów przygotowania, rozpoczęcie od najmniejszego powiększenia, zachowanie odstępu obiektywu od preparatu i poprawne działanie 10 × 40 = 400. 1 pkt: odpowiedź częściowo poprawna, z brakami lub błędem w jednym z obszarów. 0 pkt: brak poprawnego opisu i poprawnego obliczenia. Nie wymagaj dosłownego odtworzenia wzoru ani kompletnej listy drobnych narzędzi."
+  }
 ];
-// Pytania uzupełnione na podstawie przesłanych stron podręcznika (rozdziały 1–3).
-// Bank pozostaje złożony ze 100 pytań; quiz losuje z niego 7 pytań jednokrotnego wyboru.
-rounds[3].q[4]=['fill','Nauka o czynnościach życiowych organizmów to ____.','fizjologia'];
-rounds[3].q[6]=['fill','Dziedzina badająca zależności między organizmami a środowiskiem to ____.','ekologia'];
-rounds[4].q[9]=['choice','Z jakich źródeł można korzystać, poznając biologię?','Z książek, czasopism popularnonaukowych, filmów przyrodniczych i edukacyjnych stron internetowych.'];
-rounds[5].q[9]=['choice','Jaką cechę dobrego badacza pokazuje regularne zapisywanie i dokumentowanie wyników?','Systematyczność i rzetelność.'];
-rounds[7].q[7]=['choice','Jakiego mikroskopu używa się do oglądania bardzo małych obiektów, np. wirusów i bakterii, przy powiększeniu nawet do miliona razy?','Mikroskopu elektronowego.'];
-rounds[7].q[9]=['choice','Od jakiego powiększenia rozpoczynamy obserwację w mikroskopie optycznym?','Od najmniejszego powiększenia, a potem stopniowo je zwiększamy.'];
-const rawBank=rounds.flatMap(topic=>topic.q.map(([kind,text,answer])=>({kind,text,answer,topic:topic.title,sourceKind:kind})));
-const openQuestions=[
- {kind:'open',text:'Wyjaśnij własnymi słowami, jak komórka, tkanka, narząd i układ narządów tworzą organizm. Podaj przykład.',answer:'Komórki tworzą tkanki, tkanki budują narządy, narządy współpracują w układach narządów, a układy tworzą organizm. Np. komórki mięśniowe tworzą tkankę mięśniową, która buduje serce.',topic:'Poziomy organizacji ciała',fields:[{key:'cell',label:'Komórka'},{key:'tissue',label:'Tkanka'},{key:'organ',label:'Narząd'},{key:'system',label:'Układ narządów'},{key:'organism',label:'Organizm'},{key:'example',label:'Przykład'}]},
- {kind:'open',text:'Opisz, jak zaplanować doświadczenie sprawdzające, czy ilość światła wpływa na wzrost roślin.',answer:'Należy porównać podobne rośliny w takich samych warunkach, zmieniając tylko dostęp do światła. Trzeba zapisywać wyniki i na ich podstawie sformułować wniosek.',topic:'Planowanie doświadczeń'},
- {kind:'open',text:'Opisz, jak przygotować prosty preparat mikroskopowy i podaj jedną zasadę bezpiecznej pracy.',answer:'Na szkiełko podstawowe nanieś kroplę wody, umieść w niej obiekt i przykryj szkiełkiem nakrywkowym. Ze szkiełkami obchodź się ostrożnie, ponieważ są kruche.',topic:'Preparaty mikroskopowe'}
-];
-const bank=[...rawBank.map(q=>({...q,kind:'choice'})),...openQuestions];
 let session=[],index=0,answers=[],orderState=[],dragFrom=-1,playerNickname='';
 const $=id=>document.getElementById(id);
 playerNickname=localStorage.getItem('bioQuizNickname')||'';$('nickname').value=playerNickname;
@@ -76,19 +1585,7 @@ const BIOLOGY_GRADE_API_URL=AI_API_URL.replace(/\/grade$/,'/biology-grade');
 const norm=s=>(s||'').toLocaleLowerCase('pl').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[.,!?;:()\"']/g,'').replace(/\s+/g,' ').trim();
 function shuffle(list){const a=list.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
-function makeOptions(q){
- if(q.sourceKind==='tf')return shuffle(['prawda','fałsz']);
- if(q.sourceKind==='order'){
-  const right=q.answer.split(' → '),options=[q.answer],seen=new Set([norm(q.answer)]);let attempts=0;
-  while(options.length<4&&attempts++<100){const candidate=shuffle(right).join(' → '),key=norm(candidate);if(!seen.has(key)){seen.add(key);options.push(candidate)}}
-  return shuffle(options);
- }
- const eligible=rawBank.filter(item=>item.topic===q.topic&&item.sourceKind!==q.sourceKind&&item.answer.length<70&&norm(item.answer)!==norm(q.answer)).map(item=>item.answer);
- const global=rawBank.filter(item=>item.answer.length<55&&norm(item.answer)!==norm(q.answer)).map(item=>item.answer);
- const candidates=[...new Set([...shuffle(eligible),...shuffle(global)])],options=[q.answer];
- for(const candidate of candidates){if(!options.some(value=>norm(value)===norm(candidate)))options.push(candidate);if(options.length===4)break}
- return shuffle(options);
-}
+function makeOptions(q){return shuffle(q.choices)}
 function start(){playerNickname=$('nickname').value.trim().slice(0,24);$('nickname').value=playerNickname;if(!playerNickname){const input=$('nickname'),error=$('nicknameError');error.textContent='Wpisz pseudonim, aby rozpocząć quiz.';error.hidden=false;input.focus();return}$('nicknameError').hidden=true;localStorage.setItem('bioQuizNickname',playerNickname);const open=bank.filter(q=>q.kind==='open'),choice=shuffle(bank.filter(q=>q.kind==='choice')).slice(0,7);session=shuffle([...open,...choice]);session.forEach(q=>{if(q.kind==='choice')q.options=makeOptions(q)});index=0;answers=Array(10).fill(null);orderState=[];renderQ();show('play')}
 function renderQ(){
  const q=session[index],old=answers[index],score=answers.reduce((sum,a)=>sum+(a&&Number.isInteger(a.points)?a.points:a&&a.correct?1:0),0),max=10+session.filter(item=>item.kind==='open').length;$('roundTitle').textContent=q.topic;$('scorePill').textContent='Wynik: '+score+'/'+max+' pkt';$('progressText').textContent='Pytanie '+(index+1)+' z 10';$('roundPct').textContent=Math.round(index/10*100)+'%';$('bar').style.width=Math.round(index/10*100)+'%';$('qText').textContent=q.text;
@@ -117,6 +1614,7 @@ function check(value){
  answers[index]={...(answers[index]||{}),value,correct,checked:true};renderQ();if(q.kind==='choice'&&!correct)explainChoiceWithAI(q,value,index)
 }
 function explainWrong(q){
+ if(q.explanation)return q.explanation;
  if(q.sourceKind==='order'){
   if(q.answer.includes('komórka')||q.answer.includes('tkanka'))return 'Kolejność prowadzi od najmniejszego poziomu budowy do największego: komórki tworzą tkanki, tkanki budują narządy, narządy współpracują w układach, a układy tworzą organizm.';
   if(q.answer.includes('problem badawczy'))return 'Etapy metody naukowej mają ustaloną kolejność: najpierw określamy problem, potem stawiamy hipotezę, wykonujemy doświadczenie i na końcu formułujemy wniosek.';
@@ -135,15 +1633,15 @@ function explainWrong(q){
  }
  return 'Porównaj swoją odpowiedź z prawidłową i zwróć uwagę na pojęcie opisane w pytaniu.';
 }
-async function explainChoiceWithAI(q,selected,questionIndex){const target=$('aiChoiceExplanation');if(!target)return;if(location.protocol==='file:'){target.textContent='Wyjaśnienie AI jest dostępne po otwarciu quizu z opublikowanej strony.';return}target.textContent='AI wyjaśnia odpowiedź…';try{const response=await fetch(EXPLAIN_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q.text,selected_answer:String(selected),correct_answer:String(q.answer)})});const data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');if(typeof data.explanation!=='string'||!data.explanation.trim())throw new Error('AI nie zwróciło wyjaśnienia.');if(index!==questionIndex||session[index]!==q)return;target.textContent='AI: '+data.explanation}catch(error){if(index!==questionIndex||session[index]!==q)return;target.textContent='Nie udało się uzyskać wyjaśnienia AI: '+error.message+' Podpowiedź: '+explainWrong(q)}}
+async function explainChoiceWithAI(q,selected,questionIndex){const target=$('aiChoiceExplanation');if(!target)return;if(location.protocol==='file:'){target.textContent='Wyjaśnienie AI jest dostępne po otwarciu quizu z opublikowanej strony.';return}target.textContent=explainWrong(q)+' AI przygotowuje dodatkowe wyjaśnienie…';try{const response=await fetch(EXPLAIN_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q.text,selected_answer:String(selected),correct_answer:String(q.answer)})});const data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');if(typeof data.explanation!=='string'||!data.explanation.trim())throw new Error('AI nie zwróciło wyjaśnienia.');if(index!==questionIndex||session[index]!==q)return;target.textContent='AI: '+data.explanation}catch(error){if(index!==questionIndex||session[index]!==q)return;target.textContent='Nie udało się uzyskać wyjaśnienia AI: '+error.message+' Podpowiedź: '+explainWrong(q)}}
 function paintFeedback(q,a){
  const f=$('feedback');f.className='feedback show '+(q.kind==='open'?'open':a.correct?'good':'bad');f.replaceChildren();
  if(q.kind==='open'){
   const title=document.createElement('strong');title.textContent='Ocena AI: '+a.points+'/2 pkt';f.append(title,document.createElement('br'),document.createTextNode(a.aiFeedback||''));const sample=document.createElement('div');sample.style.marginTop='10px';const label=document.createElement('strong');label.textContent='Przykładowa odpowiedź: ';sample.append(label,document.createTextNode(q.answer));f.appendChild(sample);
  }else if(a.correct){f.textContent='Dobrze! Odpowiedź jest poprawna.'}
- else{const title=document.createElement('strong');title.textContent='Ta odpowiedź jest błędna. ';const chosen=Array.isArray(a.value)?a.value.join(' → '):String(a.value||'');const selected=document.createElement('div');selected.style.marginTop='4px';selected.textContent='Twoja odpowiedź: '+chosen;const correct=document.createElement('div');correct.style.marginTop='8px';const label=document.createElement('strong');label.textContent='Poprawna odpowiedź: ';correct.append(label,document.createTextNode(q.answer));const explanation=document.createElement('div');explanation.className='ai-explanation';explanation.id='aiChoiceExplanation';explanation.textContent='AI przygotowuje wyjaśnienie…';f.append(title,selected,correct,explanation)}
+ else{const title=document.createElement('strong');title.textContent='Ta odpowiedź jest błędna. ';const chosen=Array.isArray(a.value)?a.value.join(' → '):String(a.value||'');const selected=document.createElement('div');selected.style.marginTop='4px';selected.textContent='Twoja odpowiedź: '+chosen;const correct=document.createElement('div');correct.style.marginTop='8px';const label=document.createElement('strong');label.textContent='Poprawna odpowiedź: ';correct.append(label,document.createTextNode(q.answer));const explanation=document.createElement('div');explanation.className='ai-explanation';explanation.id='aiChoiceExplanation';explanation.textContent=explainWrong(q);f.append(title,selected,correct,explanation)}
 }
-async function gradeOpen(){const q=session[index],button=$('revealBtn'),f=$('feedback');let value,savedValue;if(q.fields){const fields={};q.fields.forEach((field,i)=>fields[field.key]=$('openField'+i).value.trim());if(q.fields.some(field=>!fields[field.key])){f.className='feedback show bad';f.textContent='Uzupełnij każde pole, zanim poprosisz AI o ocenę.';return}savedValue=fields;value=q.fields.map(field=>field.label+': '+fields[field.key]).join('\n')}else{value=$('userAnswer').value.trim();savedValue=value}if(value.replace(/[^\p{L}\p{N}]/gu,'').length<2){f.className='feedback show bad';f.textContent='Wpisz odpowiedź, zanim poprosisz AI o ocenę.';return}if(location.protocol==='file:'){f.className='feedback show bad';f.textContent='Ocena AI nie działa w lokalnie otwartym pliku. Otwórz quiz na stronie GitHub Pages po scaleniu PR-a i wdrożeniu Workera w Cloudflare.';return}button.disabled=true;button.textContent='AI ocenia…';f.className='feedback show';f.textContent='Trwa ocenianie odpowiedzi…';try{const id='bio-'+index,res=await fetch(BIOLOGY_GRADE_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,question:q.text,answer:value,expected_answer:q.answer})}),data=await res.json().catch(()=>({}));if(!res.ok)throw new Error(data.error||'Błąd API ('+res.status+')');if(!Array.isArray(data.results)||data.results.length!==1||data.results[0].id!==id||!Number.isInteger(data.results[0].score))throw new Error('AI zwróciło niepełną ocenę.');const grade=data.results[0];answers[index]={value:savedValue,checked:true,rated:true,points:grade.score,correct:grade.score>0,aiFeedback:grade.feedback};renderQ()}catch(error){f.className='feedback show bad';f.textContent='Nie udało się uzyskać oceny AI. Sprawdź połączenie i konfigurację Workera. '+error.message;button.disabled=false;button.textContent='Spróbuj ponownie z AI'}}
+async function gradeOpen(){const q=session[index],button=$('revealBtn'),f=$('feedback');let value,savedValue;if(q.fields){const fields={};q.fields.forEach((field,i)=>fields[field.key]=$('openField'+i).value.trim());if(q.fields.some(field=>!fields[field.key])){f.className='feedback show bad';f.textContent='Uzupełnij każde pole, zanim poprosisz AI o ocenę.';return}savedValue=fields;value=q.fields.map(field=>field.label+': '+fields[field.key]).join('\n')}else{value=$('userAnswer').value.trim();savedValue=value}if(value.replace(/[^\p{L}\p{N}]/gu,'').length<2){f.className='feedback show bad';f.textContent='Wpisz odpowiedź, zanim poprosisz AI o ocenę.';return}if(location.protocol==='file:'){f.className='feedback show bad';f.textContent='Ocena AI nie działa w lokalnie otwartym pliku. Otwórz quiz na stronie GitHub Pages po scaleniu PR-a i wdrożeniu Workera w Cloudflare.';return}button.disabled=true;button.textContent='AI ocenia…';f.className='feedback show';f.textContent='Trwa ocenianie odpowiedzi…';try{const id='bio-'+index,res=await fetch(BIOLOGY_GRADE_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,question:q.text,answer:value,expected_answer:q.answer+(q.rubric?'\nKryteria oceniania: '+q.rubric:'')})}),data=await res.json().catch(()=>({}));if(!res.ok)throw new Error(data.error||'Błąd API ('+res.status+')');if(!Array.isArray(data.results)||data.results.length!==1||data.results[0].id!==id||!Number.isInteger(data.results[0].score))throw new Error('AI zwróciło niepełną ocenę.');const grade=data.results[0];answers[index]={value:savedValue,checked:true,rated:true,points:grade.score,correct:grade.score>0,aiFeedback:grade.feedback};renderQ()}catch(error){f.className='feedback show bad';f.textContent='Nie udało się uzyskać oceny AI. Sprawdź połączenie i konfigurację Workera. '+error.message;button.disabled=false;button.textContent='Spróbuj ponownie z AI'}}
 function next(){if(index<9){index++;renderQ()}else finish()}
 async function renderRankings(){const hosts=['rankHome','rankResult'].map($).filter(Boolean);hosts.forEach(host=>host.textContent='Pobieranie rankingu…');try{const response=await fetch(LEADERBOARD_API_URL,{headers:{'Accept':'application/json'}}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');const rows=Array.isArray(data.entries)?data.entries.slice(0,10):[];hosts.forEach(host=>{host.replaceChildren();if(!rows.length){host.textContent='Brak wyników. Zagraj, aby pojawić się w rankingu.';return}const list=document.createElement('ol');list.className='ranking';rows.forEach((row,i)=>{const item=document.createElement('li'),place=document.createElement('span'),name=document.createElement('span'),score=document.createElement('span');place.className='rank-number';place.textContent=String(i+1)+'.';name.className='rank-name';name.textContent=row.nickname||'Uczeń';score.className='rank-score';score.textContent=(row.points??0)+'/'+(row.maxPoints??0)+' pkt';item.append(place,name,score);list.appendChild(item)});host.appendChild(list)})}catch(error){hosts.forEach(host=>host.textContent='Ranking w chmurze jest chwilowo niedostępny. '+error.message)}}
 async function recordRanking(score,max){if(!playerNickname){$('rankingStatus').textContent='Wpisz pseudonim na stronie startowej, aby zapisać wynik w rankingu.';return}try{const response=await fetch(LEADERBOARD_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nickname:playerNickname,quiz:"biologia",points:score,maxPoints:max})}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');$('rankingStatus').textContent=data.saved?'Wynik zapisany w rankingu w chmurze.':'Twój lepszy wynik jest już zapisany w rankingu.';await renderRankings()}catch(error){$('rankingStatus').textContent='Nie udało się zapisać wyniku w chmurze. '+error.message}}
