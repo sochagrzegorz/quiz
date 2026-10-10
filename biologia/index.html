@@ -14,29 +14,14 @@
 <main class="shell">
 <header class="top"><div class="brand"><span class="mark">✳</span><span>Biologia na piątkę</span></div><span class="tag">KLASA 5 · BANK PYTAŃ</span></header>
 <section id="home" class="view active">
-<div class="hero"><div class="eyebrow">Jeden quiz · losowane pytania</div><h1>Sprawdź, jak działa życie.</h1><p>Bank zawiera 100 pytań z działu „Biologia — nauka o życiu”: 97 jednokrotnego wyboru i 3 opisowe. Każda sesja losuje 7 pytań zamkniętych i zawiera 3 pytania opisowe oceniane przez AI.</p><div class="nickname-row"><label for="nickname">Twój pseudonim <span aria-hidden="true">*</span></label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Wpisz pseudonim" required aria-required="true"><p id="nicknameError" class="tiny nickname-error" role="alert" hidden></p></div><div class="hero-actions"><button class="btn primary" id="startBtn">Losuj 10 pytań →</button></div><div class="note">Pseudonim i wynik zapisują się na tym urządzeniu.</div></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankHome"></div></div></section>
-<section id="play" class="view"><button class="btn plain back" id="homeBtn">← Zakończ quiz</button><div class="panel"><div class="quiz-head"><div><div class="eyebrow" id="roundLabel">QUIZ BIOLOGICZNY · LOSOWANY ZESTAW</div><h2 id="roundTitle">Sprawdź swoją wiedzę</h2></div><span class="score-pill" id="scorePill">Wynik: 0 pkt</span></div><div class="progress-meta"><span id="progressText">Pytanie 1 z 10</span><span id="roundPct">0%</span></div><div class="progress"><div class="bar" id="bar"></div></div><div class="qbox"><span class="qtype" id="qType"></span><div class="qtext" id="qText"></div><div id="inputArea"></div><div class="feedback" id="feedback" aria-live="polite"></div></div><div class="actions"><button class="btn plain" id="prevBtn">← Wstecz</button><div class="right"><button class="btn secondary hidden" id="revealBtn">Oceń odpowiedź AI</button><button class="btn primary" id="checkBtn">Sprawdź</button><button class="btn primary hidden" id="nextBtn">Dalej →</button></div></div></div></section>
+<div class="hero"><div class="eyebrow">Jeden quiz · losowane pytania</div><h1>Sprawdź, jak działa życie.</h1><p>Bank zawiera 100 pytań z działu „Biologia — nauka o życiu”: 70 jednokrotnego wyboru i 30 opisowych. Każda sesja losuje 7 pytań zamkniętych oraz 3 z 30 pytań opisowych ocenianych przez AI.</p><div class="nickname-row"><label for="nickname">Twój pseudonim <span aria-hidden="true">*</span></label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Wpisz pseudonim" required aria-required="true"><p id="nicknameError" class="tiny nickname-error" role="alert" hidden></p></div><div class="hero-actions"><button class="btn primary" id="startBtn">Losuj 10 pytań →</button></div><div class="note">Pseudonim jest zapamiętywany na tym urządzeniu. Po ukończeniu quizu pseudonim i najlepszy wynik są widoczne w rankingu w chmurze.</div></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankHome"></div></div></section>
+<section id="play" class="view"><button class="btn plain back" id="homeBtn">← Zakończ quiz</button><div class="panel"><div class="quiz-head"><div><div class="eyebrow" id="roundLabel">QUIZ BIOLOGICZNY · LOSOWANY ZESTAW</div><h2 id="roundTitle">Sprawdź swoją wiedzę</h2></div><span class="score-pill" id="scorePill">Wynik: 0 pkt</span></div><div class="progress-meta"><span id="progressText">Pytanie 1 z 10</span><span id="roundPct">0%</span></div><div class="progress"><div class="bar" id="bar"></div></div><div class="qbox"><span class="qtype" id="qType"></span><div class="qtext" id="qText"></div><div id="inputArea"></div><div class="feedback" id="feedback" aria-live="polite"></div></div><div class="actions"><div class="right"><button class="btn secondary hidden" id="revealBtn">Oceń odpowiedź AI</button><button class="btn primary" id="checkBtn">Sprawdź</button><button class="btn primary hidden" id="nextBtn">Dalej →</button></div></div></div></section>
 <section id="result" class="view"><div class="panel result"><div class="result-icon">✓</div><div class="eyebrow">Koniec quizu</div><p id="playerName" class="player-name"></p><h2 id="resultTitle">Dobra robota!</h2><div class="result-score" id="resultScore">0 pkt</div><p id="resultMessage"></p><p id="rankingStatus" class="tiny" aria-live="polite"></p><div class="result-grid"><div class="stat"><b id="correctStat">0</b><span>zdobyte punkty</span></div><div class="stat"><b id="openStat">0</b><span>ocenione pytania otwarte</span></div></div><button class="btn primary" id="nextRoundBtn">Losuj kolejny zestaw →</button><button class="btn secondary" id="resultHomeBtn">Wróć do początku</button></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankResult"></div></div></section>
 <footer>Biologia · Nauka w swoim tempie</footer>
 </main>
 <script>
 // 100 pytań opracowanych na podstawie 15 zdjęć działu „Biologia — nauka o życiu”.
 const bank=[
-  {
-    "id": "bio-001",
-    "kind": "choice",
-    "topic": "Biologia jako nauka",
-    "text": "Czym zajmuje się biologia?",
-    "answer": "Badaniem organizmów, ich czynności życiowych oraz zależności z otoczeniem.",
-    "choices": [
-      "Badaniem organizmów, ich czynności życiowych oraz zależności z otoczeniem.",
-      "Wyłącznie badaniem skał i minerałów.",
-      "Wyłącznie przewidywaniem pogody.",
-      "Badaniem budowy maszyn."
-    ],
-    "explanation": "Biologia bada budowę i funkcjonowanie organizmów oraz ich relacje z innymi organizmami i środowiskiem.",
-    "source": "Zdjęcie 1"
-  },
   {
     "id": "bio-002",
     "kind": "choice",
@@ -83,21 +68,6 @@ const bank=[
     "source": "Zdjęcie 1"
   },
   {
-    "id": "bio-005",
-    "kind": "choice",
-    "topic": "Biologia jako nauka",
-    "text": "Która cecha jest wspólna wszystkim organizmom opisanym w podręczniku?",
-    "answer": "Są zbudowane z komórek.",
-    "choices": [
-      "Są zbudowane z komórek.",
-      "Mają serce.",
-      "Poruszają się z miejsca na miejsce.",
-      "Składają się z wielu narządów."
-    ],
-    "explanation": "Wszystkie organizmy mają budowę komórkową; mogą być jedno- lub wielokomórkowe.",
-    "source": "Zdjęcie 1"
-  },
-  {
     "id": "bio-006",
     "kind": "choice",
     "topic": "Biologia jako nauka",
@@ -110,21 +80,6 @@ const bank=[
       "Drożdże."
     ],
     "explanation": "Na zdjęciu drożdże są przykładem organizmów zbudowanych z jednej komórki.",
-    "source": "Zdjęcie 1"
-  },
-  {
-    "id": "bio-007",
-    "kind": "choice",
-    "topic": "Biologia jako nauka",
-    "text": "Co pokazuje przykład sekwoi w tekście?",
-    "answer": "Organizm może być zbudowany z miliardów komórek.",
-    "choices": [
-      "Drzewa nie mają budowy komórkowej.",
-      "Tylko zwierzęta są wielokomórkowe.",
-      "Organizm może być zbudowany z miliardów komórek.",
-      "Każdy organizm składa się z jednej komórki."
-    ],
-    "explanation": "Sekwoja jest przykładem dużego organizmu wielokomórkowego.",
     "source": "Zdjęcie 1"
   },
   {
@@ -173,36 +128,6 @@ const bank=[
     "source": "Zdjęcie 5"
   },
   {
-    "id": "bio-011",
-    "kind": "choice",
-    "topic": "Dziedziny biologii",
-    "text": "Jak nazywa się nauka o budowie wewnętrznej organizmów?",
-    "answer": "Anatomia.",
-    "choices": [
-      "Ekologia.",
-      "Botanika.",
-      "Anatomia.",
-      "Fizjologia."
-    ],
-    "explanation": "Anatomia dotyczy budowy wewnętrznej organizmów.",
-    "source": "Zdjęcie 5"
-  },
-  {
-    "id": "bio-012",
-    "kind": "choice",
-    "topic": "Dziedziny biologii",
-    "text": "Która dziedzina biologii bada czynności życiowe organizmów?",
-    "answer": "Fizjologia.",
-    "choices": [
-      "Mikrobiologia.",
-      "Fizjologia.",
-      "Anatomia.",
-      "Zoologia."
-    ],
-    "explanation": "Fizjologia zajmuje się funkcjonowaniem organizmów, czyli ich czynnościami życiowymi.",
-    "source": "Zdjęcie 5"
-  },
-  {
     "id": "bio-013",
     "kind": "choice",
     "topic": "Dziedziny biologii",
@@ -216,36 +141,6 @@ const bank=[
     ],
     "explanation": "Ekologia bada między innymi zależności organizmów z ich środowiskiem.",
     "source": "Zdjęcie 5"
-  },
-  {
-    "id": "bio-014",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Do czego organizm wykorzystuje składniki pokarmowe?",
-    "answer": "Jako źródło energii i materiał do budowy komórek.",
-    "choices": [
-      "Wyłącznie do zmiany miejsca pobytu.",
-      "Tylko do usuwania zbędnych substancji.",
-      "Wyłącznie do odbierania dźwięków.",
-      "Jako źródło energii i materiał do budowy komórek."
-    ],
-    "explanation": "Odżywianie dostarcza substancji potrzebnych do budowy komórek oraz uzyskiwania energii.",
-    "source": "Zdjęcie 2"
-  },
-  {
-    "id": "bio-015",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Na czym polega oddychanie opisane w podręczniku?",
-    "answer": "Na uwalnianiu z pokarmu energii potrzebnej do życia.",
-    "choices": [
-      "Na zwiększaniu masy i rozmiarów ciała.",
-      "Na wydawaniu potomstwa.",
-      "Na uwalnianiu z pokarmu energii potrzebnej do życia.",
-      "Na dostarczaniu gotowych komórek z pokarmem."
-    ],
-    "explanation": "Oddychanie pozwala uzyskać energię zawartą w pokarmie.",
-    "source": "Zdjęcie 2"
   },
   {
     "id": "bio-016",
@@ -278,21 +173,6 @@ const bank=[
     "source": "Zdjęcie 2"
   },
   {
-    "id": "bio-018",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Czym jest wydalanie?",
-    "answer": "Usuwaniem z organizmu substancji niepotrzebnych i szkodliwych.",
-    "choices": [
-      "Pobieraniem składników pokarmowych.",
-      "Wydawaniem potomstwa.",
-      "Zwiększaniem rozmiarów ciała.",
-      "Usuwaniem z organizmu substancji niepotrzebnych i szkodliwych."
-    ],
-    "explanation": "Wydalanie pozwala usuwać między innymi nadmiar wody oraz szkodliwe substancje.",
-    "source": "Zdjęcie 2"
-  },
-  {
     "id": "bio-019",
     "kind": "choice",
     "topic": "Czynności życiowe",
@@ -306,21 +186,6 @@ const bank=[
     ],
     "explanation": "Podpis pod ilustracją wymienia wodę, sole mineralne i szkodliwe substancje.",
     "source": "Zdjęcie 2"
-  },
-  {
-    "id": "bio-020",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Jak w podręczniku zdefiniowano ruch?",
-    "answer": "Jako zmianę położenia całego ciała lub jego części.",
-    "choices": [
-      "Wyłącznie jako wydawanie potomstwa.",
-      "Jako zmianę położenia całego ciała lub jego części.",
-      "Wyłącznie jako bieganie zwierząt.",
-      "Jako każdą zmianę masy ciała."
-    ],
-    "explanation": "Ruch obejmuje zarówno przemieszczenie organizmu, jak i zmianę położenia części jego ciała.",
-    "source": "Zdjęcie 3"
   },
   {
     "id": "bio-021",
@@ -338,36 +203,6 @@ const bank=[
     "source": "Zdjęcie 3"
   },
   {
-    "id": "bio-022",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Na czym polega wzrost organizmu?",
-    "answer": "Na zwiększaniu rozmiarów i masy ciała.",
-    "choices": [
-      "Wyłącznie na zmianie miejsca pobytu.",
-      "Wyłącznie na zmianie wyglądu bez zmiany rozmiarów.",
-      "Na usuwaniu szkodliwych substancji.",
-      "Na zwiększaniu rozmiarów i masy ciała."
-    ],
-    "explanation": "Wzrost oznacza zwiększanie rozmiarów i masy organizmu.",
-    "source": "Zdjęcie 3"
-  },
-  {
-    "id": "bio-023",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Co obejmuje rozwój organizmu?",
-    "answer": "Zmiany wyglądu i sposobu funkcjonowania w ciągu życia.",
-    "choices": [
-      "Tylko pobieranie pokarmu.",
-      "Wyłącznie zmianę położenia ciała.",
-      "Zmiany wyglądu i sposobu funkcjonowania w ciągu życia.",
-      "Wyłącznie zwiększanie masy ciała."
-    ],
-    "explanation": "Rozwój jest szerszym pojęciem niż wzrost: obejmuje zmiany wyglądu i funkcjonowania.",
-    "source": "Zdjęcie 3"
-  },
-  {
     "id": "bio-024",
     "kind": "choice",
     "topic": "Czynności życiowe",
@@ -380,36 +215,6 @@ const bank=[
       "Przemieszczaniem się w środowisku."
     ],
     "explanation": "Rozmnażanie prowadzi do powstawania nowych organizmów.",
-    "source": "Zdjęcie 3"
-  },
-  {
-    "id": "bio-025",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Co jest potrzebne do rozmnażania płciowego opisanego w tekście?",
-    "answer": "Męskie i żeńskie komórki rozrodcze.",
-    "choices": [
-      "Męskie i żeńskie komórki rozrodcze.",
-      "Wyłącznie komórki mięśniowe.",
-      "Tylko zwiększenie ilości pokarmu.",
-      "Wyłącznie zmiana temperatury otoczenia."
-    ],
-    "explanation": "Rozmnażanie płciowe odbywa się z udziałem męskich i żeńskich komórek rozrodczych.",
-    "source": "Zdjęcie 3"
-  },
-  {
-    "id": "bio-026",
-    "kind": "choice",
-    "topic": "Czynności życiowe",
-    "text": "Panda wyczuwa zapach drapieżnika i zmienia zachowanie. Którą czynność życiową ilustruje ten przykład?",
-    "answer": "Reakcję na bodźce.",
-    "choices": [
-      "Rozmnażanie się.",
-      "Wydalanie.",
-      "Wzrost.",
-      "Reakcję na bodźce."
-    ],
-    "explanation": "Zapach jest bodźcem, a zmiana zachowania stanowi reakcję organizmu.",
     "source": "Zdjęcie 3"
   },
   {
@@ -443,36 +248,6 @@ const bank=[
     "source": "Zdjęcie 4"
   },
   {
-    "id": "bio-029",
-    "kind": "choice",
-    "topic": "Poziomy budowy organizmów",
-    "text": "Czym jest tkanka?",
-    "answer": "Grupą komórek o podobnej budowie wykonujących określone zadania.",
-    "choices": [
-      "Grupą komórek o podobnej budowie wykonujących określone zadania.",
-      "Grupą niezależnych organizmów różnych gatunków.",
-      "Zbiorem wszystkich układów narządów zwierzęcia.",
-      "Pojedynczym narządem otoczonym skórą."
-    ],
-    "explanation": "Tkankę tworzą podobne komórki pełniące określone funkcje.",
-    "source": "Zdjęcie 4"
-  },
-  {
-    "id": "bio-030",
-    "kind": "choice",
-    "topic": "Poziomy budowy organizmów",
-    "text": "Z czego są zbudowane narządy zwierząt?",
-    "answer": "Z tkanek wyspecjalizowanych w pełnieniu określonych funkcji.",
-    "choices": [
-      "Z całych układów narządów.",
-      "Z wielu niezależnych organizmów.",
-      "Wyłącznie z jednej komórki.",
-      "Z tkanek wyspecjalizowanych w pełnieniu określonych funkcji."
-    ],
-    "explanation": "Tkanki współtworzą narząd i umożliwiają wykonywanie jego funkcji.",
-    "source": "Zdjęcie 4"
-  },
-  {
     "id": "bio-031",
     "kind": "choice",
     "topic": "Poziomy budowy organizmów",
@@ -503,21 +278,6 @@ const bank=[
     "source": "Zdjęcie 4"
   },
   {
-    "id": "bio-033",
-    "kind": "choice",
-    "topic": "Poziomy budowy organizmów",
-    "text": "Co tworzą narządy uczestniczące we wspólnych czynnościach życiowych zwierzęcia?",
-    "answer": "Układ narządów.",
-    "choices": [
-      "Układ narządów.",
-      "Pojedynczą komórkę.",
-      "Jedną tkankę.",
-      "Grupę niezależnych organizmów."
-    ],
-    "explanation": "Współpracujące narządy tworzą układ, na przykład układ krwionośny.",
-    "source": "Zdjęcie 4"
-  },
-  {
     "id": "bio-034",
     "kind": "choice",
     "topic": "Poziomy budowy organizmów",
@@ -530,21 +290,6 @@ const bank=[
       "Serce i naczynia krwionośne."
     ],
     "explanation": "Na schemacie zwierzęcia podpisano serce oraz naczynia krwionośne.",
-    "source": "Zdjęcie 4"
-  },
-  {
-    "id": "bio-035",
-    "kind": "choice",
-    "topic": "Poziomy budowy organizmów",
-    "text": "Dzięki czemu układy narządów tworzą sprawnie działający organizm?",
-    "answer": "Dzięki współpracy poszczególnych układów.",
-    "choices": [
-      "Dzięki zamianie wszystkich narządów w jedną komórkę.",
-      "Dzięki temu, że organizm nie wykonuje czynności życiowych.",
-      "Dzięki współpracy poszczególnych układów.",
-      "Dzięki temu, że każdy układ działa bez związku z innymi."
-    ],
-    "explanation": "Poszczególne układy współpracują, umożliwiając funkcjonowanie całego organizmu.",
     "source": "Zdjęcie 4"
   },
   {
@@ -608,36 +353,6 @@ const bank=[
     "source": "Zdjęcie 4"
   },
   {
-    "id": "bio-040",
-    "kind": "choice",
-    "topic": "Poziomy budowy organizmów",
-    "text": "Dlaczego tkanka i narząd oznaczają różne poziomy budowy?",
-    "answer": "Tkanka jest grupą podobnych komórek, a narząd jest zbudowany z tkanek.",
-    "choices": [
-      "Tkanka występuje wyłącznie poza organizmem.",
-      "Tkanka jest grupą podobnych komórek, a narząd jest zbudowany z tkanek.",
-      "Tkanka jest większa od całego organizmu.",
-      "Narząd jest zawsze pojedynczą komórką."
-    ],
-    "explanation": "Tkanka i narząd różnią się stopniem złożoności budowy.",
-    "source": "Zdjęcie 4"
-  },
-  {
-    "id": "bio-041",
-    "kind": "choice",
-    "topic": "Obserwacja i doświadczenie",
-    "text": "Na czym polega obserwacja biologiczna?",
-    "answer": "Na uważnym przyglądaniu się organizmom lub procesom bez wpływania na ich przebieg.",
-    "choices": [
-      "Na uważnym przyglądaniu się organizmom lub procesom bez wpływania na ich przebieg.",
-      "Na celowym zmienianiu kilku warunków naraz.",
-      "Na podawaniu organizmowi większej ilości wody w celu sprawdzenia jej wpływu.",
-      "Na zastępowaniu wyników własnym przypuszczeniem."
-    ],
-    "explanation": "Obserwator przygląda się obiektowi lub procesowi, lecz celowo go nie zmienia.",
-    "source": "Zdjęcie 6"
-  },
-  {
     "id": "bio-042",
     "kind": "choice",
     "topic": "Obserwacja i doświadczenie",
@@ -650,21 +365,6 @@ const bank=[
       "Zadbać o to, by nie zauważyły obecności obserwatora."
     ],
     "explanation": "Podręcznik zaleca, by zwierzęta nie odkryły obecności obserwującej osoby.",
-    "source": "Zdjęcie 6"
-  },
-  {
-    "id": "bio-043",
-    "kind": "choice",
-    "topic": "Obserwacja i doświadczenie",
-    "text": "Co odróżnia doświadczenie od obserwacji?",
-    "answer": "Celowa zmiana jednego badanego czynnika.",
-    "choices": [
-      "Konieczność badania wyłącznie zwierząt.",
-      "Rezygnacja z porównywania wyników.",
-      "Celowa zmiana jednego badanego czynnika.",
-      "Brak możliwości zapisywania wyników."
-    ],
-    "explanation": "W doświadczeniu badacz zmienia wybrany czynnik i sprawdza skutki tej zmiany.",
     "source": "Zdjęcie 6"
   },
   {
@@ -698,21 +398,6 @@ const bank=[
     "source": "Zdjęcie 6"
   },
   {
-    "id": "bio-046",
-    "kind": "choice",
-    "topic": "Obserwacja i doświadczenie",
-    "text": "Do czego służy próba kontrolna?",
-    "answer": "Do porównania z próbą, w której zmieniono badany czynnik.",
-    "choices": [
-      "Do zmiany wszystkich warunków jednocześnie.",
-      "Do zastąpienia zapisywania wyników.",
-      "Do potwierdzenia hipotezy bez wykonania doświadczenia.",
-      "Do porównania z próbą, w której zmieniono badany czynnik."
-    ],
-    "explanation": "Próba kontrolna stanowi punkt odniesienia przy ocenie wpływu badanego czynnika.",
-    "source": "Zdjęcie 6"
-  },
-  {
     "id": "bio-047",
     "kind": "choice",
     "topic": "Obserwacja i doświadczenie",
@@ -726,21 +411,6 @@ const bank=[
     ],
     "explanation": "Próba badawcza jest zestawem, w którym zmienia się badany czynnik.",
     "source": "Zdjęcie 6"
-  },
-  {
-    "id": "bio-048",
-    "kind": "choice",
-    "topic": "Obserwacja i doświadczenie",
-    "text": "Jak powinny różnić się warunki w próbie badawczej i kontrolnej?",
-    "answer": "Tylko jednym czynnikiem, którego wpływ badamy.",
-    "choices": [
-      "Nie powinny różnić się nawet badanym czynnikiem.",
-      "Tylko jednym czynnikiem, którego wpływ badamy.",
-      "Wszystkimi możliwymi czynnikami.",
-      "Wyłącznie sposobem zapisywania wyników."
-    ],
-    "explanation": "Pozostałe warunki muszą być takie same, aby można było ocenić wpływ jednego czynnika.",
-    "source": "Zdjęcie 9"
   },
   {
     "id": "bio-049",
@@ -923,21 +593,6 @@ const bank=[
     "source": "Zdjęcie 7"
   },
   {
-    "id": "bio-061",
-    "kind": "choice",
-    "topic": "Metoda naukowa",
-    "text": "Co należy zrobić, jeżeli wyniki doświadczenia przeczą hipotezie?",
-    "answer": "Odrzucić hipotezę i oprzeć wniosek na uzyskanych wynikach.",
-    "choices": [
-      "Odrzucić hipotezę i oprzeć wniosek na uzyskanych wynikach.",
-      "Zmienić zapis wyników, aby pasował do hipotezy.",
-      "Uznać hipotezę za potwierdzoną mimo wyników.",
-      "Pominąć wszystkie wyniki próby kontrolnej."
-    ],
-    "explanation": "Wniosek może potwierdzić albo odrzucić hipotezę; zależy od wyników doświadczenia.",
-    "source": "Zdjęcie 15"
-  },
-  {
     "id": "bio-062",
     "kind": "choice",
     "topic": "Źródła wiedzy i praca badacza",
@@ -983,21 +638,6 @@ const bank=[
     "source": "Zdjęcie 8"
   },
   {
-    "id": "bio-065",
-    "kind": "choice",
-    "topic": "Źródła wiedzy i praca badacza",
-    "text": "Co można poznawać podczas wizyty w ogrodzie botanicznym?",
-    "answer": "Rośliny, także pochodzące z innych części świata.",
-    "choices": [
-      "Rośliny, także pochodzące z innych części świata.",
-      "Wyłącznie budowę mikroskopów.",
-      "Tylko zwierzęta żyjące w morzu.",
-      "Wyłącznie skały i minerały."
-    ],
-    "explanation": "Ogród botaniczny umożliwia oglądanie różnych roślin, również pochodzących z odległych regionów.",
-    "source": "Zdjęcie 8"
-  },
-  {
     "id": "bio-066",
     "kind": "choice",
     "topic": "Źródła wiedzy i praca badacza",
@@ -1040,21 +680,6 @@ const bank=[
       "Niedokładność."
     ],
     "explanation": "Cierpliwość pomaga wytrwać w badaniach trwających długo lub wymagających wielu powtórzeń.",
-    "source": "Zdjęcie 8"
-  },
-  {
-    "id": "bio-069",
-    "kind": "choice",
-    "topic": "Źródła wiedzy i praca badacza",
-    "text": "Jaką cechę wykazuje uczeń, który regularnie zapisuje wyniki badań?",
-    "answer": "Systematyczność.",
-    "choices": [
-      "Systematyczność.",
-      "Przypadkowość.",
-      "Nieostrożność.",
-      "Niecierpliwość."
-    ],
-    "explanation": "Systematyczność polega między innymi na regularnym dokumentowaniu wyników.",
     "source": "Zdjęcie 8"
   },
   {
@@ -1238,21 +863,6 @@ const bank=[
     "source": "Zdjęcie 10"
   },
   {
-    "id": "bio-082",
-    "kind": "choice",
-    "topic": "Budowa mikroskopu",
-    "text": "Do czego służą śruby makrometryczna i mikrometryczna?",
-    "answer": "Do ustawiania ostrości obrazu.",
-    "choices": [
-      "Do przygotowywania kropli wody.",
-      "Do zmiany składu badanego obiektu.",
-      "Do obliczania czasu doświadczenia.",
-      "Do ustawiania ostrości obrazu."
-    ],
-    "explanation": "Obie śruby służą do regulowania ostrości obrazu.",
-    "source": "Zdjęcie 10"
-  },
-  {
     "id": "bio-083",
     "kind": "choice",
     "topic": "Praca z mikroskopem",
@@ -1280,21 +890,6 @@ const bank=[
       "Preparat należy położyć na okularze."
     ],
     "explanation": "Podręcznik nakazuje zachowanie odstępu, aby obiektyw nie dotknął preparatu.",
-    "source": "Zdjęcie 12"
-  },
-  {
-    "id": "bio-085",
-    "kind": "choice",
-    "topic": "Praca z mikroskopem",
-    "text": "Jak oblicza się całkowite powiększenie obrazu w mikroskopie optycznym?",
-    "answer": "Mnoży się powiększenie okularu przez powiększenie obiektywu.",
-    "choices": [
-      "Mnoży się powiększenie okularu przez powiększenie obiektywu.",
-      "Dodaje się powiększenie okularu do powiększenia obiektywu.",
-      "Odejmuje się powiększenie obiektywu od powiększenia okularu.",
-      "Dzieli się powiększenie okularu przez powiększenie obiektywu."
-    ],
-    "explanation": "Całkowite powiększenie jest iloczynem powiększeń okularu i obiektywu.",
     "source": "Zdjęcie 12"
   },
   {
@@ -1478,6 +1073,607 @@ const bank=[
     "source": "Zdjęcie 13"
   },
   {
+    "id": "bio-open-001",
+    "kind": "open",
+    "topic": "Biologia jako nauka",
+    "source": "Zdjęcie 1",
+    "text": "Wyjaśnij, czym zajmuje się biologia. Podaj jeden przykład pytania, na które biolog może szukać odpowiedzi.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Czym zajmuje się biologia?"
+      },
+      {
+        "key": "part2",
+        "label": "Przykładowe pytanie biologa"
+      }
+    ],
+    "answer": "Biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i ich środowiskiem. Przykładowe pytanie: Czy ilość wody wpływa na wzrost fasoli?",
+    "rubric": "2 pkt: opis zakresu biologii obejmujący organizmy oraz sensowny przykład pytania biologicznego. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-002",
+    "kind": "open",
+    "topic": "Cechy organizmów",
+    "source": "Zdjęcia 1–3",
+    "text": "Podaj jedną wspólną cechę budowy organizmów oraz wspólną cechę ich funkcjonowania. Porównaj drożdże i sekwoję pod względem liczby komórek.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Wspólna cecha budowy"
+      },
+      {
+        "key": "part2",
+        "label": "Wspólna cecha funkcjonowania"
+      },
+      {
+        "key": "part3",
+        "label": "Drożdże i sekwoja — porównanie liczby komórek"
+      }
+    ],
+    "answer": "Wszystkie organizmy są zbudowane z komórek i wykonują czynności życiowe. Drożdże są jednokomórkowe, natomiast sekwoja jest zbudowana z bardzo wielu komórek.",
+    "rubric": "2 pkt: wskazanie budowy komórkowej i wykonywania czynności życiowych oraz poprawne porównanie drożdży i sekwoi. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-003",
+    "kind": "open",
+    "topic": "Dziedziny biologii",
+    "source": "Zdjęcie 5",
+    "text": "Porównaj anatomię i fizjologię. Podaj przykład zagadnienia badanego przez każdą z tych dziedzin.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Anatomia i przykład zagadnienia"
+      },
+      {
+        "key": "part2",
+        "label": "Fizjologia i przykład zagadnienia"
+      }
+    ],
+    "answer": "Anatomia bada budowę wewnętrzną organizmów, np. budowę serca. Fizjologia bada czynności życiowe organizmów, np. pracę serca lub oddychanie.",
+    "rubric": "2 pkt: rozróżnienie budowy i funkcjonowania oraz po jednym trafnym przykładzie. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-004",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 2",
+    "text": "Wyjaśnij dwa powody, dla których organizm potrzebuje składników pokarmowych. Podaj, czym najchętniej odżywia się dorosła panda opisana w tekście.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Pierwsza rola składników pokarmowych"
+      },
+      {
+        "key": "part2",
+        "label": "Druga rola składników pokarmowych"
+      },
+      {
+        "key": "part3",
+        "label": "Pokarm pandy"
+      }
+    ],
+    "answer": "Składniki pokarmowe są źródłem energii oraz materiałem do budowy komórek. Dorosła panda najchętniej zjada liście i łodygi bambusa.",
+    "rubric": "2 pkt: wskazanie energii i materiału budulcowego oraz bambusa jako pokarmu pandy. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-005",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 2",
+    "text": "Wyjaśnij różnicę między odżywianiem się a oddychaniem. Napisz, jak te czynności są ze sobą powiązane.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Odżywianie się"
+      },
+      {
+        "key": "part2",
+        "label": "Oddychanie"
+      },
+      {
+        "key": "part3",
+        "label": "Związek tych czynności"
+      }
+    ],
+    "answer": "Odżywianie dostarcza organizmowi składników pokarmowych. Oddychanie uwalnia energię z pokarmu. Pokarm dostarczony dzięki odżywianiu może więc być źródłem energii uzyskiwanej podczas oddychania.",
+    "rubric": "2 pkt: poprawne wyjaśnienie obu czynności oraz powiązanie pokarmu z uwalnianiem energii. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-006",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 2",
+    "text": "Wyjaśnij, na czym polega wydalanie. Podaj dwa przykłady substancji usuwanych z organizmu wymienionych w tekście.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Na czym polega wydalanie?"
+      },
+      {
+        "key": "part2",
+        "label": "Pierwszy przykład"
+      },
+      {
+        "key": "part3",
+        "label": "Drugi przykład"
+      }
+    ],
+    "answer": "Wydalanie polega na usuwaniu substancji niepotrzebnych lub szkodliwych. Przykładami są nadmiar wody, nadmiar soli mineralnych i dwutlenek węgla.",
+    "rubric": "2 pkt: poprawna definicja wydalania i dwa różne trafne przykłady; akceptuj dowolne dwa z wymienionych. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-007",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Wyjaśnij, dlaczego ruch nie musi oznaczać przemieszczania całego organizmu. Podaj przykład ruchu zwierzęcia i rośliny.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Wyjaśnienie pojęcia ruchu"
+      },
+      {
+        "key": "part2",
+        "label": "Przykład u zwierzęcia"
+      },
+      {
+        "key": "part3",
+        "label": "Przykład u rośliny"
+      }
+    ],
+    "answer": "Ruch to zmiana położenia całego ciała lub jego części. Panda może biegać lub wspinać się na drzewo. U roślin liście i łodyga mogą zwracać się w stronę światła.",
+    "rubric": "2 pkt: wyjaśnienie ruchu części ciała oraz poprawne przykłady dla zwierzęcia i rośliny. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-008",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Porównaj wzrost i rozwój organizmu. Wyjaśnij na przykładzie pandy, dlaczego zwiększenie masy i osiągnięcie dojrzałości opisują różne zmiany.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Wzrost"
+      },
+      {
+        "key": "part2",
+        "label": "Rozwój"
+      },
+      {
+        "key": "part3",
+        "label": "Przykład pandy"
+      }
+    ],
+    "answer": "Wzrost oznacza zwiększanie rozmiarów i masy ciała. Rozwój obejmuje zmiany wyglądu i sposobu funkcjonowania. Zwiększenie masy pandy jest wzrostem, a osiągnięcie dojrzałości płciowej — zmianą związaną z rozwojem.",
+    "rubric": "2 pkt: rozróżnienie wzrostu i rozwoju oraz poprawne przypisanie zmian u pandy; nie wymagaj wartości masy. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-009",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Wyjaśnij, co daje organizmom reagowanie na bodźce. Wybierz przykład dotyczący pandy i wskaż w nim bodziec oraz reakcję.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Znaczenie reagowania na bodźce"
+      },
+      {
+        "key": "part2",
+        "label": "Bodziec"
+      },
+      {
+        "key": "part3",
+        "label": "Reakcja pandy"
+      }
+    ],
+    "answer": "Reakcje na bodźce pomagają organizmom dostosowywać się do zmian w środowisku. Przykładowo zapach lub dźwięk drapieżnika jest bodźcem, a oddalenie się pandy od zagrożenia może być reakcją.",
+    "rubric": "2 pkt: znaczenie reakcji na zmiany otoczenia oraz spójne rozróżnienie bodźca i reakcji; akceptuj inne sensowne przykłady. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-010",
+    "kind": "open",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Wyjaśnij, czym jest rozmnażanie się. Podaj, jakie komórki uczestniczą w rozmnażaniu płciowym i czy jest to jedyny sposób rozmnażania organizmów.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Na czym polega rozmnażanie?"
+      },
+      {
+        "key": "part2",
+        "label": "Komórki w rozmnażaniu płciowym"
+      },
+      {
+        "key": "part3",
+        "label": "Inny sposób rozmnażania"
+      }
+    ],
+    "answer": "Rozmnażanie oznacza wydawanie potomstwa. W rozmnażaniu płciowym uczestniczą męskie i żeńskie komórki rozrodcze. Niektóre organizmy rozmnażają się bezpłciowo, więc rozmnażanie płciowe nie jest jedynym sposobem.",
+    "rubric": "2 pkt: definicja rozmnażania, wskazanie obu rodzajów komórek rozrodczych i istnienia rozmnażania bezpłciowego. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-011",
+    "kind": "open",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcie 4",
+    "text": "Wyjaśnij, czym różni się tkanka od narządu. Podaj przykład tkanki i narządu pokazanych w podręczniku.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Tkanka i jej przykład"
+      },
+      {
+        "key": "part2",
+        "label": "Narząd i jego przykład"
+      }
+    ],
+    "answer": "Tkanka to grupa podobnych komórek wykonujących określone zadania, np. tkanka mięśniowa. Narząd jest zbudowany z tkanek pełniących określone funkcje, np. serce.",
+    "rubric": "2 pkt: poprawne odróżnienie tkanki od narządu oraz przykłady; akceptuj także tkankę miękiszową i liść jako organ. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-012",
+    "kind": "open",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcie 4",
+    "text": "Porównaj poziomy budowy rośliny i zwierzęcia. Zapisz obie kolejności od komórki do organizmu oraz podaj przykład organu rośliny i narządu zwierzęcia.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Kolejność u rośliny"
+      },
+      {
+        "key": "part2",
+        "label": "Kolejność u zwierzęcia"
+      },
+      {
+        "key": "part3",
+        "label": "Przykłady organu i narządu"
+      }
+    ],
+    "answer": "Roślina: komórka → tkanka → organ → system organów → organizm. Zwierzę: komórka → tkanka → narząd → układ narządów → organizm. Przykłady: liść u rośliny, serce u zwierzęcia.",
+    "rubric": "2 pkt: dwie poprawne kolejności i odpowiednie przykłady; akceptuj użycie słowa narząd jako synonimu organu. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-013",
+    "kind": "open",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcie 4",
+    "text": "Wyjaśnij, czym jest układ narządów i dlaczego jego elementy muszą współpracować. Wykorzystaj przykład układu krwionośnego z ilustracji.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Czym jest układ narządów?"
+      },
+      {
+        "key": "part2",
+        "label": "Elementy układu krwionośnego"
+      },
+      {
+        "key": "part3",
+        "label": "Znaczenie współpracy"
+      }
+    ],
+    "answer": "Układ tworzą narządy uczestniczące we wspólnych czynnościach życiowych. Na ilustracji układ krwionośny obejmuje serce i naczynia krwionośne. Ich współpraca umożliwia przepływ krwi i działanie układu.",
+    "rubric": "2 pkt: wyjaśnienie układu, wskazanie serca i naczyń oraz sens współpracy; nie wymagaj szczegółowej fizjologii krążenia. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-014",
+    "kind": "open",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcia 1 i 4",
+    "text": "Dlaczego komórkę nazywamy podstawową jednostką budowy organizmów? Wyjaśnij, jak to stwierdzenie odnosi się do organizmu jedno- i wielokomórkowego.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Dlaczego komórka jest jednostką podstawową?"
+      },
+      {
+        "key": "part2",
+        "label": "Organizm jednokomórkowy"
+      },
+      {
+        "key": "part3",
+        "label": "Organizm wielokomórkowy"
+      }
+    ],
+    "answer": "Wszystkie organizmy są zbudowane z komórek. U jednokomórkowych jedna komórka tworzy cały organizm i wykonuje czynności życiowe. U wielokomórkowych organizm składa się z wielu komórek, które współpracują.",
+    "rubric": "2 pkt: budowa komórkowa wszystkich organizmów oraz poprawny opis obu typów; akceptuj przykłady drożdży i sekwoi. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-015",
+    "kind": "open",
+    "topic": "Obserwacja i doświadczenie",
+    "source": "Zdjęcie 6",
+    "text": "Porównaj obserwację i doświadczenie. Podaj po jednym przykładzie badania każdego rodzaju.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Obserwacja i przykład"
+      },
+      {
+        "key": "part2",
+        "label": "Doświadczenie i przykład"
+      }
+    ],
+    "answer": "W obserwacji przyglądamy się organizmom lub procesom bez celowej ingerencji, np. obserwujemy bociany. W doświadczeniu zmieniamy badany czynnik, np. podlewamy jedną grupę fasoli większą ilością wody i porównujemy jej wzrost z drugą grupą.",
+    "rubric": "2 pkt: rozróżnienie braku ingerencji i celowej zmiany czynnika oraz dwa właściwie przypisane przykłady. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-016",
+    "kind": "open",
+    "topic": "Metoda naukowa",
+    "source": "Zdjęcie 7",
+    "text": "Wyjaśnij różnicę między problemem badawczym a hipotezą. Ułóż pasującą do siebie parę dotyczącą dojrzewania bananów w obecności jabłek.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Różnica między pojęciami"
+      },
+      {
+        "key": "part2",
+        "label": "Problem badawczy"
+      },
+      {
+        "key": "part3",
+        "label": "Hipoteza"
+      }
+    ],
+    "answer": "Problem badawczy jest pytaniem, a hipoteza — proponowaną odpowiedzią, którą można sprawdzić. Problem: Czy jabłka przyspieszają dojrzewanie bananów? Hipoteza: Banany przechowywane z jabłkami dojrzewają szybciej.",
+    "rubric": "2 pkt: poprawne rozróżnienie i spójna para pytanie–hipoteza; akceptuj też sprawdzalną hipotezę o braku wpływu. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-017",
+    "kind": "open",
+    "topic": "Planowanie doświadczeń",
+    "source": "Zdjęcie 6",
+    "text": "Chcesz zbadać wpływ ilości wody na wzrost fasoli. Opisz próbę badawczą, próbę kontrolną i dwa warunki, które powinny być w obu próbach takie same.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Próba badawcza"
+      },
+      {
+        "key": "part2",
+        "label": "Próba kontrolna"
+      },
+      {
+        "key": "part3",
+        "label": "Dwa wspólne warunki"
+      }
+    ],
+    "answer": "W próbie badawczej podlewamy fasolę większą ilością wody niż w próbie kontrolnej. W kontrolnej nie zwiększamy ilości wody. Takie same powinny być np. gatunek i początkowa wielkość roślin, gleba, oświetlenie, temperatura oraz czas badania.",
+    "rubric": "2 pkt: dwie próby różniące się ilością wody i dwa trafne warunki stałe; akceptuj inną rozsądną zmianę ilości wody. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-018",
+    "kind": "open",
+    "topic": "Planowanie doświadczeń",
+    "source": "Zdjęcia 6 i 9",
+    "text": "Uczeń jedną fasolę podlewa częściej i trzyma w świetle, a drugą rzadziej i w ciemności. Chce sprawdzić wyłącznie wpływ wody. Wyjaśnij błąd i zaproponuj poprawę.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Na czym polega błąd?"
+      },
+      {
+        "key": "part2",
+        "label": "Jak poprawić doświadczenie?"
+      }
+    ],
+    "answer": "Uczeń zmienia jednocześnie ilość wody i dostęp do światła, więc nie może stwierdzić, który czynnik wpłynął na wynik. Powinien zapewnić obu roślinom takie samo światło i pozostałe warunki, zmieniając tylko ilość wody.",
+    "rubric": "2 pkt: wskazanie dwóch zmienianych czynników i poprawa polegająca na pozostawieniu wyłącznie różnicy w ilości wody. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-019",
+    "kind": "open",
+    "topic": "Metoda naukowa",
+    "source": "Zdjęcie 7",
+    "text": "Po pięciu dniach banany z jabłkami były ciemnożółte z brązowymi plamami, a banany bez jabłek jasnożółte bez plam. Zapisz wynik porównania i wniosek. Wyjaśnij różnicę między wynikiem a wnioskiem.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Wynik porównania"
+      },
+      {
+        "key": "part2",
+        "label": "Wniosek"
+      },
+      {
+        "key": "part3",
+        "label": "Różnica między wynikiem a wnioskiem"
+      }
+    ],
+    "answer": "Wynik: banany w obu próbach różniły się kolorem i obecnością plam; te z jabłkami były ciemniejsze i miały plamy. Wniosek: obecność jabłek przyspiesza dojrzewanie bananów. Wynik opisuje to, co zaobserwowano, a wniosek odpowiada na problem badawczy na podstawie wyników.",
+    "rubric": "2 pkt: poprawne opisanie danych, wyciągnięcie uzasadnionego wniosku i rozróżnienie obu pojęć. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-020",
+    "kind": "open",
+    "topic": "Metoda naukowa",
+    "source": "Zdjęcia 7 i 15",
+    "text": "Wyjaśnij, co powinien zrobić badacz, gdy wyniki nie potwierdzają jego hipotezy. Napisz, dlaczego nie powinien poprawiać wyników tak, aby pasowały do oczekiwań.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Postępowanie z hipotezą"
+      },
+      {
+        "key": "part2",
+        "label": "Dlaczego nie wolno zmieniać wyników?"
+      }
+    ],
+    "answer": "Badacz powinien oprzeć wniosek na rzeczywistych wynikach i odrzucić hipotezę, jeżeli wyniki jej przeczą. Zmienianie danych byłoby nierzetelne i prowadziłoby do nieprawdziwego wniosku. Wyniki niejednoznaczne nie pozwalają uznać hipotezy za potwierdzoną.",
+    "rubric": "2 pkt: oparcie wniosku na wynikach oraz wyjaśnienie znaczenia rzetelnego zapisu; akceptuj wskazanie potrzeby powtórzenia badania przy niejednoznaczności. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-021",
+    "kind": "open",
+    "topic": "Metoda naukowa",
+    "source": "Zdjęcia 7, 9 i 15",
+    "text": "Wymień w kolejności główne etapy metody naukowej. Wyjaśnij, co robimy podczas analizy wyników i na jakiej podstawie formułujemy wniosek.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Kolejność etapów"
+      },
+      {
+        "key": "part2",
+        "label": "Analiza wyników"
+      },
+      {
+        "key": "part3",
+        "label": "Podstawa wniosku"
+      }
+    ],
+    "answer": "Obserwacja → problem badawczy → hipoteza → zaplanowanie i przeprowadzenie doświadczenia → analiza wyników → wniosek. Analizując wyniki, porównujemy rezultaty obu prób. Wniosek wynika z danych i pozwala potwierdzić lub odrzucić hipotezę.",
+    "rubric": "2 pkt: poprawna kolejność sześciu etapów oraz opis porównywania wyników i oparcia wniosku na danych. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-022",
+    "kind": "open",
+    "topic": "Praca badacza",
+    "source": "Zdjęcia 6 i 8",
+    "text": "Zaplanuj obserwowanie ptaków przy gnieździe tak, aby okazać szacunek przyrodzie. Podaj dwie zasady postępowania i sposób dokumentowania obserwacji.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Pierwsza zasada"
+      },
+      {
+        "key": "part2",
+        "label": "Druga zasada"
+      },
+      {
+        "key": "part3",
+        "label": "Dokumentowanie"
+      }
+    ],
+    "answer": "Należy obserwować z oddalenia i zachowywać ciszę, aby nie płoszyć ptaków. Nie wolno uszkadzać roślin ani gniazda. Można użyć lornetki, zapisywać obserwacje, wykonywać rysunki lub zdjęcia bez niepokojenia zwierząt.",
+    "rubric": "2 pkt: dwie sensowne zasady ograniczające ingerencję oraz sposób dokumentowania bez zakłócania zachowania ptaków. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-023",
+    "kind": "open",
+    "topic": "Praca badacza",
+    "source": "Zdjęcie 8",
+    "text": "Wybierz cztery cechy dobrego badacza wymienione w podręczniku. Przy każdej wyjaśnij, jak powinna przejawiać się podczas badań.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Pierwsza cecha i zachowanie"
+      },
+      {
+        "key": "part2",
+        "label": "Druga cecha i zachowanie"
+      },
+      {
+        "key": "part3",
+        "label": "Trzecia cecha i zachowanie"
+      },
+      {
+        "key": "part4",
+        "label": "Czwarta cecha i zachowanie"
+      }
+    ],
+    "answer": "Przykłady: szacunek dla przyrody — niepłoszenie zwierząt; ostrożność — ochrona skóry i oczu; cierpliwość — wykonywanie długich badań i powtórzeń; systematyczność — regularne zapisywanie wyników; rzetelność — dokładne prowadzenie i dokumentowanie badań.",
+    "rubric": "2 pkt: cztery różne cechy spośród pięciu wymienionych i właściwe objaśnienia; 1 pkt za częściowo poprawny zestaw. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-024",
+    "kind": "open",
+    "topic": "Źródła wiedzy biologicznej",
+    "source": "Zdjęcie 8",
+    "text": "Podaj trzy źródła wiedzy biologicznej inne niż własne obserwacje i doświadczenia. Wyjaśnij, do czego każde z nich może się przydać.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Pierwsze źródło i zastosowanie"
+      },
+      {
+        "key": "part2",
+        "label": "Drugie źródło i zastosowanie"
+      },
+      {
+        "key": "part3",
+        "label": "Trzecie źródło i zastosowanie"
+      }
+    ],
+    "answer": "Przewodnik lub atlas pomaga rozpoznawać organizmy. Książka lub czasopismo popularnonaukowe objaśnia zagadnienia biologiczne. Film przyrodniczy pokazuje organizmy i ich zachowania. Można też korzystać z edukacyjnych stron internetowych, muzeów i ogrodów botanicznych lub zoologicznych.",
+    "rubric": "2 pkt: trzy różne wiarygodne źródła wiedzy biologicznej oraz sensowne zastosowanie każdego; akceptuj inne trafne kombinacje. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-025",
+    "kind": "open",
+    "topic": "Budowa mikroskopu",
+    "source": "Zdjęcie 10",
+    "text": "Wymień trzy części mikroskopu optycznego i opisz funkcję każdej z nich.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Pierwsza część i funkcja"
+      },
+      {
+        "key": "part2",
+        "label": "Druga część i funkcja"
+      },
+      {
+        "key": "part3",
+        "label": "Trzecia część i funkcja"
+      }
+    ],
+    "answer": "Przykłady: okular powiększa obraz wytworzony przez obiektyw; obiektyw powiększa obraz oglądanego przedmiotu; stolik podtrzymuje preparat. Inne poprawne przykłady: rewolwer zmienia obiektyw, źródło światła oświetla obiekt, śruby regulują ostrość, tubus mieści okular.",
+    "rubric": "2 pkt: trzy różne części i poprawne funkcje; 1 pkt za jedną lub dwie poprawne pary albo częściowe opisy. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-026",
+    "kind": "open",
+    "topic": "Powiększenie mikroskopu",
+    "source": "Zdjęcia 12 i 15",
+    "text": "Podaj zasadę obliczania powiększenia mikroskopu. Oblicz je dla okularu 10× i obiektywu 20× oraz dla okularu 15× i obiektywu 10×. Pokaż działania.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Zasada obliczania"
+      },
+      {
+        "key": "part2",
+        "label": "Okular 10× i obiektyw 20×"
+      },
+      {
+        "key": "part3",
+        "label": "Okular 15× i obiektyw 10×"
+      }
+    ],
+    "answer": "Mnożymy powiększenie okularu przez powiększenie obiektywu. Pierwszy zestaw: 10 × 20 = 200 razy. Drugi zestaw: 15 × 10 = 150 razy.",
+    "rubric": "2 pkt: poprawna zasada, oba działania i wyniki; 1 pkt za częściowo poprawne obliczenia lub poprawną zasadę z błędem rachunkowym. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
+    "id": "bio-open-027",
+    "kind": "open",
+    "topic": "Praca z mikroskopem",
+    "source": "Zdjęcie 12",
+    "text": "Opisz rozpoczęcie obserwacji gotowego preparatu pod mikroskopem: wybór obiektywu, oświetlenie, ustawienie preparatu i uzyskanie ostrego obrazu. Podaj zasadę ostrożności przy zbliżaniu obiektywu.",
+    "fields": [
+      {
+        "key": "part1",
+        "label": "Obiektyw i oświetlenie"
+      },
+      {
+        "key": "part2",
+        "label": "Ustawienie preparatu"
+      },
+      {
+        "key": "part3",
+        "label": "Ostrość i ostrożność"
+      }
+    ],
+    "answer": "Wybieramy obiektyw o najmniejszym powiększeniu i oświetlamy pole widzenia. Preparat ustawiamy na stoliku tak, aby obiekt był w polu widzenia. Ostrożnie zbliżamy obiektyw, nie dotykając preparatu, i regulujemy ostrość śrubami makrometryczną oraz mikrometryczną. Powiększenie zwiększamy stopniowo.",
+    "rubric": "2 pkt: najmniejsze powiększenie na początku, oświetlenie, preparat na stoliku, regulacja ostrości i unikanie dotknięcia preparatu obiektywem. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru."
+  },
+  {
     "id": "bio-098",
     "kind": "open",
     "topic": "Poziomy budowy organizmów",
@@ -1575,7 +1771,7 @@ const bank=[
     "rubric": "2 pkt: poprawna kolejność głównych etapów przygotowania, rozpoczęcie od najmniejszego powiększenia, zachowanie odstępu obiektywu od preparatu i poprawne działanie 10 × 40 = 400. 1 pkt: odpowiedź częściowo poprawna, z brakami lub błędem w jednym z obszarów. 0 pkt: brak poprawnego opisu i poprawnego obliczenia. Nie wymagaj dosłownego odtworzenia wzoru ani kompletnej listy drobnych narzędzi."
   }
 ];
-let session=[],index=0,answers=[],orderState=[],dragFrom=-1,playerNickname='';
+let session=[],index=0,answers=[],orderState=[],dragFrom=-1,playerNickname='',sessionVersion=0,gradePending=false,finished=false;
 const $=id=>document.getElementById(id);
 playerNickname=localStorage.getItem('bioQuizNickname')||'';$('nickname').value=playerNickname;
 const AI_API_URL='https://chlopcy-quiz-ai.sochagrzegorz.workers.dev/grade';
@@ -1586,7 +1782,7 @@ const norm=s=>(s||'').toLocaleLowerCase('pl').normalize('NFD').replace(/[\u0300-
 function shuffle(list){const a=list.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
 function makeOptions(q){return shuffle(q.choices)}
-function start(){playerNickname=$('nickname').value.trim().slice(0,24);$('nickname').value=playerNickname;if(!playerNickname){const input=$('nickname'),error=$('nicknameError');error.textContent='Wpisz pseudonim, aby rozpocząć quiz.';error.hidden=false;input.focus();return}$('nicknameError').hidden=true;localStorage.setItem('bioQuizNickname',playerNickname);const open=bank.filter(q=>q.kind==='open'),choice=shuffle(bank.filter(q=>q.kind==='choice')).slice(0,7);session=shuffle([...open,...choice]);session.forEach(q=>{if(q.kind==='choice')q.options=makeOptions(q)});index=0;answers=Array(10).fill(null);orderState=[];renderQ();show('play')}
+function start(){playerNickname=$('nickname').value.trim().slice(0,24);$('nickname').value=playerNickname;if(!playerNickname){const input=$('nickname'),error=$('nicknameError');error.textContent='Wpisz pseudonim, aby rozpocząć quiz.';error.hidden=false;input.focus();return}$('nicknameError').hidden=true;localStorage.setItem('bioQuizNickname',playerNickname);sessionVersion++;gradePending=false;finished=false;const open=shuffle(bank.filter(q=>q.kind==='open')).slice(0,3),choice=shuffle(bank.filter(q=>q.kind==='choice')).slice(0,7);session=shuffle([...open,...choice]);session.forEach(q=>{if(q.kind==='choice')q.options=makeOptions(q)});index=0;answers=Array(10).fill(null);orderState=[];renderQ();show('play')}
 function renderQ(){
  const q=session[index],old=answers[index],score=answers.reduce((sum,a)=>sum+(a&&Number.isInteger(a.points)?a.points:a&&a.correct?1:0),0),max=10+session.filter(item=>item.kind==='open').length;$('roundTitle').textContent=q.topic;$('scorePill').textContent='Wynik: '+score+'/'+max+' pkt';$('progressText').textContent='Pytanie '+(index+1)+' z 10';$('roundPct').textContent=Math.round(index/10*100)+'%';$('bar').style.width=Math.round(index/10*100)+'%';$('qText').textContent=q.text;
  $('qType').textContent=q.kind==='choice'?'Wybierz jedną odpowiedź':'Odpowiedz własnymi słowami';
@@ -1594,10 +1790,10 @@ function renderQ(){
  if(q.kind==='choice'){
   const options=document.createElement('div');options.className='choice-options';q.options.forEach(option=>{const b=document.createElement('button');b.type='button';const checked=old&&old.checked,choiceState=checked?(norm(option)===norm(q.answer)?' correct':norm(option)===norm(old.value)?' wrong':''):'';b.className='choice-option'+(old&&norm(old.value)===norm(option)?' selected':'')+choiceState;b.disabled=!!checked;b.textContent=option;b.onclick=()=>{answers[index]={value:option};options.querySelectorAll('.choice-option').forEach(button=>button.classList.toggle('selected',button===b));$('checkBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};options.appendChild(b)});area.appendChild(options)
  }else{
-  if(q.fields){const fields=document.createElement('div');fields.className='open-fields';q.fields.forEach((field,i)=>{const wrap=document.createElement('div'),label=document.createElement('label'),input=document.createElement('textarea');wrap.className='open-field';label.htmlFor='openField'+i;label.textContent=field.label;input.className='answer';input.id='openField'+i;input.maxLength=250;input.rows=2;input.placeholder='Wpisz odpowiedź: '+field.label.toLocaleLowerCase('pl');input.value=old&&old.value&&typeof old.value==='object'?(old.value[field.key]||''):'';input.oninput=()=>{const value={};q.fields.forEach((item,j)=>value[item.key]=$('openField'+j).value);answers[index]={value};$('revealBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};wrap.append(label,input);fields.appendChild(wrap)});area.appendChild(fields)}
-  else{const input=document.createElement('textarea');input.className='answer';input.rows=3;input.placeholder='Wpisz swoją odpowiedź…';input.value=old&&old.value&&typeof old.value==='string'?old.value:'';input.id='userAnswer';input.oninput=()=>{answers[index]={value:input.value};$('revealBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};area.appendChild(input)}
+  if(q.fields){const fields=document.createElement('div');fields.className='open-fields';q.fields.forEach((field,i)=>{const wrap=document.createElement('div'),label=document.createElement('label'),input=document.createElement('textarea');wrap.className='open-field';label.htmlFor='openField'+i;label.textContent=field.label;input.className='answer';input.id='openField'+i;input.maxLength=250;input.disabled=!!(old&&old.checked);input.rows=2;input.placeholder='Wpisz odpowiedź: '+field.label.toLocaleLowerCase('pl');input.value=old&&old.value&&typeof old.value==='object'?(old.value[field.key]||''):'';input.oninput=()=>{const value={};q.fields.forEach((item,j)=>value[item.key]=$('openField'+j).value);answers[index]={value};$('revealBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};wrap.append(label,input);fields.appendChild(wrap)});area.appendChild(fields)}
+  else{const input=document.createElement('textarea');input.className='answer';input.rows=3;input.placeholder='Wpisz swoją odpowiedź…';input.value=old&&old.value&&typeof old.value==='string'?old.value:'';input.id='userAnswer';input.maxLength=1800;input.disabled=!!(old&&old.checked);input.oninput=()=>{answers[index]={value:input.value};$('revealBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};area.appendChild(input)}
  }
- $('feedback').className='feedback';$('feedback').innerHTML='';$('checkBtn').classList.toggle('hidden',q.kind==='open'||!!(old&&old.checked));$('revealBtn').classList.toggle('hidden',q.kind!=='open'||!!(old&&old.checked));$('revealBtn').disabled=false;$('revealBtn').textContent='Oceń odpowiedź AI';$('nextBtn').classList.toggle('hidden',!(old&&old.checked));$('nextBtn').textContent=index===9?'Zobacz wynik →':'Dalej →';$('prevBtn').textContent='← Poprzednie pytanie';$('prevBtn').disabled=index===0;$('prevBtn').style.opacity=index===0?'.45':'1';if(old&&old.checked)paintFeedback(q,old)
+ $('feedback').className='feedback';$('feedback').innerHTML='';$('checkBtn').classList.toggle('hidden',q.kind==='open'||!!(old&&old.checked));$('revealBtn').classList.toggle('hidden',q.kind!=='open'||!!(old&&old.checked));$('revealBtn').disabled=false;$('revealBtn').textContent='Oceń odpowiedź AI';$('nextBtn').classList.toggle('hidden',!(old&&old.checked));$('nextBtn').textContent=index===9?'Zobacz wynik →':'Dalej →';if(old&&old.checked)paintFeedback(q,old)
 }
 function renderOrder(locked){
  const area=$('inputArea'),hint=document.createElement('div'),list=document.createElement('ol');hint.className='order-hint';hint.textContent='Przeciągnij elementy, aby zmienić kolejność. Na telefonie możesz użyć strzałek.';list.className='order-list';list.id='orderList';area.append(hint,list);
@@ -1607,7 +1803,7 @@ function renderOrder(locked){
 }
 function moveOrder(from,to){if(to<0||to>=orderState.length)return;const moved=orderState.splice(from,1)[0];orderState.splice(to,0,moved);answers[index]={value:orderState.slice()};$('checkBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback';renderOrder(false)}
 function check(value){
- const q=session[index];if(value===undefined&&q.kind==='choice')value=answers[index]&&answers[index].value;if(value===undefined)value=$('userAnswer')?$('userAnswer').value:'';
+ const q=session[index];if(!q||finished||answers[index]?.checked)return;if(value===undefined&&q.kind==='choice')value=answers[index]&&answers[index].value;if(value===undefined)value=$('userAnswer')?$('userAnswer').value:'';
  if(!String(value).trim()){$('feedback').className='feedback show bad';$('feedback').textContent='Wpisz odpowiedź, a potem ją sprawdź.';return}
  if(q.kind==='open')return;
  let correct=norm(value)===norm(q.answer);
@@ -1641,12 +1837,40 @@ function paintFeedback(q,a){
  }else if(a.correct){f.textContent='Dobrze! Odpowiedź jest poprawna.'}
  else{const title=document.createElement('strong');title.textContent='Ta odpowiedź jest błędna. ';const chosen=Array.isArray(a.value)?a.value.join(' → '):String(a.value||'');const selected=document.createElement('div');selected.style.marginTop='4px';selected.textContent='Twoja odpowiedź: '+chosen;const correct=document.createElement('div');correct.style.marginTop='8px';const label=document.createElement('strong');label.textContent='Poprawna odpowiedź: ';correct.append(label,document.createTextNode(q.answer));const explanation=document.createElement('div');explanation.className='ai-explanation';explanation.id='aiChoiceExplanation';explanation.textContent=explainWrong(q);f.append(title,selected,correct,explanation)}
 }
-async function gradeOpen(){const q=session[index],button=$('revealBtn'),f=$('feedback');let value,savedValue;if(q.fields){const fields={};q.fields.forEach((field,i)=>fields[field.key]=$('openField'+i).value.trim());if(q.fields.some(field=>!fields[field.key])){f.className='feedback show bad';f.textContent='Uzupełnij każde pole, zanim poprosisz AI o ocenę.';return}savedValue=fields;value=q.fields.map(field=>field.label+': '+fields[field.key]).join('\n')}else{value=$('userAnswer').value.trim();savedValue=value}if(value.replace(/[^\p{L}\p{N}]/gu,'').length<2){f.className='feedback show bad';f.textContent='Wpisz odpowiedź, zanim poprosisz AI o ocenę.';return}if(location.protocol==='file:'){f.className='feedback show bad';f.textContent='Ocena AI nie działa w lokalnie otwartym pliku. Otwórz quiz na stronie GitHub Pages po scaleniu PR-a i wdrożeniu Workera w Cloudflare.';return}button.disabled=true;button.textContent='AI ocenia…';f.className='feedback show';f.textContent='Trwa ocenianie odpowiedzi…';try{const id='bio-'+index,res=await fetch(BIOLOGY_GRADE_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,question:q.text,answer:value,expected_answer:q.answer+(q.rubric?'\nKryteria oceniania: '+q.rubric:'')})}),data=await res.json().catch(()=>({}));if(!res.ok)throw new Error(data.error||'Błąd API ('+res.status+')');if(!Array.isArray(data.results)||data.results.length!==1||data.results[0].id!==id||!Number.isInteger(data.results[0].score))throw new Error('AI zwróciło niepełną ocenę.');const grade=data.results[0];answers[index]={value:savedValue,checked:true,rated:true,points:grade.score,correct:grade.score>0,aiFeedback:grade.feedback};renderQ()}catch(error){f.className='feedback show bad';f.textContent='Nie udało się uzyskać oceny AI. Sprawdź połączenie i konfigurację Workera. '+error.message;button.disabled=false;button.textContent='Spróbuj ponownie z AI'}}
-function next(){if(index<9){index++;renderQ()}else finish()}
-async function renderRankings(){const hosts=['rankHome','rankResult'].map($).filter(Boolean);hosts.forEach(host=>host.textContent='Pobieranie rankingu…');try{const response=await fetch(LEADERBOARD_API_URL,{headers:{'Accept':'application/json'}}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');const rows=Array.isArray(data.entries)?data.entries.slice(0,10):[];hosts.forEach(host=>{host.replaceChildren();if(!rows.length){host.textContent='Brak wyników. Zagraj, aby pojawić się w rankingu.';return}const list=document.createElement('ol');list.className='ranking';rows.forEach((row,i)=>{const item=document.createElement('li'),place=document.createElement('span'),name=document.createElement('span'),score=document.createElement('span');place.className='rank-number';place.textContent=String(i+1)+'.';name.className='rank-name';name.textContent=row.nickname||'Uczeń';score.className='rank-score';score.textContent=(row.points??0)+'/'+(row.maxPoints??0)+' pkt';item.append(place,name,score);list.appendChild(item)});host.appendChild(list)})}catch(error){hosts.forEach(host=>host.textContent='Ranking w chmurze jest chwilowo niedostępny. '+error.message)}}
+async function gradeOpen(){
+ const q=session[index],questionIndex=index,version=sessionVersion;
+ if(!q||q.kind!=='open'||finished||gradePending||answers[index]?.checked)return;
+ const button=$('revealBtn'),f=$('feedback');
+ let value,savedValue;
+ if(q.fields){
+  const fields={};q.fields.forEach((field,i)=>fields[field.key]=$('openField'+i).value.trim());
+  if(!Object.values(fields).some(text=>/[\p{L}\p{N}]/u.test(text))){f.className='feedback show bad';f.textContent='Wpisz odpowiedź przynajmniej w jednym polu. Niepełna odpowiedź może otrzymać część punktów.';return}
+  savedValue=fields;value=q.fields.map(field=>field.label+': '+(fields[field.key]||'[brak odpowiedzi]')).join('\n');
+ }else{value=$('userAnswer').value.trim();savedValue=value;if(!value){f.className='feedback show bad';f.textContent='Wpisz odpowiedź przed oceną.';return}}
+ if(location.protocol==='file:'){f.className='feedback show bad';f.textContent='Ocenianie AI działa na opublikowanej stronie quizu. Otwórz https://sochagrzegorz.github.io/quiz/biologia/';return}
+ const controls=[...$('inputArea').querySelectorAll('textarea')];
+ gradePending=true;controls.forEach(input=>input.disabled=true);button.disabled=true;button.textContent='AI ocenia…';f.className='feedback show';f.textContent='Trwa ocenianie odpowiedzi…';
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),45000);
+ const stillCurrent=()=>version===sessionVersion&&index===questionIndex&&session[index]===q;
+ try{
+  const id=q.id,res=await fetch(BIOLOGY_GRADE_API_URL,{method:'POST',signal:controller.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify({id,question:q.text,answer:value,expected_answer:q.answer+(q.rubric?'\nKryteria oceniania: '+q.rubric:'')})}),data=await res.json().catch(()=>({}));
+  if(!stillCurrent())return;
+  if(!res.ok)throw new Error(data.error||'Błąd API ('+res.status+')');
+  const grade=data.results?.[0];
+  if(!Array.isArray(data.results)||data.results.length!==1||grade.id!==id||!Number.isInteger(grade.score)||grade.score<0||grade.score>2||typeof grade.feedback!=='string'||!grade.feedback.trim())throw new Error('AI zwróciło niepełną ocenę.');
+  answers[questionIndex]={value:savedValue,checked:true,rated:true,points:grade.score,correct:grade.score>0,aiFeedback:grade.feedback};
+  gradePending=false;renderQ();
+ }catch(error){
+  if(!stillCurrent())return;
+  f.className='feedback show bad';f.textContent=error.name==='AbortError'?'Ocenianie trwało zbyt długo. Twoja odpowiedź jest zachowana — spróbuj ponownie.':'Nie udało się uzyskać oceny AI. '+error.message;
+  controls.forEach(input=>input.disabled=false);button.disabled=false;button.textContent='Spróbuj ponownie z AI';
+ }finally{clearTimeout(timeout);if(stillCurrent())gradePending=false}
+}
+function next(){if(finished||gradePending||!answers[index]?.checked)return;if(index<9){index++;renderQ()}else finish()}
+async function renderRankings(){const hosts=['rankHome','rankResult'].map($).filter(Boolean);hosts.forEach(host=>host.textContent='Pobieranie rankingu…');try{const response=await fetch(LEADERBOARD_API_URL+'?quiz=biologia',{headers:{'Accept':'application/json'}}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');const rows=Array.isArray(data.entries)?data.entries.slice(0,10):[];hosts.forEach(host=>{host.replaceChildren();if(!rows.length){host.textContent='Brak wyników. Zagraj, aby pojawić się w rankingu.';return}const list=document.createElement('ol');list.className='ranking';rows.forEach((row,i)=>{const item=document.createElement('li'),place=document.createElement('span'),name=document.createElement('span'),score=document.createElement('span');place.className='rank-number';place.textContent=String(i+1)+'.';name.className='rank-name';name.textContent=row.nickname||'Uczeń';score.className='rank-score';score.textContent=(row.points??0)+'/'+(row.maxPoints??0)+' pkt';item.append(place,name,score);list.appendChild(item)});host.appendChild(list)})}catch(error){hosts.forEach(host=>host.textContent='Ranking w chmurze jest chwilowo niedostępny. '+error.message)}}
 async function recordRanking(score,max){if(!playerNickname){$('rankingStatus').textContent='Wpisz pseudonim na stronie startowej, aby zapisać wynik w rankingu.';return}try{const response=await fetch(LEADERBOARD_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nickname:playerNickname,quiz:"biologia",points:score,maxPoints:max})}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');$('rankingStatus').textContent=data.saved?'Wynik zapisany w rankingu w chmurze.':'Twój lepszy wynik jest już zapisany w rankingu.';await renderRankings()}catch(error){$('rankingStatus').textContent='Nie udało się zapisać wyniku w chmurze. '+error.message}}
-function finish(){const score=answers.reduce((sum,a)=>sum+(a&&Number.isInteger(a.points)?a.points:a&&a.correct?1:0),0),max=10+session.filter(q=>q.kind==='open').length;localStorage.setItem('bioQuizLastScore',String(score));localStorage.setItem('bioQuizRuns',String(Number(localStorage.getItem('bioQuizRuns')||0)+1));$('bar').style.width='100%';$('resultTitle').textContent=score>=max*.8?'Świetna robota!':score>=max*.5?'Dobra praca!':'Warto powtórzyć';$('playerName').textContent=playerNickname?'Wynik dla: '+playerNickname:'';$('resultScore').textContent=score+'/'+max+' pkt';$('resultMessage').textContent=score>=max*.8?'Bardzo dobrze opanowujesz materiał.':score>=max*.5?'Masz już solidną bazę — spróbuj kolejnego losowania.':'Przejrzyj odpowiedzi i spróbuj jeszcze raz.';$('correctStat').textContent=score+' / '+max;$('openStat').textContent=answers.filter(a=>a&&a.rated).length;$('rankingStatus').textContent=playerNickname?'Zapisywanie wyniku w rankingu…':'';show('result');recordRanking(score,max)}
-function home(){show('home')}
-$('startBtn').onclick=start;$('nickname').addEventListener('input',()=>{$('nicknameError').hidden=true});$('homeBtn').onclick=home;$('resultHomeBtn').onclick=home;$('nextRoundBtn').onclick=start;$('checkBtn').onclick=()=>check();$('revealBtn').onclick=gradeOpen;$('nextBtn').onclick=next;$('prevBtn').onclick=()=>{if(index>0){index--;renderQ()}};renderRankings();document.addEventListener('keydown',e=>{if(e.key==='Enter'&&$('play').classList.contains('active')&&!$('checkBtn').classList.contains('hidden')&&document.activeElement.id==='userAnswer')check()});</script>
+function finish(){if(finished||session.length!==10||answers.some(a=>!a?.checked))return;finished=true;const score=answers.reduce((sum,a)=>sum+(a&&Number.isInteger(a.points)?a.points:a&&a.correct?1:0),0),max=10+session.filter(q=>q.kind==='open').length;localStorage.setItem('bioQuizLastScore',String(score));localStorage.setItem('bioQuizRuns',String(Number(localStorage.getItem('bioQuizRuns')||0)+1));$('bar').style.width='100%';$('resultTitle').textContent=score>=max*.8?'Świetna robota!':score>=max*.5?'Dobra praca!':'Warto powtórzyć';$('playerName').textContent=playerNickname?'Wynik dla: '+playerNickname:'';$('resultScore').textContent=score+'/'+max+' pkt';$('resultMessage').textContent=score>=max*.8?'Bardzo dobrze opanowujesz materiał.':score>=max*.5?'Masz już solidną bazę — spróbuj kolejnego losowania.':'Przejrzyj odpowiedzi i spróbuj jeszcze raz.';$('correctStat').textContent=score+' / '+max;$('openStat').textContent=answers.filter(a=>a&&a.rated).length;$('rankingStatus').textContent=playerNickname?'Zapisywanie wyniku w rankingu…':'';show('result');recordRanking(score,max)}
+function home(){sessionVersion++;gradePending=false;show('home')}
+$('startBtn').onclick=start;$('nickname').addEventListener('input',()=>{$('nicknameError').hidden=true});$('homeBtn').onclick=home;$('resultHomeBtn').onclick=home;$('nextRoundBtn').onclick=start;$('checkBtn').onclick=()=>check();$('revealBtn').onclick=gradeOpen;$('nextBtn').onclick=next;renderRankings();document.addEventListener('keydown',e=>{if(e.key==='Enter'&&$('play').classList.contains('active')&&!$('checkBtn').classList.contains('hidden')&&document.activeElement.id==='userAnswer')check()});</script>
 </body>
 </html>
