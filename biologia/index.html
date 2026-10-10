@@ -3,22 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#f4f7ee">
+<meta name="theme-color" content="#245941">
 <title>Biologia — quiz dla klasy 5</title>
 <style>
-:root{--ink:#193a32;--muted:#657a70;--green:#246b50;--green2:#dff0e5;--paper:#fffefa;--bg:#f3f6ef;--line:#e3e9df;--gold:#f5c86a;--red:#a23d39;--shadow:0 14px 45px #17352b12}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}.shell{max-width:940px;margin:auto;padding:20px 18px 48px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:26px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.01em}.mark{width:38px;height:38px;border-radius:13px;background:var(--green);color:white;display:grid;place-items:center;font-size:21px}.tag{font-size:12px;background:#e6eee6;color:var(--green);padding:7px 11px;border-radius:99px;font-weight:700}.hero{padding:25px 0 26px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800;color:var(--green)}h1{font-size:clamp(34px,7vw,58px);line-height:1.04;letter-spacing:-.045em;margin:10px 0 13px;max-width:650px}.hero p{font-size:18px;color:var(--muted);max-width:630px;margin:0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.btn{border:0;border-radius:13px;padding:12px 17px;font-weight:750;transition:.16s}.btn:hover{transform:translateY(-1px)}.primary{background:var(--green);color:white}.secondary{background:var(--green2);color:var(--green)}.plain{background:transparent;color:var(--muted);border:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}.round{border:1px solid var(--line);background:var(--paper);border-radius:18px;padding:17px;text-align:left;color:var(--ink);box-shadow:0 3px 12px #193a3206}.round:hover{border-color:#9cc7ab;box-shadow:var(--shadow)}.round .num{font-size:12px;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.round strong{display:block;font-size:17px;margin:5px 0 4px}.round span:last-child{color:var(--muted);font-size:13px}.view{display:none}.view.active{display:block}.back{margin:3px 0 20px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:clamp(19px,4vw,34px);box-shadow:var(--shadow)}.quiz-head{display:flex;justify-content:space-between;gap:15px;align-items:start;margin-bottom:19px}.quiz-head h2{margin:5px 0;font-size:25px;line-height:1.2}.score-pill{background:#f3f5ed;border-radius:99px;padding:8px 12px;white-space:nowrap;font-size:13px;font-weight:750}.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;margin-bottom:7px}.progress{height:8px;background:#edf0e9;border-radius:99px;overflow:hidden}.bar{height:100%;width:0;background:var(--green);transition:width .25s}.qbox{padding:25px 0 20px}.qtype{display:inline-block;font-size:12px;font-weight:800;color:var(--green);background:#e8f2e9;padding:5px 9px;border-radius:8px}.qtext{font-size:clamp(20px,4vw,27px);line-height:1.35;margin:15px 0 20px;font-weight:750;letter-spacing:-.015em}.answer{width:100%;padding:13px 14px;border:1.5px solid #d8e2d8;border-radius:12px;background:white;color:var(--ink);outline:none}.answer:focus{border-color:var(--green);box-shadow:0 0 0 3px #246b501a}.hint{font-size:13px;color:var(--muted);margin-top:8px}.feedback{margin-top:14px;padding:12px 14px;border-radius:12px;font-weight:650;display:none}.feedback.show{display:block}.feedback.good{background:#e7f4e8;color:#20583f}.feedback.bad{background:#fff0e8;color:#8b452c}.feedback.open{background:#eef3f7;color:#314e62;font-weight:500}.actions{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:17px}.actions .right{display:flex;gap:9px}.tiny{font-size:13px;color:var(--muted)}.result{text-align:center;padding:15px 0}.result-icon{width:66px;height:66px;background:#e4f2e6;color:var(--green);font-size:32px;border-radius:22px;display:grid;place-items:center;margin:0 auto 14px}.result h2{font-size:32px;margin:0 0 8px;letter-spacing:-.03em}.result p{color:var(--muted)}.result-score{font-size:48px;font-weight:850;color:var(--green);margin:15px 0 4px}.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:19px 0}.stat{padding:14px;border-radius:14px;background:#f3f6ef}.stat b{display:block;font-size:20px}.round-nav{display:flex;gap:8px;overflow:auto;margin-top:17px;padding-bottom:6px}.round-nav button{flex:0 0 auto;border:1px solid var(--line);background:white;color:var(--muted);border-radius:10px;padding:8px 11px;font-size:13px}.round-nav button.done{background:var(--green2);color:var(--green);border-color:transparent}.note{color:var(--muted);font-size:13px;margin-top:17px}.reset-link{text-align:center;margin-top:22px}.hidden{display:none!important}footer{color:#7b8a80;font-size:12px;text-align:center;margin-top:25px}@media(max-width:620px){.shell{padding:15px 14px 35px}.grid{grid-template-columns:1fr}.top{margin-bottom:12px}.hero{padding-top:18px}.hero p{font-size:16px}.tag{font-size:11px}.panel{border-radius:18px}.quiz-head h2{font-size:21px}.score-pill{font-size:12px;padding:7px 9px}.actions{align-items:stretch}.actions .right{flex:1}.actions .right .btn{flex:1}.actions>.btn{flex:1}}
-.order-list{display:grid;gap:9px;list-style:none;padding:0;margin:14px 0}.order-item{display:flex;align-items:center;gap:10px;background:#f4f7f1;border:1px solid var(--line);border-radius:12px;padding:9px 10px;touch-action:pan-y}.order-item.dragging{opacity:.45}.drag-handle{font-size:18px;color:var(--muted);cursor:grab;user-select:none}.order-word{flex:1;font-weight:700}.move-btn{border:0;background:white;color:var(--green);border-radius:8px;width:36px;height:36px;font-size:18px;font-weight:800}.move-btn:disabled{opacity:.35}.order-hint{font-size:13px;color:var(--muted)}.choice-options{display:grid;gap:10px;margin:14px 0}.choice-option{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;color:var(--ink);padding:12px 14px}.choice-option.selected{background:var(--green2);border-color:var(--green);color:var(--green)}.choice-option.correct{background:#e5f3e7;border-color:#378d55;color:#20583f}.choice-option.wrong{background:#fff0ef;border-color:#b53d38;color:#762e29}.ai-explanation{margin-top:9px;padding-top:9px;border-top:1px solid var(--line);font-weight:500}.nickname-row{max-width:430px;margin-top:20px}.nickname-error{color:#a23838;font-weight:650}.nickname-row label{display:block;font-size:14px;font-weight:750;margin-bottom:7px}.nickname-row input{width:100%;padding:12px 14px;border:1.5px solid #d8e2d8;border-radius:12px;background:white;color:var(--ink)}.player-name{font-weight:750;color:var(--green)}.leaderboard{margin-top:12px}.leaderboard h2{font-size:22px;margin:0}.leaderboard p{color:var(--muted);margin:4px 0 12px}.ranking{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}.ranking li{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;background:#f3f6ef;border-radius:12px;padding:10px 12px}.rank-number{font-weight:850;color:var(--green)}.rank-name{font-weight:700;overflow-wrap:anywhere}.rank-score{font-weight:800;color:var(--green);white-space:nowrap}.open-fields{display:grid;gap:12px}.open-field label{display:block;font-weight:750;margin-bottom:6px}.open-field textarea{min-height:76px;resize:vertical}
+:root{--ink:#203e34;--muted:#627269;--green:#245941;--green2:#e8efdc;--paper:#fffefa;--bg:#f6f4ed;--line:#dce2d8;--gold:#e9ef9b;--red:#a63738;--shadow:0 10px 30px #263e2d09}
+*{box-sizing:border-box}body{margin:0;background-color:var(--bg);background-image:linear-gradient(#64806007 1px,transparent 1px),linear-gradient(90deg,#64806007 1px,transparent 1px);background-size:26px 26px;color:var(--ink);font:16px/1.55 "Segoe UI",system-ui,sans-serif}button,input,textarea,select{font:inherit}button,a,input,textarea,summary,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #896bb3;outline-offset:4px}button,a{touch-action:manipulation}
+.shell{max-width:1280px;margin:auto;padding:26px 32px 35px}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:30px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.03em;font-size:21px}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--green);color:var(--gold);font-size:29px}.brand small{display:block;font-size:10px;letter-spacing:.16em;font-weight:600;text-transform:uppercase;color:var(--muted)}.top-links{display:flex;align-items:center;gap:22px}.top-links a{font-size:13px;color:var(--green);text-decoration:none;font-weight:650}.tag{border:1px solid #cbd4c6;border-radius:30px;padding:6px 12px;font-size:11px;font-weight:700;letter-spacing:.07em}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:28px;align-items:start}.content{min-width:0}.view{display:none}.view.active{display:block}
+.hero{position:relative;background:var(--green);color:#fffef3;border-radius:26px;overflow:hidden;padding:34px;margin-bottom:20px}.hero-top{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:12px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:10px;font-weight:800;color:var(--green)}.hero .eyebrow{color:var(--gold)}h1{font-size:clamp(34px,4vw,53px);line-height:1.05;letter-spacing:-.05em;margin:16px 0}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--gold)}.hero p{font-size:14px;line-height:1.65;color:#dce7da;max-width:480px;margin:0}.hero-art{width:100%;height:auto;transform:rotate(5deg)}.hero-stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.hero-stats span{border:1px solid #ffffff30;border-radius:9px;padding:7px 11px;font-size:12px;color:#f3f4e9}.hero-stats b{color:var(--gold);font-size:15px;margin-right:3px}
+.start-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;margin-bottom:20px}.start-heading{display:flex;align-items:center;gap:11px;margin-bottom:18px}.step-number{display:grid;place-items:center;width:32px;height:32px;background:#e9edbd;border-radius:50%;font-size:12px;font-weight:800}.start-heading h2{font-size:19px;margin:0;letter-spacing:-.03em}.start-heading p{font-size:12px;color:var(--muted);margin:1px 0 0}.start-form{display:flex;align-items:flex-end;gap:12px}.nickname-row{flex:1;min-width:0}.nickname-row label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}.nickname-row input{width:100%;border:1px solid #cbd5c6;padding:12px 14px;border-radius:11px;background:#fff;color:var(--ink)}.nickname-error{color:var(--red);margin-bottom:0}.btn{border:1px solid transparent;border-radius:11px;padding:12px 18px;font-weight:700;font-size:14px;transition:background .15s,transform .15s}.btn:hover:not(:disabled){transform:translateY(-1px)}.primary{background:var(--green);color:#fff}.primary:hover:not(:disabled){background:#163f2c}.secondary{background:var(--green2);color:var(--green)}.plain{background:transparent;color:var(--muted);border-color:var(--line)}.note,.tiny{font-size:12px;color:var(--muted)}.note{margin-top:14px;line-height:1.6}.note svg{vertical-align:middle;margin-right:4px}.back{margin:0 0 16px;padding:7px 0;border:0;font-size:12px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}.quiz-head{display:flex;justify-content:space-between;gap:15px;align-items:start;margin-bottom:24px}.quiz-head h2{font-size:23px;letter-spacing:-.025em;margin:5px 0 0;line-height:1.25}.score-pill{background:#edf0dc;border-radius:30px;padding:8px 11px;white-space:nowrap;font-size:12px;font-weight:750}.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:9px}.progress{height:7px;background:#edf0e7;border-radius:20px;overflow:hidden}.bar{height:100%;width:0;background:#819d59;transition:width .25s;border-radius:20px}.qbox{padding:27px 0 24px}.qtype{display:inline-flex;border:1px solid #d3dccb;border-radius:6px;color:#526a40;padding:4px 8px;text-transform:uppercase;font-size:9px;letter-spacing:.07em;font-weight:800}.qtext{font-size:clamp(20px,2.3vw,27px);line-height:1.35;margin:15px 0 22px;font-weight:700;letter-spacing:-.025em}.choice-options{display:grid;gap:10px;counter-reset:options}.choice-option{display:flex;align-items:center;gap:12px;counter-increment:options;width:100%;text-align:left;border:1px solid #dce2d6;background:white;border-radius:12px;color:var(--ink);padding:13px 15px;font-size:15px;transition:background .15s,border-color .15s}.choice-option:before{content:counter(options,upper-alpha);display:grid;place-items:center;flex:0 0 29px;height:29px;background:#f1f3ec;border-radius:7px;font-size:12px;font-weight:750;color:#77846c}.choice-option:hover:not(:disabled){border-color:#819e69;background:#f9faf4}.choice-option.selected{background:#f0f3de;border-color:#788e4b}.choice-option.selected:before{background:#d6e29d;color:#32481b}.choice-option.correct{background:#e4f3e9;border-color:#398557;color:#1d5b35}.choice-option.correct:before{content:"✓";background:#398557;color:white}.choice-option.wrong{background:#fce9e8;border-color:#ba4547;color:#8b272d}.choice-option.wrong:before{content:"×";background:#ba4547;color:white}.answer{width:100%;padding:12px 14px;border:1px solid #cbd5c6;border-radius:11px;background:white;color:var(--ink);font-size:15px;outline:none}.answer:focus,.nickname-row input:focus{outline:2px solid #8aa368;outline-offset:2px}.answer:disabled{background:#f4f5ee;color:#4b6257;opacity:1}.open-fields{display:grid;gap:15px}.open-field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.open-field textarea{min-height:84px;resize:vertical}.feedback{margin-top:18px;padding:16px;border-radius:12px;display:none;font-size:14px}.feedback.show{display:block}.feedback.good{background:#e4f3e9;color:#205c39}.feedback.bad{background:#fbede6;color:#793c2c}.feedback.open{background:#eeeaf6;color:#493a68}.ai-explanation{margin-top:12px;padding-top:12px;border-top:1px solid #bba59055;line-height:1.65}.actions{display:flex;justify-content:flex-end;border-top:1px solid var(--line);padding-top:19px}.actions .right{display:flex;gap:9px}.leaderboard{margin-top:20px;box-shadow:none}.section-label{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-label span{font-size:10px;letter-spacing:.12em;color:var(--muted);font-weight:750}.leaderboard h2{font-size:19px;letter-spacing:-.02em;margin:0}.leaderboard p{font-size:12px;color:var(--muted);margin:3px 0 18px}.leaderboard #rankHome,.leaderboard #rankResult{font-size:13px;color:var(--muted)}.ranking{list-style:none;padding:0;margin:0;display:grid;gap:7px}.ranking li{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;background:#f3f5eb;border-radius:10px;padding:10px 12px}.rank-number{color:var(--green);font-weight:800}.rank-name{font-weight:700;overflow-wrap:anywhere}.rank-score{font-weight:750;white-space:nowrap}.result{text-align:center;padding:32px}.result-icon{display:grid;place-items:center;width:62px;height:62px;background:#e6edb3;border-radius:50%;margin:0 auto 15px;font-size:30px}.result h2{font-size:30px;letter-spacing:-.04em;margin:6px 0}.result-score{font-size:50px;font-weight:800;letter-spacing:-.05em;margin:17px 0 0}.result p{color:var(--muted);font-size:14px}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.stat{background:#f1f4e9;border-radius:13px;padding:15px;font-size:12px}.stat b{display:block;font-size:23px}.player-name{font-weight:700}.result .btn{margin:4px}
+.notebook{position:sticky;top:24px;min-width:0}.notebook-heading{display:flex;align-items:center;justify-content:space-between;margin:1px 0 15px}.notebook-heading h2{font-size:17px;letter-spacing:-.03em;margin:0}.notebook-heading span{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#6a7a63}.notebook-intro{font-size:12px;color:var(--muted);margin:0 0 15px}.topic-picker{width:100%;color:var(--ink);background:#fdfcf8;border:1px solid #d6ddd0;border-radius:9px;padding:8px 10px;margin-bottom:20px;font-size:12px}.sticky-note{position:relative;padding:25px 22px 22px;background:#f3edb3;border:1px solid #e3dda5;border-radius:3px 3px 21px 3px;box-shadow:3px 5px 0 #e6e2c277;transform:rotate(-1deg);margin:8px 2px 23px;min-height:215px}.sticky-note:before{content:"";position:absolute;width:66px;height:22px;background:#e4dba2b3;top:-10px;left:calc(50% - 33px);transform:rotate(5deg);border-left:2px dotted #fff5;border-right:2px dotted #fff5}.note-kicker{display:flex;align-items:center;justify-content:space-between;font-size:9px;letter-spacing:.12em;font-weight:800;text-transform:uppercase;color:#706824;margin-bottom:12px}.note-symbol{font-size:22px;line-height:1}.sticky-note h3{font-family:Georgia,serif;font-size:24px;font-weight:400;line-height:1.12;letter-spacing:-.035em;margin:0 0 13px}.sticky-note p{font-size:14px;line-height:1.6;margin:0}.memory-line{font-size:12px;margin-top:16px;padding-top:12px;border-top:1px dashed #b8b16e;line-height:1.55}.memory-line b{font-weight:800}.recall-card{background:#e9e3f1;border:1px solid #d9cfe4;border-radius:13px;padding:18px 20px;margin-bottom:16px}.recall-card .eyebrow{color:#705485;font-size:9px}.recall-card p{font-size:14px;margin:9px 0 12px;line-height:1.5}.recall-card details{font-size:13px;color:#543f6c}.recall-card summary{font-size:12px;font-weight:750;cursor:pointer}.recall-card details p{font-size:13px;border-top:1px solid #c7b9d8;margin-top:10px;padding-top:10px}.note-controls{display:flex;justify-content:space-between;align-items:center;padding:0 3px}.note-controls button{border:0;background:transparent;color:var(--green);padding:8px 0;font-size:12px;font-weight:750}.note-controls span{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}.notebook-source{font-size:10px;color:#737c6d;margin:14px 2px 0;line-height:1.5}.chapter-label{margin-top:23px;border-top:1px solid var(--line);padding-top:14px;display:flex;gap:10px;color:var(--muted);font-size:11px}.chapter-label b{display:block;color:var(--ink);font-size:12px}.chapter-label .mini-icon{font-size:22px}
+.hidden{display:none!important}footer{display:flex;justify-content:space-between;gap:12px;color:#74806e;font-size:10px;margin-top:30px;padding-top:17px;border-top:1px solid var(--line)}footer a{color:inherit;text-decoration:none}
+@media(min-width:1200px){.hero{padding:38px}.hero-top{grid-template-columns:1fr 180px}}
+@media(max-width:1000px){.shell{padding:22px}.workspace{grid-template-columns:minmax(0,1fr) 250px;gap:20px}.hero-art{display:none}.hero-top{grid-template-columns:1fr}.hero{padding:28px}.panel{padding:24px}.start-form{flex-direction:column;align-items:stretch}.sticky-note{padding:24px 18px 18px}}
+@media(max-width:760px){.shell{padding:18px 15px 30px}.top{margin-bottom:20px;padding-bottom:15px}.brand{font-size:17px}.mark{width:35px;height:35px;font-size:25px}.brand small{font-size:8px}.top-links{gap:10px}.tag{display:none}.workspace{grid-template-columns:1fr;gap:30px}.notebook{position:static;max-width:none}.notebook-heading{margin-bottom:8px}.notebook-intro{max-width:440px}.notebook-cards{display:grid;grid-template-columns:1fr 1fr;gap:15px;align-items:start}.sticky-note{margin-bottom:12px}.recall-card{margin-top:8px}.topic-picker{max-width:340px}.hero-top{grid-template-columns:1fr 110px}.hero-art{display:block}.hero{border-radius:20px;padding:25px}.hero h1{font-size:38px}.hero p{font-size:13px}.hero-stats{gap:6px;margin-top:18px}.hero-stats span{font-size:10px;padding:5px 8px}.start-form{flex-direction:row}.start-card{padding:20px}.panel{padding:22px}.quiz-head h2{font-size:21px}.qtext{font-size:23px}.chapter-label{display:none}.top-links a{font-size:11px}footer{font-size:9px}}
+@media(max-width:460px){.hero-top{grid-template-columns:1fr 82px}.hero h1{font-size:33px}.hero .eyebrow{font-size:8px}.hero-art{align-self:start;margin-top:28px}.start-form{flex-direction:column}.hero-stats span{font-size:10px}.hero-stats b{font-size:12px}.notebook-cards{grid-template-columns:1fr}.recall-card{margin-top:0}.sticky-note{min-height:0}.quiz-head{gap:8px}.score-pill{font-size:10px;padding:7px 9px}.quiz-head h2{font-size:19px}.quiz-head .eyebrow{font-size:8px}.qtext{font-size:21px}.choice-option{padding:12px;font-size:14px;gap:10px}.actions .right,.actions .btn{width:100%}.result .btn{width:100%;margin:5px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
-<main class="shell">
-<header class="top"><div class="brand"><span class="mark">✳</span><span>Biologia na piątkę</span></div><span class="tag">KLASA 5 · BANK PYTAŃ</span></header>
-<section id="home" class="view active">
-<div class="hero"><div class="eyebrow">Jeden quiz · losowane pytania</div><h1>Sprawdź, jak działa życie.</h1><p>Bank zawiera 100 pytań z działu „Biologia — nauka o życiu”: 70 jednokrotnego wyboru i 30 opisowych. Każda sesja losuje 7 pytań zamkniętych oraz 3 z 30 pytań opisowych ocenianych przez AI.</p><div class="nickname-row"><label for="nickname">Twój pseudonim <span aria-hidden="true">*</span></label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Wpisz pseudonim" required aria-required="true"><p id="nicknameError" class="tiny nickname-error" role="alert" hidden></p></div><div class="hero-actions"><button class="btn primary" id="startBtn">Losuj 10 pytań →</button></div><div class="note">Pseudonim jest zapamiętywany na tym urządzeniu. Po ukończeniu quizu pseudonim i najlepszy wynik są widoczne w rankingu w chmurze.</div></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankHome"></div></div></section>
-<section id="play" class="view"><button class="btn plain back" id="homeBtn">← Zakończ quiz</button><div class="panel"><div class="quiz-head"><div><div class="eyebrow" id="roundLabel">QUIZ BIOLOGICZNY · LOSOWANY ZESTAW</div><h2 id="roundTitle">Sprawdź swoją wiedzę</h2></div><span class="score-pill" id="scorePill">Wynik: 0 pkt</span></div><div class="progress-meta"><span id="progressText">Pytanie 1 z 10</span><span id="roundPct">0%</span></div><div class="progress"><div class="bar" id="bar"></div></div><div class="qbox"><span class="qtype" id="qType"></span><div class="qtext" id="qText"></div><div id="inputArea"></div><div class="feedback" id="feedback" aria-live="polite"></div></div><div class="actions"><div class="right"><button class="btn secondary hidden" id="revealBtn">Oceń odpowiedź AI</button><button class="btn primary" id="checkBtn">Sprawdź</button><button class="btn primary hidden" id="nextBtn">Dalej →</button></div></div></div></section>
+<main class="shell"><header class="top"><div class="brand"><span class="mark" aria-hidden="true">✳</span><span>Biologia na piątkę<small>Klub młodych odkrywców</small></span></div><nav class="top-links" aria-label="Nawigacja"><a href="../">← Wszystkie quizy</a><span class="tag">KLASA 5</span></nav></header><div class="workspace"><div class="content"><section id="home" class="view active">
+<div class="hero"><div class="hero-top"><div><div class="eyebrow">Rozdział 1 · Biologia — nauka o życiu</div><h1>Małe pytania.<br><em>Wielkie odkrycia.</em></h1><p>Od jednej komórki po cały organizm. Sprawdź, co już wiesz, i odkryj coś nowego przy każdej odpowiedzi.</p></div><svg class="hero-art" viewBox="0 0 200 220" aria-hidden="true"><rect x="12" y="15" width="176" height="184" rx="85" fill="#dce5a2"/><g fill="none" stroke="#244d39" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M87 53l-17 32 30 17 18-33z" fill="#fffce9"/><path d="M85 46l18-9 28 16-5 20z" fill="#c5b8dd"/><path d="M93 102l-6 12M81 120h59M122 93c38 28 28 69-8 70M102 166v13M62 180h88"/><path d="M70 137h37"/><circle cx="138" cy="126" r="9" fill="#e6ab8d"/></g><g fill="#fff9db"><circle cx="44" cy="48" r="5"/><circle cx="162" cy="70" r="4"/><path d="M156 24v15m-7-7h14" stroke="#fff9db" stroke-width="3"/></g><path d="M21 162c-3-17 6-27 20-29 3 17-5 29-20 29z" fill="#8eac6e"/><path d="M20 175l9-29" stroke="#244d39" stroke-width="2"/><rect x="110" y="192" width="83" height="23" rx="6" fill="#e6ddee"/><text x="151" y="207" text-anchor="middle" fill="#53466a" font-family="system-ui" font-size="9" font-weight="700">ODKRYWAJ!</text></svg></div><div class="hero-stats"><span><b>100</b> pytań w bazie</span><span><b>10</b> w każdym quizie</span><span><b>3</b> odpowiedzi ocenia AI</span></div></div>
+<div class="start-card"><div class="start-heading"><span class="step-number">01</span><div><h2>Twój mały sprawdzian</h2><p>7 pytań wyboru + 3 opisowe. Ucz się w swoim tempie.</p></div></div><div class="start-form"><div class="nickname-row"><label for="nickname">Jak Cię zapisać? Podaj pseudonim</label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Twój pseudonim" required aria-required="true"><p id="nicknameError" class="tiny nickname-error" role="alert" hidden></p></div><button class="btn primary" id="startBtn">Zaczynamy →</button></div><p class="note">Losujemy z 70 pytań jednokrotnego wyboru i 30 opisowych. Po ukończeniu quizu pseudonim i najlepszy wynik pojawią się w rankingu.</p></div>
+<div class="panel leaderboard"><div class="section-label"><h2>Tablica odkrywców</h2><span>TOP 10</span></div><p>Najlepsze wyniki z biologii · jeden rekord na pseudonim</p><div id="rankHome"></div></div></section><section id="play" class="view"><button class="btn plain back" id="homeBtn">← Zakończ quiz</button><div class="panel"><div class="quiz-head"><div><div class="eyebrow" id="roundLabel">QUIZ BIOLOGICZNY · LOSOWANY ZESTAW</div><h2 id="roundTitle">Sprawdź swoją wiedzę</h2></div><span class="score-pill" id="scorePill">Wynik: 0 pkt</span></div><div class="progress-meta"><span id="progressText">Pytanie 1 z 10</span><span id="roundPct">0%</span></div><div class="progress"><div class="bar" id="bar"></div></div><div class="qbox"><span class="qtype" id="qType"></span><div class="qtext" id="qText"></div><div id="inputArea"></div><div class="feedback" id="feedback" aria-live="polite"></div></div><div class="actions"><div class="right"><button class="btn secondary hidden" id="revealBtn">Oceń odpowiedź AI</button><button class="btn primary" id="checkBtn">Sprawdź</button><button class="btn primary hidden" id="nextBtn">Dalej →</button></div></div></div></section>
 <section id="result" class="view"><div class="panel result"><div class="result-icon">✓</div><div class="eyebrow">Koniec quizu</div><p id="playerName" class="player-name"></p><h2 id="resultTitle">Dobra robota!</h2><div class="result-score" id="resultScore">0 pkt</div><p id="resultMessage"></p><p id="rankingStatus" class="tiny" aria-live="polite"></p><div class="result-grid"><div class="stat"><b id="correctStat">0</b><span>zdobyte punkty</span></div><div class="stat"><b id="openStat">0</b><span>ocenione pytania otwarte</span></div></div><button class="btn primary" id="nextRoundBtn">Losuj kolejny zestaw →</button><button class="btn secondary" id="resultHomeBtn">Wróć do początku</button></div><div class="panel leaderboard"><h2>Ranking najlepszych wyników</h2><p>Najlepszy wynik każdego pseudonimu</p><div id="rankResult"></div></div></section>
-<footer>Biologia · Nauka w swoim tempie</footer>
-</main>
+</div><aside class="notebook" aria-labelledby="notebookTitle">
+<div class="notebook-heading"><h2 id="notebookTitle">Na marginesie</h2><span>Twój notatnik</span></div><p class="notebook-intro">Małe porcje wiedzy, które zostają w głowie.</p>
+<label class="hidden" for="noteTopic">Temat notatek</label><select id="noteTopic" class="topic-picker" aria-label="Temat notatek"><option value="all">Cały rozdział</option value="biology">Biologia jako nauka</option><option value="life">Czynności życiowe</option><option value="levels">Budowa organizmów</option><option value="research">Jak pracuje badacz?</option><option value="microscope">Świat pod mikroskopem</option></select>
+<div class="notebook-cards"><article class="sticky-note"><div class="note-kicker"><span id="noteCategory"></span><span class="note-symbol" aria-hidden="true" id="noteSymbol">✳</span></div><h3 id="noteTitle"></h3><p id="noteBody"></p><div class="memory-line"><b>Zapamiętaj:</b> <span id="noteMemory"></span></div></article>
+<article class="recall-card"><div class="eyebrow">Chwila na powtórkę</div><p id="noteRecall"></p><details id="noteDetails"><summary>Pokaż odpowiedź</summary><p id="noteAnswer"></p></details></article></div>
+<div class="note-controls"><button type="button" id="nextNote">Inna notatka ↻</button><span id="noteCount"></span></div><p class="notebook-source">Notatki na podstawie Twojego rozdziału. Podczas quizu dobieramy temat do pytania.</p><div class="chapter-label"><span class="mini-icon" aria-hidden="true">✳</span><span><b>Najpierw spróbuj z pamięci.</b>Potem zerknij do notatki i opowiedz ją własnymi słowami.</span></div></aside></div><footer><span>BIOLOGIA NA PIĄTKĘ · ROZDZIAŁ 1</span><span>Ciekawość to dobry początek.</span></footer></main>
 <script>
 // 100 pytań opracowanych na podstawie 15 zdjęć działu „Biologia — nauka o życiu”.
 const bank=[
@@ -1780,7 +1794,7 @@ const EXPLAIN_API_URL=AI_API_URL.replace(/\/grade$/,'/explain');
 const BIOLOGY_GRADE_API_URL=AI_API_URL.replace(/\/grade$/,'/biology-grade');
 const norm=s=>(s||'').toLocaleLowerCase('pl').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[.,!?;:()\"']/g,'').replace(/\s+/g,' ').trim();
 function shuffle(list){const a=list.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+function show(id){if(id!=='play')syncNotebook(null);document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
 function makeOptions(q){return shuffle(q.choices)}
 function start(){playerNickname=$('nickname').value.trim().slice(0,24);$('nickname').value=playerNickname;if(!playerNickname){const input=$('nickname'),error=$('nicknameError');error.textContent='Wpisz pseudonim, aby rozpocząć quiz.';error.hidden=false;input.focus();return}$('nicknameError').hidden=true;localStorage.setItem('bioQuizNickname',playerNickname);sessionVersion++;gradePending=false;finished=false;const open=shuffle(bank.filter(q=>q.kind==='open')).slice(0,3),choice=shuffle(bank.filter(q=>q.kind==='choice')).slice(0,7);session=shuffle([...open,...choice]);session.forEach(q=>{if(q.kind==='choice')q.options=makeOptions(q)});index=0;answers=Array(10).fill(null);orderState=[];renderQ();show('play')}
 function renderQ(){
@@ -1793,7 +1807,7 @@ function renderQ(){
   if(q.fields){const fields=document.createElement('div');fields.className='open-fields';q.fields.forEach((field,i)=>{const wrap=document.createElement('div'),label=document.createElement('label'),input=document.createElement('textarea');wrap.className='open-field';label.htmlFor='openField'+i;label.textContent=field.label;input.className='answer';input.id='openField'+i;input.maxLength=250;input.disabled=!!(old&&old.checked);input.rows=2;input.placeholder='Wpisz odpowiedź: '+field.label.toLocaleLowerCase('pl');input.value=old&&old.value&&typeof old.value==='object'?(old.value[field.key]||''):'';input.oninput=()=>{const value={};q.fields.forEach((item,j)=>value[item.key]=$('openField'+j).value);answers[index]={value};$('revealBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};wrap.append(label,input);fields.appendChild(wrap)});area.appendChild(fields)}
   else{const input=document.createElement('textarea');input.className='answer';input.rows=3;input.placeholder='Wpisz swoją odpowiedź…';input.value=old&&old.value&&typeof old.value==='string'?old.value:'';input.id='userAnswer';input.maxLength=1800;input.disabled=!!(old&&old.checked);input.oninput=()=>{answers[index]={value:input.value};$('revealBtn').classList.remove('hidden');$('nextBtn').classList.add('hidden');$('feedback').className='feedback'};area.appendChild(input)}
  }
- $('feedback').className='feedback';$('feedback').innerHTML='';$('checkBtn').classList.toggle('hidden',q.kind==='open'||!!(old&&old.checked));$('revealBtn').classList.toggle('hidden',q.kind!=='open'||!!(old&&old.checked));$('revealBtn').disabled=false;$('revealBtn').textContent='Oceń odpowiedź AI';$('nextBtn').classList.toggle('hidden',!(old&&old.checked));$('nextBtn').textContent=index===9?'Zobacz wynik →':'Dalej →';if(old&&old.checked)paintFeedback(q,old)
+ $('feedback').className='feedback';$('feedback').innerHTML='';$('checkBtn').classList.toggle('hidden',q.kind==='open'||!!(old&&old.checked));$('revealBtn').classList.toggle('hidden',q.kind!=='open'||!!(old&&old.checked));$('revealBtn').disabled=false;$('revealBtn').textContent='Oceń odpowiedź AI';$('nextBtn').classList.toggle('hidden',!(old&&old.checked));$('nextBtn').textContent=index===9?'Zobacz wynik →':'Dalej →';if(old&&old.checked)paintFeedback(q,old);syncNotebook(q)
 }
 function renderOrder(locked){
  const area=$('inputArea'),hint=document.createElement('div'),list=document.createElement('ol');hint.className='order-hint';hint.textContent='Przeciągnij elementy, aby zmienić kolejność. Na telefonie możesz użyć strzałek.';list.className='order-list';list.id='orderList';area.append(hint,list);
@@ -1871,6 +1885,260 @@ async function renderRankings(){const hosts=['rankHome','rankResult'].map($).fil
 async function recordRanking(score,max){if(!playerNickname){$('rankingStatus').textContent='Wpisz pseudonim na stronie startowej, aby zapisać wynik w rankingu.';return}try{const response=await fetch(LEADERBOARD_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nickname:playerNickname,quiz:"biologia",points:score,maxPoints:max})}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||'Błąd serwera ('+response.status+')');$('rankingStatus').textContent=data.saved?'Wynik zapisany w rankingu w chmurze.':'Twój lepszy wynik jest już zapisany w rankingu.';await renderRankings()}catch(error){$('rankingStatus').textContent='Nie udało się zapisać wyniku w chmurze. '+error.message}}
 function finish(){if(finished||session.length!==10||answers.some(a=>!a?.checked))return;finished=true;const score=answers.reduce((sum,a)=>sum+(a&&Number.isInteger(a.points)?a.points:a&&a.correct?1:0),0),max=10+session.filter(q=>q.kind==='open').length;localStorage.setItem('bioQuizLastScore',String(score));localStorage.setItem('bioQuizRuns',String(Number(localStorage.getItem('bioQuizRuns')||0)+1));$('bar').style.width='100%';$('resultTitle').textContent=score>=max*.8?'Świetna robota!':score>=max*.5?'Dobra praca!':'Warto powtórzyć';$('playerName').textContent=playerNickname?'Wynik dla: '+playerNickname:'';$('resultScore').textContent=score+'/'+max+' pkt';$('resultMessage').textContent=score>=max*.8?'Bardzo dobrze opanowujesz materiał.':score>=max*.5?'Masz już solidną bazę — spróbuj kolejnego losowania.':'Przejrzyj odpowiedzi i spróbuj jeszcze raz.';$('correctStat').textContent=score+' / '+max;$('openStat').textContent=answers.filter(a=>a&&a.rated).length;$('rankingStatus').textContent=playerNickname?'Zapisywanie wyniku w rankingu…':'';show('result');recordRanking(score,max)}
 function home(){sessionVersion++;gradePending=false;show('home')}
+
+const notebookNotes=[
+  {
+    "id": 0,
+    "topic": "biology",
+    "category": "Jeden rozdział, cały świat",
+    "title": "Życie ma wiele rozmiarów",
+    "body": "Drożdże są zbudowane z jednej komórki, a ogromna sekwoja — z bardzo wielu. Oba organizmy wykonują czynności życiowe.",
+    "memory": "Wielkość nie decyduje o tym, czy coś żyje.",
+    "recall": "Co łączy drożdże i sekwoję?",
+    "answer": "Budowa komórkowa i wykonywanie czynności życiowych.",
+    "symbol": "✳"
+  },
+  {
+    "id": 1,
+    "topic": "biology",
+    "category": "Słowa mają historię",
+    "title": "Co kryje „biologia”?",
+    "body": "Nazwa biologii pochodzi od dwóch greckich słów. W podręczniku bios oznacza „życie”, a logos — „słowo”.",
+    "memory": "Biologia bada organizmy i ich życie.",
+    "recall": "Czym, poza budową, zajmuje się biologia?",
+    "answer": "Czynnościami życiowymi oraz zależnościami między organizmami i ich środowiskiem.",
+    "symbol": "β"
+  },
+  {
+    "id": 2,
+    "topic": "biology",
+    "category": "Poznaj specjalistów",
+    "title": "Kto bada co?",
+    "body": "Botanik zajmuje się roślinami, zoolog zwierzętami, a mikrobiolog mikroorganizmami. To różne drogi poznawania żywego świata.",
+    "memory": "Botanika — rośliny. Zoologia — zwierzęta.",
+    "recall": "Do jakiej dziedziny należy badanie mikroorganizmów?",
+    "answer": "Do mikrobiologii.",
+    "symbol": "❋"
+  },
+  {
+    "id": 3,
+    "topic": "biology",
+    "category": "Dwa spojrzenia",
+    "title": "Budowa czy działanie?",
+    "body": "Anatomia odpowiada na pytania o budowę wewnętrzną organizmu. Fizjologia pomaga zrozumieć jego czynności życiowe. Ekologia bada zależności z otoczeniem.",
+    "memory": "Anatomia: jak jest zbudowane? Fizjologia: jak działa?",
+    "recall": "Która dziedzina bada zależności między organizmami a środowiskiem?",
+    "answer": "Ekologia.",
+    "symbol": "◉"
+  },
+  {
+    "id": 4,
+    "topic": "life",
+    "category": "Ciekawostka z rozdziału",
+    "title": "Roślina też się rusza",
+    "body": "Roślina nie musi przemieszczać się z miejsca na miejsce, żeby wykonywać ruch. Może zwracać liście i łodygę w stronę światła.",
+    "memory": "Ruch może dotyczyć tylko części organizmu.",
+    "recall": "Podaj przykład ruchu rośliny.",
+    "answer": "Zwracanie liści lub łodygi w stronę światła.",
+    "symbol": "❧"
+  },
+  {
+    "id": 5,
+    "topic": "life",
+    "category": "To warto rozróżniać",
+    "title": "Oddycha także roślina",
+    "body": "Oddychanie uwalnia z pokarmu energię potrzebną do życia. Większość organizmów, w tym rośliny, wykorzystuje do tego tlen.",
+    "memory": "Oddychanie → uwalnianie energii.",
+    "recall": "Czy oddychają tylko zwierzęta?",
+    "answer": "Nie. Oddychają również rośliny i inne organizmy.",
+    "symbol": "↟"
+  },
+  {
+    "id": 6,
+    "topic": "life",
+    "category": "Dwa różne pojęcia",
+    "title": "Rosnę i się rozwijam",
+    "body": "Wzrost to zwiększanie rozmiarów i masy. Rozwój obejmuje zmiany wyglądu oraz sposobu funkcjonowania w ciągu życia.",
+    "memory": "Wzrost: większy. Rozwój: zmienia się.",
+    "recall": "Jak nazywa się zwiększanie masy i rozmiarów ciała?",
+    "answer": "Wzrost.",
+    "symbol": "↗"
+  },
+  {
+    "id": 7,
+    "topic": "life",
+    "category": "Panda podpowiada",
+    "title": "Życie w codziennych scenach",
+    "body": "Panda jedząca bambus odżywia się, wspinająca się na drzewo wykonuje ruch, a wykrywająca niebezpieczeństwo dzięki zmysłom reaguje na bodźce.",
+    "memory": "Bodziec to np. światło, zapach lub dźwięk.",
+    "recall": "Czym jest wydalanie?",
+    "answer": "Usuwaniem zbędnych i szkodliwych substancji, np. nadmiaru wody i dwutlenku węgla.",
+    "symbol": "◎"
+  },
+  {
+    "id": 8,
+    "topic": "levels",
+    "category": "Od małego do dużego",
+    "title": "Pięć pięter życia",
+    "body": "Komórki tworzą tkanki, tkanki budują narządy, a współpracujące narządy — układy. Współdziałające układy tworzą organizm.",
+    "memory": "Komórka → tkanka → narząd → układ → organizm.",
+    "recall": "Co znajduje się między tkanką a układem narządów?",
+    "answer": "Narząd.",
+    "symbol": "▥"
+  },
+  {
+    "id": 9,
+    "topic": "levels",
+    "category": "Zespół komórek",
+    "title": "Tkanka ma zadanie",
+    "body": "Tkankę tworzą komórki o podobnej budowie, wykonujące określone zadania. Przykładem jest tkanka mięśniowa.",
+    "memory": "Podobne komórki + określone zadanie = tkanka.",
+    "recall": "Czy serce jest tkanką, czy narządem?",
+    "answer": "Serce jest narządem i składa się z różnych tkanek.",
+    "symbol": "⠿"
+  },
+  {
+    "id": 10,
+    "topic": "levels",
+    "category": "Rośliny też mają poziomy",
+    "title": "Liść to organ",
+    "body": "U roślin komórki również tworzą tkanki. Tkanki budują organy, takie jak liść. Liście i łodyga należą do systemu pędowego.",
+    "memory": "Narząd u zwierzęcia, organ u rośliny.",
+    "recall": "Jaki system tworzą między innymi liście i łodyga?",
+    "answer": "System pędowy.",
+    "symbol": "❧"
+  },
+  {
+    "id": 11,
+    "topic": "levels",
+    "category": "Współpraca w organizmie",
+    "title": "Serce nie działa samo",
+    "body": "Serce i naczynia krwionośne współpracują w układzie krwionośnym. Poszczególne układy razem umożliwiają działanie całego organizmu.",
+    "memory": "Narząd jest częścią większego układu.",
+    "recall": "Wymień dwa elementy układu krwionośnego z rozdziału.",
+    "answer": "Serce i naczynia krwionośne.",
+    "symbol": "♡"
+  },
+  {
+    "id": 12,
+    "topic": "research",
+    "category": "Mały naukowiec",
+    "title": "Patrzę czy zmieniam?",
+    "body": "W obserwacji przyglądasz się organizmom i procesom, nie wpływając na ich przebieg. W doświadczeniu celowo zmieniasz jeden badany czynnik.",
+    "memory": "Obserwacja: przyglądam się. Doświadczenie: zmieniam czynnik.",
+    "recall": "Czy oglądanie bocianów bez ich płoszenia jest doświadczeniem?",
+    "answer": "Nie, to obserwacja.",
+    "symbol": "⌕"
+  },
+  {
+    "id": 13,
+    "topic": "research",
+    "category": "Zasada uczciwego porównania",
+    "title": "Zmieniaj tylko jedno",
+    "body": "W próbie badawczej zmieniasz wybrany czynnik. Próba kontrolna pozwala porównać wyniki. Pozostałe warunki powinny być takie same.",
+    "memory": "Jedna różnica między próbami.",
+    "recall": "Dlaczego nie zmieniać jednocześnie ilości wody i światła?",
+    "answer": "Nie będzie wiadomo, który czynnik spowodował zaobserwowaną zmianę.",
+    "symbol": "⇄"
+  },
+  {
+    "id": 14,
+    "topic": "research",
+    "category": "Doświadczenie z kuchni",
+    "title": "Banany w towarzystwie",
+    "body": "W opisanym doświadczeniu banany z jabłkami po pięciu dniach były ciemniejsze i miały plamy. Banany bez jabłek były jasnożółte i bez plam.",
+    "memory": "Wniosek z doświadczenia: jabłka przyspieszały dojrzewanie bananów.",
+    "recall": "Która miska stanowiła próbę kontrolną?",
+    "answer": "Miska z bananami bez jabłek.",
+    "symbol": "◔"
+  },
+  {
+    "id": 15,
+    "topic": "research",
+    "category": "Myśl jak badacz",
+    "title": "Pytanie to początek",
+    "body": "Problem badawczy jest pytaniem. Hipoteza to możliwa odpowiedź, którą sprawdzamy. Dopiero po analizie wyników formułujemy wniosek.",
+    "memory": "Pytanie → hipoteza → doświadczenie → wyniki → wniosek.",
+    "recall": "Czy odrzucenie hipotezy oznacza nieudane badanie?",
+    "answer": "Nie. Wniosek powinien być zgodny z wynikami, nawet jeśli nie potwierdzają hipotezy.",
+    "symbol": "?"
+  },
+  {
+    "id": 16,
+    "topic": "microscope",
+    "category": "Matematyka w biologii",
+    "title": "Mnożymy, nie dodajemy",
+    "body": "Powiększenie obrazu obliczamy, mnożąc powiększenie okularu przez powiększenie obiektywu. Okular 10× i obiektyw 40× dają 400×.",
+    "memory": "Okular × obiektyw = powiększenie obrazu.",
+    "recall": "Jakie powiększenie dają okular 10× i obiektyw 20×?",
+    "answer": "10 × 20 = 200 razy.",
+    "symbol": "×"
+  },
+  {
+    "id": 17,
+    "topic": "microscope",
+    "category": "Dobry początek obserwacji",
+    "title": "Zacznij od najmniejszego",
+    "body": "Obserwację rozpoczynamy od najmniejszego powiększenia, a potem stopniowo je zwiększamy. Obiektyw nie może dotknąć preparatu.",
+    "memory": "Najpierw małe powiększenie, potem większe.",
+    "recall": "Które części mikroskopu służą do regulowania ostrości?",
+    "answer": "Śruby makrometryczna i mikrometryczna.",
+    "symbol": "⌕"
+  },
+  {
+    "id": 18,
+    "topic": "microscope",
+    "category": "Przepis na preparat",
+    "title": "Mała kropla, wielki świat",
+    "body": "Na szkiełko podstawowe nanieś kroplę wody, umieść w niej cienki fragment skórki cebuli i ostrożnie przykryj szkiełkiem nakrywkowym.",
+    "memory": "Woda → obiekt → szkiełko nakrywkowe.",
+    "recall": "Gdzie kładziemy gotowy preparat?",
+    "answer": "Na stoliku mikroskopu.",
+    "symbol": "◈"
+  },
+  {
+    "id": 19,
+    "topic": "microscope",
+    "category": "Spójrz jeszcze bliżej",
+    "title": "Świat ukryty w kropli",
+    "body": "Mikroskop pozwala obserwować m.in. organizmy żyjące w kropli wody i komórki skórki cebuli. Mikroskop optyczny służy do oglądania obiektów żywych i martwych.",
+    "memory": "Małe nie znaczy nieważne!",
+    "recall": "Do czego służy rewolwer w mikroskopie?",
+    "answer": "Umożliwia zmianę obiektywu.",
+    "symbol": "◌"
+  }
+];
+let notePool=notebookNotes.slice(),notePosition=0,noteQuestionKey=null;
+function noteTopicFor(q){
+ if(!q)return 'all';
+ if(/mikroskop|preparat|powiększenie/i.test(q.topic))return 'microscope';
+ if(/metoda|badacz|badawc|obserwac|doświadcze|źródła/i.test(q.topic))return 'research';
+ if(/poziom|tkank|narząd|budow.*organiz/i.test(q.topic))return 'levels';
+ if(/czynności|rozmnaż|oddych|wzrost/i.test(q.topic))return 'life';
+ return 'biology';
+}
+function renderNotebook(){
+ const n=notePool[notePosition];
+ $('noteCategory').textContent=n.category;$('noteSymbol').textContent=n.symbol;
+ $('noteTitle').textContent=n.title;$('noteBody').textContent=n.body;
+ $('noteMemory').textContent=n.memory;$('noteRecall').textContent=n.recall;
+ $('noteAnswer').textContent=n.answer;$('noteDetails').open=false;
+ $('noteCount').textContent=String(notePosition+1).padStart(2,'0')+' / '+String(notePool.length).padStart(2,'0');
+}
+function chooseNoteTopic(topic){
+ notePool=notebookNotes.filter(n=>topic==='all'||n.topic===topic);
+ if(!notePool.length)notePool=notebookNotes.slice();
+ notePosition=Math.floor(Math.random()*notePool.length);$('noteTopic').value=topic;renderNotebook();
+}
+function syncNotebook(q){
+ const key=q?q.id:null;
+ if(q&&noteQuestionKey===key)return;
+ noteQuestionKey=key;chooseNoteTopic(noteTopicFor(q));
+}
+$('nextNote').onclick=()=>{notePosition=(notePosition+1)%notePool.length;renderNotebook()};
+$('noteTopic').onchange=()=>chooseNoteTopic($('noteTopic').value);
+chooseNoteTopic('all');
+
 $('startBtn').onclick=start;$('nickname').addEventListener('input',()=>{$('nicknameError').hidden=true});$('homeBtn').onclick=home;$('resultHomeBtn').onclick=home;$('nextRoundBtn').onclick=start;$('checkBtn').onclick=()=>check();$('revealBtn').onclick=gradeOpen;$('nextBtn').onclick=next;renderRankings();document.addEventListener('keydown',e=>{if(e.key==='Enter'&&$('play').classList.contains('active')&&!$('checkBtn').classList.contains('hidden')&&document.activeElement.id==='userAnswer')check()});</script>
 </body>
 </html>
