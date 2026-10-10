@@ -8,7 +8,7 @@ Quiz jest publikowany przez GitHub Pages:
 
 https://sochagrzegorz.github.io/quiz/
 
-Repozytorium: https://github.com/sochagrzegorz/chlopcy-z-placu-broni-quiz
+Repozytorium: https://github.com/sochagrzegorz/quiz
 
 Po zmianach w index.html GitHub Pages automatycznie przebuduje stronę.
 
@@ -16,14 +16,15 @@ Quiz biologiczny korzysta z endpointu `/grade` tego samego Workera. Po zmianach 
 
 ## Backend AI i ranking
 
-Quiz korzysta z Cloudflare Worker `chlopcy-quiz-ai` oraz OpenAI Responses API. Ocena AI w sekcji IV jest włączona. GitHub Pages obsługuje statyczne pliki, dlatego sekret `OPENAI_API_KEY` pozostaje po stronie Cloudflare.
+Quiz korzysta z Cloudflare Worker `chlopcy-quiz-ai` oraz Cloudflare Workers AI (model Llama 3.3). Ocena AI w sekcji IV jest włączona. GitHub Pages obsługuje statyczne pliki, dlatego sekret `OPENAI_API_KEY` pozostaje po stronie Cloudflare.
 
 Aby odtworzyć konfigurację:
 
 1. Utwórz Workera w Cloudflare Workers & Pages i wklej kod z `worker.js`.
 2. W ustawieniach dodaj sekret `OPENAI_API_KEY`.
-3. Utwórz namespace Workers KV `chlopcy-quiz-ranking` i podłącz go do Workera jako binding `LEADERBOARD` (dla środowiska Production; Previews mogą używać tej samej przestrzeni).
-4. Ustaw w `index.html` `AI_API_URL` na adres Workera zakończony `/grade`; endpoint `/leaderboard` jest tworzony automatycznie przez Worker.
+3. Dodaj binding `AI` dla Cloudflare Workers AI.
+4. Utwórz namespace Workers KV `chlopcy-quiz-ranking` i podłącz go do Workera jako binding `LEADERBOARD` (dla środowiska Production; Previews mogą używać tej samej przestrzeni).
+5. Ustaw w `index.html` `AI_API_URL` na adres Workera zakończony `/grade`; endpoint `/leaderboard` jest tworzony automatycznie przez Worker.
 
 Worker przechowuje do 100 najlepszych pseudonimów, a strona wyświetla TOP 10. Quiz biologiczny automatycznie wysyła wynik (maks. 13 pkt) oraz pseudonim po ukończeniu; quiz z lektury zachowuje przycisk ręcznego dodania wyniku. Publicznie widoczne są wyłącznie pseudonim i wynik. Odpowiedzi opisowe nie są zapisywane w rankingu. Lepszy wynik danego pseudonimu zastępuje słabszy.
 
@@ -46,3 +47,12 @@ Worker ogranicza liczbę żądań na adres IP w obrębie aktywnego procesu. To p
 
 Treść banku pytań przygotowano na podstawie lektury; pytania i odpowiedzi warto zweryfikować pod kątem wydania omawianego w klasie.
 
+
+## Uwagi bezpieczeństwa i wdrożenia
+
+- `worker.js` trzeba wdrożyć osobno w Cloudflare; commit na GitHubie nie aktualizuje Workera.
+- Limity zapisu rankingu działają tylko w obrębie instancji Workera i nie zapewniają globalnej ochrony.
+- Ranking przyjmuje wynik wyliczony w przeglądarce i **nie potwierdza uczciwego rozwiązania quizu**. Do wiarygodnego rankingu konieczna jest ocena odpowiedzi po stronie serwera i wydawanie jednorazowego potwierdzenia wyniku.
+- Równoczesne aktualizacje jednej listy w Workers KV mogą powodować utratę wpisów. Do atomowych aktualizacji zalecany jest Durable Object albo baza D1 z odpowiednią transakcją.
+- Klucz OpenAI nie jest wymagany przez aktualny kod `worker.js`, który korzysta z bindingu Workers AI `AI`.
+- Sekcja V lektury jest oceniana w skali 0–5 pkt za każdą z dwóch wypowiedzi (łącznie 10 pkt); sekcja IV pozostaje 0–2 pkt za odpowiedź.
