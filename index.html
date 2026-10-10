@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#174b3c">
+<title>Quizy klasa 5</title>
+<style>
+:root{color-scheme:light;--ink:#19352d;--green:#174b3c;--muted:#63736c;--line:#ded7c5;--paper:#fffdf7}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#fffdf4,#f2eddd 58%,#e8e3d4);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:linear-gradient(125deg,#153d32,#1d5744 62%,#174333);border-bottom:7px solid #a53d36;color:#fff;padding:clamp(36px,8vw,82px) 20px;text-align:center}
+header p{margin:0 0 8px;color:#ead795;font-weight:750;letter-spacing:.15em;text-transform:uppercase;font-size:.78rem}
+h1{margin:0;font:700 clamp(2.4rem,8vw,4rem)/1.08 Georgia,"Times New Roman",serif}
+header .intro{max-width:620px;margin:16px auto 0;color:#e4eee8;font-size:1.08rem}
+main{width:min(960px,100%);margin:auto;padding:38px 18px 64px}
+h2{font:700 1.5rem Georgia,serif;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{display:flex;flex-direction:column;min-height:260px;padding:clamp(22px,4vw,32px);border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#fffdf8,var(--paper));box-shadow:0 8px 24px #33271112}
+.icon{font-size:2rem}.tag{margin:14px 0 4px;color:#8e4037;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+h3{margin:0;color:var(--green);font:700 clamp(1.3rem,4vw,1.8rem)/1.2 Georgia,serif}
+.card p{margin:12px 0 22px;color:#506158}
+a.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;align-self:flex-start;margin-top:auto;padding:12px 18px;border-radius:10px;background:var(--green);color:white;text-decoration:none;font-weight:750}
+a.button:hover,a.button:focus-visible{background:#24654e;outline:3px solid #bdd5c4;outline-offset:2px}
+.leaderboard{margin-top:32px;padding:clamp(22px,4vw,32px);border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#fffdf8,var(--paper));box-shadow:0 8px 24px #33271112}.leaderboard p{margin:5px 0 14px;color:var(--muted)}.ranking{list-style:none;padding:0;margin:0;display:grid;gap:8px}.ranking li{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 13px;border-radius:11px;background:#f3f6ef}.rank-number{font-weight:850;color:var(--green)}.rank-name{font-weight:750;overflow-wrap:anywhere}.rank-details{display:grid;justify-items:end;gap:2px}.rank-score{font-weight:800;color:var(--green);white-space:nowrap}.rank-quiz{color:var(--muted);font-size:.78rem;text-align:right}@media(max-width:520px){.ranking li{grid-template-columns:28px minmax(0,1fr) auto;gap:7px;padding:10px 8px}.rank-score{font-size:.9rem}}footer{text-align:center;color:var(--muted);font-size:.9rem;margin-top:30px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.card{min-height:220px}main{padding-top:28px}}
+</style>
+</head>
+<body>
+<header><p>Materiały do nauki</p><h1>Quizy klasa 5</h1><div class="intro">Wybierz temat i sprawdź swoją wiedzę. Każdy quiz możesz rozpocząć w dowolnym momencie.</div></header>
+<main>
+<h2>Wybierz quiz</h2>
+<div class="grid">
+<article class="card"><div class="icon" aria-hidden="true">📚</div><div class="tag">Język polski · lektura</div><h3>Chłopcy z Placu Broni</h3><p>Sprawdź znajomość bohaterów, wydarzeń i przesłania powieści Ferenca Molnára. W każdej sesji czeka losowy zestaw pytań.</p><a class="button" href="./lektura/">Rozpocznij quiz <span aria-hidden="true">→</span></a></article>
+<article class="card"><div class="icon" aria-hidden="true">🔬</div><div class="tag">Biologia · rozdział 1</div><h3>Biologia dla klasy 5</h3><p>Przećwicz podstawowe pojęcia i kolejność organizacji ciała — od komórki do organizmu.</p><a class="button" href="./biologia/">Rozpocznij quiz <span aria-hidden="true">→</span></a></article>
+</div>
+<section class="leaderboard" aria-labelledby="biologyRankingTitle"><h2 id="biologyRankingTitle">🔬 TOP 10 — Biologia · rozdział 1</h2><p>Najlepsze wyniki z quizu biologicznego.</p><div id="biologyRanking" aria-live="polite">Pobieranie rankingu…</div></section>
+<section class="leaderboard" aria-labelledby="literatureRankingTitle"><h2 id="literatureRankingTitle">📚 TOP 10 — Chłopcy z Placu Broni</h2><p>Najlepsze wyniki z quizu lekturowego.</p><div id="literatureRanking" aria-live="polite">Pobieranie rankingu…</div></section>
+<footer>Powodzenia w nauce! 🌱</footer>
+<script>
+const LEADERBOARD_API_URL="https://chlopcy-quiz-ai.sochagrzegorz.workers.dev/leaderboard";
+async function loadRanking(hostId,quiz){const host=document.getElementById(hostId);try{const response=await fetch(LEADERBOARD_API_URL+"?quiz="+encodeURIComponent(quiz),{headers:{"Accept":"application/json"}}),data=await response.json().catch(()=>({}));if(!response.ok)throw new Error(data.error||"Błąd serwera ("+response.status+")");const entries=Array.isArray(data.entries)?data.entries.slice(0,10):[];if(!entries.length){host.textContent="Brak wyników. Ukończ ten quiz i dodaj swój wynik do rankingu.";return}const list=document.createElement("ol");list.className="ranking";entries.forEach((entry,index)=>{const row=document.createElement("li"),place=document.createElement("span"),name=document.createElement("span"),score=document.createElement("span");place.className="rank-number";place.textContent=(index+1)+".";name.className="rank-name";name.textContent=entry.nickname||"Uczeń";score.className="rank-score";score.textContent=(entry.points??0)+"/"+(entry.maxPoints??0)+" pkt";row.append(place,name,score);list.appendChild(row)});host.replaceChildren(list)}catch(error){host.textContent="Ranking chwilowo niedostępny. "+error.message}}
+loadRanking("biologyRanking","biologia");loadRanking("literatureRanking","lektura");
+</script>
+</main>
+</body>
+</html>
