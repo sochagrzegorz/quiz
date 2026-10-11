@@ -39,7 +39,7 @@ test('biology: full run, partial open marks, notes, practice and ranking',async(
   const choice=page.locator('.choice-option');
   if(await choice.count()){await choice.first().click();await page.locator('#checkBtn').click();}
   else {for(const input of await page.locator('#inputArea textarea').all())await input.fill('Odpowiedź ucznia z literówką.');await page.locator('#revealBtn').click();}
-  await expect(page.locator('#nextBtn')).toBeVisible();await page.locator('#nextBtn').click();
+  await expect(page.locator('#nextBtn')).toBeVisible();await page.locator('#nextBtn').click();if(i===0)await expect.poll(async()=>Math.abs(await page.locator('#qText').evaluate(el=>el.getBoundingClientRect().top))<48).toBe(true);
  }
  await expect(page.locator('#result')).toHaveClass(/active/);await expect(page.locator('#rankingStatus')).toContainText('zapisany');
  expect(f.calls.length).toEqual(3);const rows=[...(await f.storage.list({prefix:'entry:biologia:'})).values()];expect(rows).toHaveLength(1);expect(rows[0].maxPoints).toEqual(13);
