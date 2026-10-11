@@ -48,7 +48,7 @@ async function handleLeaderboard(request, env, origin) {
   if (request.method !== "GET" && request.method !== "POST") return json({ error: "Dozwolone są metody GET i POST." }, 405, origin);
   let entries = await env.LEADERBOARD.get("leaderboard", "json") || [];
   if (!Array.isArray(entries)) entries = [];
-  if (request.method === "GET") { const requestedQuiz = new URL(request.url).searchParams.get("quiz"); const normalizedQuiz = requestedQuiz === "biologia" ? "biologia" : requestedQuiz === "lektura" ? "lektura" : null; const ranked = entries.map(item => ({ ...item, quiz: item.quiz === "biologia" ? "biologia" : "lektura" })).filter(item => !normalizedQuiz || item.quiz === normalizedQuiz); return json({ entries: ranked.slice(0, 10) }, 200, origin); }
+  if (request.method === "GET") { const requestedQuiz = new URL(request.url).searchParams.get("quiz"); const normalizedQuiz = requestedQuiz === "biologia" ? "biologia" : requestedQuiz === "lektura" ? "lektura" : requestedQuiz === "historia" ? "historia" : null; const ranked = entries.map(item => ({ ...item, quiz: item.quiz === "biologia" ? "biologia" : item.quiz === "historia" ? "historia" : "lektura" })).filter(item => !normalizedQuiz || item.quiz === normalizedQuiz); return json({ entries: ranked.slice(0, 10) }, 200, origin); }
   const ip = request.headers.get("CF-Connecting-IP") || "unknown";
   if (hitLimit("leaderboard:" + ip)) return json({ error: "Zbyt wiele zapisów. Spróbuj za minutę." }, 429, origin);
   let body;
@@ -60,9 +60,9 @@ async function handleLeaderboard(request, env, origin) {
       body.maxPoints < 1 || body.maxPoints > 20 || body.points < 0 || body.points > body.maxPoints) {
     return json({ error: "Pseudonim lub wynik ma nieprawidłowy format." }, 400, origin);
   }
-  if (body.quiz !== "biologia" && body.quiz !== "lektura") return json({ error: "Nieprawidłowy quiz." }, 400, origin);
+  if (body.quiz !== "biologia" && body.quiz !== "lektura" && body.quiz !== "historia") return json({ error: "Nieprawidłowy quiz." }, 400, origin);
   const quiz = body.quiz;
-  if (body.maxPoints !== (quiz === "biologia" ? 13 : 20)) return json({ error: "Nieprawidłowa maksymalna punktacja." }, 400, origin);
+  if (body.maxPoints !== (quiz === "biologia" ? 13 : quiz === "historia" ? 10 : 20)) return json({ error: "Nieprawidłowa maksymalna punktacja." }, 400, origin);
   const entry = { nickname, quiz, points: body.points, maxPoints: body.maxPoints, percent: Math.round(body.points / body.maxPoints * 100) };
   const key = nickname.toLocaleLowerCase("pl");
   const existingIndex = entries.findIndex(item => String(item.nickname || "").toLocaleLowerCase("pl") === key && (item.quiz === "biologia" ? "biologia" : "lektura") === quiz);
