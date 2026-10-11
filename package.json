@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/worker.test.mjs",
+    "test:browser": "playwright test",
+    "test:chromium": "playwright test --project=desktop-chromium --project=android-chromium",
+    "bank:generate": "node build-bank.mjs",
+    "test:runtime": "node --test tests/runtime.test.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "miniflare": "^4.20260730.0"
+  }
+}
+
