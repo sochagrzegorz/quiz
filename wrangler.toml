@@ -1,0 +1,20 @@
+name = "chlopcy-quiz-ai"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "QUIZ"
+class_name = "QuizCoordinator"
+
+[[migrations]]
+tag = "quiz-v1"
+new_sqlite_classes = ["QuizCoordinator"]
+
+# Before deployment add the EXISTING production namespace ID. Never create or
+# overwrite the legacy ranking as part of this migration. See README.
+# [[kv_namespaces]]
+# binding = "LEADERBOARD"
+# id = "EXISTING_PRODUCTION_NAMESPACE_ID"
