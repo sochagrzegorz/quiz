@@ -11,14 +11,13 @@ export class MemoryStorage {
 }
 export function fixture(options = {}) {
   const storage = new MemoryStorage(), calls = [], legacy = options.legacy || [];
-  const env = { AI_TIMEOUT_MS: options.timeout || 1000, LEADERBOARD: { get: async () => structuredClone(legacy), put: async () => { throw new Error('Never mutate legacy KV'); } }, AI: { run: async (model, input) => { calls.push(input); if (options.ai) return options.ai(input); return { response: { score: options.score ?? input.response_format.json_schema.properties.score.maximum, feedback: 'Dobra odpowied�. Sprawd� przyk�ad.' } }; } } };
+  const env = { AI_TIMEOUT_MS: options.timeout || 1000, LEADERBOARD: { get: async () => structuredClone(legacy), put: async () => { throw new Error('Never mutate legacy KV'); } }, AI: { run: async (model, input) => { calls.push(input); if (options.ai) return options.ai(input); return { response: { score: options.score ?? input.response_format.json_schema.properties.score.maximum, feedback: 'Dobra odpowiedź. Sprawdź przykład.' } }; } } };
   const coordinator = new QuizCoordinator({ storage }, env);
   env.QUIZ = { idFromName: name => name, get: () => coordinator };
   const request = async (path, body, headers = {}) => {
     const response = await worker.fetch(new Request('https://quiz.test' + path, { method: body === undefined ? 'GET' : 'POST', headers: { Origin: 'https://sochagrzegorz.github.io', 'CF-Connecting-IP': '192.0.2.1', 'Content-Type': 'application/json', ...headers }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) }), env);
     return { status: response.status, data: await response.json(), headers: response.headers };
   };
-  const start = async (quiz = 'lektura', nickname = 'Ucze�') => (await request('/session', { quiz, nickname })).data;
+  const start = async (quiz = 'lektura', nickname = 'Uczeń') => (await request('/session', { quiz, nickname })).data;
   return { storage, env, coordinator, calls, request, start, legacy };
 }
-

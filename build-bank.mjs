@@ -7,4 +7,3 @@ const start=lit.indexOf('const mcq=');
 const pools=vm.runInNewContext(lit.slice(start,lit.indexOf('const API_BASE'))+'\npools');
 fs.writeFileSync('question-bank.js','// Canonical server question bank. Keep aligned with the quiz HTML; tested for equality.\nexport const biology = '+JSON.stringify(bank,null,2)+';\nexport const literature = '+JSON.stringify(pools,null,2)+';\n');
 fs.writeFileSync('package.json',JSON.stringify({private:true,type:'module',scripts:{test:'node --test tests/*.test.mjs'}},null,2)+'\n');
-

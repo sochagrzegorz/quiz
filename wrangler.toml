@@ -18,4 +18,3 @@ new_sqlite_classes = ["QuizCoordinator"]
 # [[kv_namespaces]]
 # binding = "LEADERBOARD"
 # id = "EXISTING_PRODUCTION_NAMESPACE_ID"
-

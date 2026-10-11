@@ -4,4 +4,3 @@ export default defineConfig({ testDir: './tests/browser', timeout: 60000, worker
  {name:'android-chromium',use:{...devices['Pixel 5']}},
  {name:'iphone-webkit',use:{...devices['iPhone 13']}}
 ] });
-

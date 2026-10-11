@@ -4,111 +4,111 @@ export const biology = [
     "id": "bio-002",
     "kind": "choice",
     "topic": "Biologia jako nauka",
-    "text": "Kt�ry zestaw zawiera wy��cznie grupy organizm�w?",
-    "answer": "Bakterie, protisty, grzyby, ro�liny i zwierz�ta.",
+    "text": "Który zestaw zawiera wyłącznie grupy organizmów?",
+    "answer": "Bakterie, protisty, grzyby, rośliny i zwierzęta.",
     "choices": [
-      "Bakterie, ska�y, grzyby, ro�liny i zwierz�ta.",
-      "Protisty, minera�y, chmury, ro�liny i zwierz�ta.",
-      "Grzyby, woda, powietrze, ro�liny i zwierz�ta.",
-      "Bakterie, protisty, grzyby, ro�liny i zwierz�ta."
+      "Bakterie, skały, grzyby, rośliny i zwierzęta.",
+      "Protisty, minerały, chmury, rośliny i zwierzęta.",
+      "Grzyby, woda, powietrze, rośliny i zwierzęta.",
+      "Bakterie, protisty, grzyby, rośliny i zwierzęta."
     ],
-    "explanation": "Bakterie, protisty, grzyby, ro�liny i zwierz�ta s� organizmami. Ska�y, minera�y, woda i powietrze nie s� organizmami.",
-    "source": "Zdj�cie 1",
+    "explanation": "Bakterie, protisty, grzyby, rośliny i zwierzęta są organizmami. Skały, minerały, woda i powietrze nie są organizmami.",
+    "source": "Zdjęcie 1",
     "sourcePhotos": [
       1
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)"
+      "Zdjęcie 1 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: biologia bada budow� i czynno�ci �yciowe organizm�w oraz zale�no�ci mi�dzy organizmami i �rodowiskiem. Wszystkie organizmy s� zbudowane z kom�rek. Nazwa pochodzi od bios - �ycie i logos - s�owo.",
+    "hintContext": "Podręcznik: biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i środowiskiem. Wszystkie organizmy są zbudowane z komórek. Nazwa pochodzi od bios — życie i logos — słowo.",
     "similarGroups": [],
-    "hint": "Sprawd�, kt�re nazwy oznaczaj� grupy istot �ywych, a kt�re elementy przyrody nieo�ywionej."
+    "hint": "Sprawdź, które nazwy oznaczają grupy istot żywych, a które elementy przyrody nieożywionej."
   },
   {
     "id": "bio-003",
     "kind": "choice",
     "topic": "Biologia jako nauka",
-    "text": "Co oznacza greckie s�owo "bios", od kt�rego pochodzi nazwa biologii?",
-    "answer": "�ycie.",
+    "text": "Co oznacza greckie słowo „bios”, od którego pochodzi nazwa biologii?",
+    "answer": "Życie.",
     "choices": [
       "Woda.",
       "Powietrze.",
-      "�ycie.",
+      "Życie.",
       "Ziemia."
     ],
-    "explanation": "Nazwa biologii pochodzi od greckich s��w bios - �ycie i logos - s�owo.",
-    "source": "Zdj�cie 1",
+    "explanation": "Nazwa biologii pochodzi od greckich słów bios — życie i logos — słowo.",
+    "source": "Zdjęcie 1",
     "sourcePhotos": [
       1
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)"
+      "Zdjęcie 1 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: biologia bada budow� i czynno�ci �yciowe organizm�w oraz zale�no�ci mi�dzy organizmami i �rodowiskiem. Wszystkie organizmy s� zbudowane z kom�rek. Nazwa pochodzi od bios - �ycie i logos - s�owo.",
+    "hintContext": "Podręcznik: biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i środowiskiem. Wszystkie organizmy są zbudowane z komórek. Nazwa pochodzi od bios — życie i logos — słowo.",
     "similarGroups": [
       "bio-name-etymology"
     ],
-    "hint": "Pomy�l o greckim s�owie u�ywanym na okre�lenie tego, co odr��nia istoty �ywe od ska� i wody."
+    "hint": "Pomyśl o greckim słowie używanym na określenie tego, co odróżnia istoty żywe od skał i wody."
   },
   {
     "id": "bio-004",
     "kind": "choice",
     "topic": "Biologia jako nauka",
-    "text": "Kt�re z podanych polskich s��w odpowiada greckiemu "logos", od kt�rego pochodzi nazwa biologii?",
-    "answer": "S�owo.",
+    "text": "Które z podanych polskich słów odpowiada greckiemu „logos”, od którego pochodzi nazwa biologii?",
+    "answer": "Słowo.",
     "choices": [
-      "Kom�rka.",
-      "S�owo.",
-      "Ro�lina.",
-      "Zwierz�."
+      "Komórka.",
+      "Słowo.",
+      "Roślina.",
+      "Zwierzę."
     ],
-    "explanation": "Greckie logos mo�na t�umaczy� jako "s�owo", a bios jako "�ycie".",
-    "source": "Zdj�cie 1",
+    "explanation": "Greckie logos można tłumaczyć jako „słowo”, a bios jako „życie”.",
+    "source": "Zdjęcie 1",
     "sourcePhotos": [
       1
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)"
+      "Zdjęcie 1 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: biologia bada budow� i czynno�ci �yciowe organizm�w oraz zale�no�ci mi�dzy organizmami i �rodowiskiem. Wszystkie organizmy s� zbudowane z kom�rek. Nazwa pochodzi od bios - �ycie i logos - s�owo.",
+    "hintContext": "Podręcznik: biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i środowiskiem. Wszystkie organizmy są zbudowane z komórek. Nazwa pochodzi od bios — życie i logos — słowo.",
     "similarGroups": [
       "bio-name-etymology"
     ],
-    "hint": "Pierwszy cz�on nazwy oznacza �ycie. Zastan�w si�, jak po polsku mo�na kr�tko nazwa� drug� cz��� znaczenia "biologii"."
+    "hint": "Pierwszy człon nazwy oznacza życie. Zastanów się, jak po polsku można krótko nazwać drugą część znaczenia „biologii”."
   },
   {
     "id": "bio-006",
     "kind": "choice",
     "topic": "Biologia jako nauka",
-    "text": "Kt�ry z wymienionych organizm�w jest jednokom�rkowy?",
-    "answer": "Dro�d�e.",
+    "text": "Który z wymienionych organizmów jest jednokomórkowy?",
+    "answer": "Drożdże.",
     "choices": [
       "Sekwoja.",
       "Panda wielka.",
-      "Cz�owiek.",
-      "Dro�d�e."
+      "Człowiek.",
+      "Drożdże."
     ],
-    "explanation": "Pojedynczy organizm dro�d�y jest zbudowany z jednej kom�rki. Sekwoja, panda i cz�owiek s� wielokom�rkowe.",
-    "source": "Zdj�cie 1",
+    "explanation": "Pojedynczy organizm drożdży jest zbudowany z jednej komórki. Sekwoja, panda i człowiek są wielokomórkowe.",
+    "source": "Zdjęcie 1",
     "sourcePhotos": [
       1
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)"
+      "Zdjęcie 1 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: biologia bada budow� i czynno�ci �yciowe organizm�w oraz zale�no�ci mi�dzy organizmami i �rodowiskiem. Wszystkie organizmy s� zbudowane z kom�rek. Nazwa pochodzi od bios - �ycie i logos - s�owo.",
+    "hintContext": "Podręcznik: biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i środowiskiem. Wszystkie organizmy są zbudowane z komórek. Nazwa pochodzi od bios — życie i logos — słowo.",
     "similarGroups": [],
-    "hint": "W podr�czniku pokazano organizm grzyba zbudowany tylko z jednej kom�rki. Kt�ry przyk�ad pasuje do tego opisu?"
+    "hint": "W podręczniku pokazano organizm grzyba zbudowany tylko z jednej komórki. Który przykład pasuje do tego opisu?"
   },
   {
     "id": "bio-008",
     "kind": "choice",
     "topic": "Dziedziny biologii",
-    "text": "Jak nazywa si� nauka o zwierz�tach?",
+    "text": "Jak nazywa się nauka o zwierzętach?",
     "answer": "Zoologia.",
     "choices": [
       "Anatomia.",
@@ -116,1174 +116,1174 @@ export const biology = [
       "Botanika.",
       "Mikrobiologia."
     ],
-    "explanation": "Zoologia zajmuje si� zwierz�tami.",
-    "source": "Zdj�cie 5",
+    "explanation": "Zoologia zajmuje się zwierzętami.",
+    "source": "Zdjęcie 5",
     "sourcePhotos": [
       5
     ],
     "sourceReferences": [
-      "Zdj�cie 5 (s. 11)"
+      "Zdjęcie 5 (s. 11)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia zoologi� (zwierz�ta), botanik� (ro�liny), mikrobiologi� (mikroorganizmy), anatomi� (budow� wewn�trzn�), fizjologi� (czynno�ci �yciowe) i ekologi� (zale�no�ci organizm�w ze �rodowiskiem).",
+    "hintContext": "Podręcznik wymienia zoologię (zwierzęta), botanikę (rośliny), mikrobiologię (mikroorganizmy), anatomię (budowę wewnętrzną), fizjologię (czynności życiowe) i ekologię (zależności organizmów ze środowiskiem).",
     "similarGroups": [],
-    "hint": "Przypomnij sobie nazw� dziedziny biologii, kt�rej przedmiotem s� zwierz�ta."
+    "hint": "Przypomnij sobie nazwę dziedziny biologii, której przedmiotem są zwierzęta."
   },
   {
     "id": "bio-009",
     "kind": "choice",
     "topic": "Dziedziny biologii",
-    "text": "Kt�r� dziedzin� biologii wybierze badacz zajmuj�cy si� ro�linami?",
-    "answer": "Botanik�.",
+    "text": "Którą dziedzinę biologii wybierze badacz zajmujący się roślinami?",
+    "answer": "Botanikę.",
     "choices": [
-      "Botanik�.",
-      "Zoologi�.",
-      "Mikrobiologi�.",
-      "Fizjologi� zwierz�t."
+      "Botanikę.",
+      "Zoologię.",
+      "Mikrobiologię.",
+      "Fizjologię zwierząt."
     ],
-    "explanation": "Botanika to nauka o ro�linach.",
-    "source": "Zdj�cie 5",
+    "explanation": "Botanika to nauka o roślinach.",
+    "source": "Zdjęcie 5",
     "sourcePhotos": [
       5
     ],
     "sourceReferences": [
-      "Zdj�cie 5 (s. 11)"
+      "Zdjęcie 5 (s. 11)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia zoologi� (zwierz�ta), botanik� (ro�liny), mikrobiologi� (mikroorganizmy), anatomi� (budow� wewn�trzn�), fizjologi� (czynno�ci �yciowe) i ekologi� (zale�no�ci organizm�w ze �rodowiskiem).",
+    "hintContext": "Podręcznik wymienia zoologię (zwierzęta), botanikę (rośliny), mikrobiologię (mikroorganizmy), anatomię (budowę wewnętrzną), fizjologię (czynności życiowe) i ekologię (zależności organizmów ze środowiskiem).",
     "similarGroups": [],
-    "hint": "Dopasuj nazw� dziedziny do jej obiektu: chodzi o nauk� zajmuj�c� si� ro�linami."
+    "hint": "Dopasuj nazwę dziedziny do jej obiektu: chodzi o naukę zajmującą się roślinami."
   },
   {
     "id": "bio-010",
     "kind": "choice",
     "topic": "Dziedziny biologii",
-    "text": "Czym zajmuje si� mikrobiologia?",
+    "text": "Czym zajmuje się mikrobiologia?",
     "answer": "Mikroorganizmami.",
     "choices": [
-      "Wy��cznie du�ymi ssakami.",
-      "Wy��cznie budow� li�ci.",
-      "Wy��cznie ruchem planet.",
+      "Wyłącznie dużymi ssakami.",
+      "Wyłącznie budową liści.",
+      "Wyłącznie ruchem planet.",
       "Mikroorganizmami."
     ],
     "explanation": "Mikrobiologia bada mikroorganizmy.",
-    "source": "Zdj�cie 5",
+    "source": "Zdjęcie 5",
     "sourcePhotos": [
       5
     ],
     "sourceReferences": [
-      "Zdj�cie 5 (s. 11)"
+      "Zdjęcie 5 (s. 11)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia zoologi� (zwierz�ta), botanik� (ro�liny), mikrobiologi� (mikroorganizmy), anatomi� (budow� wewn�trzn�), fizjologi� (czynno�ci �yciowe) i ekologi� (zale�no�ci organizm�w ze �rodowiskiem).",
+    "hintContext": "Podręcznik wymienia zoologię (zwierzęta), botanikę (rośliny), mikrobiologię (mikroorganizmy), anatomię (budowę wewnętrzną), fizjologię (czynności życiowe) i ekologię (zależności organizmów ze środowiskiem).",
     "similarGroups": [],
-    "hint": "Cz�stka "mikro" podpowiada, �e ta dziedzina zajmuje si� bardzo ma�ymi organizmami."
+    "hint": "Cząstka „mikro” podpowiada, że ta dziedzina zajmuje się bardzo małymi organizmami."
   },
   {
     "id": "bio-013",
     "kind": "choice",
     "topic": "Dziedziny biologii",
-    "text": "Badanie zale�no�ci mi�dzy organizmami a �rodowiskiem nale�y do:",
+    "text": "Badanie zależności między organizmami a środowiskiem należy do:",
     "answer": "Ekologii.",
     "choices": [
       "Ekologii.",
       "Anatomii.",
-      "Wy��cznie botaniki.",
-      "Wy��cznie zoologii."
+      "Wyłącznie botaniki.",
+      "Wyłącznie zoologii."
     ],
-    "explanation": "Ekologia bada mi�dzy innymi zale�no�ci organizm�w z ich �rodowiskiem.",
-    "source": "Zdj�cie 5",
+    "explanation": "Ekologia bada między innymi zależności organizmów z ich środowiskiem.",
+    "source": "Zdjęcie 5",
     "sourcePhotos": [
       5
     ],
     "sourceReferences": [
-      "Zdj�cie 5 (s. 11)"
+      "Zdjęcie 5 (s. 11)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia zoologi� (zwierz�ta), botanik� (ro�liny), mikrobiologi� (mikroorganizmy), anatomi� (budow� wewn�trzn�), fizjologi� (czynno�ci �yciowe) i ekologi� (zale�no�ci organizm�w ze �rodowiskiem).",
+    "hintContext": "Podręcznik wymienia zoologię (zwierzęta), botanikę (rośliny), mikrobiologię (mikroorganizmy), anatomię (budowę wewnętrzną), fizjologię (czynności życiowe) i ekologię (zależności organizmów ze środowiskiem).",
     "similarGroups": [],
-    "hint": "Szukaj dziedziny badaj�cej powi�zania organizm�w z miejscem, w kt�rym �yj�."
+    "hint": "Szukaj dziedziny badającej powiązania organizmów z miejscem, w którym żyją."
   },
   {
     "id": "bio-016",
     "kind": "choice",
-    "topic": "Czynno�ci �yciowe",
-    "text": "Kt�re zdanie o oddychaniu organizm�w jest prawdziwe?",
-    "answer": "U wi�kszo�ci organizm�w, tak�e u ro�lin, wymaga ono tlenu.",
+    "topic": "Czynności życiowe",
+    "text": "Które zdanie o oddychaniu organizmów jest prawdziwe?",
+    "answer": "U większości organizmów, także u roślin, wymaga ono tlenu.",
     "choices": [
-      "Oddychanie zachodzi wy��cznie u organizm�w wielokom�rkowych.",
-      "U wi�kszo�ci organizm�w, tak�e u ro�lin, wymaga ono tlenu.",
-      "Ro�liny w og�le nie oddychaj�.",
-      "Tlen jest potrzebny wy��cznie zwierz�tom."
+      "Oddychanie zachodzi wyłącznie u organizmów wielokomórkowych.",
+      "U większości organizmów, także u roślin, wymaga ono tlenu.",
+      "Rośliny w ogóle nie oddychają.",
+      "Tlen jest potrzebny wyłącznie zwierzętom."
     ],
-    "explanation": "Wi�kszo�� organizm�w, w tym ro�liny, wykorzystuje tlen do oddychania i uwalniania energii z pokarmu.",
-    "source": "Zdj�cie 2",
+    "explanation": "Większość organizmów, w tym rośliny, wykorzystuje tlen do oddychania i uwalniania energii z pokarmu.",
+    "source": "Zdjęcie 2",
     "sourcePhotos": [
       2
     ],
     "sourceReferences": [
-      "Zdj�cie 2 (s. 8)"
+      "Zdjęcie 2 (s. 8)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Pomy�l, jaki gaz wi�kszo�� organizm�w pobiera z powietrza podczas uwalniania energii z pokarmu."
+    "hint": "Pomyśl, jaki gaz większość organizmów pobiera z powietrza podczas uwalniania energii z pokarmu."
   },
   {
     "id": "bio-017",
     "kind": "choice",
-    "topic": "Czynno�ci �yciowe",
+    "topic": "Czynności życiowe",
     "text": "Jaki gaz powstaje podczas oddychania i jest usuwany z organizmu?",
-    "answer": "Dwutlenek w�gla.",
+    "answer": "Dwutlenek węgla.",
     "choices": [
-      "Dwutlenek w�gla.",
+      "Dwutlenek węgla.",
       "Tlen.",
       "Azot.",
       "Hel."
     ],
-    "explanation": "Podczas oddychania powstaje dwutlenek w�gla, kt�ry jest usuwany z organizmu.",
-    "source": "Zdj�cie 2",
+    "explanation": "Podczas oddychania powstaje dwutlenek węgla, który jest usuwany z organizmu.",
+    "source": "Zdjęcie 2",
     "sourcePhotos": [
       2
     ],
     "sourceReferences": [
-      "Zdj�cie 2 (s. 8)"
+      "Zdjęcie 2 (s. 8)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "W czasie oddychania powstaje gaz, kt�ry panda tak�e usuwa z organizmu. To jeden ze sk�adnik�w powietrza."
+    "hint": "W czasie oddychania powstaje gaz, który panda także usuwa z organizmu. To jeden ze składników powietrza."
   },
   {
     "id": "bio-019",
     "kind": "choice",
-    "topic": "Czynno�ci �yciowe",
-    "text": "W przyk�adzie pandy z podr�cznika, kt�re substancje s� usuwane z organizmu wraz z moczem?",
+    "topic": "Czynności życiowe",
+    "text": "W przykładzie pandy z podręcznika, które substancje są usuwane z organizmu wraz z moczem?",
     "answer": "Nadmiar wody i soli mineralnych oraz szkodliwe substancje.",
     "choices": [
-      "Tylko sk�adniki potrzebne do budowy nowych kom�rek.",
-      "Wy��cznie dwutlenek w�gla.",
+      "Tylko składniki potrzebne do budowy nowych komórek.",
+      "Wyłącznie dwutlenek węgla.",
       "Nadmiar wody i soli mineralnych oraz szkodliwe substancje.",
-      "Wy��cznie tlen."
+      "Wyłącznie tlen."
     ],
-    "explanation": "Z moczem organizm usuwa mi�dzy innymi nadmiar wody i soli mineralnych oraz szkodliwe produkty przemian.",
-    "source": "Zdj�cie 2",
+    "explanation": "Z moczem organizm usuwa między innymi nadmiar wody i soli mineralnych oraz szkodliwe produkty przemian.",
+    "source": "Zdjęcie 2",
     "sourcePhotos": [
       2
     ],
     "sourceReferences": [
-      "Zdj�cie 2 (s. 8)"
+      "Zdjęcie 2 (s. 8)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Podpis przy pandzie wymienia, co jej mocz usuwa opr�cz szkodliwych substancji. Zwr�� uwag� na sk�adniki, kt�rych nadmiar organizm reguluje."
+    "hint": "Podpis przy pandzie wymienia, co jej mocz usuwa oprócz szkodliwych substancji. Zwróć uwagę na składniki, których nadmiar organizm reguluje."
   },
   {
     "id": "bio-021",
     "kind": "choice",
-    "topic": "Czynno�ci �yciowe",
-    "text": "Kt�ry przyk�ad pokazuje ruch ro�liny?",
-    "answer": "Zwracanie li�ci i �odygi w stron� �wiat�a.",
+    "topic": "Czynności życiowe",
+    "text": "Który przykład pokazuje ruch rośliny?",
+    "answer": "Zwracanie liści i łodygi w stronę światła.",
     "choices": [
-      "Zwracanie li�ci i �odygi w stron� �wiat�a.",
+      "Zwracanie liści i łodygi w stronę światła.",
       "Wytwarzanie nowych nasion.",
       "Usuwanie nadmiaru wody.",
       "Uwalnianie energii z pokarmu."
     ],
-    "explanation": "Ro�lina mo�e zmienia� po�o�enie cz��ci cia�a, mimo �e nie przemieszcza si� jak zwierz�.",
-    "source": "Zdj�cie 3",
+    "explanation": "Roślina może zmieniać położenie części ciała, mimo że nie przemieszcza się jak zwierzę.",
+    "source": "Zdjęcie 3",
     "sourcePhotos": [
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Ro�lina nie musi chodzi�, by wykonywa� ruch. Przypomnij sobie, jak jej cz��ci ustawiaj� si� wzgl�dem �wiat�a."
+    "hint": "Roślina nie musi chodzić, by wykonywać ruch. Przypomnij sobie, jak jej części ustawiają się względem światła."
   },
   {
     "id": "bio-024",
     "kind": "choice",
-    "topic": "Czynno�ci �yciowe",
-    "text": "Czym jest rozmna�anie si�?",
-    "answer": "Wydawaniem na �wiat potomstwa.",
+    "topic": "Czynności życiowe",
+    "text": "Czym jest rozmnażanie się?",
+    "answer": "Wydawaniem na świat potomstwa.",
     "choices": [
-      "Usuwaniem zb�dnych substancji.",
-      "Wydawaniem na �wiat potomstwa.",
-      "Zwi�kszaniem masy jednego osobnika.",
-      "Przemieszczaniem si� w �rodowisku."
+      "Usuwaniem zbędnych substancji.",
+      "Wydawaniem na świat potomstwa.",
+      "Zwiększaniem masy jednego osobnika.",
+      "Przemieszczaniem się w środowisku."
     ],
-    "explanation": "Rozmna�anie prowadzi do powstawania nowych organizm�w.",
-    "source": "Zdj�cie 3",
+    "explanation": "Rozmnażanie prowadzi do powstawania nowych organizmów.",
+    "source": "Zdjęcie 3",
     "sourcePhotos": [
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Ta czynno�� �yciowa sprawia, �e pojawiaj� si� nowe osobniki danego gatunku."
+    "hint": "Ta czynność życiowa sprawia, że pojawiają się nowe osobniki danego gatunku."
   },
   {
     "id": "bio-027",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�ra kolejno�� poziom�w budowy organizmu zwierz�cego jest poprawna?",
-    "answer": "Kom�rka  tkanka  narz�d  uk�ad narz�d�w  organizm.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Która kolejność poziomów budowy organizmu zwierzęcego jest poprawna?",
+    "answer": "Komórka → tkanka → narząd → układ narządów → organizm.",
     "choices": [
-      "Kom�rka  narz�d  tkanka  uk�ad narz�d�w  organizm.",
-      "Narz�d  tkanka  kom�rka  organizm  uk�ad narz�d�w.",
-      "Kom�rka  tkanka  narz�d  uk�ad narz�d�w  organizm.",
-      "Tkanka  kom�rka  narz�d  organizm  uk�ad narz�d�w."
+      "Komórka → narząd → tkanka → układ narządów → organizm.",
+      "Narząd → tkanka → komórka → organizm → układ narządów.",
+      "Komórka → tkanka → narząd → układ narządów → organizm.",
+      "Tkanka → komórka → narząd → organizm → układ narządów."
     ],
-    "explanation": "Podobne kom�rki tworz� tkanki, tkanki buduj� narz�dy, a narz�dy wsp��pracuj� w uk�adach.",
-    "source": "Zdj�cie 4",
+    "explanation": "Podobne komórki tworzą tkanki, tkanki budują narządy, a narządy współpracują w układach.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [
       "organism-hierarchy"
     ],
-    "hint": "U��� poziomy od najmniejszego: pojedynczy element, grupa podobnych element�w, cz��� cia�a, wsp��pracuj�cy zestaw cz��ci, ca�e zwierz�."
+    "hint": "Ułóż poziomy od najmniejszego: pojedynczy element, grupa podobnych elementów, część ciała, współpracujący zestaw części, całe zwierzę."
   },
   {
     "id": "bio-028",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Jaka jest podstawowa jednostka budowy organizm�w?",
-    "answer": "Kom�rka.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Jaka jest podstawowa jednostka budowy organizmów?",
+    "answer": "Komórka.",
     "choices": [
-      "Uk�ad narz�d�w.",
-      "Kom�rka.",
+      "Układ narządów.",
+      "Komórka.",
       "Tkanka.",
-      "Narz�d."
+      "Narząd."
     ],
-    "explanation": "Kom�rka jest podstawowym i najmniejszym z wymienionych poziom�w budowy.",
-    "source": "Zdj�cie 4",
+    "explanation": "Komórka jest podstawowym i najmniejszym z wymienionych poziomów budowy.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [
       "single-cell-meaning"
     ],
-    "hint": "To najmniejszy poziom budowy wsp�lny wszystkim organizmom, tak�e jednokom�rkowym dro�d�om."
+    "hint": "To najmniejszy poziom budowy wspólny wszystkim organizmom, także jednokomórkowym drożdżom."
   },
   {
     "id": "bio-031",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�rym poziomem budowy organizmu jest serce?",
-    "answer": "Narz�dem.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Którym poziomem budowy organizmu jest serce?",
+    "answer": "Narządem.",
     "choices": [
-      "Tkank�.",
-      "Ca�ym organizmem.",
-      "Narz�dem.",
-      "Kom�rk�."
+      "Tkanką.",
+      "Całym organizmem.",
+      "Narządem.",
+      "Komórką."
     ],
-    "explanation": "Serce jest narz�dem: sk�ada si� z r��nych tkanek i pe�ni okre�lon� funkcj� w organizmie.",
-    "source": "Zdj�cie 4",
+    "explanation": "Serce jest narządem: składa się z różnych tkanek i pełni określoną funkcję w organizmie.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Serce sk�ada si� z tkanek i pe�ni okre�lon� funkcj�. W tabeli sprawd� nazw� takiej cz��ci cia�a."
+    "hint": "Serce składa się z tkanek i pełni określoną funkcję. W tabeli sprawdź nazwę takiej części ciała."
   },
   {
     "id": "bio-032",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�r� z wymienionych tkanek zaliczamy do tkanek zwierz�cych?",
-    "answer": "Tkank� mi��niow�.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Którą z wymienionych tkanek zaliczamy do tkanek zwierzęcych?",
+    "answer": "Tkankę mięśniową.",
     "choices": [
-      "Tkank� okrywaj�c� ro�lin.",
-      "Tkank� mi��niow�.",
-      "Tkank� mi�kiszow�.",
-      "Tkank� przewodz�c� ro�lin."
+      "Tkankę okrywającą roślin.",
+      "Tkankę mięśniową.",
+      "Tkankę miękiszową.",
+      "Tkankę przewodzącą roślin."
     ],
-    "explanation": "Tkanka mi��niowa wyst�puje u zwierz�t. Pozosta�e odpowiedzi dotycz� tkanek ro�linnych.",
-    "source": "Zdj�cie 4",
+    "explanation": "Tkanka mięśniowa występuje u zwierząt. Pozostałe odpowiedzi dotyczą tkanek roślinnych.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Wybierz tkank� zwi�zan� z ruchem zwierz�cia; pozosta�e nazwy mog� dotyczy� ro�lin."
+    "hint": "Wybierz tkankę związaną z ruchem zwierzęcia; pozostałe nazwy mogą dotyczyć roślin."
   },
   {
     "id": "bio-034",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�re elementy nale�� do uk�adu krwiono�nego zwierz�cia?",
-    "answer": "Serce i naczynia krwiono�ne.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Które elementy należą do układu krwionośnego zwierzęcia?",
+    "answer": "Serce i naczynia krwionośne.",
     "choices": [
-      "Li�� i �odyg�.",
+      "Liść i łodygę.",
       "Okular i obiektyw.",
-      "Korze� i li��.",
-      "Serce i naczynia krwiono�ne."
+      "Korzeń i liść.",
+      "Serce i naczynia krwionośne."
     ],
-    "explanation": "Serce i naczynia krwiono�ne wsp��pracuj� w uk�adzie krwiono�nym.",
-    "source": "Zdj�cie 4",
+    "explanation": "Serce i naczynia krwionośne współpracują w układzie krwionośnym.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Na ilustracji uk�adu krwiono�nego psa podpisano pomp� oraz przewody, kt�rymi p�ynie krew."
+    "hint": "Na ilustracji układu krwionośnego psa podpisano pompę oraz przewody, którymi płynie krew."
   },
   {
     "id": "bio-036",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�ry z wymienionych element�w jest organem ro�liny?",
-    "answer": "Li��.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Który z wymienionych elementów jest organem rośliny?",
+    "answer": "Liść.",
     "choices": [
-      "Ca�a ro�lina.",
-      "Li��.",
-      "Tkanka mi�kiszowa.",
-      "Kom�rka ro�linna."
+      "Cała roślina.",
+      "Liść.",
+      "Tkanka miękiszowa.",
+      "Komórka roślinna."
     ],
-    "explanation": "Li�� jest organem, natomiast kom�rka i tkanka reprezentuj� ni�sze poziomy budowy.",
-    "source": "Zdj�cie 4",
+    "explanation": "Liść jest organem, natomiast komórka i tkanka reprezentują niższe poziomy budowy.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Na ilustracji ro�liny wybierz cz���, kt�ra jest organem, a nie pojedyncz� kom�rk� ani grup� kom�rek."
+    "hint": "Na ilustracji rośliny wybierz część, która jest organem, a nie pojedynczą komórką ani grupą komórek."
   },
   {
     "id": "bio-037",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�r� z wymienionych tkanek zaliczamy do tkanek ro�linnych?",
-    "answer": "Tkank� mi�kiszow�.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Którą z wymienionych tkanek zaliczamy do tkanek roślinnych?",
+    "answer": "Tkankę miękiszową.",
     "choices": [
-      "Tkank� mi�kiszow�.",
-      "Tkank� mi��niow�.",
-      "Tkank� nerwow�.",
-      "Tkank� kostn�."
+      "Tkankę miękiszową.",
+      "Tkankę mięśniową.",
+      "Tkankę nerwową.",
+      "Tkankę kostną."
     ],
-    "explanation": "Tkanka mi�kiszowa wyst�puje u ro�lin. Tkanki mi��niowa, nerwowa i kostna s� tkankami zwierz�cymi.",
-    "source": "Zdj�cie 4",
+    "explanation": "Tkanka miękiszowa występuje u roślin. Tkanki mięśniowa, nerwowa i kostna są tkankami zwierzęcymi.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Szukaj tkanki z przyk�adu ro�linnego w tabeli poziom�w budowy; jej nazwa zaczyna si� od "mi�k-"."
+    "hint": "Szukaj tkanki z przykładu roślinnego w tabeli poziomów budowy; jej nazwa zaczyna się od „mięk-”."
   },
   {
     "id": "bio-038",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�ra para sk�ada si� z organ�w nale��cych do systemu p�dowego ro�liny?",
-    "answer": "Li�� i �odyga.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Która para składa się z organów należących do systemu pędowego rośliny?",
+    "answer": "Liść i łodyga.",
     "choices": [
-      "Serce i naczynia krwiono�ne.",
-      "Korze� i serce.",
-      "�odyga i kom�rka zwierz�ca.",
-      "Li�� i �odyga."
+      "Serce i naczynia krwionośne.",
+      "Korzeń i serce.",
+      "Łodyga i komórka zwierzęca.",
+      "Liść i łodyga."
     ],
-    "explanation": "Li�� i �odyga s� organami ro�liny i nale�� do systemu p�dowego.",
-    "source": "Zdj�cie 4",
+    "explanation": "Liść i łodyga są organami rośliny i należą do systemu pędowego.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "System p�dowy ro�liny obejmuje cz��ci widoczne nad ziemi�, w tym elementy pokazane na rysunku z li��mi."
+    "hint": "System pędowy rośliny obejmuje części widoczne nad ziemią, w tym elementy pokazane na rysunku z liśćmi."
   },
   {
     "id": "bio-039",
     "kind": "choice",
-    "topic": "Poziomy budowy organizm�w",
-    "text": "Kt�ra kolejno�� poziom�w budowy ro�liny jest poprawna?",
-    "answer": "Kom�rka  tkanka  organ  system organ�w  organizm.",
+    "topic": "Poziomy budowy organizmów",
+    "text": "Która kolejność poziomów budowy rośliny jest poprawna?",
+    "answer": "Komórka → tkanka → organ → system organów → organizm.",
     "choices": [
-      "Organ  kom�rka  system organ�w  tkanka  organizm.",
-      "Tkanka  system organ�w  kom�rka  organ  organizm.",
-      "Kom�rka  tkanka  organ  system organ�w  organizm.",
-      "Kom�rka  organ  tkanka  organizm  system organ�w."
+      "Organ → komórka → system organów → tkanka → organizm.",
+      "Tkanka → system organów → komórka → organ → organizm.",
+      "Komórka → tkanka → organ → system organów → organizm.",
+      "Komórka → organ → tkanka → organizm → system organów."
     ],
-    "explanation": "U ro�lin tkanki buduj� organy, a organy ��cz� si� w systemy.",
-    "source": "Zdj�cie 4",
+    "explanation": "U roślin tkanki budują organy, a organy łączą się w systemy.",
+    "source": "Zdjęcie 4",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [
       "organism-hierarchy"
     ],
-    "hint": "U ro�lin mi�dzy tkank� a systemem wyst�puje organ. Pami�taj te�, �e uk�ad ko�czy si� ca�ym organizmem."
+    "hint": "U roślin między tkanką a systemem występuje organ. Pamiętaj też, że układ kończy się całym organizmem."
   },
   {
     "id": "bio-042",
     "kind": "choice",
-    "topic": "Obserwacja i do�wiadczenie",
-    "text": "Jak nale�y obserwowa� dzikie zwierz�ta, aby nie wp�ywa� na ich zachowanie?",
-    "answer": "Zadba� o to, by nie zauwa�y�y obecno�ci obserwatora.",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Jak należy obserwować dzikie zwierzęta, aby nie wpływać na ich zachowanie?",
+    "answer": "Zadbać o to, by nie zauważyły obecności obserwatora.",
     "choices": [
-      "Podchodzi� do nich i zmusza� je do ruchu.",
-      "Karmi� je przed ka�d� obserwacj�.",
-      "Ha�asowa�, aby wysz�y z kryj�wki.",
-      "Zadba� o to, by nie zauwa�y�y obecno�ci obserwatora."
+      "Podchodzić do nich i zmuszać je do ruchu.",
+      "Karmić je przed każdą obserwacją.",
+      "Hałasować, aby wyszły z kryjówki.",
+      "Zadbać o to, by nie zauważyły obecności obserwatora."
     ],
-    "explanation": "Obserwator powinien ogranicza� sw�j wp�yw na zachowanie zwierz�t, zachowuj�c dystans i cisz�.",
-    "source": "Zdj�cie 6",
+    "explanation": "Obserwator powinien ograniczać swój wpływ na zachowanie zwierząt, zachowując dystans i ciszę.",
+    "source": "Zdjęcie 6",
     "sourcePhotos": [
       6
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)"
+      "Zdjęcie 6 (s. 12)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja polega na uwa�nym przygl�daniu si� bez wp�ywania na przebieg zjawiska. W do�wiadczeniu zmienia si� jeden badany czynnik; pr�ba kontrolna nie zmienia badanego czynnika.",
+    "hintContext": "Podręcznik: obserwacja polega na uważnym przyglądaniu się bez wpływania na przebieg zjawiska. W doświadczeniu zmienia się jeden badany czynnik; próba kontrolna nie zmienia badanego czynnika.",
     "similarGroups": [],
-    "hint": "Przy obserwacji w terenie badacz nie powinien zmienia� zachowania zwierz�t. Jak mo�e pozosta� niezauwa�ony?"
+    "hint": "Przy obserwacji w terenie badacz nie powinien zmieniać zachowania zwierząt. Jak może pozostać niezauważony?"
   },
   {
     "id": "bio-044",
     "kind": "choice",
-    "topic": "Obserwacja i do�wiadczenie",
-    "text": "Ucze� przygl�da si� zachowaniu pary bocian�w i nie ingeruje w ich �ycie. Co prowadzi?",
-    "answer": "Obserwacj�.",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Uczeń przygląda się zachowaniu pary bocianów i nie ingeruje w ich życie. Co prowadzi?",
+    "answer": "Obserwację.",
     "choices": [
-      "Eksperyment wymagaj�cy zmiany ich gniazda.",
-      "Obserwacj�.",
-      "Do�wiadczenie ze zmienionym czynnikiem.",
-      "Pr�b� badawcz� polegaj�c� na karmieniu ptak�w."
+      "Eksperyment wymagający zmiany ich gniazda.",
+      "Obserwację.",
+      "Doświadczenie ze zmienionym czynnikiem.",
+      "Próbę badawczą polegającą na karmieniu ptaków."
     ],
-    "explanation": "Przygl�danie si� bocianom bez ingerencji jest przyk�adem obserwacji.",
-    "source": "Zdj�cie 6",
+    "explanation": "Przyglądanie się bocianom bez ingerencji jest przykładem obserwacji.",
+    "source": "Zdjęcie 6",
     "sourcePhotos": [
       6
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)"
+      "Zdjęcie 6 (s. 12)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja polega na uwa�nym przygl�daniu si� bez wp�ywania na przebieg zjawiska. W do�wiadczeniu zmienia si� jeden badany czynnik; pr�ba kontrolna nie zmienia badanego czynnika.",
+    "hintContext": "Podręcznik: obserwacja polega na uważnym przyglądaniu się bez wpływania na przebieg zjawiska. W doświadczeniu zmienia się jeden badany czynnik; próba kontrolna nie zmienia badanego czynnika.",
     "similarGroups": [
       "observation-or-experiment"
     ],
-    "hint": "Ucze� tylko si� przygl�da i nie zmienia �adnego warunku. Czy to obserwacja, czy do�wiadczenie?"
+    "hint": "Uczeń tylko się przygląda i nie zmienia żadnego warunku. Czy to obserwacja, czy doświadczenie?"
   },
   {
     "id": "bio-045",
     "kind": "choice",
-    "topic": "Obserwacja i do�wiadczenie",
-    "text": "Badacz podlewa jedn� grup� fasoli wi�ksz� ilo�ci� wody i por�wnuje jej wzrost z drug� grup�. Co prowadzi?",
-    "answer": "Do�wiadczenie.",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "Badacz podlewa jedną grupę fasoli większą ilością wody i porównuje jej wzrost z drugą grupą. Co prowadzi?",
+    "answer": "Doświadczenie.",
     "choices": [
-      "Do�wiadczenie.",
-      "Obserwacj� bez zmiany warunk�w.",
-      "Wy��cznie przegl�d atlasu ro�lin.",
+      "Doświadczenie.",
+      "Obserwację bez zmiany warunków.",
+      "Wyłącznie przegląd atlasu roślin.",
       "Badanie budowy mikroskopu."
     ],
-    "explanation": "Celowa zmiana ilo�ci wody sprawia, �e jest to do�wiadczenie.",
-    "source": "Zdj�cie 6",
+    "explanation": "Celowa zmiana ilości wody sprawia, że jest to doświadczenie.",
+    "source": "Zdjęcie 6",
     "sourcePhotos": [
       6
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)"
+      "Zdjęcie 6 (s. 12)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja polega na uwa�nym przygl�daniu si� bez wp�ywania na przebieg zjawiska. W do�wiadczeniu zmienia si� jeden badany czynnik; pr�ba kontrolna nie zmienia badanego czynnika.",
+    "hintContext": "Podręcznik: obserwacja polega na uważnym przyglądaniu się bez wpływania na przebieg zjawiska. W doświadczeniu zmienia się jeden badany czynnik; próba kontrolna nie zmienia badanego czynnika.",
     "similarGroups": [
       "observation-or-experiment"
     ],
-    "hint": "W jednym zestawie celowo zmienia si� ilo�� wody, a potem por�wnuje wzrost. To kluczowa cecha jednej z metod badania."
+    "hint": "W jednym zestawie celowo zmienia się ilość wody, a potem porównuje wzrost. To kluczowa cecha jednej z metod badania."
   },
   {
     "id": "bio-047",
     "kind": "choice",
-    "topic": "Obserwacja i do�wiadczenie",
-    "text": "W kt�rej pr�bie zmieniamy wybrany czynnik?",
-    "answer": "W pr�bie badawczej.",
+    "topic": "Obserwacja i doświadczenie",
+    "text": "W której próbie zmieniamy wybrany czynnik?",
+    "answer": "W próbie badawczej.",
     "choices": [
-      "W �adnej pr�bie do�wiadczenia.",
-      "W obu pr�bach zawsze w taki sam spos�b.",
-      "W pr�bie badawczej.",
-      "W pr�bie kontrolnej zamiast badawczej."
+      "W żadnej próbie doświadczenia.",
+      "W obu próbach zawsze w taki sam sposób.",
+      "W próbie badawczej.",
+      "W próbie kontrolnej zamiast badawczej."
     ],
-    "explanation": "Pr�ba badawcza jest zestawem, w kt�rym zmienia si� badany czynnik.",
-    "source": "Zdj�cie 6",
+    "explanation": "Próba badawcza jest zestawem, w którym zmienia się badany czynnik.",
+    "source": "Zdjęcie 6",
     "sourcePhotos": [
       6
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)"
+      "Zdjęcie 6 (s. 12)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja polega na uwa�nym przygl�daniu si� bez wp�ywania na przebieg zjawiska. W do�wiadczeniu zmienia si� jeden badany czynnik; pr�ba kontrolna nie zmienia badanego czynnika.",
+    "hintContext": "Podręcznik: obserwacja polega na uważnym przyglądaniu się bez wpływania na przebieg zjawiska. W doświadczeniu zmienia się jeden badany czynnik; próba kontrolna nie zmienia badanego czynnika.",
     "similarGroups": [],
-    "hint": "W nazwie tej pr�by kryje si� zestaw, w kt�rym badacz wprowadza badan� zmian�."
+    "hint": "W nazwie tej próby kryje się zestaw, w którym badacz wprowadza badaną zmianę."
   },
   {
     "id": "bio-049",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Kt�re zdanie jest problemem badawczym dotycz�cym banan�w i jab�ek?",
-    "answer": "Czy obecno�� jab�ek przyspiesza dojrzewanie banan�w?",
+    "text": "Które zdanie jest problemem badawczym dotyczącym bananów i jabłek?",
+    "answer": "Czy obecność jabłek przyspiesza dojrzewanie bananów?",
     "choices": [
-      "Czy obecno�� jab�ek przyspiesza dojrzewanie banan�w?",
-      "Banany szybciej dojrzewaj� w obecno�ci jab�ek.",
-      "Banany zbr�zowia�y po pi�ciu dniach.",
+      "Czy obecność jabłek przyspiesza dojrzewanie bananów?",
+      "Banany szybciej dojrzewają w obecności jabłek.",
+      "Banany zbrązowiały po pięciu dniach.",
       "Przygotowano dwie szklane miski."
     ],
-    "explanation": "Problem badawczy ma posta� pytania, na kt�re szukamy odpowiedzi.",
-    "source": "Zdj�cie 7",
+    "explanation": "Problem badawczy ma postać pytania, na które szukamy odpowiedzi.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "problem-or-hypothesis"
     ],
-    "hint": "Problem badawczy zapisujemy jako pytanie, na kt�re do�wiadczenie ma pom�c odpowiedzie�."
+    "hint": "Problem badawczy zapisujemy jako pytanie, na które doświadczenie ma pomóc odpowiedzieć."
   },
   {
     "id": "bio-050",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Chcesz zbada�, czy obecno�� jab�ek wp�ywa na dojrzewanie banan�w. Kt�re zdanie jest hipotez�, kt�r� mo�na sprawdzi�?",
-    "answer": "Banany szybciej dojrzewaj�, je�eli s� przechowywane razem z jab�kami.",
+    "text": "Chcesz zbadać, czy obecność jabłek wpływa na dojrzewanie bananów. Które zdanie jest hipotezą, którą można sprawdzić?",
+    "answer": "Banany szybciej dojrzewają, jeżeli są przechowywane razem z jabłkami.",
     "choices": [
-      "Czy banany dojrzewaj� szybciej obok jab�ek?",
-      "Przygotuj dwie miski i dwana�cie banan�w.",
-      "Po pi�ciu dniach na bananach pojawi�y si� plamy.",
-      "Banany szybciej dojrzewaj�, je�eli s� przechowywane razem z jab�kami."
+      "Czy banany dojrzewają szybciej obok jabłek?",
+      "Przygotuj dwie miski i dwanaście bananów.",
+      "Po pięciu dniach na bananach pojawiły się plamy.",
+      "Banany szybciej dojrzewają, jeżeli są przechowywane razem z jabłkami."
     ],
-    "explanation": "Hipoteza jest proponowan� odpowiedzi� na pytanie badawcze, kt�r� nast�pnie sprawdzamy.",
-    "source": "Zdj�cie 7",
+    "explanation": "Hipoteza jest proponowaną odpowiedzią na pytanie badawcze, którą następnie sprawdzamy.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "problem-or-hypothesis"
     ],
-    "hint": "Hipoteza to przewidywana odpowied� na pytanie. Sformu�uj j� tak, by mo�na by�o sprawdzi� wp�yw jab�ek na tempo zmian banan�w."
+    "hint": "Hipoteza to przewidywana odpowiedź na pytanie. Sformułuj ją tak, by można było sprawdzić wpływ jabłek na tempo zmian bananów."
   },
   {
     "id": "bio-051",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Kt�ra kolejno�� etap�w metody naukowej jest poprawna?",
-    "answer": "Obserwacja  problem badawczy  hipoteza  do�wiadczenie  analiza wynik�w  wniosek.",
+    "text": "Która kolejność etapów metody naukowej jest poprawna?",
+    "answer": "Obserwacja → problem badawczy → hipoteza → doświadczenie → analiza wyników → wniosek.",
     "choices": [
-      "Hipoteza  wniosek  obserwacja  analiza wynik�w  do�wiadczenie  problem badawczy.",
-      "Do�wiadczenie  wniosek  hipoteza  problem badawczy  obserwacja  analiza wynik�w.",
-      "Obserwacja  problem badawczy  hipoteza  do�wiadczenie  analiza wynik�w  wniosek.",
-      "Obserwacja  wniosek  do�wiadczenie  hipoteza  problem badawczy  analiza wynik�w."
+      "Hipoteza → wniosek → obserwacja → analiza wyników → doświadczenie → problem badawczy.",
+      "Doświadczenie → wniosek → hipoteza → problem badawczy → obserwacja → analiza wyników.",
+      "Obserwacja → problem badawczy → hipoteza → doświadczenie → analiza wyników → wniosek.",
+      "Obserwacja → wniosek → doświadczenie → hipoteza → problem badawczy → analiza wyników."
     ],
-    "explanation": "Od obserwacji przechodzimy do pytania i hipotezy, a po do�wiadczeniu analizujemy wyniki i formu�ujemy wniosek.",
-    "source": "Zdj�cie 15",
+    "explanation": "Od obserwacji przechodzimy do pytania i hipotezy, a po doświadczeniu analizujemy wyniki i formułujemy wniosek.",
+    "source": "Zdjęcie 15",
     "sourcePhotos": [
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 15 (s. 21)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "scientific-sequence"
     ],
-    "hint": "Po obserwacji stawiamy pytanie i hipotez�; dopiero potem sprawdzamy j�, analizujemy wyniki i wyci�gamy wniosek."
+    "hint": "Po obserwacji stawiamy pytanie i hipotezę; dopiero potem sprawdzamy ją, analizujemy wyniki i wyciągamy wniosek."
   },
   {
     "id": "bio-052",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Kt�ry etap metody naukowej nast�puje po sformu�owaniu problemu badawczego?",
+    "text": "Który etap metody naukowej następuje po sformułowaniu problemu badawczego?",
     "answer": "Postawienie hipotezy.",
     "choices": [
-      "Pomini�cie do�wiadczenia.",
+      "Pominięcie doświadczenia.",
       "Postawienie hipotezy.",
-      "Sformu�owanie ko�cowego wniosku.",
-      "Zako�czenie analizy wynik�w."
+      "Sformułowanie końcowego wniosku.",
+      "Zakończenie analizy wyników."
     ],
-    "explanation": "Po ustaleniu pytania badacz proponuje odpowied�, czyli hipotez�.",
-    "source": "Zdj�cie 7",
+    "explanation": "Po ustaleniu pytania badacz proponuje odpowiedź, czyli hipotezę.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "scientific-sequence"
     ],
-    "hint": "Gdy badacz ju� wie, na jakie pytanie szuka odpowiedzi, proponuje mo�liw� odpowied� do sprawdzenia."
+    "hint": "Gdy badacz już wie, na jakie pytanie szuka odpowiedzi, proponuje możliwą odpowiedź do sprawdzenia."
   },
   {
     "id": "bio-053",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Co nale�y ustali� podczas planowania do�wiadczenia?",
-    "answer": "Materia�y, czas trwania, uk�ad pr�b oraz spos�b zapisywania wynik�w.",
+    "text": "Co należy ustalić podczas planowania doświadczenia?",
+    "answer": "Materiały, czas trwania, układ prób oraz sposób zapisywania wyników.",
     "choices": [
-      "Materia�y, czas trwania, uk�ad pr�b oraz spos�b zapisywania wynik�w.",
-      "Wy��cznie tytu� do�wiadczenia.",
-      "Gotowy wniosek niezale�ny od wynik�w.",
-      "Spos�b pomini�cia pr�by kontrolnej."
+      "Materiały, czas trwania, układ prób oraz sposób zapisywania wyników.",
+      "Wyłącznie tytuł doświadczenia.",
+      "Gotowy wniosek niezależny od wyników.",
+      "Sposób pominięcia próby kontrolnej."
     ],
-    "explanation": "Dok�adny plan obejmuje materia�y, czas, pr�by do�wiadczalne i dokumentowanie wynik�w.",
-    "source": "Zdj�cie 15",
+    "explanation": "Dokładny plan obejmuje materiały, czas, próby doświadczalne i dokumentowanie wyników.",
+    "source": "Zdjęcie 15",
     "sourcePhotos": [
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 15 (s. 21)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Dobry plan obejmuje potrzebne rzeczy, d�ugo�� badania, por�wnywane zestawy oraz spos�b notowania tego, co si� wydarzy."
+    "hint": "Dobry plan obejmuje potrzebne rzeczy, długość badania, porównywane zestawy oraz sposób notowania tego, co się wydarzy."
   },
   {
     "id": "bio-054",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "W dw�ch miskach umieszczono podobne zielone banany. Do jednej dodano jab�ka, a do drugiej nie. Miejsce i czas przechowywania by�y takie same. Jaki czynnik zmieniono w tym do�wiadczeniu?",
-    "answer": "Obecno�� jab�ek w misce z bananami.",
+    "text": "W dwóch miskach umieszczono podobne zielone banany. Do jednej dodano jabłka, a do drugiej nie. Miejsce i czas przechowywania były takie same. Jaki czynnik zmieniono w tym doświadczeniu?",
+    "answer": "Obecność jabłek w misce z bananami.",
     "choices": [
-      "Rodzaj szk�a, z kt�rego wykonano miski.",
-      "Dost�p banan�w do gleby.",
-      "D�ugo�� korzeni bananowca.",
-      "Obecno�� jab�ek w misce z bananami."
+      "Rodzaj szkła, z którego wykonano miski.",
+      "Dostęp bananów do gleby.",
+      "Długość korzeni bananowca.",
+      "Obecność jabłek w misce z bananami."
     ],
-    "explanation": "Jedyn� opisan� r��nic� by�a obecno�� jab�ek. To ich wp�yw mo�na bada� przy zachowaniu takich samych pozosta�ych warunk�w.",
-    "source": "Zdj�cie 7",
+    "explanation": "Jedyną opisaną różnicą była obecność jabłek. To ich wpływ można badać przy zachowaniu takich samych pozostałych warunków.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Por�wnaj opisane miski i znajd� jedyn� r��nic� mi�dzy nimi. Pozosta�e warunki utrzymano jednakowe."
+    "hint": "Porównaj opisane miski i znajdź jedyną różnicę między nimi. Pozostałe warunki utrzymano jednakowe."
   },
   {
     "id": "bio-055",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Chcesz sprawdzi�, czy obecno�� jab�ek przyspiesza dojrzewanie banan�w. Jak nale�y przygotowa� pr�b� badawcz�?",
-    "answer": "Banany przechowywano w misce z jab�kami.",
+    "text": "Chcesz sprawdzić, czy obecność jabłek przyspiesza dojrzewanie bananów. Jak należy przygotować próbę badawczą?",
+    "answer": "Banany przechowywano w misce z jabłkami.",
     "choices": [
-      "W misce umieszczono wy��cznie jab�ka.",
+      "W misce umieszczono wyłącznie jabłka.",
       "Banany posadzono w glebie.",
-      "Banany przechowywano w misce z jab�kami.",
-      "Banany przechowywano bez jab�ek."
+      "Banany przechowywano w misce z jabłkami.",
+      "Banany przechowywano bez jabłek."
     ],
-    "explanation": "W pr�bie badawczej wprowadzamy badany czynnik - umieszczamy jab�ka obok banan�w. Por�wnujemy j� z pr�b� bez jab�ek.",
-    "source": "Zdj�cie 7",
+    "explanation": "W próbie badawczej wprowadzamy badany czynnik — umieszczamy jabłka obok bananów. Porównujemy ją z próbą bez jabłek.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Pr�ba badawcza to ta, w kt�rej pojawia si� sprawdzany czynnik. W tym pytaniu badanym czynnikiem s� jab�ka."
+    "hint": "Próba badawcza to ta, w której pojawia się sprawdzany czynnik. W tym pytaniu badanym czynnikiem są jabłka."
   },
   {
     "id": "bio-056",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Badacz sprawdza wp�yw jab�ek na dojrzewanie banan�w. W pr�bie badawczej trzyma banany z jab�kami. Jak powinna wygl�da� pr�ba kontrolna przy takich samych pozosta�ych warunkach?",
-    "answer": "Banany przechowywano w misce bez jab�ek.",
+    "text": "Badacz sprawdza wpływ jabłek na dojrzewanie bananów. W próbie badawczej trzyma banany z jabłkami. Jak powinna wyglądać próba kontrolna przy takich samych pozostałych warunkach?",
+    "answer": "Banany przechowywano w misce bez jabłek.",
     "choices": [
       "Wszystkie owoce codziennie przenoszono do innego pomieszczenia.",
-      "Banany przechowywano w misce bez jab�ek.",
-      "Banany przechowywano w misce z jab�kami.",
-      "W misce pozostawiono wy��cznie jab�ka."
+      "Banany przechowywano w misce bez jabłek.",
+      "Banany przechowywano w misce z jabłkami.",
+      "W misce pozostawiono wyłącznie jabłka."
     ],
-    "explanation": "Pr�ba kontrolna zawiera banany bez jab�ek. Dzi�ki temu mo�na por�wna� dojrzewanie przy obecno�ci badanego czynnika i bez niego.",
-    "source": "Zdj�cie 7",
+    "explanation": "Próba kontrolna zawiera banany bez jabłek. Dzięki temu można porównać dojrzewanie przy obecności badanego czynnika i bez niego.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Pr�ba kontrolna nie zawiera badanego czynnika. Zachowaj te same banany i warunki, zmie� tylko obecno�� jab�ek."
+    "hint": "Próba kontrolna nie zawiera badanego czynnika. Zachowaj te same banany i warunki, zmień tylko obecność jabłek."
   },
   {
     "id": "bio-057",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Por�wnujesz dojrzewanie banan�w z jab�kami i bez jab�ek. Jak ustali� czas trwania obu pr�b, aby sprawdza� wy��cznie wp�yw jab�ek?",
-    "answer": "Obie pr�by prowadzi� przez taki sam czas.",
+    "text": "Porównujesz dojrzewanie bananów z jabłkami i bez jabłek. Jak ustalić czas trwania obu prób, aby sprawdzać wyłącznie wpływ jabłek?",
+    "answer": "Obie próby prowadzić przez taki sam czas.",
     "choices": [
-      "Obie pr�by prowadzi� przez taki sam czas.",
-      "Pr�b� z jab�kami prowadzi� dwa razy d�u�ej.",
-      "Zako�czy� ka�d� pr�b� w dowolnym momencie.",
-      "Pomin�� zapisywanie czasu obu pr�b."
+      "Obie próby prowadzić przez taki sam czas.",
+      "Próbę z jabłkami prowadzić dwa razy dłużej.",
+      "Zakończyć każdą próbę w dowolnym momencie.",
+      "Pominąć zapisywanie czasu obu prób."
     ],
-    "explanation": "Czas trwania powinien by� taki sam. Gdyby pr�by trwa�y r��nie d�ugo, czas tak�e m�g�by wp�ywa� na stopie� dojrza�o�ci banan�w.",
-    "source": "Zdj�cie 7",
+    "explanation": "Czas trwania powinien być taki sam. Gdyby próby trwały różnie długo, czas także mógłby wpływać na stopień dojrzałości bananów.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Aby por�wna� wy��cznie wp�yw jab�ek, nie pozw�l, by d�ugo�� obserwacji r��ni�a si� mi�dzy zestawami."
+    "hint": "Aby porównać wyłącznie wpływ jabłek, nie pozwól, by długość obserwacji różniła się między zestawami."
   },
   {
     "id": "bio-058",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Kt�re zdanie dok�adnie zapisuje wynik pr�by badawczej z bananami i jab�kami, a nie pytanie, hipotez� lub plan?",
-    "answer": "Po pi�ciu dniach banany z jab�kami zmieni�y kolor na ciemno���ty, a na ich sk�rkach pojawi�y si� br�zowe plamy.",
+    "text": "Które zdanie dokładnie zapisuje wynik próby badawczej z bananami i jabłkami, a nie pytanie, hipotezę lub plan?",
+    "answer": "Po pięciu dniach banany z jabłkami zmieniły kolor na ciemnożółty, a na ich skórkach pojawiły się brązowe plamy.",
     "choices": [
-      "Czy obecno�� jab�ek przyspiesza dojrzewanie banan�w?",
-      "Przypuszczam, �e banany szybciej dojrzewaj� obok jab�ek.",
-      "Umieszcz� banany w dw�ch jednakowych miskach.",
-      "Po pi�ciu dniach banany z jab�kami zmieni�y kolor na ciemno���ty, a na ich sk�rkach pojawi�y si� br�zowe plamy."
+      "Czy obecność jabłek przyspiesza dojrzewanie bananów?",
+      "Przypuszczam, że banany szybciej dojrzewają obok jabłek.",
+      "Umieszczę banany w dwóch jednakowych miskach.",
+      "Po pięciu dniach banany z jabłkami zmieniły kolor na ciemnożółty, a na ich skórkach pojawiły się brązowe plamy."
     ],
-    "explanation": "Wynik pr�by badawczej opisuje zaobserwowan� zmian�: banany z jab�kami sta�y si� ciemno���te i pojawi�y si� na nich br�zowe plamy.",
-    "source": "Zdj�cie 7",
+    "explanation": "Wynik próby badawczej opisuje zaobserwowaną zmianę: banany z jabłkami stały się ciemnożółte i pojawiły się na nich brązowe plamy.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "banana-results-and-conclusion"
     ],
-    "hint": "Wynik opisuje to, co faktycznie zauwa�ono po do�wiadczeniu. Poszukaj obserwowanej barwy i zmian na sk�rce, nie przewidywania."
+    "hint": "Wynik opisuje to, co faktycznie zauważono po doświadczeniu. Poszukaj obserwowanej barwy i zmian na skórce, nie przewidywania."
   },
   {
     "id": "bio-059",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Planujesz por�wna� dojrzewanie banan�w z jab�kami i bez jab�ek. Jakie banany nale�y wybra� na pocz�tku do obu pr�b?",
-    "answer": "Banany o podobnym pocz�tkowym stopniu dojrza�o�ci.",
+    "text": "Planujesz porównać dojrzewanie bananów z jabłkami i bez jabłek. Jakie banany należy wybrać na początku do obu prób?",
+    "answer": "Banany o podobnym początkowym stopniu dojrzałości.",
     "choices": [
-      "Do jednej pr�by zielone, a do drugiej ju� przejrza�e.",
-      "Do jednej pr�by ca�e, a do drugiej bez sk�rek.",
-      "Banany o podobnym pocz�tkowym stopniu dojrza�o�ci.",
-      "Do jednej pr�by ���te, a do drugiej wy��cznie br�zowe."
+      "Do jednej próby zielone, a do drugiej już przejrzałe.",
+      "Do jednej próby całe, a do drugiej bez skórek.",
+      "Banany o podobnym początkowym stopniu dojrzałości.",
+      "Do jednej próby żółte, a do drugiej wyłącznie brązowe."
     ],
-    "explanation": "Podobny pocz�tkowy stopie� dojrza�o�ci pozwala por�wnywa� wp�yw jab�ek. Inaczej r��nice mog�yby wynika� z doboru banan�w.",
-    "source": "Zdj�cie 7",
+    "explanation": "Podobny początkowy stopień dojrzałości pozwala porównywać wpływ jabłek. Inaczej różnice mogłyby wynikać z doboru bananów.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Uczciwe por�wnanie zaczyna si� od podobnych materia��w. Zastan�w si�, co mog�oby zafa�szowa� wp�yw jab�ek ju� na starcie."
+    "hint": "Uczciwe porównanie zaczyna się od podobnych materiałów. Zastanów się, co mogłoby zafałszować wpływ jabłek już na starcie."
   },
   {
     "id": "bio-060",
     "kind": "choice",
     "topic": "Metoda naukowa",
-    "text": "Podobne zielone banany trzymano przez pi�� dni w tych samych warunkach: jedne z jab�kami, drugie bez nich. Te z jab�kami sta�y si� ciemno���te z plamami, a te bez jab�ek - jasno���te bez plam. Kt�ry wniosek wynika z tych obserwacji?",
-    "answer": "Banany szybciej dojrzewaj�, gdy s� przechowywane razem z jab�kami.",
+    "text": "Podobne zielone banany trzymano przez pięć dni w tych samych warunkach: jedne z jabłkami, drugie bez nich. Te z jabłkami stały się ciemnożółte z plamami, a te bez jabłek — jasnożółte bez plam. Który wniosek wynika z tych obserwacji?",
+    "answer": "Banany szybciej dojrzewają, gdy są przechowywane razem z jabłkami.",
     "choices": [
-      "Obie pr�by dowiod�y, �e banany nigdy nie zmieniaj� koloru.",
-      "Banany szybciej dojrzewaj�, gdy s� przechowywane razem z jab�kami.",
-      "Jab�ka ca�kowicie zatrzymuj� dojrzewanie banan�w.",
-      "Banany dojrzewaj� tylko bez innych owoc�w."
+      "Obie próby dowiodły, że banany nigdy nie zmieniają koloru.",
+      "Banany szybciej dojrzewają, gdy są przechowywane razem z jabłkami.",
+      "Jabłka całkowicie zatrzymują dojrzewanie bananów.",
+      "Banany dojrzewają tylko bez innych owoców."
     ],
-    "explanation": "Banany przechowywane z jab�kami wykazywa�y wi�ksze oznaki dojrza�o�ci w tym samym czasie. Wyniki wspieraj� wniosek, �e obecno�� jab�ek przyspiesza�a ich dojrzewanie.",
-    "source": "Zdj�cie 7",
+    "explanation": "Banany przechowywane z jabłkami wykazywały większe oznaki dojrzałości w tym samym czasie. Wyniki wspierają wniosek, że obecność jabłek przyspieszała ich dojrzewanie.",
+    "source": "Zdjęcie 7",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "banana-results-and-conclusion"
     ],
-    "hint": "Por�wnaj wygl�d obu grup po tym samym czasie. Wniosek powinien wyja�nia�, co m�wi ta r��nica o tempie dojrzewania."
+    "hint": "Porównaj wygląd obu grup po tym samym czasie. Wniosek powinien wyjaśniać, co mówi ta różnica o tempie dojrzewania."
   },
   {
     "id": "bio-062",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Kt�ry zestaw zawiera �r�d�a przydatne do zdobywania wiedzy biologicznej?",
-    "answer": "Ksi��ki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Który zestaw zawiera źródła przydatne do zdobywania wiedzy biologicznej?",
+    "answer": "Książki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe.",
     "choices": [
-      "Wy��cznie reklamy produkt�w.",
-      "Wy��cznie przypadkowe plotki.",
-      "Tylko w�asne domys�y bez obserwacji.",
-      "Ksi��ki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe."
+      "Wyłącznie reklamy produktów.",
+      "Wyłącznie przypadkowe plotki.",
+      "Tylko własne domysły bez obserwacji.",
+      "Książki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe."
     ],
-    "explanation": "Ksi��ki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe mog� dostarcza� wiedzy biologicznej. Warto wybiera� wiarygodnych autor�w.",
-    "source": "Zdj�cie 8",
+    "explanation": "Książki popularnonaukowe, filmy przyrodnicze i edukacyjne strony internetowe mogą dostarczać wiedzy biologicznej. Warto wybierać wiarygodnych autorów.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "learning-sources"
     ],
-    "hint": "Wybierz �r�d�a, kt�re przekazuj� wiedz� biologiczn�, takie jak publikacje popularnonaukowe i materia�y edukacyjne."
+    "hint": "Wybierz źródła, które przekazują wiedzę biologiczną, takie jak publikacje popularnonaukowe i materiały edukacyjne."
   },
   {
     "id": "bio-063",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Gdzie mo�na prowadzi� zaj�cia terenowe pomagaj�ce poznawa� organizmy?",
-    "answer": "W lesie, na ��ce lub nad stawem.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Gdzie można prowadzić zajęcia terenowe pomagające poznawać organizmy?",
+    "answer": "W lesie, na łące lub nad stawem.",
     "choices": [
-      "Tylko w zamkni�tym magazynie.",
-      "Wy��cznie w laboratorium chemicznym.",
-      "W lesie, na ��ce lub nad stawem.",
-      "Wy��cznie w sali komputerowej."
+      "Tylko w zamkniętym magazynie.",
+      "Wyłącznie w laboratorium chemicznym.",
+      "W lesie, na łące lub nad stawem.",
+      "Wyłącznie w sali komputerowej."
     ],
-    "explanation": "Bezpo�redni kontakt z przyrod� w terenie jest wa�nym �r�d�em wiedzy biologicznej.",
-    "source": "Zdj�cie 8",
+    "explanation": "Bezpośredni kontakt z przyrodą w terenie jest ważnym źródłem wiedzy biologicznej.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "learning-sources"
     ],
-    "hint": "Przypomnij sobie miejsca wymienione w ksi��ce jako przyk�ady terenu, gdzie mo�na poznawa� organizmy."
+    "hint": "Przypomnij sobie miejsca wymienione w książce jako przykłady terenu, gdzie można poznawać organizmy."
   },
   {
     "id": "bio-064",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Do czego s�u�� przewodniki do oznaczania ro�lin i zwierz�t?",
-    "answer": "Pomagaj� rozpoznawa� spotkane organizmy.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Do czego służą przewodniki do oznaczania roślin i zwierząt?",
+    "answer": "Pomagają rozpoznawać spotkane organizmy.",
     "choices": [
-      "S�u�� wy��cznie do przewidywania pogody.",
-      "Pomagaj� rozpoznawa� spotkane organizmy.",
-      "S�u�� do obliczania powi�kszenia mikroskopu.",
-      "Zast�puj� szkie�ko podstawowe."
+      "Służą wyłącznie do przewidywania pogody.",
+      "Pomagają rozpoznawać spotkane organizmy.",
+      "Służą do obliczania powiększenia mikroskopu.",
+      "Zastępują szkiełko podstawowe."
     ],
-    "explanation": "Podczas zaj�� terenowych mo�na u�ywa� przewodnik�w do identyfikacji organizm�w.",
-    "source": "Zdj�cie 8",
+    "explanation": "Podczas zajęć terenowych można używać przewodników do identyfikacji organizmów.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "learning-sources"
     ],
-    "hint": "Przewodnik terenowy pomaga ustali�, jaki organizm spotkali�my. Pomy�l, co znaczy "oznaczy�" ro�lin� lub zwierz�."
+    "hint": "Przewodnik terenowy pomaga ustalić, jaki organizm spotkaliśmy. Pomyśl, co znaczy „oznaczyć” roślinę lub zwierzę."
   },
   {
     "id": "bio-066",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
+    "topic": "Źródła wiedzy i praca badacza",
     "text": "Jak badacz okazuje szacunek dla przyrody podczas obserwacji?",
-    "answer": "Nie niszczy ro�lin i nie p�oszy zwierz�t.",
+    "answer": "Nie niszczy roślin i nie płoszy zwierząt.",
     "choices": [
-      "Zrywa wszystkie napotkane ro�liny.",
-      "Ha�asuje przy gniazdach.",
-      "Niszczy kryj�wki zwierz�t, by �atwiej je zobaczy�.",
-      "Nie niszczy ro�lin i nie p�oszy zwierz�t."
+      "Zrywa wszystkie napotkane rośliny.",
+      "Hałasuje przy gniazdach.",
+      "Niszczy kryjówki zwierząt, by łatwiej je zobaczyć.",
+      "Nie niszczy roślin i nie płoszy zwierząt."
     ],
-    "explanation": "Szacunek dla przyrody wymaga ograniczenia szk�d i zak��cania �ycia organizm�w.",
-    "source": "Zdj�cie 8",
+    "explanation": "Szacunek dla przyrody wymaga ograniczenia szkód i zakłócania życia organizmów.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "researcher-care"
     ],
-    "hint": "Dobry obserwator nie szkodzi ro�linom i nie zak��ca spokoju zwierz�t. Wybierz zachowanie zgodne z t� zasad�."
+    "hint": "Dobry obserwator nie szkodzi roślinom i nie zakłóca spokoju zwierząt. Wybierz zachowanie zgodne z tą zasadą."
   },
   {
     "id": "bio-067",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Na czym polega ostro�no�� podczas wykonywania do�wiadcze�?",
-    "answer": "Na ochronie sk�ry i oczu przed szkodliwymi substancjami.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Na czym polega ostrożność podczas wykonywania doświadczeń?",
+    "answer": "Na ochronie skóry i oczu przed szkodliwymi substancjami.",
     "choices": [
-      "Na pomijaniu zasad bezpiecze�stwa.",
-      "Na pr�bowaniu smaku ka�dej badanej substancji.",
-      "Na ochronie sk�ry i oczu przed szkodliwymi substancjami.",
-      "Na dotykaniu nieznanych substancji go�� r�k�."
+      "Na pomijaniu zasad bezpieczeństwa.",
+      "Na próbowaniu smaku każdej badanej substancji.",
+      "Na ochronie skóry i oczu przed szkodliwymi substancjami.",
+      "Na dotykaniu nieznanych substancji gołą ręką."
     ],
-    "explanation": "Ochrona sk�ry i oczu przed szkodliwymi substancjami jest przyk�adem ostro�no�ci podczas do�wiadcze�.",
-    "source": "Zdj�cie 8",
+    "explanation": "Ochrona skóry i oczu przed szkodliwymi substancjami jest przykładem ostrożności podczas doświadczeń.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "researcher-care"
     ],
-    "hint": "Podczas do�wiadcze� mog� pojawi� si� szkodliwe substancje. Jak� cz��� cia�a nale�y przed nimi zabezpieczy�?"
+    "hint": "Podczas doświadczeń mogą pojawić się szkodliwe substancje. Jaką część ciała należy przed nimi zabezpieczyć?"
   },
   {
     "id": "bio-068",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Badacz wykonuje d�ugotrwa�e badanie zgodnie z planem mimo konieczno�ci powt�rze�. Jak� cech� wykazuje?",
-    "answer": "Cierpliwo��.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Badacz wykonuje długotrwałe badanie zgodnie z planem mimo konieczności powtórzeń. Jaką cechę wykazuje?",
+    "answer": "Cierpliwość.",
     "choices": [
       "Brak zainteresowania wynikami.",
-      "Cierpliwo��.",
-      "Po�piech.",
-      "Niedok�adno��."
+      "Cierpliwość.",
+      "Pośpiech.",
+      "Niedokładność."
     ],
-    "explanation": "Cierpliwo�� pomaga wytrwa� w badaniach trwaj�cych d�ugo lub wymagaj�cych wielu powt�rze�.",
-    "source": "Zdj�cie 8",
+    "explanation": "Cierpliwość pomaga wytrwać w badaniach trwających długo lub wymagających wielu powtórzeń.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "researcher-care"
     ],
-    "hint": "Badanie trwa d�ugo i wymaga powt�rze�. Kt�ra cecha pomaga spokojnie wytrwa� do ko�ca pracy?"
+    "hint": "Badanie trwa długo i wymaga powtórzeń. Która cecha pomaga spokojnie wytrwać do końca pracy?"
   },
   {
     "id": "bio-070",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Kt�re zachowanie �wiadczy o rzetelno�ci badacza?",
-    "answer": "Dok�adne przeprowadzanie i dobre dokumentowanie bada�.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Które zachowanie świadczy o rzetelności badacza?",
+    "answer": "Dokładne przeprowadzanie i dobre dokumentowanie badań.",
     "choices": [
-      "Wymy�lanie brakuj�cych wynik�w.",
+      "Wymyślanie brakujących wyników.",
       "Pomijanie niewygodnych obserwacji.",
-      "Zapisywanie tylko wynik�w zgodnych z oczekiwaniem.",
-      "Dok�adne przeprowadzanie i dobre dokumentowanie bada�."
+      "Zapisywanie tylko wyników zgodnych z oczekiwaniem.",
+      "Dokładne przeprowadzanie i dobre dokumentowanie badań."
     ],
-    "explanation": "Rzetelny badacz pracuje dok�adnie i dokumentuje rzeczywisty przebieg bada�.",
-    "source": "Zdj�cie 8",
+    "explanation": "Rzetelny badacz pracuje dokładnie i dokumentuje rzeczywisty przebieg badań.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "researcher-care"
     ],
-    "hint": "Rzetelny badacz opisuje przebieg i wyniki dok�adnie, zamiast dopasowywa� je do swoich oczekiwa�."
+    "hint": "Rzetelny badacz opisuje przebieg i wyniki dokładnie, zamiast dopasowywać je do swoich oczekiwań."
   },
   {
     "id": "bio-071",
     "kind": "choice",
-    "topic": "�r�d�a wiedzy i praca badacza",
-    "text": "Czym mo�na uzupe�nia� zapis wynik�w obserwacji?",
-    "answer": "Rysunkami lub zdj�ciami obserwowanych obiekt�w.",
+    "topic": "Źródła wiedzy i praca badacza",
+    "text": "Czym można uzupełniać zapis wyników obserwacji?",
+    "answer": "Rysunkami lub zdjęciami obserwowanych obiektów.",
     "choices": [
-      "Wy��cznie opisem w�asnych oczekiwa�.",
-      "Zmienionymi wynikami innych os�b.",
-      "Rysunkami lub zdj�ciami obserwowanych obiekt�w.",
-      "Dowolnymi obrazkami niezwi�zanymi z badaniem."
+      "Wyłącznie opisem własnych oczekiwań.",
+      "Zmienionymi wynikami innych osób.",
+      "Rysunkami lub zdjęciami obserwowanych obiektów.",
+      "Dowolnymi obrazkami niezwiązanymi z badaniem."
     ],
-    "explanation": "Rysunki i zdj�cia obserwowanych obiekt�w pomagaj� dokumentowa� rzeczywiste wyniki badania.",
-    "source": "Zdj�cie 8",
+    "explanation": "Rysunki i zdjęcia obserwowanych obiektów pomagają dokumentować rzeczywiste wyniki badania.",
+    "source": "Zdjęcie 8",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia przewodniki i atlasy, ksi��ki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zaj�cia terenowe oraz muzea i ogrody. Badacz powinien szanowa� przyrod�, by� ostro�ny, cierpliwy, systematyczny i rzetelny.",
+    "hintContext": "Podręcznik wymienia przewodniki i atlasy, książki i czasopisma popularnonaukowe, filmy przyrodnicze, edukacyjne strony internetowe, zajęcia terenowe oraz muzea i ogrody. Badacz powinien szanować przyrodę, być ostrożny, cierpliwy, systematyczny i rzetelny.",
     "similarGroups": [
       "learning-sources"
     ],
-    "hint": "Poza zapisywaniem liczb badacz mo�e utrwali� wygl�d obiektu w formie obrazu."
+    "hint": "Poza zapisywaniem liczb badacz może utrwalić wygląd obiektu w formie obrazu."
   },
   {
     "id": "bio-072",
     "kind": "choice",
     "topic": "Obserwacje mikroskopowe",
-    "text": "Kt�ry przyrz�d pomaga ogl�da� ptaki z oddalenia?",
-    "answer": "Lornetk�.",
+    "text": "Który przyrząd pomaga oglądać ptaki z oddalenia?",
+    "answer": "Lornetkę.",
     "choices": [
-      "Ig�� preparacyjn�.",
-      "Lornetk�.",
+      "Igłę preparacyjną.",
+      "Lornetkę.",
       "Mikroskop elektronowy.",
-      "Szkie�ko nakrywkowe."
+      "Szkiełko nakrywkowe."
     ],
-    "explanation": "Lornetka umo�liwia przygl�danie si� ptakom z oddalenia.",
-    "source": "Zdj�cie 10",
+    "explanation": "Lornetka umożliwia przyglądanie się ptakom z oddalenia.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: mikroskop optyczny pozwala obserwowa� m.in. pojedyncze kom�rki i fragmenty tkanek; mikroskop elektronowy daje bardzo du�e powi�kszenia. Powi�kszenie optyczne to iloczyn powi�kszenia okularu i obiektywu.",
+    "hintContext": "Podręcznik: mikroskop optyczny pozwala obserwować m.in. pojedyncze komórki i fragmenty tkanek; mikroskop elektronowy daje bardzo duże powiększenia. Powiększenie optyczne to iloczyn powiększenia okularu i obiektywu.",
     "similarGroups": [],
-    "hint": "Do przygl�dania si� ptakom z daleka przydaje si� przyrz�d z dwoma lunetami, kt�rego u�ywa si� do patrzenia obiema oczami."
+    "hint": "Do przyglądania się ptakom z daleka przydaje się przyrząd z dwoma lunetami, którego używa się do patrzenia obiema oczami."
   },
   {
     "id": "bio-073",
     "kind": "choice",
     "topic": "Obserwacje mikroskopowe",
-    "text": "Kt�ry przyrz�d mo�na wykorzysta� do przyjrzenia si� budowie kwiatu?",
-    "answer": "Lup�.",
+    "text": "Który przyrząd można wykorzystać do przyjrzenia się budowie kwiatu?",
+    "answer": "Lupę.",
     "choices": [
-      "Lup�.",
-      "Wy��cznie mikroskop elektronowy.",
+      "Lupę.",
+      "Wyłącznie mikroskop elektronowy.",
       "Zakraplacz.",
-      "�rub� makrometryczn�."
+      "Śrubę makrometryczną."
     ],
-    "explanation": "Lupa pozwala przyjrze� si� drobnym szczeg��om budowy kwiatu.",
-    "source": "Zdj�cie 10",
+    "explanation": "Lupa pozwala przyjrzeć się drobnym szczegółom budowy kwiatu.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: mikroskop optyczny pozwala obserwowa� m.in. pojedyncze kom�rki i fragmenty tkanek; mikroskop elektronowy daje bardzo du�e powi�kszenia. Powi�kszenie optyczne to iloczyn powi�kszenia okularu i obiektywu.",
+    "hintContext": "Podręcznik: mikroskop optyczny pozwala obserwować m.in. pojedyncze komórki i fragmenty tkanek; mikroskop elektronowy daje bardzo duże powiększenia. Powiększenie optyczne to iloczyn powiększenia okularu i obiektywu.",
     "similarGroups": [],
-    "hint": "Do powi�kszenia drobnego szczeg��u kwiatu u�ywa si� prostego przyrz�du optycznego trzymanego w r�ku."
+    "hint": "Do powiększenia drobnego szczegółu kwiatu używa się prostego przyrządu optycznego trzymanego w ręku."
   },
   {
     "id": "bio-074",
     "kind": "choice",
     "topic": "Obserwacje mikroskopowe",
-    "text": "Jakie obiekty mo�na ogl�da� w mikroskopie optycznym?",
-    "answer": "Zar�wno �ywe, jak i martwe, odpowiednio przygotowane.",
+    "text": "Jakie obiekty można oglądać w mikroskopie optycznym?",
+    "answer": "Zarówno żywe, jak i martwe, odpowiednio przygotowane.",
     "choices": [
-      "Wy��cznie martwe.",
-      "Wy��cznie �ywe.",
-      "Tylko takie, kt�re s� wi�ksze od stolika mikroskopu.",
-      "Zar�wno �ywe, jak i martwe, odpowiednio przygotowane."
+      "Wyłącznie martwe.",
+      "Wyłącznie żywe.",
+      "Tylko takie, które są większe od stolika mikroskopu.",
+      "Zarówno żywe, jak i martwe, odpowiednio przygotowane."
     ],
-    "explanation": "Mikroskop optyczny pozwala ogl�da� obiekty �ywe i martwe przygotowane jako preparaty.",
-    "source": "Zdj�cie 10",
+    "explanation": "Mikroskop optyczny pozwala oglądać obiekty żywe i martwe przygotowane jako preparaty.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: mikroskop optyczny pozwala obserwowa� m.in. pojedyncze kom�rki i fragmenty tkanek; mikroskop elektronowy daje bardzo du�e powi�kszenia. Powi�kszenie optyczne to iloczyn powi�kszenia okularu i obiektywu.",
+    "hintContext": "Podręcznik: mikroskop optyczny pozwala obserwować m.in. pojedyncze komórki i fragmenty tkanek; mikroskop elektronowy daje bardzo duże powiększenia. Powiększenie optyczne to iloczyn powiększenia okularu i obiektywu.",
     "similarGroups": [],
-    "hint": "Mikroskop optyczny pozwala bada� preparaty zawieraj�ce zar�wno �ywy, jak i martwy materia�."
+    "hint": "Mikroskop optyczny pozwala badać preparaty zawierające zarówno żywy, jak i martwy materiał."
   },
   {
     "id": "bio-075",
     "kind": "choice",
     "topic": "Obserwacje mikroskopowe",
-    "text": "Mikroskop ma okular powi�kszaj�cy 10 razy i obiektyw powi�kszaj�cy 100 razy. Jakie jest ca�kowite powi�kszenie obrazu?",
+    "text": "Mikroskop ma okular powiększający 10 razy i obiektyw powiększający 100 razy. Jakie jest całkowite powiększenie obrazu?",
     "answer": "1000 razy.",
     "choices": [
       "10 razy.",
@@ -1291,107 +1291,107 @@ export const biology = [
       "1000 razy.",
       "100 razy."
     ],
-    "explanation": "Powi�kszenie okularu mno�ymy przez powi�kszenie obiektywu: 10 � 100 = 1000.",
-    "source": "Zdj�cie 13",
+    "explanation": "Powiększenie okularu mnożymy przez powiększenie obiektywu: 10 × 100 = 1000.",
+    "source": "Zdjęcie 13",
     "sourcePhotos": [
       13
     ],
     "sourceReferences": [
-      "Zdj�cie 13 (s. 19)"
+      "Zdjęcie 13 (s. 19)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: mikroskop optyczny pozwala obserwowa� m.in. pojedyncze kom�rki i fragmenty tkanek; mikroskop elektronowy daje bardzo du�e powi�kszenia. Powi�kszenie optyczne to iloczyn powi�kszenia okularu i obiektywu.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: mikroskop optyczny pozwala obserwować m.in. pojedyncze komórki i fragmenty tkanek; mikroskop elektronowy daje bardzo duże powiększenia. Powiększenie optyczne to iloczyn powiększenia okularu i obiektywu.",
     "similarGroups": [
       "microscope-magnification"
     ],
-    "hint": "Ca�kowite powi�kszenie oblicza si� przez mno�enie. Pomn�� warto�� okularu przez warto�� obiektywu."
+    "hint": "Całkowite powiększenie oblicza się przez mnożenie. Pomnóż wartość okularu przez wartość obiektywu."
   },
   {
     "id": "bio-076",
     "kind": "choice",
     "topic": "Budowa mikroskopu",
-    "text": "Jak� funkcj� pe�ni okular?",
-    "answer": "Powi�ksza obraz wytworzony przez obiektyw.",
+    "text": "Jaką funkcję pełni okular?",
+    "answer": "Powiększa obraz wytworzony przez obiektyw.",
     "choices": [
-      "Zast�puje szkie�ko podstawowe.",
-      "Powi�ksza obraz wytworzony przez obiektyw.",
+      "Zastępuje szkiełko podstawowe.",
+      "Powiększa obraz wytworzony przez obiektyw.",
       "Przytrzymuje preparat na stoliku.",
-      "Zmienia ilo�� wody w preparacie."
+      "Zmienia ilość wody w preparacie."
     ],
-    "explanation": "Okular dodatkowo powi�ksza obraz utworzony przez obiektyw.",
-    "source": "Zdj�cie 10",
+    "explanation": "Okular dodatkowo powiększa obraz utworzony przez obiektyw.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Sp�jrz przez t� cz��� mikroskopu: powi�ksza obraz, kt�ry wcze�niej utworzy� obiektyw."
+    "hint": "Spójrz przez tę część mikroskopu: powiększa obraz, który wcześniej utworzył obiektyw."
   },
   {
     "id": "bio-077",
     "kind": "choice",
     "topic": "Budowa mikroskopu",
-    "text": "Do czego s�u�y obiektyw?",
-    "answer": "Do powi�kszania obrazu ogl�danego przedmiotu.",
+    "text": "Do czego służy obiektyw?",
+    "answer": "Do powiększania obrazu oglądanego przedmiotu.",
     "choices": [
-      "Do powi�kszania obrazu ogl�danego przedmiotu.",
+      "Do powiększania obrazu oglądanego przedmiotu.",
       "Do nakrywania preparatu.",
-      "Do przenoszenia fragmentu sk�rki cebuli.",
-      "Do zapisywania wynik�w obserwacji."
+      "Do przenoszenia fragmentu skórki cebuli.",
+      "Do zapisywania wyników obserwacji."
     ],
-    "explanation": "Obiektyw tworzy powi�kszony obraz obserwowanego obiektu.",
-    "source": "Zdj�cie 10",
+    "explanation": "Obiektyw tworzy powiększony obraz obserwowanego obiektu.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Ta cz��� jest skierowana w stron� preparatu i powi�ksza ogl�dany przedmiot."
+    "hint": "Ta część jest skierowana w stronę preparatu i powiększa oglądany przedmiot."
   },
   {
     "id": "bio-078",
     "kind": "choice",
     "topic": "Budowa mikroskopu",
-    "text": "W jakiej cz��ci mikroskopu umieszczony jest okular?",
+    "text": "W jakiej części mikroskopu umieszczony jest okular?",
     "answer": "W tubusie.",
     "choices": [
       "Na stoliku.",
-      "W �r�dle �wiat�a.",
-      "W szkie�ku nakrywkowym.",
+      "W źródle światła.",
+      "W szkiełku nakrywkowym.",
       "W tubusie."
     ],
-    "explanation": "Tubus jest elementem, w kt�rym znajduje si� okular.",
-    "source": "Zdj�cie 10",
+    "explanation": "Tubus jest elementem, w którym znajduje się okular.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Na schemacie odszukaj cz��� ��cz�c� okular z reszt� mikroskopu. To w niej umieszczono okular."
+    "hint": "Na schemacie odszukaj część łączącą okular z resztą mikroskopu. To w niej umieszczono okular."
   },
   {
     "id": "bio-079",
     "kind": "choice",
     "topic": "Budowa mikroskopu",
-    "text": "Do czego s�u�y rewolwer mikroskopu?",
+    "text": "Do czego służy rewolwer mikroskopu?",
     "answer": "Do zmiany obiektywu.",
     "choices": [
       "Do dokumentowania obserwacji.",
@@ -1399,26 +1399,26 @@ export const biology = [
       "Do zmiany obiektywu.",
       "Do nakrapiania wody."
     ],
-    "explanation": "Obr�t rewolweru pozwala wybra� inny obiektyw.",
-    "source": "Zdj�cie 10",
+    "explanation": "Obrót rewolweru pozwala wybrać inny obiektyw.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Obr�cenie tej cz��ci pozwala wybra� inny obiektyw bez zdejmowania go r�k�."
+    "hint": "Obrócenie tej części pozwala wybrać inny obiektyw bez zdejmowania go ręką."
   },
   {
     "id": "bio-080",
     "kind": "choice",
     "topic": "Budowa mikroskopu",
-    "text": "Na kt�rej cz��ci mikroskopu umieszcza si� preparat?",
+    "text": "Na której części mikroskopu umieszcza się preparat?",
     "answer": "Na stoliku.",
     "choices": [
       "Na rewolwerze.",
@@ -1427,106 +1427,106 @@ export const biology = [
       "Na tubusie."
     ],
     "explanation": "Stolik jest miejscem przeznaczonym na preparat mikroskopowy.",
-    "source": "Zdj�cie 10",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Preparat le�y na p�askiej cz��ci mikroskopu pod obiektywem. Jak nazywa si� ten element?"
+    "hint": "Preparat leży na płaskiej części mikroskopu pod obiektywem. Jak nazywa się ten element?"
   },
   {
     "id": "bio-081",
     "kind": "choice",
     "topic": "Budowa mikroskopu",
-    "text": "Jak� rol� pe�ni �r�d�o �wiat�a lub odpowiednio ustawione lusterko?",
-    "answer": "O�wietla obserwowany obiekt.",
+    "text": "Jaką rolę pełni źródło światła lub odpowiednio ustawione lusterko?",
+    "answer": "Oświetla obserwowany obiekt.",
     "choices": [
-      "O�wietla obserwowany obiekt.",
-      "Zwi�ksza mas� preparatu.",
-      "Zast�puje obiektyw.",
+      "Oświetla obserwowany obiekt.",
+      "Zwiększa masę preparatu.",
+      "Zastępuje obiektyw.",
       "Nadaje preparatowi wybrany kolor."
     ],
-    "explanation": "�wiat�o pozwala zobaczy� obserwowany obiekt w mikroskopie optycznym.",
-    "source": "Zdj�cie 10",
+    "explanation": "Światło pozwala zobaczyć obserwowany obiekt w mikroskopie optycznym.",
+    "source": "Zdjęcie 10",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Kom�rki w polu widzenia musz� by� o�wietlone. Wska� element, kt�ry dostarcza im �wiat�o."
+    "hint": "Komórki w polu widzenia muszą być oświetlone. Wskaż element, który dostarcza im światło."
   },
   {
     "id": "bio-083",
     "kind": "choice",
     "topic": "Praca z mikroskopem",
-    "text": "Od kt�rego obiektywu rozpoczyna si� obserwacj�?",
-    "answer": "Od obiektywu o najmniejszym powi�kszeniu.",
+    "text": "Od którego obiektywu rozpoczyna się obserwację?",
+    "answer": "Od obiektywu o najmniejszym powiększeniu.",
     "choices": [
-      "Od dowolnego, bez ustawiania ostro�ci.",
-      "Obserwacj� zaczyna si� bez obiektywu.",
-      "Od obiektywu o najmniejszym powi�kszeniu.",
-      "Od obiektywu o najwi�kszym powi�kszeniu."
+      "Od dowolnego, bez ustawiania ostrości.",
+      "Obserwację zaczyna się bez obiektywu.",
+      "Od obiektywu o najmniejszym powiększeniu.",
+      "Od obiektywu o największym powiększeniu."
     ],
-    "explanation": "Zaczynamy od najmniejszego powi�kszenia, kt�re nast�pnie stopniowo zwi�kszamy.",
-    "source": "Zdj�cie 12",
+    "explanation": "Zaczynamy od najmniejszego powiększenia, które następnie stopniowo zwiększamy.",
+    "source": "Zdjęcie 12",
     "sourcePhotos": [
       12
     ],
     "sourceReferences": [
-      "Zdj�cie 12 (s. 18)"
+      "Zdjęcie 12 (s. 18)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: zacznij od najmniejszego powi�kszenia, o�wietl pole widzenia, umie�� preparat na stoliku, ostro�nie ustaw ostro�� i zwi�kszaj powi�kszenie stopniowo. Obiektyw nie mo�e dotkn�� preparatu.",
+    "hintContext": "Podręcznik: zacznij od najmniejszego powiększenia, oświetl pole widzenia, umieść preparat na stoliku, ostrożnie ustaw ostrość i zwiększaj powiększenie stopniowo. Obiektyw nie może dotknąć preparatu.",
     "similarGroups": [
       "microscope-start-and-safety"
     ],
-    "hint": "Na pocz�tku �atwiej znale�� obiekt, gdy obraz jest mniej powi�kszony. Kt�ry obiektyw wybierzesz jako pierwszy?"
+    "hint": "Na początku łatwiej znaleźć obiekt, gdy obraz jest mniej powiększony. Który obiektyw wybierzesz jako pierwszy?"
   },
   {
     "id": "bio-084",
     "kind": "choice",
     "topic": "Praca z mikroskopem",
-    "text": "O czym trzeba pami�ta� przy zbli�aniu obiektywu do preparatu?",
-    "answer": "Obiektyw nie mo�e dotkn�� preparatu.",
+    "text": "O czym trzeba pamiętać przy zbliżaniu obiektywu do preparatu?",
+    "answer": "Obiektyw nie może dotknąć preparatu.",
     "choices": [
-      "Przed zbli�eniem trzeba zdj�� stolik.",
-      "Obiektyw nie mo�e dotkn�� preparatu.",
-      "Obiektyw musi mocno dociska� szkie�ko.",
-      "Preparat nale�y po�o�y� na okularze."
+      "Przed zbliżeniem trzeba zdjąć stolik.",
+      "Obiektyw nie może dotknąć preparatu.",
+      "Obiektyw musi mocno dociskać szkiełko.",
+      "Preparat należy położyć na okularze."
     ],
-    "explanation": "Przy zbli�aniu obiektywu nale�y zachowa� odst�p, aby nie dotkn�� i nie uszkodzi� preparatu.",
-    "source": "Zdj�cie 12",
+    "explanation": "Przy zbliżaniu obiektywu należy zachować odstęp, aby nie dotknął i nie uszkodził preparatu.",
+    "source": "Zdjęcie 12",
     "sourcePhotos": [
       12
     ],
     "sourceReferences": [
-      "Zdj�cie 12 (s. 18)"
+      "Zdjęcie 12 (s. 18)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: zacznij od najmniejszego powi�kszenia, o�wietl pole widzenia, umie�� preparat na stoliku, ostro�nie ustaw ostro�� i zwi�kszaj powi�kszenie stopniowo. Obiektyw nie mo�e dotkn�� preparatu.",
+    "hintContext": "Podręcznik: zacznij od najmniejszego powiększenia, oświetl pole widzenia, umieść preparat na stoliku, ostrożnie ustaw ostrość i zwiększaj powiększenie stopniowo. Obiektyw nie może dotknąć preparatu.",
     "similarGroups": [
       "microscope-start-and-safety"
     ],
-    "hint": "Zbli�aj�c obiektyw, zostaw niewielk� przerw� nad szkie�kiem, by nie uderzy� w ogl�dany materia�."
+    "hint": "Zbliżając obiektyw, zostaw niewielką przerwę nad szkiełkiem, by nie uderzyć w oglądany materiał."
   },
   {
     "id": "bio-086",
     "kind": "choice",
     "topic": "Praca z mikroskopem",
-    "text": "Okular powi�ksza 10 razy, a obiektyw 20 razy. Jakie jest ca�kowite powi�kszenie?",
+    "text": "Okular powiększa 10 razy, a obiektyw 20 razy. Jakie jest całkowite powiększenie?",
     "answer": "200 razy.",
     "choices": [
       "30 razy.",
@@ -1534,450 +1534,450 @@ export const biology = [
       "2 razy.",
       "200 razy."
     ],
-    "explanation": "Mno�ymy 10 przez 20 i otrzymujemy powi�kszenie dwustukrotne.",
-    "source": "Zdj�cie 12",
+    "explanation": "Mnożymy 10 przez 20 i otrzymujemy powiększenie dwustukrotne.",
+    "source": "Zdjęcie 12",
     "sourcePhotos": [
       12
     ],
     "sourceReferences": [
-      "Zdj�cie 12 (s. 18)"
+      "Zdjęcie 12 (s. 18)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: zacznij od najmniejszego powi�kszenia, o�wietl pole widzenia, umie�� preparat na stoliku, ostro�nie ustaw ostro�� i zwi�kszaj powi�kszenie stopniowo. Obiektyw nie mo�e dotkn�� preparatu.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: zacznij od najmniejszego powiększenia, oświetl pole widzenia, umieść preparat na stoliku, ostrożnie ustaw ostrość i zwiększaj powiększenie stopniowo. Obiektyw nie może dotknąć preparatu.",
     "similarGroups": [
       "microscope-magnification"
     ],
-    "hint": "Zastosuj t� sam� zasad� co w poprzednich przyk�adach: pomn�� dwa podane powi�kszenia."
+    "hint": "Zastosuj tę samą zasadę co w poprzednich przykładach: pomnóż dwa podane powiększenia."
   },
   {
     "id": "bio-087",
     "kind": "choice",
     "topic": "Obserwacje mikroskopowe",
-    "text": "Kt�ry rodzaj mikroskopu umo�liwia bardzo du�e powi�kszenia, si�gaj�ce nawet miliona razy?",
+    "text": "Który rodzaj mikroskopu umożliwia bardzo duże powiększenia, sięgające nawet miliona razy?",
     "answer": "Mikroskopy elektronowe.",
     "choices": [
-      "Zwyk�e lupy.",
-      "Lornetki do obserwowania ptak�w.",
+      "Zwykłe lupy.",
+      "Lornetki do obserwowania ptaków.",
       "Mikroskopy elektronowe.",
-      "Mikroskopy optyczne u�ywane na lekcjach."
+      "Mikroskopy optyczne używane na lekcjach."
     ],
-    "explanation": "Mikroskopy elektronowe pozwalaj� uzyskiwa� bardzo du�e powi�kszenia i obserwowa� szczeg��y niezwykle ma�ych obiekt�w.",
-    "source": "Zdj�cie 13",
+    "explanation": "Mikroskopy elektronowe pozwalają uzyskiwać bardzo duże powiększenia i obserwować szczegóły niezwykle małych obiektów.",
+    "source": "Zdjęcie 13",
     "sourcePhotos": [
       13
     ],
     "sourceReferences": [
-      "Zdj�cie 13 (s. 19)"
+      "Zdjęcie 13 (s. 19)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: mikroskop optyczny pozwala obserwowa� m.in. pojedyncze kom�rki i fragmenty tkanek; mikroskop elektronowy daje bardzo du�e powi�kszenia. Powi�kszenie optyczne to iloczyn powi�kszenia okularu i obiektywu.",
+    "hintContext": "Podręcznik: mikroskop optyczny pozwala obserwować m.in. pojedyncze komórki i fragmenty tkanek; mikroskop elektronowy daje bardzo duże powiększenia. Powiększenie optyczne to iloczyn powiększenia okularu i obiektywu.",
     "similarGroups": [],
-    "hint": "W podr�czniku pokazano urz�dzenie do badania bardzo ma�ych obiekt�w, kt�re mo�e powi�ksza� obraz znacznie bardziej ni� zwyk�y mikroskop."
+    "hint": "W podręczniku pokazano urządzenie do badania bardzo małych obiektów, które może powiększać obraz znacznie bardziej niż zwykły mikroskop."
   },
   {
     "id": "bio-088",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Na kt�re szkie�ko najpierw nanosi si� kropl� wody?",
-    "answer": "Na szkie�ko podstawowe.",
+    "text": "Na które szkiełko najpierw nanosi się kroplę wody?",
+    "answer": "Na szkiełko podstawowe.",
     "choices": [
-      "Na soczewk� obiektywu.",
-      "Na szkie�ko podstawowe.",
-      "Na szkie�ko nakrywkowe.",
-      "Na soczewk� okularu."
+      "Na soczewkę obiektywu.",
+      "Na szkiełko podstawowe.",
+      "Na szkiełko nakrywkowe.",
+      "Na soczewkę okularu."
     ],
-    "explanation": "Przygotowanie preparatu rozpoczyna si� od naniesienia kropli wody na szkie�ko podstawowe.",
-    "source": "Zdj�cie 11",
+    "explanation": "Przygotowanie preparatu rozpoczyna się od naniesienia kropli wody na szkiełko podstawowe.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Najpierw przygotowuje si� pod�o�e, na kt�rym powstanie kropla z materia�em. Kt�re szkie�ko le�y na dole?"
+    "hint": "Najpierw przygotowuje się podłoże, na którym powstanie kropla z materiałem. Które szkiełko leży na dole?"
   },
   {
     "id": "bio-089",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Jakim narz�dziem nanosi si� kropl� wody na szkie�ko?",
+    "text": "Jakim narzędziem nanosi się kroplę wody na szkiełko?",
     "answer": "Zakraplaczem.",
     "choices": [
       "Zakraplaczem.",
       "Rewolwerem.",
       "Okularem.",
-      "�rub� mikrometryczn�."
+      "Śrubą mikrometryczną."
     ],
-    "explanation": "Zakraplacz pozwala przenie�� kropl� wody na szkie�ko podstawowe.",
-    "source": "Zdj�cie 11",
+    "explanation": "Zakraplacz pozwala przenieść kroplę wody na szkiełko podstawowe.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Kropl� przenosi si� ma�ym przyrz�dem zako�czonym w�sk� ko�c�wk�; jego nazwa wi��e si� z kropl�."
+    "hint": "Kroplę przenosi się małym przyrządem zakończonym wąską końcówką; jego nazwa wiąże się z kroplą."
   },
   {
     "id": "bio-090",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Jakie narz�dzia s�u�� do zdj�cia i przeniesienia sk�rki li�cia cebuli?",
-    "answer": "P�seta i ig�a preparacyjna.",
+    "text": "Jakie narzędzia służą do zdjęcia i przeniesienia skórki liścia cebuli?",
+    "answer": "Pęseta i igła preparacyjna.",
     "choices": [
       "Okular i tubus.",
       "Rewolwer i obiektyw.",
-      "�ruby makrometryczna i mikrometryczna.",
-      "P�seta i ig�a preparacyjna."
+      "Śruby makrometryczna i mikrometryczna.",
+      "Pęseta i igła preparacyjna."
     ],
-    "explanation": "Przy przygotowaniu cienkiego fragmentu sk�rki u�ywa si� p�sety i ig�y preparacyjnej.",
-    "source": "Zdj�cie 11",
+    "explanation": "Przy przygotowaniu cienkiego fragmentu skórki używa się pęsety i igły preparacyjnej.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Do chwytania cienkiej sk�rki u�yj narz�dzia zaciskaj�cego, a do jej oddzielenia - cienkiego, ostrego narz�dzia preparacyjnego."
+    "hint": "Do chwytania cienkiej skórki użyj narzędzia zaciskającego, a do jej oddzielenia — cienkiego, ostrego narzędzia preparacyjnego."
   },
   {
     "id": "bio-091",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Przygotowujesz preparat z cienkiej sk�rki bia�ego li�cia spichrzowego cebuli. Z kt�rej cz��ci li�cia pobierzesz sk�rk� do takiego preparatu?",
-    "answer": "Z wewn�trznej strony li�cia.",
+    "text": "Przygotowujesz preparat z cienkiej skórki białego liścia spichrzowego cebuli. Z której części liścia pobierzesz skórkę do takiego preparatu?",
+    "answer": "Z wewnętrznej strony liścia.",
     "choices": [
-      "Z zewn�trznej strony �odygi.",
-      "Wy��cznie z kwiatu cebuli.",
-      "Z wewn�trznej strony li�cia.",
-      "Wy��cznie z korzenia."
+      "Z zewnętrznej strony łodygi.",
+      "Wyłącznie z kwiatu cebuli.",
+      "Z wewnętrznej strony liścia.",
+      "Wyłącznie z korzenia."
     ],
-    "explanation": "Cienk� sk�rk� mo�na zdj�� z wewn�trznej strony bia�ego li�cia spichrzowego cebuli i umie�ci� w kropli wody.",
-    "source": "Zdj�cie 11",
+    "explanation": "Cienką skórkę można zdjąć z wewnętrznej strony białego liścia spichrzowego cebuli i umieścić w kropli wody.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Instrukcja wskazuje wewn�trzn� stron� bia�ego li�cia spichrzowego. To z niej delikatnie oddziela si� cienk� sk�rk�."
+    "hint": "Instrukcja wskazuje wewnętrzną stronę białego liścia spichrzowego. To z niej delikatnie oddziela się cienką skórkę."
   },
   {
     "id": "bio-092",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Gdzie umieszcza si� pobrany fragment sk�rki cebuli?",
-    "answer": "W kropli wody na szkie�ku podstawowym.",
+    "text": "Gdzie umieszcza się pobrany fragment skórki cebuli?",
+    "answer": "W kropli wody na szkiełku podstawowym.",
     "choices": [
       "W tubusie mikroskopu.",
-      "W kropli wody na szkie�ku podstawowym.",
-      "Bezpo�rednio na okularze.",
-      "Pod �r�d�em �wiat�a poza stolikiem."
+      "W kropli wody na szkiełku podstawowym.",
+      "Bezpośrednio na okularze.",
+      "Pod źródłem światła poza stolikiem."
     ],
-    "explanation": "Fragment sk�rki powinien znale�� si� w kropli wody na szkie�ku podstawowym.",
-    "source": "Zdj�cie 11",
+    "explanation": "Fragment skórki powinien znaleźć się w kropli wody na szkiełku podstawowym.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Fragment materia�u powinien znale�� si� tam, gdzie jest woda, na dolnym szkie�ku zestawu."
+    "hint": "Fragment materiału powinien znaleźć się tam, gdzie jest woda, na dolnym szkiełku zestawu."
   },
   {
     "id": "bio-093",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Czym przykrywa si� przygotowany materia� na szkie�ku podstawowym?",
-    "answer": "Szkie�kiem nakrywkowym.",
+    "text": "Czym przykrywa się przygotowany materiał na szkiełku podstawowym?",
+    "answer": "Szkiełkiem nakrywkowym.",
     "choices": [
-      "Szkie�kiem nakrywkowym.",
+      "Szkiełkiem nakrywkowym.",
       "Okularem.",
-      "P�set�.",
+      "Pęsetą.",
       "Rewolwerem."
     ],
-    "explanation": "Szkie�ko nakrywkowe os�ania materia� umieszczony w kropli wody.",
-    "source": "Zdj�cie 11",
+    "explanation": "Szkiełko nakrywkowe osłania materiał umieszczony w kropli wody.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Po u�o�eniu obiektu w kropli os�ania si� go cienkim drugim szkie�kiem. Jak nazywa si� g�rne szkie�ko?"
+    "hint": "Po ułożeniu obiektu w kropli osłania się go cienkim drugim szkiełkiem. Jak nazywa się górne szkiełko?"
   },
   {
     "id": "bio-094",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Jak nale�y nak�ada� szkie�ko nakrywkowe na materia� w kropli wody?",
-    "answer": "Przyk�ada si� je uko�nie i ostro�nie nakrywa materia�.",
+    "text": "Jak należy nakładać szkiełko nakrywkowe na materiał w kropli wody?",
+    "answer": "Przykłada się je ukośnie i ostrożnie nakrywa materiał.",
     "choices": [
-      "Upuszcza si� je z du�ej wysoko�ci.",
-      "Dociska si� je obiektywem.",
-      "Wsuwa si� je do tubusu.",
-      "Przyk�ada si� je uko�nie i ostro�nie nakrywa materia�."
+      "Upuszcza się je z dużej wysokości.",
+      "Dociska się je obiektywem.",
+      "Wsuwa się je do tubusu.",
+      "Przykłada się je ukośnie i ostrożnie nakrywa materiał."
     ],
-    "explanation": "Szkie�ko nakrywkowe przyk�adamy uko�nie i ostro�nie opuszczamy na przygotowany materia�.",
-    "source": "Zdj�cie 11",
+    "explanation": "Szkiełko nakrywkowe przykładamy ukośnie i ostrożnie opuszczamy na przygotowany materiał.",
+    "source": "Zdjęcie 11",
     "sourcePhotos": [
       11
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)"
+      "Zdjęcie 11 (s. 17)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Opu�� szkie�ko powoli pod k�tem, zamiast k�a�� je p�asko od razu; tak opisuje to instrukcja."
+    "hint": "Opuść szkiełko powoli pod kątem, zamiast kłaść je płasko od razu; tak opisuje to instrukcja."
   },
   {
     "id": "bio-095",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Kt�ra z podanych kolejno�ci przygotowania preparatu w kropli wody i umieszczenia go pod mikroskopem jest poprawna?",
-    "answer": "Kropla wody  przygotowanie obiektu  obiekt w kropli  szkie�ko nakrywkowe  stolik mikroskopu.",
+    "text": "Która z podanych kolejności przygotowania preparatu w kropli wody i umieszczenia go pod mikroskopem jest poprawna?",
+    "answer": "Kropla wody → przygotowanie obiektu → obiekt w kropli → szkiełko nakrywkowe → stolik mikroskopu.",
     "choices": [
-      "Obiekt w kropli  stolik  przygotowanie obiektu  szkie�ko nakrywkowe  kropla wody.",
-      "Stolik  szkie�ko nakrywkowe  obiekt w kropli  przygotowanie obiektu  kropla wody.",
-      "Kropla wody  przygotowanie obiektu  obiekt w kropli  szkie�ko nakrywkowe  stolik mikroskopu.",
-      "Szkie�ko nakrywkowe  stolik  kropla wody  przygotowanie obiektu  obiekt w kropli."
+      "Obiekt w kropli → stolik → przygotowanie obiektu → szkiełko nakrywkowe → kropla wody.",
+      "Stolik → szkiełko nakrywkowe → obiekt w kropli → przygotowanie obiektu → kropla wody.",
+      "Kropla wody → przygotowanie obiektu → obiekt w kropli → szkiełko nakrywkowe → stolik mikroskopu.",
+      "Szkiełko nakrywkowe → stolik → kropla wody → przygotowanie obiektu → obiekt w kropli."
     ],
-    "explanation": "Na szkie�ko podstawowe nanosimy wod�, przygotowujemy obiekt, umieszczamy go w kropli i nakrywamy. Gotowy preparat umieszczamy na stoliku mikroskopu.",
-    "source": "Zdj�cie 15",
+    "explanation": "Na szkiełko podstawowe nanosimy wodę, przygotowujemy obiekt, umieszczamy go w kropli i nakrywamy. Gotowy preparat umieszczamy na stoliku mikroskopu.",
+    "source": "Zdjęcie 15",
     "sourcePhotos": [
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 15 (s. 21)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [
       "onion-slide-preparation"
     ],
-    "hint": "Zacznij od kropli na dolnym szkie�ku, potem dodaj materia�, przykryj go i dopiero gotowy preparat po��� na mikroskopie."
+    "hint": "Zacznij od kropli na dolnym szkiełku, potem dodaj materiał, przykryj go i dopiero gotowy preparat połóż na mikroskopie."
   },
   {
     "id": "bio-096",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Po co barwi si� niekt�re preparaty mikroskopowe?",
-    "answer": "Poniewa� kom�rki s� w nich lepiej widoczne.",
+    "text": "Po co barwi się niektóre preparaty mikroskopowe?",
+    "answer": "Ponieważ komórki są w nich lepiej widoczne.",
     "choices": [
-      "Poniewa� barwienie zast�puje obiektyw.",
-      "Poniewa� kom�rki s� w nich lepiej widoczne.",
-      "Poniewa� barwienie zwi�ksza liczb� kom�rek.",
-      "Poniewa� bez barwienia mikroskop nie ma okularu."
+      "Ponieważ barwienie zastępuje obiektyw.",
+      "Ponieważ komórki są w nich lepiej widoczne.",
+      "Ponieważ barwienie zwiększa liczbę komórek.",
+      "Ponieważ bez barwienia mikroskop nie ma okularu."
     ],
-    "explanation": "Barwienie poprawia widoczno�� kom�rek i ich cz��ci, u�atwiaj�c obserwacj�.",
-    "source": "Zdj�cie 12",
+    "explanation": "Barwienie poprawia widoczność komórek i ich części, ułatwiając obserwację.",
+    "source": "Zdjęcie 12",
     "sourcePhotos": [
       12
     ],
     "sourceReferences": [
-      "Zdj�cie 12 (s. 18)"
+      "Zdjęcie 12 (s. 18)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [],
-    "hint": "Niekt�re kom�rki s� s�abo widoczne bez dodatkowego zabiegu. Pomy�l, co poprawia ich odr��nienie od t�a."
+    "hint": "Niektóre komórki są słabo widoczne bez dodatkowego zabiegu. Pomyśl, co poprawia ich odróżnienie od tła."
   },
   {
     "id": "bio-097",
     "kind": "choice",
     "topic": "Preparat mikroskopowy",
-    "text": "Kt�ry zestaw zawiera przyk�ady obiekt�w nadaj�cych si� do obserwacji mikroskopowej?",
-    "answer": "Pojedyncze kom�rki i fragmenty tkanek.",
+    "text": "Który zestaw zawiera przykłady obiektów nadających się do obserwacji mikroskopowej?",
+    "answer": "Pojedyncze komórki i fragmenty tkanek.",
     "choices": [
-      "Pojedyncze kom�rki i fragmenty tkanek.",
-      "Wy��cznie ca�e drzewa i g�ry.",
+      "Pojedyncze komórki i fragmenty tkanek.",
+      "Wyłącznie całe drzewa i góry.",
       "Tylko chmury i planety.",
-      "Wy��cznie ca�e stada du�ych ssak�w."
+      "Wyłącznie całe stada dużych ssaków."
     ],
-    "explanation": "Mikroskop umo�liwia ogl�danie bardzo ma�ych obiekt�w, na przyk�ad kom�rek i fragment�w tkanek.",
-    "source": "Zdj�cie 13",
+    "explanation": "Mikroskop umożliwia oglądanie bardzo małych obiektów, na przykład komórek i fragmentów tkanek.",
+    "source": "Zdjęcie 13",
     "sourcePhotos": [
       13
     ],
     "sourceReferences": [
-      "Zdj�cie 13 (s. 19)"
+      "Zdjęcie 13 (s. 19)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje kropl� wody na szkie�ku podstawowym, fragment sk�rki cebuli z wewn�trznej strony li�cia spichrzowego oraz uko�ne i ostro�ne nakrycie szkie�kiem nakrywkowym.",
+    "hintContext": "Podręcznik opisuje kroplę wody na szkiełku podstawowym, fragment skórki cebuli z wewnętrznej strony liścia spichrzowego oraz ukośne i ostrożne nakrycie szkiełkiem nakrywkowym.",
     "similarGroups": [],
-    "hint": "Mikroskop przydaje si� do ogl�dania struktur mniejszych od ca�ego organizmu, na przyk�ad cz��ci jego budowy."
+    "hint": "Mikroskop przydaje się do oglądania struktur mniejszych od całego organizmu, na przykład części jego budowy."
   },
   {
     "id": "bio-open-001",
     "kind": "open",
     "topic": "Biologia jako nauka",
-    "source": "Zdj�cie 1",
-    "text": "Wyja�nij, czym zajmuje si� biologia. Podaj jeden przyk�ad pytania, na kt�re biolog mo�e szuka� odpowiedzi.",
+    "source": "Zdjęcie 1",
+    "text": "Wyjaśnij, czym zajmuje się biologia. Podaj jeden przykład pytania, na które biolog może szukać odpowiedzi.",
     "fields": [
       {
         "key": "part1",
-        "label": "Czym zajmuje si� biologia?"
+        "label": "Czym zajmuje się biologia?"
       },
       {
         "key": "part2",
-        "label": "Przyk�adowe pytanie biologa"
+        "label": "Przykładowe pytanie biologa"
       }
     ],
-    "answer": "Biologia bada budow� i czynno�ci �yciowe organizm�w oraz zale�no�ci mi�dzy organizmami i ich �rodowiskiem. Przyk�adowe pytanie: Czy ilo�� wody wp�ywa na wzrost fasoli?",
-    "rubric": "2 pkt: opis zakresu biologii obejmuj�cy organizmy oraz sensowny przyk�ad pytania biologicznego. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i ich środowiskiem. Przykładowe pytanie: Czy ilość wody wpływa na wzrost fasoli?",
+    "rubric": "2 pkt: opis zakresu biologii obejmujący organizmy oraz sensowny przykład pytania biologicznego. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       1
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)"
+      "Zdjęcie 1 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: biologia bada budow� i czynno�ci �yciowe organizm�w oraz zale�no�ci mi�dzy organizmami i �rodowiskiem. Wszystkie organizmy s� zbudowane z kom�rek. Nazwa pochodzi od bios - �ycie i logos - s�owo.",
+    "hintContext": "Podręcznik: biologia bada budowę i czynności życiowe organizmów oraz zależności między organizmami i środowiskiem. Wszystkie organizmy są zbudowane z komórek. Nazwa pochodzi od bios — życie i logos — słowo.",
     "similarGroups": [],
-    "hint": "Pomy�l o dw�ch sprawach badanych przez biologi�: budowie organizm�w i tym, jak �yj�. Wymy�l pytanie o organizm lub jego �rodowisko."
+    "hint": "Pomyśl o dwóch sprawach badanych przez biologię: budowie organizmów i tym, jak żyją. Wymyśl pytanie o organizm lub jego środowisko."
   },
   {
     "id": "bio-open-002",
     "kind": "open",
-    "topic": "Cechy organizm�w",
-    "source": "Zdj�cia 1-3",
-    "text": "Podaj jedn� wsp�ln� cech� budowy organizm�w oraz wsp�ln� cech� ich funkcjonowania. Por�wnaj dro�d�e i sekwoj� pod wzgl�dem liczby kom�rek.",
+    "topic": "Cechy organizmów",
+    "source": "Zdjęcia 1–3",
+    "text": "Podaj jedną wspólną cechę budowy organizmów oraz wspólną cechę ich funkcjonowania. Porównaj drożdże i sekwoję pod względem liczby komórek.",
     "fields": [
       {
         "key": "part1",
-        "label": "Wsp�lna cecha budowy"
+        "label": "Wspólna cecha budowy"
       },
       {
         "key": "part2",
-        "label": "Wsp�lna cecha funkcjonowania"
+        "label": "Wspólna cecha funkcjonowania"
       },
       {
         "key": "part3",
-        "label": "Dro�d�e i sekwoja - por�wnanie liczby kom�rek"
+        "label": "Drożdże i sekwoja — porównanie liczby komórek"
       }
     ],
-    "answer": "Wszystkie organizmy s� zbudowane z kom�rek i wykonuj� czynno�ci �yciowe. Dro�d�e s� jednokom�rkowe, natomiast sekwoja jest zbudowana z bardzo wielu kom�rek.",
-    "rubric": "2 pkt: wskazanie budowy kom�rkowej i wykonywania czynno�ci �yciowych oraz poprawne por�wnanie dro�d�y i sekwoi. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Wszystkie organizmy są zbudowane z komórek i wykonują czynności życiowe. Drożdże są jednokomórkowe, natomiast sekwoja jest zbudowana z bardzo wielu komórek.",
+    "rubric": "2 pkt: wskazanie budowy komórkowej i wykonywania czynności życiowych oraz poprawne porównanie drożdży i sekwoi. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       1,
       2,
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)",
-      "Zdj�cie 2 (s. 8)",
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 1 (numer strony niewidoczny)",
+      "Zdjęcie 2 (s. 8)",
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: organizmy maj� budow� kom�rkow� i wykonuj� te same czynno�ci �yciowe. Dro�d�e s� jednokom�rkowe; sekwoja sk�ada si� z bardzo wielu kom�rek.",
+    "hintContext": "Podręcznik: organizmy mają budowę komórkową i wykonują te same czynności życiowe. Drożdże są jednokomórkowe; sekwoja składa się z bardzo wielu komórek.",
     "similarGroups": [],
-    "hint": "W podr�czniku wsp�lne dla wszystkich organizm�w s� kom�rki i czynno�ci �yciowe. Por�wnaj, czy dro�d�e i sekwoja maj� jedn� czy wiele kom�rek."
+    "hint": "W podręczniku wspólne dla wszystkich organizmów są komórki i czynności życiowe. Porównaj, czy drożdże i sekwoja mają jedną czy wiele komórek."
   },
   {
     "id": "bio-open-003",
     "kind": "open",
     "topic": "Dziedziny biologii",
-    "source": "Zdj�cie 5",
-    "text": "Por�wnaj anatomi� i fizjologi�. Podaj przyk�ad zagadnienia badanego przez ka�d� z tych dziedzin.",
+    "source": "Zdjęcie 5",
+    "text": "Porównaj anatomię i fizjologię. Podaj przykład zagadnienia badanego przez każdą z tych dziedzin.",
     "fields": [
       {
         "key": "part1",
-        "label": "Anatomia i przyk�ad zagadnienia"
+        "label": "Anatomia i przykład zagadnienia"
       },
       {
         "key": "part2",
-        "label": "Fizjologia i przyk�ad zagadnienia"
+        "label": "Fizjologia i przykład zagadnienia"
       }
     ],
-    "answer": "Anatomia bada budow� wewn�trzn� organizm�w, np. budow� serca. Fizjologia bada czynno�ci �yciowe organizm�w, np. prac� serca lub oddychanie.",
-    "rubric": "2 pkt: rozr��nienie budowy i funkcjonowania oraz po jednym trafnym przyk�adzie. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Anatomia bada budowę wewnętrzną organizmów, np. budowę serca. Fizjologia bada czynności życiowe organizmów, np. pracę serca lub oddychanie.",
+    "rubric": "2 pkt: rozróżnienie budowy i funkcjonowania oraz po jednym trafnym przykładzie. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       5
     ],
     "sourceReferences": [
-      "Zdj�cie 5 (s. 11)"
+      "Zdjęcie 5 (s. 11)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik wymienia zoologi� (zwierz�ta), botanik� (ro�liny), mikrobiologi� (mikroorganizmy), anatomi� (budow� wewn�trzn�), fizjologi� (czynno�ci �yciowe) i ekologi� (zale�no�ci organizm�w ze �rodowiskiem).",
+    "hintContext": "Podręcznik wymienia zoologię (zwierzęta), botanikę (rośliny), mikrobiologię (mikroorganizmy), anatomię (budowę wewnętrzną), fizjologię (czynności życiowe) i ekologię (zależności organizmów ze środowiskiem).",
     "similarGroups": [],
-    "hint": "Anatomia dotyczy tego, jak organizm jest zbudowany, a fizjologia - co dzieje si� w nim. Dobierz do ka�dej dziedziny osobny przyk�ad."
+    "hint": "Anatomia dotyczy tego, jak organizm jest zbudowany, a fizjologia — co dzieje się w nim. Dobierz do każdej dziedziny osobny przykład."
   },
   {
     "id": "bio-open-004",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 2",
-    "text": "Panda zjada li�cie i �odygi bambusa. Wyja�nij dwa powody, dla kt�rych potrzebuje sk�adnik�w pokarmowych. Nazwij czynno�� �yciow�, kt�r� wykonuje, pobieraj�c pokarm.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 2",
+    "text": "Panda zjada liście i łodygi bambusa. Wyjaśnij dwa powody, dla których potrzebuje składników pokarmowych. Nazwij czynność życiową, którą wykonuje, pobierając pokarm.",
     "fields": [
       {
         "key": "part1",
-        "label": "Pierwsza rola sk�adnik�w pokarmowych"
+        "label": "Pierwsza rola składników pokarmowych"
       },
       {
         "key": "part2",
-        "label": "Druga rola sk�adnik�w pokarmowych"
+        "label": "Druga rola składników pokarmowych"
       },
       {
         "key": "part3",
-        "label": "Nazwa czynno�ci �yciowej"
+        "label": "Nazwa czynności życiowej"
       }
     ],
-    "answer": "Sk�adniki pokarmowe s� �r�d�em energii oraz materia�em do budowy kom�rek. Panda pobieraj�ca pokarm wykonuje czynno�� �yciow� nazywan� od�ywianiem si�.",
-    "rubric": "2 pkt: wskazanie �r�d�a energii i materia�u budulcowego oraz od�ywiania si� jako czynno�ci �yciowej. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania.",
+    "answer": "Składniki pokarmowe są źródłem energii oraz materiałem do budowy komórek. Panda pobierająca pokarm wykonuje czynność życiową nazywaną odżywianiem się.",
+    "rubric": "2 pkt: wskazanie źródła energii i materiału budulcowego oraz odżywiania się jako czynności życiowej. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania.",
     "sourcePhotos": [
       2
     ],
     "sourceReferences": [
-      "Zdj�cie 2 (s. 8)"
+      "Zdjęcie 2 (s. 8)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Pokarm mo�e dostarcza� energii i materia�u do budowy kom�rek. Nazwij czynno��, podczas kt�rej panda pobiera bambus."
+    "hint": "Pokarm może dostarczać energii i materiału do budowy komórek. Nazwij czynność, podczas której panda pobiera bambus."
   },
   {
     "id": "bio-open-005",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 2",
-    "text": "Wyja�nij r��nic� mi�dzy od�ywianiem si� a oddychaniem. Napisz, jak te czynno�ci s� ze sob� powi�zane.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 2",
+    "text": "Wyjaśnij różnicę między odżywianiem się a oddychaniem. Napisz, jak te czynności są ze sobą powiązane.",
     "fields": [
       {
         "key": "part1",
-        "label": "Od�ywianie si�"
+        "label": "Odżywianie się"
       },
       {
         "key": "part2",
@@ -1985,28 +1985,28 @@ export const biology = [
       },
       {
         "key": "part3",
-        "label": "Zwi�zek tych czynno�ci"
+        "label": "Związek tych czynności"
       }
     ],
-    "answer": "Od�ywianie dostarcza organizmowi sk�adnik�w pokarmowych. Oddychanie uwalnia energi� z pokarmu. Pokarm dostarczony dzi�ki od�ywianiu mo�e wi�c by� �r�d�em energii uzyskiwanej podczas oddychania.",
-    "rubric": "2 pkt: poprawne wyja�nienie obu czynno�ci oraz powi�zanie pokarmu z uwalnianiem energii. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Odżywianie dostarcza organizmowi składników pokarmowych. Oddychanie uwalnia energię z pokarmu. Pokarm dostarczony dzięki odżywianiu może więc być źródłem energii uzyskiwanej podczas oddychania.",
+    "rubric": "2 pkt: poprawne wyjaśnienie obu czynności oraz powiązanie pokarmu z uwalnianiem energii. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       2
     ],
     "sourceReferences": [
-      "Zdj�cie 2 (s. 8)"
+      "Zdjęcie 2 (s. 8)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Jedna czynno�� dostarcza sk�adniki pokarmowe, druga uwalnia z nich energi� potrzebn� do �ycia. Wyja�nij, jak ��cz� si� te procesy."
+    "hint": "Jedna czynność dostarcza składniki pokarmowe, druga uwalnia z nich energię potrzebną do życia. Wyjaśnij, jak łączą się te procesy."
   },
   {
     "id": "bio-open-006",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 2",
-    "text": "Wyja�nij, na czym polega wydalanie. Podaj dwa przyk�ady substancji usuwanych z organizmu w tym procesie.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 2",
+    "text": "Wyjaśnij, na czym polega wydalanie. Podaj dwa przykłady substancji usuwanych z organizmu w tym procesie.",
     "fields": [
       {
         "key": "part1",
@@ -2014,65 +2014,65 @@ export const biology = [
       },
       {
         "key": "part2",
-        "label": "Pierwszy przyk�ad"
+        "label": "Pierwszy przykład"
       },
       {
         "key": "part3",
-        "label": "Drugi przyk�ad"
+        "label": "Drugi przykład"
       }
     ],
-    "answer": "Wydalanie polega na usuwaniu substancji niepotrzebnych lub szkodliwych. Przyk�adami s� nadmiar wody, nadmiar soli mineralnych i dwutlenek w�gla.",
-    "rubric": "2 pkt: poprawna definicja wydalania i dwa r��ne poprawne przyk�ady substancji, np. nadmiar wody, soli mineralnych lub dwutlenek w�gla. Akceptuj inne poprawne przyk�ady wydalanych substancji. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Wydalanie polega na usuwaniu substancji niepotrzebnych lub szkodliwych. Przykładami są nadmiar wody, nadmiar soli mineralnych i dwutlenek węgla.",
+    "rubric": "2 pkt: poprawna definicja wydalania i dwa różne poprawne przykłady substancji, np. nadmiar wody, soli mineralnych lub dwutlenek węgla. Akceptuj inne poprawne przykłady wydalanych substancji. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       2
     ],
     "sourceReferences": [
-      "Zdj�cie 2 (s. 8)"
+      "Zdjęcie 2 (s. 8)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Wydalanie usuwa z organizmu to, co zb�dne lub szkodliwe. Przypomnij sobie przyk�ady z opisu moczu pandy i oddychania."
+    "hint": "Wydalanie usuwa z organizmu to, co zbędne lub szkodliwe. Przypomnij sobie przykłady z opisu moczu pandy i oddychania."
   },
   {
     "id": "bio-open-007",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 3",
-    "text": "Wyja�nij, dlaczego ruch nie musi oznacza� przemieszczania ca�ego organizmu. Podaj przyk�ad ruchu zwierz�cia i ro�liny.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Wyjaśnij, dlaczego ruch nie musi oznaczać przemieszczania całego organizmu. Podaj przykład ruchu zwierzęcia i rośliny.",
     "fields": [
       {
         "key": "part1",
-        "label": "Wyja�nienie poj�cia ruchu"
+        "label": "Wyjaśnienie pojęcia ruchu"
       },
       {
         "key": "part2",
-        "label": "Przyk�ad u zwierz�cia"
+        "label": "Przykład u zwierzęcia"
       },
       {
         "key": "part3",
-        "label": "Przyk�ad u ro�liny"
+        "label": "Przykład u rośliny"
       }
     ],
-    "answer": "Ruch to zmiana po�o�enia ca�ego cia�a lub jego cz��ci. Panda mo�e biega� lub wspina� si� na drzewo. U ro�lin li�cie i �odyga mog� zwraca� si� w stron� �wiat�a.",
-    "rubric": "2 pkt: wyja�nienie ruchu cz��ci cia�a oraz poprawne przyk�ady dla zwierz�cia i ro�liny. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Ruch to zmiana położenia całego ciała lub jego części. Panda może biegać lub wspinać się na drzewo. U roślin liście i łodyga mogą zwracać się w stronę światła.",
+    "rubric": "2 pkt: wyjaśnienie ruchu części ciała oraz poprawne przykłady dla zwierzęcia i rośliny. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Ruch mo�e dotyczy� ca�ego cia�a albo tylko jego cz��ci. Podaj przyk�ad przemieszczania si� zwierz�cia i zmiany po�o�enia cz��ci ro�liny."
+    "hint": "Ruch może dotyczyć całego ciała albo tylko jego części. Podaj przykład przemieszczania się zwierzęcia i zmiany położenia części rośliny."
   },
   {
     "id": "bio-open-008",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 3",
-    "text": "Por�wnaj wzrost i rozw�j organizmu. Wyja�nij na przyk�adzie pandy, dlaczego zwi�kszenie masy i osi�gni�cie dojrza�o�ci opisuj� r��ne zmiany.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Porównaj wzrost i rozwój organizmu. Wyjaśnij na przykładzie pandy, dlaczego zwiększenie masy i osiągnięcie dojrzałości opisują różne zmiany.",
     "fields": [
       {
         "key": "part1",
@@ -2080,36 +2080,36 @@ export const biology = [
       },
       {
         "key": "part2",
-        "label": "Rozw�j"
+        "label": "Rozwój"
       },
       {
         "key": "part3",
-        "label": "Przyk�ad pandy"
+        "label": "Przykład pandy"
       }
     ],
-    "answer": "Wzrost oznacza zwi�kszanie rozmiar�w i masy cia�a. Rozw�j obejmuje zmiany wygl�du i sposobu funkcjonowania. Zwi�kszenie masy pandy jest wzrostem, a osi�gni�cie dojrza�o�ci p�ciowej - zmian� zwi�zan� z rozwojem.",
-    "rubric": "2 pkt: rozr��nienie wzrostu i rozwoju oraz poprawne przypisanie zmian u pandy; nie wymagaj warto�ci masy. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Wzrost oznacza zwiększanie rozmiarów i masy ciała. Rozwój obejmuje zmiany wyglądu i sposobu funkcjonowania. Zwiększenie masy pandy jest wzrostem, a osiągnięcie dojrzałości płciowej — zmianą związaną z rozwojem.",
+    "rubric": "2 pkt: rozróżnienie wzrostu i rozwoju oraz poprawne przypisanie zmian u pandy; nie wymagaj wartości masy. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Wzrost mo�na zauwa�y� w rozmiarze i masie, a rozw�j obejmuje te� zmian� wygl�du lub funkcjonowania. Przyporz�dkuj tym poj�ciom przyk�ady pandy."
+    "hint": "Wzrost można zauważyć w rozmiarze i masie, a rozwój obejmuje też zmianę wyglądu lub funkcjonowania. Przyporządkuj tym pojęciom przykłady pandy."
   },
   {
     "id": "bio-open-009",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 3",
-    "text": "Panda wyczuwa zapach zbli�aj�cego si� drapie�nika i oddala si� od niego. Wska� bodziec i reakcj� w tym przyk�adzie. Wyja�nij, jak reagowanie na bod�ce pomaga organizmom.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Panda wyczuwa zapach zbliżającego się drapieżnika i oddala się od niego. Wskaż bodziec i reakcję w tym przykładzie. Wyjaśnij, jak reagowanie na bodźce pomaga organizmom.",
     "fields": [
       {
         "key": "part1",
-        "label": "Znaczenie reagowania na bod�ce"
+        "label": "Znaczenie reagowania na bodźce"
       },
       {
         "key": "part2",
@@ -2120,227 +2120,227 @@ export const biology = [
         "label": "Reakcja pandy"
       }
     ],
-    "answer": "Reakcje na bod�ce pomagaj� organizmom dostosowywa� si� do zmian w �rodowisku. Przyk�adowo zapach lub d�wi�k drapie�nika jest bod�cem, a oddalenie si� pandy od zagro�enia mo�e by� reakcj�.",
-    "rubric": "2 pkt: znaczenie reakcji na zmiany otoczenia oraz sp�jne rozr��nienie bod�ca i reakcji; akceptuj inne sensowne przyk�ady. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Reakcje na bodźce pomagają organizmom dostosowywać się do zmian w środowisku. Przykładowo zapach lub dźwięk drapieżnika jest bodźcem, a oddalenie się pandy od zagrożenia może być reakcją.",
+    "rubric": "2 pkt: znaczenie reakcji na zmiany otoczenia oraz spójne rozróżnienie bodźca i reakcji; akceptuj inne sensowne przykłady. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Bodziec to sygna� z otoczenia, na przyk�ad zapach. Wska� najpierw sygna�, a potem zmian� zachowania pandy."
+    "hint": "Bodziec to sygnał z otoczenia, na przykład zapach. Wskaż najpierw sygnał, a potem zmianę zachowania pandy."
   },
   {
     "id": "bio-open-010",
     "kind": "open",
-    "topic": "Czynno�ci �yciowe",
-    "source": "Zdj�cie 3",
-    "text": "Wyja�nij, czym jest rozmna�anie si�. Podaj, jakie kom�rki uczestnicz� w rozmna�aniu p�ciowym i czy jest to jedyny spos�b rozmna�ania organizm�w.",
+    "topic": "Czynności życiowe",
+    "source": "Zdjęcie 3",
+    "text": "Wyjaśnij, czym jest rozmnażanie się. Podaj, jakie komórki uczestniczą w rozmnażaniu płciowym i czy jest to jedyny sposób rozmnażania organizmów.",
     "fields": [
       {
         "key": "part1",
-        "label": "Na czym polega rozmna�anie?"
+        "label": "Na czym polega rozmnażanie?"
       },
       {
         "key": "part2",
-        "label": "Kom�rki w rozmna�aniu p�ciowym"
+        "label": "Komórki w rozmnażaniu płciowym"
       },
       {
         "key": "part3",
-        "label": "Inny spos�b rozmna�ania"
+        "label": "Inny sposób rozmnażania"
       }
     ],
-    "answer": "Rozmna�anie oznacza wydawanie potomstwa. W rozmna�aniu p�ciowym uczestnicz� m�skie i �e�skie kom�rki rozrodcze. Niekt�re organizmy rozmna�aj� si� bezp�ciowo, wi�c rozmna�anie p�ciowe nie jest jedynym sposobem.",
-    "rubric": "2 pkt: definicja rozmna�ania, wskazanie obu rodzaj�w kom�rek rozrodczych i istnienia rozmna�ania bezp�ciowego. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Rozmnażanie oznacza wydawanie potomstwa. W rozmnażaniu płciowym uczestniczą męskie i żeńskie komórki rozrodcze. Niektóre organizmy rozmnażają się bezpłciowo, więc rozmnażanie płciowe nie jest jedynym sposobem.",
+    "rubric": "2 pkt: definicja rozmnażania, wskazanie obu rodzajów komórek rozrodczych i istnienia rozmnażania bezpłciowego. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       3
     ],
     "sourceReferences": [
-      "Zdj�cie 3 (numer strony niewidoczny)"
+      "Zdjęcie 3 (numer strony niewidoczny)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje od�ywianie, oddychanie, wydalanie, ruch, rozmna�anie, wzrost i rozw�j oraz reakcj� na bod�ce. Sk�adniki pokarmowe dostarczaj� energii i materia�u do budowy kom�rek; oddychanie uwalnia energi�.",
+    "hintContext": "Podręcznik opisuje odżywianie, oddychanie, wydalanie, ruch, rozmnażanie, wzrost i rozwój oraz reakcję na bodźce. Składniki pokarmowe dostarczają energii i materiału do budowy komórek; oddychanie uwalnia energię.",
     "similarGroups": [],
-    "hint": "Rozmna�anie prowadzi do pojawienia si� potomstwa. W ksi��ce opisano udzia� dw�ch rodzaj�w kom�rek w rozmna�aniu p�ciowym oraz drugi spos�b rozmna�ania."
+    "hint": "Rozmnażanie prowadzi do pojawienia się potomstwa. W książce opisano udział dwóch rodzajów komórek w rozmnażaniu płciowym oraz drugi sposób rozmnażania."
   },
   {
     "id": "bio-open-011",
     "kind": "open",
-    "topic": "Poziomy budowy organizm�w",
-    "source": "Zdj�cie 4",
-    "text": "Wyja�nij, czym r��ni si� tkanka od narz�du. Podaj po jednym w�asnym, poprawnym przyk�adzie tkanki i narz�du.",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcie 4",
+    "text": "Wyjaśnij, czym różni się tkanka od narządu. Podaj po jednym własnym, poprawnym przykładzie tkanki i narządu.",
     "fields": [
       {
         "key": "part1",
-        "label": "Tkanka i jej przyk�ad"
+        "label": "Tkanka i jej przykład"
       },
       {
         "key": "part2",
-        "label": "Narz�d i jego przyk�ad"
+        "label": "Narząd i jego przykład"
       }
     ],
-    "answer": "Tkanka to grupa podobnych kom�rek wykonuj�cych okre�lone zadania, np. tkanka mi��niowa. Narz�d jest zbudowany z tkanek pe�ni�cych okre�lone funkcje, np. serce.",
-    "rubric": "2 pkt: poprawne odr��nienie tkanki od narz�du oraz po jednym poprawnym przyk�adzie. Akceptuj przyk�ady zwierz�ce i ro�linne, tak�e inne ni� tkanka mi��niowa i serce; organ i narz�d uznaj za synonimy. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania.",
+    "answer": "Tkanka to grupa podobnych komórek wykonujących określone zadania, np. tkanka mięśniowa. Narząd jest zbudowany z tkanek pełniących określone funkcje, np. serce.",
+    "rubric": "2 pkt: poprawne odróżnienie tkanki od narządu oraz po jednym poprawnym przykładzie. Akceptuj przykłady zwierzęce i roślinne, także inne niż tkanka mięśniowa i serce; organ i narząd uznaj za synonimy. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania.",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Tkanka to grupa podobnych kom�rek wykonuj�cych zadania, a narz�d tworz� tkanki. Wykorzystaj przyk�ady mi��nia i serca."
+    "hint": "Tkanka to grupa podobnych komórek wykonujących zadania, a narząd tworzą tkanki. Wykorzystaj przykłady mięśnia i serca."
   },
   {
     "id": "bio-open-012",
     "kind": "open",
-    "topic": "Poziomy budowy organizm�w",
-    "source": "Zdj�cie 4",
-    "text": "Por�wnaj poziomy budowy ro�liny i zwierz�cia. Zapisz obie kolejno�ci od kom�rki do organizmu oraz podaj przyk�ad organu ro�liny i narz�du zwierz�cia.",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcie 4",
+    "text": "Porównaj poziomy budowy rośliny i zwierzęcia. Zapisz obie kolejności od komórki do organizmu oraz podaj przykład organu rośliny i narządu zwierzęcia.",
     "fields": [
       {
         "key": "part1",
-        "label": "Kolejno�� u ro�liny"
+        "label": "Kolejność u rośliny"
       },
       {
         "key": "part2",
-        "label": "Kolejno�� u zwierz�cia"
+        "label": "Kolejność u zwierzęcia"
       },
       {
         "key": "part3",
-        "label": "Przyk�ady organu i narz�du"
+        "label": "Przykłady organu i narządu"
       }
     ],
-    "answer": "Ro�lina: kom�rka  tkanka  organ  system organ�w  organizm. Zwierz�: kom�rka  tkanka  narz�d  uk�ad narz�d�w  organizm. Przyk�ady: li�� u ro�liny, serce u zwierz�cia.",
-    "rubric": "2 pkt: dwie poprawne kolejno�ci i odpowiednie przyk�ady; akceptuj u�ycie s�owa narz�d jako synonimu organu. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Roślina: komórka → tkanka → organ → system organów → organizm. Zwierzę: komórka → tkanka → narząd → układ narządów → organizm. Przykłady: liść u rośliny, serce u zwierzęcia.",
+    "rubric": "2 pkt: dwie poprawne kolejności i odpowiednie przykłady; akceptuj użycie słowa narząd jako synonimu organu. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [
       "organism-hierarchy"
     ],
-    "hint": "Zapisz poziomy od najmniejszego do najwi�kszego. U ro�lin cz��� mi�dzy tkank� a systemem to organ; u zwierz�t nazywa si� j� narz�dem."
+    "hint": "Zapisz poziomy od najmniejszego do największego. U roślin część między tkanką a systemem to organ; u zwierząt nazywa się ją narządem."
   },
   {
     "id": "bio-open-013",
     "kind": "open",
-    "topic": "Poziomy budowy organizm�w",
-    "source": "Zdj�cie 4",
-    "text": "Serce i naczynia krwiono�ne tworz� uk�ad krwiono�ny. Wyja�nij, czym jest uk�ad narz�d�w. Wska� jego elementy w tym przyk�adzie i wyja�nij znaczenie ich wsp��pracy.",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcie 4",
+    "text": "Serce i naczynia krwionośne tworzą układ krwionośny. Wyjaśnij, czym jest układ narządów. Wskaż jego elementy w tym przykładzie i wyjaśnij znaczenie ich współpracy.",
     "fields": [
       {
         "key": "part1",
-        "label": "Czym jest uk�ad narz�d�w?"
+        "label": "Czym jest układ narządów?"
       },
       {
         "key": "part2",
-        "label": "Elementy uk�adu krwiono�nego"
+        "label": "Elementy układu krwionośnego"
       },
       {
         "key": "part3",
-        "label": "Znaczenie wsp��pracy"
+        "label": "Znaczenie współpracy"
       }
     ],
-    "answer": "Uk�ad narz�d�w tworz� narz�dy wsp��pracuj�ce przy wykonywaniu okre�lonych czynno�ci �yciowych. W podanym przyk�adzie s� to serce i naczynia krwiono�ne. Ich wsp��praca umo�liwia przep�yw krwi i dzia�anie uk�adu.",
-    "rubric": "2 pkt: wyja�nienie uk�adu, wskazanie serca i naczy� oraz sens wsp��pracy; nie wymagaj szczeg��owej fizjologii kr��enia. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Układ narządów tworzą narządy współpracujące przy wykonywaniu określonych czynności życiowych. W podanym przykładzie są to serce i naczynia krwionośne. Ich współpraca umożliwia przepływ krwi i działanie układu.",
+    "rubric": "2 pkt: wyjaśnienie układu, wskazanie serca i naczyń oraz sens współpracy; nie wymagaj szczegółowej fizjologii krążenia. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 4 (s. 10)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [],
-    "hint": "Uk�ad tworz� narz�dy wsp��pracuj�ce. W tym przyk�adzie rozpoznaj narz�dy i pomy�l, co umo�liwia ich wsp�lne dzia�anie."
+    "hint": "Układ tworzą narządy współpracujące. W tym przykładzie rozpoznaj narządy i pomyśl, co umożliwia ich wspólne działanie."
   },
   {
     "id": "bio-open-014",
     "kind": "open",
-    "topic": "Poziomy budowy organizm�w",
-    "source": "Zdj�cia 1 i 4",
-    "text": "Dlaczego kom�rk� nazywamy podstawow� jednostk� budowy organizm�w? Wyja�nij, jak to stwierdzenie odnosi si� do organizmu jedno- i wielokom�rkowego.",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcia 1 i 4",
+    "text": "Dlaczego komórkę nazywamy podstawową jednostką budowy organizmów? Wyjaśnij, jak to stwierdzenie odnosi się do organizmu jedno- i wielokomórkowego.",
     "fields": [
       {
         "key": "part1",
-        "label": "Dlaczego kom�rka jest jednostk� podstawow�?"
+        "label": "Dlaczego komórka jest jednostką podstawową?"
       },
       {
         "key": "part2",
-        "label": "Organizm jednokom�rkowy"
+        "label": "Organizm jednokomórkowy"
       },
       {
         "key": "part3",
-        "label": "Organizm wielokom�rkowy"
+        "label": "Organizm wielokomórkowy"
       }
     ],
-    "answer": "Wszystkie organizmy s� zbudowane z kom�rek. U jednokom�rkowych jedna kom�rka tworzy ca�y organizm i wykonuje czynno�ci �yciowe. U wielokom�rkowych organizm sk�ada si� z wielu kom�rek, kt�re wsp��pracuj�.",
-    "rubric": "2 pkt: budowa kom�rkowa wszystkich organizm�w oraz poprawny opis obu typ�w; akceptuj przyk�ady dro�d�y i sekwoi. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Wszystkie organizmy są zbudowane z komórek. U jednokomórkowych jedna komórka tworzy cały organizm i wykonuje czynności życiowe. U wielokomórkowych organizm składa się z wielu komórek, które współpracują.",
+    "rubric": "2 pkt: budowa komórkowa wszystkich organizmów oraz poprawny opis obu typów; akceptuj przykłady drożdży i sekwoi. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       1,
       4
     ],
     "sourceReferences": [
-      "Zdj�cie 1 (numer strony niewidoczny)",
-      "Zdj�cie 4 (s. 10)"
+      "Zdjęcie 1 (numer strony niewidoczny)",
+      "Zdjęcie 4 (s. 10)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [
       "single-cell-meaning"
     ],
-    "hint": "Ka�dy organizm sk�ada si� z kom�rek. Por�wnaj organizm, w kt�rym jedna kom�rka wykonuje wszystkie czynno�ci, z takim, kt�ry ma ich wiele."
+    "hint": "Każdy organizm składa się z komórek. Porównaj organizm, w którym jedna komórka wykonuje wszystkie czynności, z takim, który ma ich wiele."
   },
   {
     "id": "bio-open-015",
     "kind": "open",
-    "topic": "Obserwacja i do�wiadczenie",
-    "source": "Zdj�cie 6",
-    "text": "Por�wnaj obserwacj� i do�wiadczenie. Podaj po jednym przyk�adzie badania ka�dego rodzaju.",
+    "topic": "Obserwacja i doświadczenie",
+    "source": "Zdjęcie 6",
+    "text": "Porównaj obserwację i doświadczenie. Podaj po jednym przykładzie badania każdego rodzaju.",
     "fields": [
       {
         "key": "part1",
-        "label": "Obserwacja i przyk�ad"
+        "label": "Obserwacja i przykład"
       },
       {
         "key": "part2",
-        "label": "Do�wiadczenie i przyk�ad"
+        "label": "Doświadczenie i przykład"
       }
     ],
-    "answer": "W obserwacji przygl�damy si� organizmom lub procesom bez celowej ingerencji, np. obserwujemy bociany. W do�wiadczeniu zmieniamy badany czynnik, np. podlewamy jedn� grup� fasoli wi�ksz� ilo�ci� wody i por�wnujemy jej wzrost z drug� grup�.",
-    "rubric": "2 pkt: rozr��nienie braku ingerencji i celowej zmiany czynnika oraz dwa w�a�ciwie przypisane przyk�ady. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "W obserwacji przyglądamy się organizmom lub procesom bez celowej ingerencji, np. obserwujemy bociany. W doświadczeniu zmieniamy badany czynnik, np. podlewamy jedną grupę fasoli większą ilością wody i porównujemy jej wzrost z drugą grupą.",
+    "rubric": "2 pkt: rozróżnienie braku ingerencji i celowej zmiany czynnika oraz dwa właściwie przypisane przykłady. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       6
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)"
+      "Zdjęcie 6 (s. 12)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja polega na uwa�nym przygl�daniu si� bez wp�ywania na przebieg zjawiska. W do�wiadczeniu zmienia si� jeden badany czynnik; pr�ba kontrolna nie zmienia badanego czynnika.",
+    "hintContext": "Podręcznik: obserwacja polega na uważnym przyglądaniu się bez wpływania na przebieg zjawiska. W doświadczeniu zmienia się jeden badany czynnik; próba kontrolna nie zmienia badanego czynnika.",
     "similarGroups": [
       "observation-or-experiment"
     ],
-    "hint": "Zadaj sobie pytanie: czy badacz tylko patrzy, czy celowo zmienia jeden warunek? U�yj przyk�adu bocian�w i podlewania fasoli."
+    "hint": "Zadaj sobie pytanie: czy badacz tylko patrzy, czy celowo zmienia jeden warunek? Użyj przykładu bocianów i podlewania fasoli."
   },
   {
     "id": "bio-open-016",
     "kind": "open",
     "topic": "Metoda naukowa",
-    "source": "Zdj�cie 7",
-    "text": "Wyja�nij r��nic� mi�dzy problemem badawczym a hipotez�. U��� pasuj�c� do siebie par� dotycz�c� dojrzewania banan�w w obecno�ci jab�ek.",
+    "source": "Zdjęcie 7",
+    "text": "Wyjaśnij różnicę między problemem badawczym a hipotezą. Ułóż pasującą do siebie parę dotyczącą dojrzewania bananów w obecności jabłek.",
     "fields": [
       {
         "key": "part1",
-        "label": "R��nica mi�dzy poj�ciami"
+        "label": "Różnica między pojęciami"
       },
       {
         "key": "part2",
@@ -2351,101 +2351,101 @@ export const biology = [
         "label": "Hipoteza"
       }
     ],
-    "answer": "Problem badawczy jest pytaniem, a hipoteza - proponowan� odpowiedzi�, kt�r� mo�na sprawdzi�. Problem: Czy jab�ka przyspieszaj� dojrzewanie banan�w? Hipoteza: Banany przechowywane z jab�kami dojrzewaj� szybciej.",
-    "rubric": "2 pkt: poprawne rozr��nienie i sp�jna para pytanie-hipoteza; akceptuj te� sprawdzaln� hipotez� o braku wp�ywu. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Problem badawczy jest pytaniem, a hipoteza — proponowaną odpowiedzią, którą można sprawdzić. Problem: Czy jabłka przyspieszają dojrzewanie bananów? Hipoteza: Banany przechowywane z jabłkami dojrzewają szybciej.",
+    "rubric": "2 pkt: poprawne rozróżnienie i spójna para pytanie–hipoteza; akceptuj też sprawdzalną hipotezę o braku wpływu. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "problem-or-hypothesis"
     ],
-    "hint": "Problem badawczy jest pytaniem, a hipoteza mo�liw� odpowiedzi�. U��� pytanie o jab�ka i banany, a potem przewidywanie, kt�re mo�na sprawdzi�."
+    "hint": "Problem badawczy jest pytaniem, a hipoteza możliwą odpowiedzią. Ułóż pytanie o jabłka i banany, a potem przewidywanie, które można sprawdzić."
   },
   {
     "id": "bio-open-017",
     "kind": "open",
-    "topic": "Planowanie do�wiadcze�",
-    "source": "Zdj�cie 6 (s. 12) i zdj�cie 9 (s. 15)",
-    "text": "Chcesz zbada� wp�yw ilo�ci wody na wzrost fasoli. Opisz pr�b� badawcz�, pr�b� kontroln� i dwa warunki, kt�re powinny by� w obu pr�bach takie same.",
+    "topic": "Planowanie doświadczeń",
+    "source": "Zdjęcie 6 (s. 12) i zdjęcie 9 (s. 15)",
+    "text": "Chcesz zbadać wpływ ilości wody na wzrost fasoli. Opisz próbę badawczą, próbę kontrolną i dwa warunki, które powinny być w obu próbach takie same.",
     "fields": [
       {
         "key": "part1",
-        "label": "Pr�ba badawcza"
+        "label": "Próba badawcza"
       },
       {
         "key": "part2",
-        "label": "Pr�ba kontrolna"
+        "label": "Próba kontrolna"
       },
       {
         "key": "part3",
-        "label": "Dwa wsp�lne warunki"
+        "label": "Dwa wspólne warunki"
       }
     ],
-    "answer": "W pr�bie badawczej podlewamy fasol� wi�ksz� ilo�ci� wody ni� w pr�bie kontrolnej. W kontrolnej nie zwi�kszamy ilo�ci wody. Takie same powinny by� np. gatunek i pocz�tkowa wielko�� ro�lin, gleba, o�wietlenie, temperatura oraz czas badania.",
-    "rubric": "2 pkt: dwie pr�by r��ni�ce si� ilo�ci� wody i dwa trafne warunki sta�e; akceptuj inn� rozs�dn� zmian� ilo�ci wody. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "W próbie badawczej podlewamy fasolę większą ilością wody niż w próbie kontrolnej. W kontrolnej nie zwiększamy ilości wody. Takie same powinny być np. gatunek i początkowa wielkość roślin, gleba, oświetlenie, temperatura oraz czas badania.",
+    "rubric": "2 pkt: dwie próby różniące się ilością wody i dwa trafne warunki stałe; akceptuj inną rozsądną zmianę ilości wody. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       6,
       9
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)",
-      "Zdj�cie 9 (s. 15)"
+      "Zdjęcie 6 (s. 12)",
+      "Zdjęcie 9 (s. 15)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: w pr�bie badawczej zmienia si� wybrany czynnik; w kontrolnej nie zmienia si� badanego czynnika. Pozosta�e warunki maj� by� takie same, a materia�y, czas i zapis wynik�w nale�y zaplanowa�.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: w próbie badawczej zmienia się wybrany czynnik; w kontrolnej nie zmienia się badanego czynnika. Pozostałe warunki mają być takie same, a materiały, czas i zapis wyników należy zaplanować.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "W pr�bie badawczej zmie� ilo�� wody, a w kontrolnej pozostaw j� bez zmiany. Wymie� pozosta�e warunki, kt�re musz� by� jednakowe."
+    "hint": "W próbie badawczej zmień ilość wody, a w kontrolnej pozostaw ją bez zmiany. Wymień pozostałe warunki, które muszą być jednakowe."
   },
   {
     "id": "bio-open-018",
     "kind": "open",
-    "topic": "Planowanie do�wiadcze�",
-    "source": "Zdj�cia 6 i 9",
-    "text": "Ucze� jedn� fasol� podlewa cz��ciej i trzyma w �wietle, a drug� rzadziej i w ciemno�ci. Chce sprawdzi� wy��cznie wp�yw wody. Wyja�nij b��d i zaproponuj popraw�.",
+    "topic": "Planowanie doświadczeń",
+    "source": "Zdjęcia 6 i 9",
+    "text": "Uczeń jedną fasolę podlewa częściej i trzyma w świetle, a drugą rzadziej i w ciemności. Chce sprawdzić wyłącznie wpływ wody. Wyjaśnij błąd i zaproponuj poprawę.",
     "fields": [
       {
         "key": "part1",
-        "label": "Na czym polega b��d?"
+        "label": "Na czym polega błąd?"
       },
       {
         "key": "part2",
-        "label": "Jak poprawi� do�wiadczenie?"
+        "label": "Jak poprawić doświadczenie?"
       }
     ],
-    "answer": "Ucze� zmienia jednocze�nie ilo�� wody i dost�p do �wiat�a, wi�c nie mo�e stwierdzi�, kt�ry czynnik wp�yn�� na wynik. Powinien zapewni� obu ro�linom takie samo �wiat�o i pozosta�e warunki, zmieniaj�c tylko ilo�� wody.",
-    "rubric": "2 pkt: wskazanie dw�ch zmienianych czynnik�w i poprawa polegaj�ca na pozostawieniu wy��cznie r��nicy w ilo�ci wody. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Uczeń zmienia jednocześnie ilość wody i dostęp do światła, więc nie może stwierdzić, który czynnik wpłynął na wynik. Powinien zapewnić obu roślinom takie samo światło i pozostałe warunki, zmieniając tylko ilość wody.",
+    "rubric": "2 pkt: wskazanie dwóch zmienianych czynników i poprawa polegająca na pozostawieniu wyłącznie różnicy w ilości wody. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       6,
       9
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)",
-      "Zdj�cie 9 (s. 15)"
+      "Zdjęcie 6 (s. 12)",
+      "Zdjęcie 9 (s. 15)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: w pr�bie badawczej zmienia si� wybrany czynnik; w kontrolnej nie zmienia si� badanego czynnika. Pozosta�e warunki maj� by� takie same, a materia�y, czas i zapis wynik�w nale�y zaplanowa�.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: w próbie badawczej zmienia się wybrany czynnik; w kontrolnej nie zmienia się badanego czynnika. Pozostałe warunki mają być takie same, a materiały, czas i zapis wyników należy zaplanować.",
     "similarGroups": [
       "experiment-plan"
     ],
-    "hint": "Je�li zmienisz jednocze�nie wod� i �wiat�o, nie wiesz, kt�ry czynnik wywo�a� r��nic�. Zostaw wszystkie warunki takie same poza jednym."
+    "hint": "Jeśli zmienisz jednocześnie wodę i światło, nie wiesz, który czynnik wywołał różnicę. Zostaw wszystkie warunki takie same poza jednym."
   },
   {
     "id": "bio-open-019",
     "kind": "open",
     "topic": "Metoda naukowa",
-    "source": "Zdj�cie 7",
-    "text": "Podobne zielone banany trzymano przez pi�� dni w tych samych warunkach: jedne z jab�kami, drugie bez. Te z jab�kami sta�y si� ciemno���te z br�zowymi plamami, a te bez jab�ek - jasno���te bez plam. Zapisz wynik por�wnania i wniosek. Wyja�nij r��nic� mi�dzy wynikiem a wnioskiem.",
+    "source": "Zdjęcie 7",
+    "text": "Podobne zielone banany trzymano przez pięć dni w tych samych warunkach: jedne z jabłkami, drugie bez. Te z jabłkami stały się ciemnożółte z brązowymi plamami, a te bez jabłek — jasnożółte bez plam. Zapisz wynik porównania i wniosek. Wyjaśnij różnicę między wynikiem a wnioskiem.",
     "fields": [
       {
         "key": "part1",
-        "label": "Wynik por�wnania"
+        "label": "Wynik porównania"
       },
       {
         "key": "part2",
@@ -2453,102 +2453,102 @@ export const biology = [
       },
       {
         "key": "part3",
-        "label": "R��nica mi�dzy wynikiem a wnioskiem"
+        "label": "Różnica między wynikiem a wnioskiem"
       }
     ],
-    "answer": "Wynik: banany w obu pr�bach r��ni�y si� kolorem i obecno�ci� plam; te z jab�kami by�y ciemniejsze i mia�y plamy. Wniosek: obecno�� jab�ek przyspiesza dojrzewanie banan�w. Wynik opisuje to, co zaobserwowano, a wniosek odpowiada na problem badawczy na podstawie wynik�w.",
-    "rubric": "2 pkt: poprawne opisanie danych, wyci�gni�cie uzasadnionego wniosku i rozr��nienie obu poj��. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Wynik: banany w obu próbach różniły się kolorem i obecnością plam; te z jabłkami były ciemniejsze i miały plamy. Wniosek: obecność jabłek przyspiesza dojrzewanie bananów. Wynik opisuje to, co zaobserwowano, a wniosek odpowiada na problem badawczy na podstawie wyników.",
+    "rubric": "2 pkt: poprawne opisanie danych, wyciągnięcie uzasadnionego wniosku i rozróżnienie obu pojęć. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       7
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)"
+      "Zdjęcie 7 (s. 13)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "banana-results-and-conclusion"
     ],
-    "hint": "Wynik opisuje zaobserwowane kolory i plamy; wniosek wyja�nia, co por�wnanie m�wi o dojrzewaniu. Oddziel opis od interpretacji."
+    "hint": "Wynik opisuje zaobserwowane kolory i plamy; wniosek wyjaśnia, co porównanie mówi o dojrzewaniu. Oddziel opis od interpretacji."
   },
   {
     "id": "bio-open-020",
     "kind": "open",
     "topic": "Metoda naukowa",
-    "source": "Zdj�cie 7 (s. 13), zdj�cie 8 (s. 14) i zdj�cie 15 (s. 21)",
-    "text": "Wyja�nij, co powinien zrobi� badacz, gdy wyniki nie potwierdzaj� jego hipotezy. Napisz, dlaczego nie powinien poprawia� wynik�w tak, aby pasowa�y do oczekiwa�.",
+    "source": "Zdjęcie 7 (s. 13), zdjęcie 8 (s. 14) i zdjęcie 15 (s. 21)",
+    "text": "Wyjaśnij, co powinien zrobić badacz, gdy wyniki nie potwierdzają jego hipotezy. Napisz, dlaczego nie powinien poprawiać wyników tak, aby pasowały do oczekiwań.",
     "fields": [
       {
         "key": "part1",
-        "label": "Post�powanie z hipotez�"
+        "label": "Postępowanie z hipotezą"
       },
       {
         "key": "part2",
-        "label": "Dlaczego nie wolno zmienia� wynik�w?"
+        "label": "Dlaczego nie wolno zmieniać wyników?"
       }
     ],
-    "answer": "Badacz powinien oprze� wniosek na rzeczywistych wynikach i odrzuci� hipotez�, je�eli wyniki jej przecz�. Zmienianie danych by�oby nierzetelne i prowadzi�oby do nieprawdziwego wniosku. Wyniki niejednoznaczne nie pozwalaj� uzna� hipotezy za potwierdzon�.",
-    "rubric": "2 pkt: oparcie wniosku na wynikach oraz wyja�nienie znaczenia rzetelnego zapisu; akceptuj wskazanie potrzeby powt�rzenia badania przy niejednoznaczno�ci. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Badacz powinien oprzeć wniosek na rzeczywistych wynikach i odrzucić hipotezę, jeżeli wyniki jej przeczą. Zmienianie danych byłoby nierzetelne i prowadziłoby do nieprawdziwego wniosku. Wyniki niejednoznaczne nie pozwalają uznać hipotezy za potwierdzoną.",
+    "rubric": "2 pkt: oparcie wniosku na wynikach oraz wyjaśnienie znaczenia rzetelnego zapisu; akceptuj wskazanie potrzeby powtórzenia badania przy niejednoznaczności. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       7,
       8,
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)",
-      "Zdj�cie 8 (s. 14)",
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 7 (s. 13)",
+      "Zdjęcie 8 (s. 14)",
+      "Zdjęcie 15 (s. 21)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [],
-    "hint": "Badacz powinien opisa� to, co rzeczywi�cie pokaza�y wyniki, nawet gdy przecz� przewidywaniu. Pomy�l, jak nazywa si� dok�adne i uczciwe prowadzenie bada�."
+    "hint": "Badacz powinien opisać to, co rzeczywiście pokazały wyniki, nawet gdy przeczą przewidywaniu. Pomyśl, jak nazywa się dokładne i uczciwe prowadzenie badań."
   },
   {
     "id": "bio-open-021",
     "kind": "open",
     "topic": "Metoda naukowa",
-    "source": "Zdj�cia 7, 9 i 15",
-    "text": "Wymie� w kolejno�ci g��wne etapy metody naukowej. Wyja�nij, co robimy podczas analizy wynik�w i na jakiej podstawie formu�ujemy wniosek.",
+    "source": "Zdjęcia 7, 9 i 15",
+    "text": "Wymień w kolejności główne etapy metody naukowej. Wyjaśnij, co robimy podczas analizy wyników i na jakiej podstawie formułujemy wniosek.",
     "fields": [
       {
         "key": "part1",
-        "label": "Kolejno�� etap�w"
+        "label": "Kolejność etapów"
       },
       {
         "key": "part2",
-        "label": "Analiza wynik�w"
+        "label": "Analiza wyników"
       },
       {
         "key": "part3",
         "label": "Podstawa wniosku"
       }
     ],
-    "answer": "Obserwacja  problem badawczy  hipoteza  zaplanowanie i przeprowadzenie do�wiadczenia  analiza wynik�w  wniosek. Analizuj�c wyniki, por�wnujemy rezultaty obu pr�b. Wniosek wynika z danych i pozwala potwierdzi� lub odrzuci� hipotez�.",
-    "rubric": "2 pkt: poprawna kolejno�� sze�ciu etap�w oraz opis por�wnywania wynik�w i oparcia wniosku na danych. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Obserwacja → problem badawczy → hipoteza → zaplanowanie i przeprowadzenie doświadczenia → analiza wyników → wniosek. Analizując wyniki, porównujemy rezultaty obu prób. Wniosek wynika z danych i pozwala potwierdzić lub odrzucić hipotezę.",
+    "rubric": "2 pkt: poprawna kolejność sześciu etapów oraz opis porównywania wyników i oparcia wniosku na danych. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       7,
       9,
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 7 (s. 13)",
-      "Zdj�cie 9 (s. 15)",
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 7 (s. 13)",
+      "Zdjęcie 9 (s. 15)",
+      "Zdjęcie 15 (s. 21)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "scientific-sequence"
     ],
-    "hint": "Przypomnij sobie drog� od zauwa�enia zjawiska do pytania, przewidywania, sprawdzenia, por�wnania danych i odpowiedzi opartej na wynikach."
+    "hint": "Przypomnij sobie drogę od zauważenia zjawiska do pytania, przewidywania, sprawdzenia, porównania danych i odpowiedzi opartej na wynikach."
   },
   {
     "id": "bio-open-022",
     "kind": "open",
     "topic": "Praca badacza",
-    "source": "Zdj�cia 6 i 8",
-    "text": "Zaplanuj obserwowanie ptak�w przy gnie�dzie tak, aby okaza� szacunek przyrodzie. Podaj dwie zasady post�powania i spos�b dokumentowania obserwacji.",
+    "source": "Zdjęcia 6 i 8",
+    "text": "Zaplanuj obserwowanie ptaków przy gnieździe tak, aby okazać szacunek przyrodzie. Podaj dwie zasady postępowania i sposób dokumentowania obserwacji.",
     "fields": [
       {
         "key": "part1",
@@ -2563,29 +2563,29 @@ export const biology = [
         "label": "Dokumentowanie"
       }
     ],
-    "answer": "Nale�y obserwowa� z oddalenia i zachowywa� cisz�, aby nie p�oszy� ptak�w. Nie wolno uszkadza� ro�lin ani gniazda. Mo�na u�y� lornetki, zapisywa� obserwacje, wykonywa� rysunki lub zdj�cia bez niepokojenia zwierz�t.",
-    "rubric": "2 pkt: dwie sensowne zasady ograniczaj�ce ingerencj� oraz spos�b dokumentowania bez zak��cania zachowania ptak�w. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Należy obserwować z oddalenia i zachowywać ciszę, aby nie płoszyć ptaków. Nie wolno uszkadzać roślin ani gniazda. Można użyć lornetki, zapisywać obserwacje, wykonywać rysunki lub zdjęcia bez niepokojenia zwierząt.",
+    "rubric": "2 pkt: dwie sensowne zasady ograniczające ingerencję oraz sposób dokumentowania bez zakłócania zachowania ptaków. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       6,
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)",
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 6 (s. 12)",
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "researcher-care"
     ],
-    "hint": "Obserwuj z dystansu i nie zak��caj �ycia ptak�w. Mo�esz u�y� przyrz�du do patrzenia z daleka, a spostrze�enia zapisa� lub narysowa�."
+    "hint": "Obserwuj z dystansu i nie zakłócaj życia ptaków. Możesz użyć przyrządu do patrzenia z daleka, a spostrzeżenia zapisać lub narysować."
   },
   {
     "id": "bio-open-023",
     "kind": "open",
     "topic": "Praca badacza",
-    "source": "Zdj�cie 8",
-    "text": "Wybierz cztery cechy z listy: szacunek dla przyrody, ostro�no��, cierpliwo��, systematyczno��, rzetelno��. Przy ka�dej wyja�nij, jak dobry badacz powinien j� okazywa� podczas bada�.",
+    "source": "Zdjęcie 8",
+    "text": "Wybierz cztery cechy z listy: szacunek dla przyrody, ostrożność, cierpliwość, systematyczność, rzetelność. Przy każdej wyjaśnij, jak dobry badacz powinien ją okazywać podczas badań.",
     "fields": [
       {
         "key": "part1",
@@ -2604,97 +2604,97 @@ export const biology = [
         "label": "Czwarta cecha i zachowanie"
       }
     ],
-    "answer": "Przyk�ady: szacunek dla przyrody - niep�oszenie zwierz�t; ostro�no�� - ochrona sk�ry i oczu; cierpliwo�� - wykonywanie d�ugich bada� i powt�rze�; systematyczno�� - regularne zapisywanie wynik�w; rzetelno�� - dok�adne prowadzenie i dokumentowanie bada�.",
-    "rubric": "2 pkt: cztery r��ne cechy z listy podanej w pytaniu i trafne przyk�ady zachowa� dla ka�dej. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania i inne poprawne przyk�ady zachowa�.",
+    "answer": "Przykłady: szacunek dla przyrody — niepłoszenie zwierząt; ostrożność — ochrona skóry i oczu; cierpliwość — wykonywanie długich badań i powtórzeń; systematyczność — regularne zapisywanie wyników; rzetelność — dokładne prowadzenie i dokumentowanie badań.",
+    "rubric": "2 pkt: cztery różne cechy z listy podanej w pytaniu i trafne przykłady zachowań dla każdej. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania i inne poprawne przykłady zachowań.",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "researcher-care"
     ],
-    "hint": "Dla ka�dej cechy podaj dzia�anie: nie p�oszy�, chroni� si�, wytrwa�, zapisywa� regularnie albo rzetelnie dokumentowa�. Dopasuj w�a�ciwe przyk�ady."
+    "hint": "Dla każdej cechy podaj działanie: nie płoszyć, chronić się, wytrwać, zapisywać regularnie albo rzetelnie dokumentować. Dopasuj właściwe przykłady."
   },
   {
     "id": "bio-open-024",
     "kind": "open",
-    "topic": "�r�d�a wiedzy biologicznej",
-    "source": "Zdj�cie 8",
-    "text": "Podaj trzy �r�d�a wiedzy biologicznej inne ni� w�asne obserwacje i do�wiadczenia. Wyja�nij, do czego ka�de z nich mo�e si� przyda�.",
+    "topic": "Źródła wiedzy biologicznej",
+    "source": "Zdjęcie 8",
+    "text": "Podaj trzy źródła wiedzy biologicznej inne niż własne obserwacje i doświadczenia. Wyjaśnij, do czego każde z nich może się przydać.",
     "fields": [
       {
         "key": "part1",
-        "label": "Pierwsze �r�d�o i zastosowanie"
+        "label": "Pierwsze źródło i zastosowanie"
       },
       {
         "key": "part2",
-        "label": "Drugie �r�d�o i zastosowanie"
+        "label": "Drugie źródło i zastosowanie"
       },
       {
         "key": "part3",
-        "label": "Trzecie �r�d�o i zastosowanie"
+        "label": "Trzecie źródło i zastosowanie"
       }
     ],
-    "answer": "Przewodnik lub atlas pomaga rozpoznawa� organizmy. Ksi��ka lub czasopismo popularnonaukowe obja�nia zagadnienia biologiczne. Film przyrodniczy pokazuje organizmy i ich zachowania. Mo�na te� korzysta� z edukacyjnych stron internetowych, muze�w i ogrod�w botanicznych lub zoologicznych.",
-    "rubric": "2 pkt: trzy r��ne wiarygodne �r�d�a wiedzy biologicznej oraz sensowne zastosowanie ka�dego; akceptuj inne trafne kombinacje. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Przewodnik lub atlas pomaga rozpoznawać organizmy. Książka lub czasopismo popularnonaukowe objaśnia zagadnienia biologiczne. Film przyrodniczy pokazuje organizmy i ich zachowania. Można też korzystać z edukacyjnych stron internetowych, muzeów i ogrodów botanicznych lub zoologicznych.",
+    "rubric": "2 pkt: trzy różne wiarygodne źródła wiedzy biologicznej oraz sensowne zastosowanie każdego; akceptuj inne trafne kombinacje. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       8
     ],
     "sourceReferences": [
-      "Zdj�cie 8 (s. 14)"
+      "Zdjęcie 8 (s. 14)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [
       "learning-sources"
     ],
-    "hint": "Wybierz materia�y i miejsca wymienione w podr�czniku poza w�asnym badaniem. Wyja�nij, czy pomagaj� rozpoznawa� organizmy, czy poznawa� informacje o nich."
+    "hint": "Wybierz materiały i miejsca wymienione w podręczniku poza własnym badaniem. Wyjaśnij, czy pomagają rozpoznawać organizmy, czy poznawać informacje o nich."
   },
   {
     "id": "bio-open-025",
     "kind": "open",
     "topic": "Budowa mikroskopu",
-    "source": "Zdj�cie 10",
-    "text": "Wymie� trzy cz��ci mikroskopu optycznego i opisz funkcj� ka�dej z nich.",
+    "source": "Zdjęcie 10",
+    "text": "Wymień trzy części mikroskopu optycznego i opisz funkcję każdej z nich.",
     "fields": [
       {
         "key": "part1",
-        "label": "Pierwsza cz��� i funkcja"
+        "label": "Pierwsza część i funkcja"
       },
       {
         "key": "part2",
-        "label": "Druga cz��� i funkcja"
+        "label": "Druga część i funkcja"
       },
       {
         "key": "part3",
-        "label": "Trzecia cz��� i funkcja"
+        "label": "Trzecia część i funkcja"
       }
     ],
-    "answer": "Przyk�ady: okular powi�ksza obraz wytworzony przez obiektyw; obiektyw powi�ksza obraz ogl�danego przedmiotu; stolik podtrzymuje preparat. Inne poprawne przyk�ady: rewolwer zmienia obiektyw, �r�d�o �wiat�a o�wietla obiekt, �ruby reguluj� ostro��, tubus mie�ci okular.",
-    "rubric": "2 pkt: trzy r��ne cz��ci i poprawne funkcje. 1 pkt: jedna lub dwie poprawne pary albo cz��ciowe opisy. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania.",
+    "answer": "Przykłady: okular powiększa obraz wytworzony przez obiektyw; obiektyw powiększa obraz oglądanego przedmiotu; stolik podtrzymuje preparat. Inne poprawne przykłady: rewolwer zmienia obiektyw, źródło światła oświetla obiekt, śruby regulują ostrość, tubus mieści okular.",
+    "rubric": "2 pkt: trzy różne części i poprawne funkcje. 1 pkt: jedna lub dwie poprawne pary albo częściowe opisy. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania.",
     "sourcePhotos": [
       10
     ],
     "sourceReferences": [
-      "Zdj�cie 10 (s. 16)"
+      "Zdjęcie 10 (s. 16)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik opisuje okular, tubus, rewolwer, obiektyw, stolik, �r�d�o �wiat�a oraz �ruby makrometryczn� i mikrometryczn� wraz z ich funkcjami.",
+    "hintContext": "Podręcznik opisuje okular, tubus, rewolwer, obiektyw, stolik, źródło światła oraz śruby makrometryczną i mikrometryczną wraz z ich funkcjami.",
     "similarGroups": [
       "microscope-parts"
     ],
-    "hint": "Na schemacie mikroskopu wybierz trzy cz��ci o r��nych zadaniach: patrzenie, powi�kszanie, podtrzymywanie preparatu, �wiat�o albo ustawianie ostro�ci."
+    "hint": "Na schemacie mikroskopu wybierz trzy części o różnych zadaniach: patrzenie, powiększanie, podtrzymywanie preparatu, światło albo ustawianie ostrości."
   },
   {
     "id": "bio-open-026",
     "kind": "open",
-    "topic": "Powi�kszenie mikroskopu",
-    "source": "Zdj�cia 12 i 15",
-    "text": "Podaj zasad� obliczania powi�kszenia mikroskopu. Oblicz je dla okularu 10� i obiektywu 20� oraz dla okularu 15� i obiektywu 10�. Poka� dzia�ania.",
+    "topic": "Powiększenie mikroskopu",
+    "source": "Zdjęcia 12 i 15",
+    "text": "Podaj zasadę obliczania powiększenia mikroskopu. Oblicz je dla okularu 10× i obiektywu 20× oraz dla okularu 15× i obiektywu 10×. Pokaż działania.",
     "fields": [
       {
         "key": "part1",
@@ -2702,40 +2702,40 @@ export const biology = [
       },
       {
         "key": "part2",
-        "label": "Okular 10� i obiektyw 20�"
+        "label": "Okular 10× i obiektyw 20×"
       },
       {
         "key": "part3",
-        "label": "Okular 15� i obiektyw 10�"
+        "label": "Okular 15× i obiektyw 10×"
       }
     ],
-    "answer": "Mno�ymy powi�kszenie okularu przez powi�kszenie obiektywu. Pierwszy zestaw: 10 � 20 = 200 razy. Drugi zestaw: 15 � 10 = 150 razy.",
-    "rubric": "2 pkt: poprawna zasada, oba dzia�ania i wyniki. 1 pkt: poprawna zasada z co najmniej jednym poprawnym dzia�aniem albo cz��ciowo poprawne obliczenia. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania.",
+    "answer": "Mnożymy powiększenie okularu przez powiększenie obiektywu. Pierwszy zestaw: 10 × 20 = 200 razy. Drugi zestaw: 15 × 10 = 150 razy.",
+    "rubric": "2 pkt: poprawna zasada, oba działania i wyniki. 1 pkt: poprawna zasada z co najmniej jednym poprawnym działaniem albo częściowo poprawne obliczenia. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania.",
     "sourcePhotos": [
       12,
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 12 (s. 18)",
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 12 (s. 18)",
+      "Zdjęcie 15 (s. 21)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: powi�kszenie obrazu oblicza si� przez pomno�enie powi�kszenia okularu przez powi�kszenie obiektywu.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: powiększenie obrazu oblicza się przez pomnożenie powiększenia okularu przez powiększenie obiektywu.",
     "similarGroups": [
       "microscope-magnification"
     ],
-    "hint": "Powi�kszenie obrazu to iloczyn powi�kszenia okularu i obiektywu. Wykonaj dwa mno�enia i dopisz jednostk� "razy"."
+    "hint": "Powiększenie obrazu to iloczyn powiększenia okularu i obiektywu. Wykonaj dwa mnożenia i dopisz jednostkę „razy”."
   },
   {
     "id": "bio-open-027",
     "kind": "open",
     "topic": "Praca z mikroskopem",
-    "source": "Zdj�cie 12",
-    "text": "Opisz rozpocz�cie obserwacji gotowego preparatu pod mikroskopem: wyb�r obiektywu, o�wietlenie, ustawienie preparatu i uzyskanie ostrego obrazu. Podaj zasad� ostro�no�ci przy zbli�aniu obiektywu.",
+    "source": "Zdjęcie 12",
+    "text": "Opisz rozpoczęcie obserwacji gotowego preparatu pod mikroskopem: wybór obiektywu, oświetlenie, ustawienie preparatu i uzyskanie ostrego obrazu. Podaj zasadę ostrożności przy zbliżaniu obiektywu.",
     "fields": [
       {
         "key": "part1",
-        "label": "Obiektyw i o�wietlenie"
+        "label": "Obiektyw i oświetlenie"
       },
       {
         "key": "part2",
@@ -2743,34 +2743,34 @@ export const biology = [
       },
       {
         "key": "part3",
-        "label": "Ostro�� i ostro�no��"
+        "label": "Ostrość i ostrożność"
       }
     ],
-    "answer": "Wybieramy obiektyw o najmniejszym powi�kszeniu i o�wietlamy pole widzenia. Preparat ustawiamy na stoliku tak, aby obiekt by� w polu widzenia. Ostro�nie zbli�amy obiektyw, nie dotykaj�c preparatu, i regulujemy ostro�� �rubami makrometryczn� oraz mikrometryczn�. Powi�kszenie zwi�kszamy stopniowo.",
-    "rubric": "2 pkt: najmniejsze powi�kszenie na pocz�tku, o�wietlenie, preparat na stoliku, regulacja ostro�ci i unikanie dotkni�cia preparatu obiektywem. 1 pkt: odpowied� cz��ciowo poprawna lub niepe�na. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj w�asne sformu�owania; oceniaj sens, nie dos�owne brzmienie wzoru.",
+    "answer": "Wybieramy obiektyw o najmniejszym powiększeniu i oświetlamy pole widzenia. Preparat ustawiamy na stoliku tak, aby obiekt był w polu widzenia. Ostrożnie zbliżamy obiektyw, nie dotykając preparatu, i regulujemy ostrość śrubami makrometryczną oraz mikrometryczną. Powiększenie zwiększamy stopniowo.",
+    "rubric": "2 pkt: najmniejsze powiększenie na początku, oświetlenie, preparat na stoliku, regulacja ostrości i unikanie dotknięcia preparatu obiektywem. 1 pkt: odpowiedź częściowo poprawna lub niepełna. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj własne sformułowania; oceniaj sens, nie dosłowne brzmienie wzoru.",
     "sourcePhotos": [
       12
     ],
     "sourceReferences": [
-      "Zdj�cie 12 (s. 18)"
+      "Zdjęcie 12 (s. 18)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: zacznij od najmniejszego powi�kszenia, o�wietl pole widzenia, umie�� preparat na stoliku, ostro�nie ustaw ostro�� i zwi�kszaj powi�kszenie stopniowo. Obiektyw nie mo�e dotkn�� preparatu.",
+    "hintContext": "Podręcznik: zacznij od najmniejszego powiększenia, oświetl pole widzenia, umieść preparat na stoliku, ostrożnie ustaw ostrość i zwiększaj powiększenie stopniowo. Obiektyw nie może dotknąć preparatu.",
     "similarGroups": [
       "microscope-start-and-safety"
     ],
-    "hint": "Rozpocznij od najmniejszego powi�kszenia, o�wietl pole i ustaw preparat na stoliku. Ostro�� reguluj �rubami, pami�taj�c, by obiektyw nie dotkn�� szkie�ka."
+    "hint": "Rozpocznij od najmniejszego powiększenia, oświetl pole i ustaw preparat na stoliku. Ostrość reguluj śrubami, pamiętając, by obiektyw nie dotknął szkiełka."
   },
   {
     "id": "bio-098",
     "kind": "open",
-    "topic": "Poziomy budowy organizm�w",
-    "source": "Zdj�cia 4-5 i 14",
-    "text": "Wyja�nij w�asnymi s�owami, jak kom�rka, tkanka, narz�d i uk�ad narz�d�w tworz� organizm. Podaj jeden przyk�ad pokazuj�cy wszystkie te poziomy.",
+    "topic": "Poziomy budowy organizmów",
+    "source": "Zdjęcia 4–5 i 14",
+    "text": "Wyjaśnij własnymi słowami, jak komórka, tkanka, narząd i układ narządów tworzą organizm. Podaj jeden przykład pokazujący wszystkie te poziomy.",
     "fields": [
       {
         "key": "cell",
-        "label": "Kom�rka"
+        "label": "Komórka"
       },
       {
         "key": "tissue",
@@ -2778,11 +2778,11 @@ export const biology = [
       },
       {
         "key": "organ",
-        "label": "Narz�d"
+        "label": "Narząd"
       },
       {
         "key": "system",
-        "label": "Uk�ad narz�d�w"
+        "label": "Układ narządów"
       },
       {
         "key": "organism",
@@ -2790,62 +2790,62 @@ export const biology = [
       },
       {
         "key": "example",
-        "label": "Przyk�ad ca�ej kolejno�ci"
+        "label": "Przykład całej kolejności"
       }
     ],
-    "answer": "Kom�rka jest podstawow� jednostk� budowy organizmu. Podobne kom�rki wykonuj�ce okre�lone zadania tworz� tkank�. Tkanki buduj� narz�dy. Wsp��pracuj�ce narz�dy tworz� uk�ady, a wsp��dzia�aj�ce uk�ady - organizm. Przyk�ad: kom�rka mi��niowa  tkanka mi��niowa  serce (budowane te� przez inne tkanki)  uk�ad krwiono�ny  organizm kota.",
-    "rubric": "2 pkt: poprawnie opisane poziomy i ich kolejno�� oraz sensowny przyk�ad obejmuj�cy ca�� kolejno��. 1 pkt: cz��� poziom�w wyja�niona poprawnie, ale wyja�nienie lub przyk�ad s� niepe�ne. 0 pkt: odpowied� zasadniczo b��dna lub nie na temat. Akceptuj inne poprawne przyk�ady i w�asne sformu�owania.",
+    "answer": "Komórka jest podstawową jednostką budowy organizmu. Podobne komórki wykonujące określone zadania tworzą tkankę. Tkanki budują narządy. Współpracujące narządy tworzą układy, a współdziałające układy — organizm. Przykład: komórka mięśniowa → tkanka mięśniowa → serce (budowane też przez inne tkanki) → układ krwionośny → organizm kota.",
+    "rubric": "2 pkt: poprawnie opisane poziomy i ich kolejność oraz sensowny przykład obejmujący całą kolejność. 1 pkt: część poziomów wyjaśniona poprawnie, ale wyjaśnienie lub przykład są niepełne. 0 pkt: odpowiedź zasadniczo błędna lub nie na temat. Akceptuj inne poprawne przykłady i własne sformułowania.",
     "sourcePhotos": [
       4,
       5,
       14
     ],
     "sourceReferences": [
-      "Zdj�cie 4 (s. 10)",
-      "Zdj�cie 5 (s. 11)",
-      "Zdj�cie 14 (s. 20)"
+      "Zdjęcie 4 (s. 10)",
+      "Zdjęcie 5 (s. 11)",
+      "Zdjęcie 14 (s. 20)"
     ],
-    "auditStatus": "ZGODNE PO�REDNIO",
-    "hintContext": "Podr�cznik: kom�rki tworz� tkanki, tkanki buduj� narz�dy (u ro�lin organy), narz�dy ��cz� si� w uk�ady lub systemy, a wsp��pracuj�ce uk�ady sk�adaj� si� na organizm.",
+    "auditStatus": "ZGODNE POŚREDNIO",
+    "hintContext": "Podręcznik: komórki tworzą tkanki, tkanki budują narządy (u roślin organy), narządy łączą się w układy lub systemy, a współpracujące układy składają się na organizm.",
     "similarGroups": [
       "organism-hierarchy"
     ],
-    "hint": "Prowad� opis od kom�rki przez grupy i cz��ci z�o�one z tkanek do uk�adu, a na ko�cu ca�ego organizmu. Wybierz przyk�ad zwierz�cia pokazany w tabeli."
+    "hint": "Prowadź opis od komórki przez grupy i części złożone z tkanek do układu, a na końcu całego organizmu. Wybierz przykład zwierzęcia pokazany w tabeli."
   },
   {
     "id": "bio-099",
     "kind": "open",
     "topic": "Metoda naukowa",
-    "source": "Zdj�cia 6-7, 9 i 15",
-    "text": "Zaplanuj do�wiadczenie sprawdzaj�ce, czy obecno�� jab�ek przyspiesza dojrzewanie banan�w. Podaj problem badawczy, hipotez�, obie pr�by, wsp�lne warunki oraz spos�b zapisywania wynik�w i wyci�gania wniosku.",
+    "source": "Zdjęcia 6–7, 9 i 15",
+    "text": "Zaplanuj doświadczenie sprawdzające, czy obecność jabłek przyspiesza dojrzewanie bananów. Podaj problem badawczy, hipotezę, obie próby, wspólne warunki oraz sposób zapisywania wyników i wyciągania wniosku.",
     "fields": [
       {
         "key": "problem",
-        "label": "Problem badawczy - pytanie"
+        "label": "Problem badawczy — pytanie"
       },
       {
         "key": "hypothesis",
-        "label": "Hipoteza - przewidywana odpowied�"
+        "label": "Hipoteza — przewidywana odpowiedź"
       },
       {
         "key": "experimental",
-        "label": "Pr�ba badawcza"
+        "label": "Próba badawcza"
       },
       {
         "key": "control",
-        "label": "Pr�ba kontrolna"
+        "label": "Próba kontrolna"
       },
       {
         "key": "conditions",
-        "label": "Warunki takie same w obu pr�bach"
+        "label": "Warunki takie same w obu próbach"
       },
       {
         "key": "results",
-        "label": "Zapis wynik�w i spos�b wyci�gni�cia wniosku"
+        "label": "Zapis wyników i sposób wyciągnięcia wniosku"
       }
     ],
-    "answer": "Problem: Czy obecno�� jab�ek przyspiesza dojrzewanie banan�w? Hipoteza: Banany dojrzewaj� szybciej obok jab�ek. Pr�ba badawcza: zielone banany z jab�kami. Kontrolna: podobne banany bez jab�ek. Zachowujemy tak� sam� liczb� i pocz�tkow� dojrza�o�� banan�w, podobne miski, miejsce i czas obserwacji, np. 5 dni. Zapisujemy zmiany koloru i pojawianie si� plam. Por�wnujemy obie pr�by i na podstawie rzeczywistych wynik�w potwierdzamy lub odrzucamy hipotez�.",
-    "rubric": "2 pkt: pytanie i sprawdzalna hipoteza, poprawne pr�by r��ni�ce si� obecno�ci� jab�ek, wskazane wsp�lne warunki oraz por�wnanie zapisanych wynik�w jako podstawa wniosku. 1 pkt: sensowny, lecz niepe�ny plan. 0 pkt: plan nie bada wskazanego czynnika lub jest zasadniczo b��dny. Akceptuj inne poprawne sformu�owania hipotezy, tak�e hipotez� o braku wp�ywu.",
+    "answer": "Problem: Czy obecność jabłek przyspiesza dojrzewanie bananów? Hipoteza: Banany dojrzewają szybciej obok jabłek. Próba badawcza: zielone banany z jabłkami. Kontrolna: podobne banany bez jabłek. Zachowujemy taką samą liczbę i początkową dojrzałość bananów, podobne miski, miejsce i czas obserwacji, np. 5 dni. Zapisujemy zmiany koloru i pojawianie się plam. Porównujemy obie próby i na podstawie rzeczywistych wyników potwierdzamy lub odrzucamy hipotezę.",
+    "rubric": "2 pkt: pytanie i sprawdzalna hipoteza, poprawne próby różniące się obecnością jabłek, wskazane wspólne warunki oraz porównanie zapisanych wyników jako podstawa wniosku. 1 pkt: sensowny, lecz niepełny plan. 0 pkt: plan nie bada wskazanego czynnika lub jest zasadniczo błędny. Akceptuj inne poprawne sformułowania hipotezy, także hipotezę o braku wpływu.",
     "sourcePhotos": [
       6,
       7,
@@ -2853,26 +2853,26 @@ export const biology = [
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 6 (s. 12)",
-      "Zdj�cie 7 (s. 13)",
-      "Zdj�cie 9 (s. 15)",
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 6 (s. 12)",
+      "Zdjęcie 7 (s. 13)",
+      "Zdjęcie 9 (s. 15)",
+      "Zdjęcie 15 (s. 21)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie do�wiadczenia, analiza wynik�w oraz wniosek. W przyk�adzie por�wnuje si� zielone banany przechowywane z jab�kami i bez nich przez pi�� dni.",
+    "hintContext": "Podręcznik: obserwacja, problem badawczy, hipoteza, zaplanowanie i przeprowadzenie doświadczenia, analiza wyników oraz wniosek. W przykładzie porównuje się zielone banany przechowywane z jabłkami i bez nich przez pięć dni.",
     "similarGroups": [],
-    "hint": "Zmie� tylko obecno�� jab�ek. Opisz pytanie, przewidywanie, por�wnywalne miski, jednakowy czas i warunki oraz spos�b notowania zmian."
+    "hint": "Zmień tylko obecność jabłek. Opisz pytanie, przewidywanie, porównywalne miski, jednakowy czas i warunki oraz sposób notowania zmian."
   },
   {
     "id": "bio-100",
     "kind": "open",
     "topic": "Preparat i obserwacja mikroskopowa",
-    "source": "Zdj�cia 11-13 i 15",
-    "text": "Opisz przygotowanie preparatu ze sk�rki li�cia cebuli. Wyja�nij, od jakiego powi�kszenia zaczynasz obserwacj� i na co uwa�asz przy zbli�aniu obiektywu. Oblicz powi�kszenie dla okularu 10� i obiektywu 40�.",
+    "source": "Zdjęcia 11–13 i 15",
+    "text": "Opisz przygotowanie preparatu ze skórki liścia cebuli. Wyjaśnij, od jakiego powiększenia zaczynasz obserwację i na co uważasz przy zbliżaniu obiektywu. Oblicz powiększenie dla okularu 10× i obiektywu 40×.",
     "fields": [
       {
         "key": "tools",
-        "label": "Potrzebne narz�dzia i materia�y"
+        "label": "Potrzebne narzędzia i materiały"
       },
       {
         "key": "steps",
@@ -2880,15 +2880,15 @@ export const biology = [
       },
       {
         "key": "observation",
-        "label": "Pocz�tek obserwacji i ostro�no��"
+        "label": "Początek obserwacji i ostrożność"
       },
       {
         "key": "magnification",
-        "label": "Obliczenie powi�kszenia"
+        "label": "Obliczenie powiększenia"
       }
     ],
-    "answer": "Potrzebne s� cebula, woda, szkie�ko podstawowe i nakrywkowe, zakraplacz, p�seta oraz ig�a preparacyjna. Na szkie�ko podstawowe nanosimy kropl� wody. Z wewn�trznej strony bia�ego li�cia spichrzowego cebuli zdejmujemy sk�rk� i umieszczamy jej fragment w kropli. Ostro�nie nakrywamy go szkie�kiem nakrywkowym przyk�adanym uko�nie. Preparat k�adziemy na stoliku. Zaczynamy od najmniejszego powi�kszenia; obiektyw nie mo�e dotkn�� preparatu. Powi�kszenie: 10 � 40 = 400 razy.",
-    "rubric": "2 pkt: poprawna kolejno�� g��wnych etap�w przygotowania, rozpocz�cie od najmniejszego powi�kszenia, zachowanie odst�pu obiektywu od preparatu i poprawne dzia�anie 10 � 40 = 400. 1 pkt: odpowied� cz��ciowo poprawna, z brakami lub b��dem w jednym z obszar�w. 0 pkt: brak poprawnego opisu i poprawnego obliczenia. Nie wymagaj dos�ownego odtworzenia wzoru ani kompletnej listy drobnych narz�dzi.",
+    "answer": "Potrzebne są cebula, woda, szkiełko podstawowe i nakrywkowe, zakraplacz, pęseta oraz igła preparacyjna. Na szkiełko podstawowe nanosimy kroplę wody. Z wewnętrznej strony białego liścia spichrzowego cebuli zdejmujemy skórkę i umieszczamy jej fragment w kropli. Ostrożnie nakrywamy go szkiełkiem nakrywkowym przykładanym ukośnie. Preparat kładziemy na stoliku. Zaczynamy od najmniejszego powiększenia; obiektyw nie może dotknąć preparatu. Powiększenie: 10 × 40 = 400 razy.",
+    "rubric": "2 pkt: poprawna kolejność głównych etapów przygotowania, rozpoczęcie od najmniejszego powiększenia, zachowanie odstępu obiektywu od preparatu i poprawne działanie 10 × 40 = 400. 1 pkt: odpowiedź częściowo poprawna, z brakami lub błędem w jednym z obszarów. 0 pkt: brak poprawnego opisu i poprawnego obliczenia. Nie wymagaj dosłownego odtworzenia wzoru ani kompletnej listy drobnych narzędzi.",
     "sourcePhotos": [
       11,
       12,
@@ -2896,66 +2896,66 @@ export const biology = [
       15
     ],
     "sourceReferences": [
-      "Zdj�cie 11 (s. 17)",
-      "Zdj�cie 12 (s. 18)",
-      "Zdj�cie 13 (s. 19)",
-      "Zdj�cie 15 (s. 21)"
+      "Zdjęcie 11 (s. 17)",
+      "Zdjęcie 12 (s. 18)",
+      "Zdjęcie 13 (s. 19)",
+      "Zdjęcie 15 (s. 21)"
     ],
     "auditStatus": "ZGODNE",
-    "hintContext": "Podr�cznik pokazuje przygotowanie preparatu ze sk�rki cebuli, pocz�tek obserwacji od najmniejszego powi�kszenia i obliczanie powi�kszenia jako iloczynu okularu i obiektywu.",
+    "hintContext": "Podręcznik pokazuje przygotowanie preparatu ze skórki cebuli, początek obserwacji od najmniejszego powiększenia i obliczanie powiększenia jako iloczynu okularu i obiektywu.",
     "similarGroups": [
       "microscope-start-and-safety",
       "microscope-magnification",
       "onion-slide-preparation"
     ],
-    "hint": "Przypomnij sobie kolejno��: kropla na szkie�ku podstawowym, cienka sk�rka, szkie�ko nakrywkowe. Do obserwacji wybierz najmniejszy obiektyw, a powi�kszenia pomn��."
+    "hint": "Przypomnij sobie kolejność: kropla na szkiełku podstawowym, cienka skórka, szkiełko nakrywkowe. Do obserwacji wybierz najmniejszy obiektyw, a powiększenia pomnóż."
   }
 ];
 export const literature = {
   "mcq": [
     {
       "id": "m0",
-      "q": "Jak mia� na imi� Nemeczek?",
+      "q": "Jak miał na imię Nemeczek?",
       "choices": [
-        "Ern�",
-        "J�nos",
-        "Dezs�"
+        "Ernő",
+        "János",
+        "Dezső"
       ],
       "correct": 0
     },
     {
       "id": "m1",
-      "q": "Kto by� przyw�dc� ch�opc�w z Placu Broni?",
+      "q": "Kto był przywódcą chłopców z Placu Broni?",
       "choices": [
-        "Feri �cs",
-        "J�nos Boka",
+        "Feri Ács",
+        "János Boka",
         "Gereb"
       ],
       "correct": 1
     },
     {
       "id": "m2",
-      "q": "Jak nazywa�a si� grupa rywalizuj�ca z ch�opcami Boki?",
+      "q": "Jak nazywała się grupa rywalizująca z chłopcami Boki?",
       "choices": [
         "Czerwone Koszule",
-        "Czarne Or�y",
+        "Czarne Orły",
         "Zielone Chusty"
       ],
       "correct": 0
     },
     {
       "id": "m3",
-      "q": "Kto dowodzi� Czerwonymi Koszulami?",
+      "q": "Kto dowodził Czerwonymi Koszulami?",
       "choices": [
         "Czonakosz",
         "Boka",
-        "Feri �cs"
+        "Feri Ács"
       ],
       "correct": 2
     },
     {
       "id": "m4",
-      "q": "Jaki stopie� mia� Nemeczek na pocz�tku powie�ci?",
+      "q": "Jaki stopień miał Nemeczek na początku powieści?",
       "choices": [
         "Kapitan",
         "Jedyny szeregowiec",
@@ -2965,7 +2965,7 @@ export const literature = {
     },
     {
       "id": "m5",
-      "q": "W jakim mie�cie rozgrywa si� akcja powie�ci?",
+      "q": "W jakim mieście rozgrywa się akcja powieści?",
       "choices": [
         "Budapeszcie",
         "Pradze",
@@ -2975,17 +2975,17 @@ export const literature = {
     },
     {
       "id": "m6",
-      "q": "Od jakiej ulicy wzi��a nazw� grupa ch�opc�w?",
+      "q": "Od jakiej ulicy wzięła nazwę grupa chłopców?",
       "choices": [
-        "P�l utca (ulica Paw�a)",
-        "Kir�ly utca",
-        "V�ci utca"
+        "Pál utca (ulica Pawła)",
+        "Király utca",
+        "Váci utca"
       ],
       "correct": 0
     },
     {
       "id": "m7",
-      "q": "Gdzie mie�ci�a si� siedziba Czerwonych Koszul?",
+      "q": "Gdzie mieściła się siedziba Czerwonych Koszul?",
       "choices": [
         "W Ogrodzie Botanicznym",
         "Na szkolnym strychu",
@@ -2995,77 +2995,77 @@ export const literature = {
     },
     {
       "id": "m8",
-      "q": "Jak nazywa� si� nauczyciel ch�opc�w?",
+      "q": "Jak nazywał się nauczyciel chłopców?",
       "choices": [
-        "R�cz",
-        "�cs",
-        "Jan�"
+        "Rácz",
+        "Ács",
+        "Janó"
       ],
       "correct": 0
     },
     {
       "id": "m9",
-      "q": "Jaki zaw�d wykonywa� ojciec Nemeczka?",
+      "q": "Jaki zawód wykonywał ojciec Nemeczka?",
       "choices": [
-        "By� krawcem",
-        "By� lekarzem",
-        "By� �o�nierzem"
+        "Był krawcem",
+        "Był lekarzem",
+        "Był żołnierzem"
       ],
       "correct": 0
     },
     {
       "id": "m10",
-      "q": "Kto jest autorem powie�ci?",
+      "q": "Kto jest autorem powieści?",
       "choices": [
-        "Ferenc Moln�r",
-        "S�ndor Pet�fi",
-        "M�r J�kai"
+        "Ferenc Molnár",
+        "Sándor Petőfi",
+        "Mór Jókai"
       ],
       "correct": 0
     },
     {
       "id": "m11",
-      "q": "Co ch�opcy chcieli obroni� przed rywalami?",
+      "q": "Co chłopcy chcieli obronić przed rywalami?",
       "choices": [
         "Plac Broni",
-        "Ogr�d Botaniczny",
-        "Szkoln� bibliotek�"
+        "Ogród Botaniczny",
+        "Szkolną bibliotekę"
       ],
       "correct": 0
     },
     {
       "id": "m12",
-      "q": "Co zrobi� Gereb w pierwszej cz��ci konfliktu?",
+      "q": "Co zrobił Gereb w pierwszej części konfliktu?",
       "choices": [
-        "Zdradzi� koleg�w i przekazywa� informacje",
-        "Zosta� nauczycielem",
-        "Opu�ci� miasto"
+        "Zdradził kolegów i przekazywał informacje",
+        "Został nauczycielem",
+        "Opuścił miasto"
       ],
       "correct": 0
     },
     {
       "id": "m13",
-      "q": "Jak Zwi�zek Kitowc�w krzywdz�co zapisa� nazwisko Nemeczka?",
+      "q": "Jak Związek Kitowców krzywdząco zapisał nazwisko Nemeczka?",
       "choices": [
-        "Ma�ymi literami",
-        "Z�otym atramentem",
+        "Małymi literami",
+        "Złotym atramentem",
         "Bez nazwiska"
       ],
       "correct": 0
     },
     {
       "id": "m14",
-      "q": "Jak� cech� Boka pokazuje jako przyw�dca?",
+      "q": "Jaką cechę Boka pokazuje jako przywódca?",
       "choices": [
-        "Rozwag� i odpowiedzialno��",
-        "Oboj�tno�� wobec koleg�w",
+        "Rozwagę i odpowiedzialność",
+        "Obojętność wobec kolegów",
         "Unikanie decyzji"
       ],
       "correct": 0
     },
     {
       "id": "m15",
-      "q": "Jak Nemeczek zachowuje si� wobec obowi�zku?",
+      "q": "Jak Nemeczek zachowuje się wobec obowiązku?",
       "choices": [
         "Wykonuje go mimo strachu i choroby",
         "Ucieka przy pierwszej okazji",
@@ -3075,41 +3075,41 @@ export const literature = {
     },
     {
       "id": "m16",
-      "q": "Co oznacza s�owo "einstand" w realiach powie�ci?",
+      "q": "Co oznacza słowo „einstand” w realiach powieści?",
       "choices": [
-        "Zabranie s�abszym rzeczy si��",
+        "Zabranie słabszym rzeczy siłą",
         "Uroczysty awans",
-        "Has�o rozpoczynaj�ce lekcj�"
+        "Hasło rozpoczynające lekcję"
       ],
       "correct": 0
     },
     {
       "id": "m17",
-      "q": "Jaki nastr�j ma zako�czenie powie�ci?",
+      "q": "Jaki nastrój ma zakończenie powieści?",
       "choices": [
-        "S�odko-gorzki i smutny",
-        "Wy��cznie komiczny",
+        "Słodko-gorzki i smutny",
+        "Wyłącznie komiczny",
         "Radosny, bo plac zostaje na zawsze"
       ],
       "correct": 0
     },
     {
       "id": "m18",
-      "q": "Jak� postaw� wobec Nemeczka okazuje Feri �cs?",
+      "q": "Jaką postawę wobec Nemeczka okazuje Feri Ács?",
       "choices": [
         "Szacunek dla jego odwagi",
-        "Pogard� za jego rang�",
-        "Nie zauwa�a go"
+        "Pogardę za jego rangę",
+        "Nie zauważa go"
       ],
       "correct": 0
     },
     {
       "id": "m19",
-      "q": "Co jest wa�nym motywem powie�ci?",
+      "q": "Co jest ważnym motywem powieści?",
       "choices": [
-        "Przyja�� i lojalno��",
-        "Podr�� kosmiczna",
-        "Rywalizacja o skarb kr�lewski"
+        "Przyjaźń i lojalność",
+        "Podróż kosmiczna",
+        "Rywalizacja o skarb królewski"
       ],
       "correct": 0
     }
@@ -3117,149 +3117,149 @@ export const literature = {
   "tf": [
     {
       "id": "t0",
-      "q": "Na pocz�tku powie�ci Nemeczek by� jedynym szeregowcem w�r�d ch�opc�w z Placu Broni.",
+      "q": "Na początku powieści Nemeczek był jedynym szeregowcem wśród chłopców z Placu Broni.",
       "correct": true
     },
     {
       "id": "t1",
-      "q": "Boka dowodzi� Czerwonymi Koszulami.",
+      "q": "Boka dowodził Czerwonymi Koszulami.",
       "correct": false
     },
     {
       "id": "t2",
-      "q": "Feri �cs by� przyw�dc� Czerwonych Koszul.",
+      "q": "Feri Ács był przywódcą Czerwonych Koszul.",
       "correct": true
     },
     {
       "id": "t3",
-      "q": "Akcja powie�ci rozgrywa si� w Budapeszcie.",
+      "q": "Akcja powieści rozgrywa się w Budapeszcie.",
       "correct": true
     },
     {
       "id": "t4",
-      "q": "Plac Broni by� dla ch�opc�w wa�nym miejscem zabaw i wsp�lnoty.",
+      "q": "Plac Broni był dla chłopców ważnym miejscem zabaw i wspólnoty.",
       "correct": true
     },
     {
       "id": "t5",
-      "q": "Gereb od pocz�tku pozostawa� wierny Boce i nigdy go nie zdradzi�.",
+      "q": "Gereb od początku pozostawał wierny Boce i nigdy go nie zdradził.",
       "correct": false
     },
     {
       "id": "t6",
-      "q": "Czerwone Koszule mia�y siedzib� w Ogrodzie Botanicznym.",
+      "q": "Czerwone Koszule miały siedzibę w Ogrodzie Botanicznym.",
       "correct": true
     },
     {
       "id": "t7",
-      "q": "Nemeczek po chorobie wyzdrowia� i wr�ci� do koleg�w.",
+      "q": "Nemeczek po chorobie wyzdrowiał i wrócił do kolegów.",
       "correct": false
     },
     {
       "id": "t8",
-      "q": "R�cz by� nauczycielem ch�opc�w.",
+      "q": "Rácz był nauczycielem chłopców.",
       "correct": true
     },
     {
       "id": "t9",
-      "q": "Ojciec Nemeczka by� krawcem.",
+      "q": "Ojciec Nemeczka był krawcem.",
       "correct": true
     },
     {
       "id": "t10",
-      "q": "Boka podejmowa� decyzje jako odpowiedzialny przyw�dca.",
+      "q": "Boka podejmował decyzje jako odpowiedzialny przywódca.",
       "correct": true
     },
     {
       "id": "t11",
-      "q": "Gereb �a�owa� zdrady i chcia� naprawi� sw�j b��d.",
+      "q": "Gereb żałował zdrady i chciał naprawić swój błąd.",
       "correct": true
     },
     {
       "id": "t12",
-      "q": "Ch�opcy Boki bronili Ogrodu Botanicznego przed Czerwonymi Koszulami.",
+      "q": "Chłopcy Boki bronili Ogrodu Botanicznego przed Czerwonymi Koszulami.",
       "correct": false
     },
     {
       "id": "t13",
-      "q": "Nemeczek wykaza� si� odwag�, cho� mia� najni�szy stopie�.",
+      "q": "Nemeczek wykazał się odwagą, choć miał najniższy stopień.",
       "correct": true
     },
     {
       "id": "t14",
-      "q": "Nemeczek potwierdzi� zdrad� Gereba w rozmowie z jego ojcem.",
+      "q": "Nemeczek potwierdził zdradę Gereba w rozmowie z jego ojcem.",
       "correct": false
     },
     {
       "id": "t15",
-      "q": "Plac Broni by� statkiem, kt�rym bohaterowie podr��owali.",
+      "q": "Plac Broni był statkiem, którym bohaterowie podróżowali.",
       "correct": false
     },
     {
       "id": "t16",
-      "q": "Ch�opcy stworzyli w�asn� organizacj� z funkcjami i zasadami.",
+      "q": "Chłopcy stworzyli własną organizację z funkcjami i zasadami.",
       "correct": true
     },
     {
       "id": "t17",
-      "q": "Zako�czenie oznacza, �e ch�opcy na zawsze zachowali sw�j plac.",
+      "q": "Zakończenie oznacza, że chłopcy na zawsze zachowali swój plac.",
       "correct": false
     },
     {
       "id": "t18",
-      "q": "Feri �cs potrafi� doceni� odwag� Nemeczka.",
+      "q": "Feri Ács potrafił docenić odwagę Nemeczka.",
       "correct": true
     },
     {
       "id": "t19",
-      "q": "Boka mianowa� Nemeczka kapitanem po bitwie.",
+      "q": "Boka mianował Nemeczka kapitanem po bitwie.",
       "correct": true
     }
   ],
   "match": [
     {
       "id": "d0",
-      "q": "J�nos Boka",
-      "correct": "Przyw�dca ch�opc�w z Placu Broni",
+      "q": "János Boka",
+      "correct": "Przywódca chłopców z Placu Broni",
       "wrong": [
-        "Dow�dca Czerwonych Koszul",
+        "Dowódca Czerwonych Koszul",
         "Nauczyciel"
       ]
     },
     {
       "id": "d1",
-      "q": "Ern� Nemeczek",
-      "correct": "Pocz�tkowo jedyny szeregowiec, wierny przyjaciel",
+      "q": "Ernő Nemeczek",
+      "correct": "Początkowo jedyny szeregowiec, wierny przyjaciel",
       "wrong": [
-        "Zdradzi� koleg�w",
+        "Zdradził kolegów",
         "Nauczyciel"
       ]
     },
     {
       "id": "d2",
-      "q": "Feri �cs",
-      "correct": "Dow�dca Czerwonych Koszul",
+      "q": "Feri Ács",
+      "correct": "Dowódca Czerwonych Koszul",
       "wrong": [
-        "Przyw�dca ch�opc�w Boki",
+        "Przywódca chłopców Boki",
         "Ojciec Nemeczka"
       ]
     },
     {
       "id": "d3",
       "q": "Gereb",
-      "correct": "Zdradzi� koleg�w, potem �a�owa�",
+      "correct": "Zdradził kolegów, potem żałował",
       "wrong": [
-        "Napisa� powie��",
-        "By� nauczycielem"
+        "Napisał powieść",
+        "Był nauczycielem"
       ]
     },
     {
       "id": "d4",
-      "q": "R�cz",
+      "q": "Rácz",
       "correct": "Nauczyciel",
       "wrong": [
         "Ojciec Nemeczka",
-        "Dow�dca Czerwonych Koszul"
+        "Dowódca Czerwonych Koszul"
       ]
     },
     {
@@ -3276,14 +3276,14 @@ export const literature = {
       "q": "Czerwone Koszule",
       "correct": "Grupa rywali z Ogrodu Botanicznego",
       "wrong": [
-        "Dru�yna Boki",
+        "Drużyna Boki",
         "Rodzina Nemeczka"
       ]
     },
     {
       "id": "d7",
       "q": "Plac Broni",
-      "correct": "Miejsce zabaw i wsp�lnoty ch�opc�w",
+      "correct": "Miejsce zabaw i wspólnoty chłopców",
       "wrong": [
         "Szkolna sala",
         "Siedziba Czerwonych Koszul"
@@ -3291,53 +3291,53 @@ export const literature = {
     },
     {
       "id": "d8",
-      "q": "Ogr�d Botaniczny",
+      "q": "Ogród Botaniczny",
       "correct": "Siedziba Czerwonych Koszul",
       "wrong": [
         "Dom Boki",
-        "Szko�a R�cza"
+        "Szkoła Rácza"
       ]
     },
     {
       "id": "d9",
-      "q": "Ferenc Moln�r",
-      "correct": "Autor powie�ci",
+      "q": "Ferenc Molnár",
+      "correct": "Autor powieści",
       "wrong": [
-        "Dow�dca ch�opc�w",
+        "Dowódca chłopców",
         "Ojciec Nemeczka"
       ]
     },
     {
       "id": "d10",
-      "q": ""Einstand"",
-      "correct": "Zabranie rzeczy s�abszym si��",
+      "q": "„Einstand”",
+      "correct": "Zabranie rzeczy słabszym siłą",
       "wrong": [
-        "Wyb�r kapitana",
-        "Uroczyste przyj�cie do szko�y"
+        "Wybór kapitana",
+        "Uroczyste przyjęcie do szkoły"
       ]
     },
     {
       "id": "d11",
       "q": "Budapeszt",
-      "correct": "Miasto, w kt�rym toczy si� akcja",
+      "correct": "Miasto, w którym toczy się akcja",
       "wrong": [
         "Nazwa placu",
-        "Imi� bohatera"
+        "Imię bohatera"
       ]
     },
     {
       "id": "d12",
-      "q": "Zwi�zek Kitowc�w",
-      "correct": "Organizacja ch�opc�w zbieraj�cych i przechowuj�cych kit",
+      "q": "Związek Kitowców",
+      "correct": "Organizacja chłopców zbierających i przechowujących kit",
       "wrong": [
-        "Dru�yna Czerwonych Koszul",
-        "Grupa doros�ych krawc�w"
+        "Drużyna Czerwonych Koszul",
+        "Grupa dorosłych krawców"
       ]
     },
     {
       "id": "d13",
       "q": "Czonakosz",
-      "correct": "Jeden z ch�opc�w z Placu Broni",
+      "correct": "Jeden z chłopców z Placu Broni",
       "wrong": [
         "Ojciec Nemeczka",
         "Pisarz"
@@ -3345,17 +3345,17 @@ export const literature = {
     },
     {
       "id": "d14",
-      "q": "Ranga Nemeczka na pocz�tku powie�ci",
+      "q": "Ranga Nemeczka na początku powieści",
       "correct": "Szeregowiec",
       "wrong": [
         "Kapitan",
-        "Genera�"
+        "Generał"
       ]
     },
     {
       "id": "d15",
-      "q": "P�l utca",
-      "correct": "Ulica, od kt�rej nazwano grup�",
+      "q": "Pál utca",
+      "correct": "Ulica, od której nazwano grupę",
       "wrong": [
         "Nazwisko nauczyciela",
         "Nazwa ogrodu"
@@ -3363,204 +3363,203 @@ export const literature = {
     },
     {
       "id": "d16",
-      "q": "Lojalno�� Nemeczka",
-      "correct": "Wierno�� kolegom mimo trudno�ci",
+      "q": "Lojalność Nemeczka",
+      "correct": "Wierność kolegom mimo trudności",
       "wrong": [
-        "Zdrada dla korzy�ci",
-        "Unikanie przyjaci��"
+        "Zdrada dla korzyści",
+        "Unikanie przyjaciół"
       ]
     },
     {
       "id": "d17",
       "q": "Postawa Gereba pod koniec",
-      "correct": "Skrucha i pr�ba naprawy winy",
+      "correct": "Skrucha i próba naprawy winy",
       "wrong": [
         "Duma ze zdrady",
-        "Oboj�tno�� wobec wszystkich"
+        "Obojętność wobec wszystkich"
       ]
     },
     {
       "id": "d18",
-      "q": "Zako�czenie",
-      "correct": "Plac ma zosta� zabudowany; ch�opcy go trac�",
+      "q": "Zakończenie",
+      "correct": "Plac ma zostać zabudowany; chłopcy go tracą",
       "wrong": [
-        "Ch�opcy otrzymuj� w�asny park",
-        "Czerwone Koszule przeprowadzaj� si�"
+        "Chłopcy otrzymują własny park",
+        "Czerwone Koszule przeprowadzają się"
       ]
     },
     {
       "id": "d19",
-      "q": "G��wny konflikt",
-      "correct": "Sp�r o Plac Broni mi�dzy grupami",
+      "q": "Główny konflikt",
+      "correct": "Spór o Plac Broni między grupami",
       "wrong": [
         "Walka o szkolny puchar",
-        "Podr�� do innego kraju"
+        "Podróż do innego kraju"
       ]
     }
   ],
   "short": [
     {
       "id": "s0",
-      "q": "Jak Nemeczek wykaza� si� odwag� podczas obrony Placu Broni?"
+      "q": "Jak Nemeczek wykazał się odwagą podczas obrony Placu Broni?"
     },
     {
       "id": "s1",
-      "q": "Dlaczego ch�opcy byli gotowi walczy� o Plac Broni?"
+      "q": "Dlaczego chłopcy byli gotowi walczyć o Plac Broni?"
     },
     {
       "id": "s2",
-      "q": "Jak zmieni�a si� postawa Gereba pod koniec powie�ci?"
+      "q": "Jak zmieniła się postawa Gereba pod koniec powieści?"
     },
     {
       "id": "s3",
-      "q": "Co sprawia, �e Boka jest dobrym przyw�dc�?"
+      "q": "Co sprawia, że Boka jest dobrym przywódcą?"
     },
     {
       "id": "s4",
-      "q": "Dlaczego Plac Broni by� czym� wi�cej ni� pustym terenem?"
+      "q": "Dlaczego Plac Broni był czymś więcej niż pustym terenem?"
     },
     {
       "id": "s5",
-      "q": "Wyja�nij w�asnymi s�owami, co oznacza "einstand"."
+      "q": "Wyjaśnij własnymi słowami, co oznacza „einstand”."
     },
     {
       "id": "s6",
-      "q": "Jak Nemeczek zachowa� si� mimo choroby i os�abienia?"
+      "q": "Jak Nemeczek zachował się mimo choroby i osłabienia?"
     },
     {
       "id": "s7",
-      "q": "Co Nemeczek po�wi�ci� dla swoich koleg�w?"
+      "q": "Co Nemeczek poświęcił dla swoich kolegów?"
     },
     {
       "id": "s8",
-      "q": "Dlaczego wpisanie nazwiska Nemeczka ma�ymi literami by�o dla niego krzywdz�ce?"
+      "q": "Dlaczego wpisanie nazwiska Nemeczka małymi literami było dla niego krzywdzące?"
     },
     {
       "id": "s9",
-      "q": "W jaki spos�b Boka reaguje na zdrad� Gereba?"
+      "q": "W jaki sposób Boka reaguje na zdradę Gereba?"
     },
     {
       "id": "s10",
-      "q": "Jak� rol� w wydarzeniach odegra� Ogr�d Botaniczny?"
+      "q": "Jaką rolę w wydarzeniach odegrał Ogród Botaniczny?"
     },
     {
       "id": "s11",
-      "q": "Co zachowanie Feri �csa m�wi o jego charakterze?"
+      "q": "Co zachowanie Feri Ácsa mówi o jego charakterze?"
     },
     {
       "id": "s12",
-      "q": "Jak� rol� w �yciu Nemeczka mia�a przyja�� z ch�opcami?"
+      "q": "Jaką rolę w życiu Nemeczka miała przyjaźń z chłopcami?"
     },
     {
       "id": "s13",
-      "q": "Podaj przyk�ad lojalno�ci Nemeczka wobec grupy."
+      "q": "Podaj przykład lojalności Nemeczka wobec grupy."
     },
     {
       "id": "s14",
-      "q": "Dlaczego choroba Nemeczka jest wa�na dla wymowy powie�ci?"
+      "q": "Dlaczego choroba Nemeczka jest ważna dla wymowy powieści?"
     },
     {
       "id": "s15",
-      "q": "Jak ko�czy si� historia Placu Broni?"
+      "q": "Jak kończy się historia Placu Broni?"
     },
     {
       "id": "s16",
-      "q": "Czego ch�opcy ucz� si� dzi�ki konfliktowi z Czerwonymi Koszulami?"
+      "q": "Czego chłopcy uczą się dzięki konfliktowi z Czerwonymi Koszulami?"
     },
     {
       "id": "s17",
-      "q": "Jak post�powanie Gereba wp�ywa na zaufanie koleg�w?"
+      "q": "Jak postępowanie Gereba wpływa na zaufanie kolegów?"
     },
     {
       "id": "s18",
-      "q": "Por�wnaj w jednym zdaniu odwag� Nemeczka z przyw�dztwem Boki."
+      "q": "Porównaj w jednym zdaniu odwagę Nemeczka z przywództwem Boki."
     },
     {
       "id": "s19",
-      "q": "Jakie przes�anie o przyja�ni mo�na odczyta� z powie�ci?"
+      "q": "Jakie przesłanie o przyjaźni można odczytać z powieści?"
     }
   ],
   "essay": [
     {
       "id": "e0",
-      "q": "Czy Nemeczek jest bohaterem? Uzasadnij zdanie przyk�adami z lektury."
+      "q": "Czy Nemeczek jest bohaterem? Uzasadnij zdanie przykładami z lektury."
     },
     {
       "id": "e1",
-      "q": "Scharakteryzuj Bok� jako przyw�dc�. Czy chcia�by� mie� takiego koleg�?"
+      "q": "Scharakteryzuj Bokę jako przywódcę. Czy chciałbyś mieć takiego kolegę?"
     },
     {
       "id": "e2",
-      "q": "Czy Gereb zas�u�y� na przebaczenie? Przedstaw argumenty."
+      "q": "Czy Gereb zasłużył na przebaczenie? Przedstaw argumenty."
     },
     {
       "id": "e3",
-      "q": "Opisz, czym Plac Broni by� dla ch�opc�w i dlaczego go bronili."
+      "q": "Opisz, czym Plac Broni był dla chłopców i dlaczego go bronili."
     },
     {
       "id": "e4",
-      "q": "Czego powie�� uczy o lojalno�ci i przyja�ni?"
+      "q": "Czego powieść uczy o lojalności i przyjaźni?"
     },
     {
       "id": "e5",
-      "q": "Por�wnaj postawy Boki i Feri �csa wobec swoich grup."
+      "q": "Porównaj postawy Boki i Feri Ácsa wobec swoich grup."
     },
     {
       "id": "e6",
-      "q": "Czy odwaga zale�y od si�y fizycznej? Odwo�aj si� do Nemeczka."
+      "q": "Czy odwaga zależy od siły fizycznej? Odwołaj się do Nemeczka."
     },
     {
       "id": "e7",
-      "q": "Opowiedz o najwa�niejszej decyzji podj�tej przez Bok�."
+      "q": "Opowiedz o najważniejszej decyzji podjętej przez Bokę."
     },
     {
       "id": "e8",
-      "q": "Wyja�nij, jak zdrada Gereba wp�ywa na wydarzenia."
+      "q": "Wyjaśnij, jak zdrada Gereba wpływa na wydarzenia."
     },
     {
       "id": "e9",
-      "q": "Kt�ra scena powie�ci najbardziej zapad�a ci w pami�� i dlaczego?"
+      "q": "Która scena powieści najbardziej zapadła ci w pamięć i dlaczego?"
     },
     {
       "id": "e10",
-      "q": "Czy walka o Plac Broni by�a s�uszna? Rozwa� r��ne argumenty."
+      "q": "Czy walka o Plac Broni była słuszna? Rozważ różne argumenty."
     },
     {
       "id": "e11",
-      "q": "Jak zmienia si� Nemeczek w oczach koleg�w?"
+      "q": "Jak zmienia się Nemeczek w oczach kolegów?"
     },
     {
       "id": "e12",
-      "q": "Opisz relacje mi�dzy cz�onkami grupy Boki."
+      "q": "Opisz relacje między członkami grupy Boki."
     },
     {
       "id": "e13",
-      "q": "Co jest smutnego w zako�czeniu powie�ci?"
+      "q": "Co jest smutnego w zakończeniu powieści?"
     },
     {
       "id": "e14",
-      "q": "Napisz list do jednego z bohater�w i skomentuj jego post�powanie."
+      "q": "Napisz list do jednego z bohaterów i skomentuj jego postępowanie."
     },
     {
       "id": "e15",
-      "q": "Czy Feri �cs jest wy��cznie przeciwnikiem? Uzasadnij opini�."
+      "q": "Czy Feri Ács jest wyłącznie przeciwnikiem? Uzasadnij opinię."
     },
     {
       "id": "e16",
-      "q": "Przedstaw wydarzenie, kt�re najlepiej pokazuje solidarno�� ch�opc�w."
+      "q": "Przedstaw wydarzenie, które najlepiej pokazuje solidarność chłopców."
     },
     {
       "id": "e17",
-      "q": "Jak w�tek Zwi�zku Kitowc�w pokazuje niesprawiedliwo�� wobec Nemeczka?"
+      "q": "Jak wątek Związku Kitowców pokazuje niesprawiedliwość wobec Nemeczka?"
     },
     {
       "id": "e18",
-      "q": "Czy mo�na naprawi� b��d taki jak zdrada Gereba? Odwo�aj si� do lektury."
+      "q": "Czy można naprawić błąd taki jak zdrada Gereba? Odwołaj się do lektury."
     },
     {
       "id": "e19",
-      "q": "Sformu�uj w�asne przes�anie powie�ci i poprzyj je przyk�adami."
+      "q": "Sformułuj własne przesłanie powieści i poprzyj je przykładami."
     }
   ]
 };
-
