@@ -24,7 +24,7 @@ export default {
       return new Response(null, { status: 204, headers: corsHeaders });
     }
 
-    if (url.pathname === "/visit" && request.method === "POST") {
+    if (url.pathname.endsWith("/visit") && request.method === "POST") {
       const country = /^[A-Z]{2}$/.test(request.cf?.country || "")
         ? request.cf.country
         : "XX";
@@ -38,9 +38,9 @@ export default {
       return json({ ok: true });
     }
 
-    if (url.pathname === "/stats" && request.method === "GET") {
+    if (request.method === "GET" && !url.pathname.endsWith("/visit")) {
       const total = Number(await env.STATS.get("total")) || 0;
-      const listed = await env.STATS.list({ prefix: "country:", limit: 30 });
+      const listed = await env.STATS.list({ prefix: "country:", limit: 300 });
       const countries = await Promise.all(
         listed.keys.map(async (item) => ({
           code: item.name.slice(8),
