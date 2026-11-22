@@ -13,6 +13,15 @@
 .card-cells .cells-download { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 10px; color: var(--edge); font-weight: 700; }
 .card-cells .cells-download:focus-visible { outline: 3px solid var(--edge); outline-offset: 3px; }
 .card-cells .revision-home-audio { min-width: 0; margin-bottom: 0; }
+.card-cells .cells-files { width: 100%; margin-top: 18px; }
+.card-cells .cells-files h4 { margin: 0 0 4px; font-size: 1rem; }
+.card-cells .cells-files ul { list-style: none; margin: 0; padding: 0; }
+.card-cells .cells-files li + li { border-top: 1px solid var(--line); }
+.card-cells .cells-files a { display: flex; align-items: center; min-height: 44px; padding: 6px 2px; color: var(--edge); font-weight: 650; }
+.card-cells .cells-files details { margin-top: 12px; border-top: 1px solid var(--line); }
+.card-cells .cells-files summary { min-height: 44px; padding: 10px 2px; cursor: pointer; color: var(--edge); font-weight: 750; }
+.card-cells .cells-files details ul { padding-left: 16px; }
+.card-cells .cells-files :is(a, summary):focus-visible { outline: 3px solid var(--edge); outline-offset: 2px; }
 </style>
 </head>
 <body>
@@ -27,7 +36,7 @@
   <div class="card-top"><div class="icon" aria-hidden="true">🔬</div><span class="world-label">ŚWIAT 04</span></div>
   <div class="tag">Biologia · klasa 5</div>
   <h3 id="cells-topic">Budowa i rodzaje komórek</h3>
-  <p>Porównaj komórki zwierzęce, roślinne, grzybowe i bakteryjne. Posłuchaj powtórki i rozwiąż 8 zadań na czterech kartach do druku.</p>
+  <p>Porównaj komórki zwierzęce, roślinne, grzybowe i bakteryjne. Posłuchaj powtórki, rozwiąż zadania z notatki i wybierz kartę o komórce zwierzęcej.</p>
   <span id="cells-audio-caption" class="audio-caption">Powtórka audio · 10 min 28 s</span>
   <audio class="revision-home-audio" controls preload="none" aria-labelledby="cells-topic cells-audio-caption">
     <source src="./biologia/komorki/budowa-komorek.mp3" type="audio/mpeg">
@@ -35,6 +44,20 @@
   </audio>
   <a class="cells-download" href="./biologia/komorki/budowa-komorek.mp3" download>Pobierz MP3 (5 MB)</a>
   <a class="button" href="./biologia/komorki/budowa-komorek.pdf" target="_blank" rel="noopener" aria-label="Otwórz notatkę PDF do druku w nowej karcie">Otwórz notatkę PDF do druku</a>
+  <div class="cells-files">
+    <h4>Karty pracy do druku</h4>
+    <ul>
+      <li><a href="./biologia/komorki/narysuj-komorke-zwierzeca.pdf">Karta A – narysuj komórkę (PDF)</a></li>
+      <li><a href="./biologia/komorki/podpisz-komorke-zwierzeca.pdf">Karta B – podpisz gotowy rysunek (PDF)</a></li>
+    </ul>
+    <details>
+      <summary>Klucze odpowiedzi</summary>
+      <ul>
+        <li><a href="./biologia/komorki/klucz-karty-a-b.pdf">Klucz do kart A i B – podpisany rysunek i funkcje (PDF)</a></li>
+        <li><a href="./biologia/komorki/klucz-notatka.pdf">Klucz do 8 zadań z notatki (PDF)</a></li>
+      </ul>
+    </details>
+  </div>
 </article>
 </div>
 <div class="rankings">
